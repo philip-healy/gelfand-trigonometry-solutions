@@ -1,4 +1,4 @@
 # Solutions for Gelfand's *Trigonometry*
 
-![Cover](images/cover.pnga
-)
+![Cover](images/cover.png)
+
