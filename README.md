@@ -2,10 +2,9 @@
 
 <p align="center"><img alt="Cover" src="images/cover.png" width="250"></p>
 
-*Trigonometry* by Gelfand and Saul is often cited as a suitable precalculus text for self-study.
-However, the book does not contain solutions for exercises.
-This can present a difficulty for those who are self-studying.
-A [partial set of solutions for *Trignonmetry*](https://jbeach50.weebly.com/gelfand--saul-trig-solutions.html) (odd numbered exercises only) has been published by John Beach.
+*Trigonometry* by Gelfand and Saul is often recommended as a precalculus text for self-study.
+However, the lack of solutions for exercises can present a difficulties for those who are self-studying.
+A [partial set of solutions for *Trignonometry*](https://jbeach50.weebly.com/gelfand--saul-trig-solutions.html) (odd numbered exercises only) has been published by John Beach.
 It is hoped that this repository will eventually contain a complete set of solutions that can be downloaded in PDF format.
 
 ## Contributing
