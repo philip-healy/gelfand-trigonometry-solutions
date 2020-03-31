@@ -9,10 +9,12 @@ It is hoped that this repository will eventually contain a complete set of solut
 
 ## Contributing
 Contributions are welcome! Contributions can be:
+
 * new solutions
 * alternate solutions
 * corrections to existing solutions
 * additional information that readers may useful
+
 If you are comfortable editing the `.tex` file directly then feel free to submit a pull request. If not, just create a GitHub issue describing your proposed change. 
 
 ## See Also
