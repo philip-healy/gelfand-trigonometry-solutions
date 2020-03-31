@@ -1,4 +1,5 @@
 # Solutions for Gelfand's *Trigonometry*
 
-<img alt="Cover" src="images/cover.png" width="400" align="center">
+<p align="center"><img alt="Cover" src="images/cover.png" width="300"></p>
+
 
