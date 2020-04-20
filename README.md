@@ -7,6 +7,8 @@ However, those who are learning without the help of a teacher can struggle with 
 A [partial set of solutions for *Trignonometry*](https://jbeach50.weebly.com/gelfand--saul-trig-solutions.html) (odd numbered exercises only) has been published by John Beach.
 It is hoped that this repository will eventually contain a complete set of solutions that can be downloaded in PDF format.
 
+The output will be published using [LaTeX-Travis-Pages](https://github.com/prewriter/LaTeX-Travis-Pages).
+
 ## Contributing
 Contributions are welcome! Contributions can be:
 

@@ -1,20 +1,30 @@
 \documentclass{article}
 
 \usepackage{amsmath}
+\usepackage{cancel}
 \usepackage{enumitem}
+\usepackage{gensymb}
 \usepackage{hyperref}
+\usepackage{tikz}
 
-
-% See https://tex.stackexchange.com/questions/71653/specifying-a-no-indent-for-a-list
 \newenvironment{solutions}[1]
 {\subsection*{#1}
- \begin{enumerate}[leftmargin=0cm,itemindent=.5cm]}
+ \begin{enumerate}[leftmargin=1.5em]}
 {\end{enumerate}}
+
+\newenvironment{solutionswithpreamble}[2]
+{\subsection*{#1}
+ #2
+ \begin{enumerate}[leftmargin=1.5em]}
+{\end{enumerate}}
+
+
 \newcommand{\solution}{\item}
 
 \newenvironment{subsolutions}
 {\begin{enumerate}}
 {\end{enumerate}}
+
 \newcommand{\subsolution}{\item}
 
 
@@ -30,7 +40,7 @@
 However, those who are learning without the help of a teacher can struggle with the lack of solutions to exercises in the text.
 A partial set of solutions for \textit{Trigonometry} (odd numbered exercises only) has been published by John Beach\footnote{\href{https://jbeach50.weebly.com/gelfand--saul-trig-solutions.html}{https://jbeach50.weebly.com/gelfand--saul-trig-solutions.html}}.
 It is hoped that this document will eventually contain a complete set of solutions.
-Contributions are welcome by submitting pull requests or issues to the project's GitHub repository\footnote{\href{https://github.com/philip-healy/gelfand-trigonometry-solutions}{https://github.com/philip-healy/gelfand-trigonometry-solutions}}.
+Contributions are welcome. These can take the form of pull requests or issues submitted to the project's GitHub repository\footnote{\href{https://github.com/philip-healy/gelfand-trigonometry-solutions}{https://github.com/philip-healy/gelfand-trigonometry-solutions}}.
 
 \section*{Chapter 0: Trigonometry}
 
@@ -88,9 +98,13 @@ a &= \sqrt{\frac{1}{2}} = \frac{1}{\sqrt{2}}
 
 \solution %6
 
+
 \solution %7
 
+
 \solution %8
+
+
 
 \end{solutions}
 
@@ -134,39 +148,95 @@ To find a similar triangle with longer leg 1, divide all sides by 12, resulting 
 \begin{subsolutions}
 \subsolution
 \subsolution
-\subsolution
 \end{subsolutions}
 
 \end{solutions}
 
 \begin{solutions}{Page 11}
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
+\solution %1
+$\frac{1}{\sqrt{2}}$ (see the solution for Question 5 on page 8).\\
+\noindent Challenge: $\frac{1}{\sqrt{2}} = \frac{\sqrt{2}}{2}$ (multiplying above and below by $\sqrt{2}$).  $\sqrt{2}$ is given to 9 decimal places in the diagram on the top of page 11: $1.4141213562373$. Dividing this decimal representation by 2 (using long division if necessary) yields a figure of $0.707060678$.
+ 
+\solution %2
+$c^2 = a^2 + b^2 = 3^2 + 3^2 = 9 + 9 = 18$. $c = \sqrt{18} = \sqrt{9}\sqrt{2} = 3\sqrt{2}$.
+
+\solution %3
+The hypotenuse of a $30\degree$ right triangle is double the length of the shorter leg. So, in this case the hypotenuse is 10 units long. We can use the Pythagorean Theorem to find the length of the longer leg:
+\begin{align*}
+a^2 + b^2 &= c^2\\
+a^2 + 5^2 &= 10^2\\
+a^2 + 25 &= 100\\
+a^2 &= 75\\
+a &= \sqrt{75} = \sqrt{25}\sqrt{3} = 5\sqrt{3}
+\end{align*}
+
+\solution %4
+We can solve these by finding  similar triangles to the $30\degree$ right triangle with sides 1-$\sqrt{3}$-2, or the $45\degree$ right triangle with sides 1-1-$\sqrt{2}$.
+\begin{subsolutions}
+\subsolution $x=\sqrt{3}$, $y=2$
+\subsolution $x=1/\sqrt{3}$, $y=2/\sqrt{3}$ CHECK
+\subsolution $x=1/2$, $y=\sqrt{3}/2$
+\subsolution $x=4\sqrt{3}$, $y=8$
+\subsolution $x = y = 2\sqrt{2}$
+\subsolution $x=5$, $y=5\sqrt{2}$
+\end{subsolutions}
 \end{solutions}
 
 \begin{solutions}{Page 14 (Examples)}
-\solution
-\solution
+\solution Why didn't we need to compare $3^2$ with $2^2 + 4^2$, or $2^2$ with $3^2 + 4^2$?\\
+The obtuse angle will always be opposite the longest side. 
+\solution This conclusion is \textit{incorrect}. Why?\\
+From the footnote at the beginning of Chapter 0: \textit{``Given three arbitrary lengths\ldots they form a triangle if and only if the sum of any two of them is greater than the third.''}
+In this case $1 + 2 = 3$ which is equal to (not greater than) the third side.
 \end{solutions}
 
 \begin{solutions}{Page 14 (Exercise)}
 \solution
+\begin{subsolutions}
+\subsolution $c^2 = 8^2 = 64$. $a^2 +b^2 = 6^2 + 7^2 = 36 + 49 = 85$. $c^2 < a^2 + b^2$, so the triangle is acute.
+\subsolution $c^2 = 10^2 = 100$. $a^2 +b^2 = 6^2 + 8^2 = 36 + 64 = 100$. $c^2 = a^2 + b^2$, so the triangle is a right triangle.
+\subsolution $a$ and $b$ are the same as in question b), but $c$ is smaller, so the triangle is acute.
+\subsolution $a$ and $b$ are the same as in question b), but $c$ is larger, so the triangle is obtuse.
+\subsolution $c^2 = 12^2 = 144$. $a^2 +b^2 = 5^2 + 12^2 = 25 + 144 = 169$. $c^2 < a^2 + b^2$, so the triangle is acute.
+\subsolution $c^2 = 14^2 = 196$. $a^2 +b^2 = 169$, as above. $c^2 > a^2 + b^2$, so the triangle is obtuse.
+\subsolution Here $a$ and $b$ are the same as above, but $c$ is larger. So, this triangle is also obtuse.
+\end{subsolutions}
 \end{solutions}
 
 
 \section*{Chapter 1: Trigonometric Ratios in a Triangle}
 
 \begin{solutions}{Page 23}
-\solution
-\solution
-\solution
+\solution %1
+\begin{subsolutions}
+\subsolution $\sin{\alpha} = 5/13$
+\subsolution $\sin{\alpha} = 4/5$
+\subsolution $\sin{\alpha} = 5/13$
+\subsolution $c = \sqrt{6^2 + 8^2} = \sqrt{100} = 10$. $\sin{\alpha} = 8/10$.
+\subsolution $\sin{\alpha} = 3/5$
+\subsolution $\sin{\alpha} = 12/13$
+\subsolution $\sin{\alpha} = 3/5$
+%\subsolution $c = \sqrt{7^2 + 3^2} = \sqrt{58}. $\sin{\alpha} = 7/\sqrt{58}$.
+\end{subsolutions}
+
+\solution %2
+\begin{subsolutions}
+\subsolution $\sin{\beta} = 12/13$
+\subsolution $\sin{\beta} = 3/5$
+\subsolution $\sin{\beta} = 12/13$
+\subsolution $\sin{\beta} = 6/10$
+\subsolution $\sin{\beta} = 4/5$
+\subsolution $\sin{\beta} = 5/13$
+\subsolution $\sin{\beta} = 4/5$
+\subsolution $\sin{\beta} = 3/\sqrt{58}$
+\end{subsolutions}
+
+\solution %3
+The example 30-60-90 triangle given on page 11 has sides 1, $\sqrt{3}$, 2. Let $\beta$ represent the 60\degree angle.
+The opposite leg $b$ has length $\sqrt{3}$. The hypotenuse $c$ has length 2. So, $\sin{\beta} = b/c = \sqrt{3}/2 \approx 1.732/2 = 0.866$.\\
+\noindent Crossing off the numbers listed:\\
+$\cancel{0.1}\quad\cancel{0.2}\quad\cancel{0.3}\quad\cancel{0.4}\quad\cancel{0.5}\quad\cancel{0.6}\quad\cancel{0.7}\quad\cancel{0.8}\quad0.9$
+
 \end{solutions}
 
 \begin{solutions}{Page 25}
