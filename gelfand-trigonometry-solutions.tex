@@ -5,6 +5,7 @@
 \usepackage{enumitem}
 \usepackage{gensymb}
 \usepackage{hyperref}
+\usepackage{tabularx}
 \usepackage{tikz}
 
 \newenvironment{solutions}[1]
@@ -316,9 +317,64 @@ We can derive the Law of Sines by combining results i.~and ii.~using the common 
 \end{solutions}
 
 \begin{solutions}{Page 26}
-\solution
-\solution
-\solution
+\solution %1
+\begin{subsolutions}
+\subsolution
+$\cos{\alpha} = 12/13$.
+$\cos{\beta} = 5/13$.
+\subsolution
+$\cos{\alpha} = 3/5$.
+$\cos{\beta} = 4/5$.
+\subsolution
+$\cos{\alpha} = 12/13$.
+$\cos{\beta} = 5/13$.
+\subsolution
+$\cos{\alpha} = 6/10$.
+$\cos{\beta} = 8/10$.
+\subsolution
+$\cos{\alpha} = 4/5$.
+$\cos{\beta} = 3/5$.
+\subsolution
+$\cos{\alpha} = 5/13$.
+$\cos{\beta} = 12/13$.
+\subsolution
+$\cos{\alpha} = 4/5$.
+$\cos{\beta} = 3/5$.
+\subsolution
+$\cos{\alpha} = 3/\sqrt{58}$.
+$\cos{\beta} = 7/\sqrt{58}$.
+\end{subsolutions}
+
+\solution %2
+\begin{subsolutions}
+\subsolution
+$c = \sqrt{8^2 + 6^2} = \sqrt{64 + 36} = \sqrt{100} = 10$.
+$\cos{\alpha} = 8/10$.
+$\cos{\beta} = 6/10$.
+\subsolution
+$c = \sqrt{5^2 + 12^2} = \sqrt{25 + 155} = \sqrt{169} = 13$.
+$\cos{\alpha} = 12/13$.
+$\cos{\beta} = 5/13$.
+\subsolution
+
+$\cos{\alpha} = /$.
+$\cos{\beta} = /$.
+\subsolution
+$\cos{\alpha} = /$.
+$\cos{\beta} = /$.
+\subsolution
+$\cos{\alpha} = /$.
+$\cos{\beta} = /$.
+\subsolution
+$\cos{\alpha} = /$.
+$\cos{\beta} = /$.
+\subsolution
+$\cos{\alpha} = /$.
+$\cos{\beta} = /$.
+\end{subsolutions}
+
+\solution %3
+
 \end{solutions}
 
 \begin{solutions}{Page 28}
@@ -347,10 +403,41 @@ We can derive the Law of Sines by combining results i.~and ii.~using the common 
 \end{solutions}
 
 \begin{solutions}{Page 31}
-\solution
-\solution
-\solution
-\solution
+\solution ~ %1
+\begin{center}
+\bgroup
+\def\arraystretch{2}
+\setlength\tabcolsep{15pt}
+\begin{tabular}{ |c|c|c| }
+\hline
+angle $x$ & $\sin{x}$ & $\cos{x}$ \\
+\hline
+$30\degree$ & $\frac{1}{2}$        & $\frac{\sqrt{3}}{2}$ \\
+$45\degree$ & $\frac{1}{\sqrt{2}}$ & $\frac{1}{\sqrt{2}}$ \\ 
+$60\degree$ & $\frac{\sqrt{3}}{2}$ & $\frac{1}{2}$        \\
+$\alpha$    & $\frac{4}{5}$        & $\frac{3}{5}$        \\
+$\beta$     & $\frac{3}{5}$        & $\frac{4}{5}$        \\
+\hline
+\end{tabular}
+\egroup
+\end{center}
+
+\solution %2
+\begin{equation*}
+\cos{30\degree} = \frac{\sqrt{3}}{2} = \sin{60\degree}
+\end{equation*}
+
+\solution %3
+\begin{equation*}
+\sin^{2}{30\degree} + \cos^{2}{30\degree} = \left(\frac{1}{2}\right)^{2} + \left(\frac{\sqrt{3}}{2}\right)^{2} = \frac{1}{4} + \frac{3}{4} = 1
+\end{equation*}
+
+\solution %4
+We can observe from the table that $\sin{x}$ increases with the size of the angle ($\sin{30\degree} < \sin{45\degree} < \sin{60\degree}$), while $\cos{x}$ decreases with the size of the angle. You can compare the fractions or convert to decimal make sure. We know that $\sin{\alpha} = \frac{4}{5}$. We also know that $\alpha$ is an acute angle.\\
+\textit{Is it larger or smaller than $30\degree$?} Larger, $\frac{4}{5} > \frac{1}{2}$ so $\sin{\alpha} > \sin{30\degree}$.\\
+\textit{Than $45\degree$?} Larger, $\frac{4}{5} > \frac{1}{\sqrt{2}}$ so $\sin{\alpha} > \sin{45\degree}$.\\
+\textit{Than $60\degree$?} Smaller, $\frac{4}{5} < \frac{\sqrt{3}}{2}$ so $\sin{\alpha} < \sin{60\degree}$.
+
 \end{solutions}
 
 \begin{solutions}{Page 34 (First)}
