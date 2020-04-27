@@ -7,6 +7,7 @@
 \usepackage{hyperref}
 \usepackage{tabularx}
 \usepackage{tikz}
+\usepackage{verbatim}
 
 \newenvironment{solutions}[1]
 {\subsection*{#1}
@@ -45,6 +46,7 @@ Contributions are welcome. These can take the form of pull requests or issues su
 
 \section*{Chapter 0: Trigonometry}
 
+\begin{comment}
 \begin{solutions}{Page 3}
 \solution
 \solution
@@ -55,6 +57,7 @@ Contributions are welcome. These can take the form of pull requests or issues su
 \solution
 \solution
 \end{solutions}
+\end{comment}
 
 \begin{solutions}{Page 8}
 \solution %1
@@ -296,13 +299,13 @@ b\sin{\alpha} = h_{2} = c\sin{\gamma}
 
 \subsolution
 \begin{enumerate}
-\item We can rewrite the result from part b) so that the expressions on each side are fractions with sine denominators:
+\item We can rewrite the result from part (b) so that the expressions on each side are fractions with sine denominators:
 \begin{align*}
 a\sin{\beta} &= b\sin{\alpha}\\
 \frac{a\sin{\beta}}{\sin{\alpha}\sin{\beta}} &= \frac{b\sin{\alpha}}{\sin{\alpha}\sin{\beta}}\\
 \frac{a}{\sin{\alpha}} &= \frac{b}{\sin{\beta}}
 \end{align*}
-\item We can rewrite the result from part c) similarly:
+\item We can rewrite the result from part (c) similarly:
 \begin{align*}
 c\sin{\beta} &= b\sin{\gamma}\\
 \frac{c\sin{\beta}}{\sin{\beta}\sin{\gamma}} &= \frac{b\sin{\gamma}}{\sin{\beta}\sin{\gamma}}\\
@@ -356,50 +359,107 @@ $c = \sqrt{5^2 + 12^2} = \sqrt{25 + 155} = \sqrt{169} = 13$.
 $\cos{\alpha} = 12/13$.
 $\cos{\beta} = 5/13$.
 \subsolution
-
-$\cos{\alpha} = /$.
-$\cos{\beta} = /$.
+Scaling up the $1$-$\sqrt{3}$-$2$ $30\degree$ triangle gives us a value of 20 units for the length of $c$.
+Next, we will use the Pythagorean Theorem to find the length of the longer leg:
+\begin{align*}
+a^2 + b^2 &= c^2\\
+10^2 + b^2 &= 20^2\\
+b^2 &= 400 - 100 = 300\\
+b &= \sqrt{300} = \sqrt{100}\sqrt{3} = 10\sqrt{3}
+\end{align*}
+We can now find $\cos{\alpha}$ and $\cos{\beta}$:
+\begin{align*}
+\cos{\alpha} &= \frac{10\sqrt{3}}{20} = \frac{\sqrt{3}}{2}\\
+\cos{\beta} &= \frac{10}{20} = \frac{1}{2}
+\end{align*}
 \subsolution
-$\cos{\alpha} = /$.
-$\cos{\beta} = /$.
+The triangle is congruent to the one above, so the solution is the same.
 \subsolution
-$\cos{\alpha} = /$.
-$\cos{\beta} = /$.
+Consider the $45\degree$ right triangle with legs of length 1 and hypotenuse $\sqrt{2}$. $\cos{\alpha} = \cos{\beta} = 1/\sqrt{2}$.
 \subsolution
-$\cos{\alpha} = /$.
-$\cos{\beta} = /$.
+$c = \sqrt{3^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5$.
+$\cos{\alpha} = 3/5$. $\cos{\beta} = 4/5$.
 \subsolution
-$\cos{\alpha} = /$.
-$\cos{\beta} = /$.
+$b = x\sqrt{3}$.
+$\cos{\alpha} = x\sqrt{3}/2x = \sqrt{3}/2$.
+$\cos{\beta} = x/2x = 1/2$.
 \end{subsolutions}
 
 \solution %3
+The Altitude-on-Hypotenuse Theorem tells us that when an altitude is drawn to the hypotenuse of a right triangle, the two triangles formed are similar to the given triangle and to each other. Therefore, the triangles with sides $a$-$b$-$c$, $a$-$p$-$d$ and $d$-$b$-$q$ are similar, and the ratio for $\cos{\alpha}$ appears in all of them:
+\begin{subsolutions}
+\subsolution $a/c$
+\subsolution $p/a$
+\subsolution $d/b$
+\end{subsolutions}
 
 \end{solutions}
 
 \begin{solutions}{Page 28}
-\solution
+\solution %1
+In this instance, $\alpha=29\degree$, $\beta=61\degree$, and $\alpha + \beta = 90\degree$. According to the theorem above, if $\alpha + \beta = 90\degree$, then $\sin{\alpha} = \cos{\beta}$.
 \solution
 \solution
 \end{solutions}
 
-\begin{solutions}{Page 29}
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\end{solutions}
+\begin{solutionswithpreamble}{Page 29}
+{First, we need to find the length of the hypotenuse: $c = \sqrt{3^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5.$}
+\solution $\sin^{2}{\alpha} = \left(\frac{4}{5}\right)^2 = \frac{16}{25}$
+\solution $\sin^{2}{\beta} = \left(\frac{3}{5}\right)^2 = \frac{9}{25}$
+\solution $\cos^{2}{\alpha} = \left(\frac{3}{5}\right)^2 = \frac{9}{25}$ (same as $\sin^{2}{\beta}$)
+\solution $\cos^{2}{\beta} = \left(\frac{4}{5}\right)^2 = \frac{16}{25}$ (same as $\sin^{2}{\alpha}$)
+\solution $\sin^{2}{\alpha} + \cos^{2}{\alpha} = \frac{16}{25} + \frac{9}{25} = \frac{25}{25} = 1$
+\solution $\sin^{2}{\alpha} + \cos^{2}{\beta} = \frac{16}{25} + \frac{16}{25} = \frac{32}{25}$
+\solution $\cos^{2}{\alpha} + \sin^{2}{\beta} = \frac{9}{25} + \frac{9}{25} = \frac{18}{25}$
+\end{solutionswithpreamble}
 
 \begin{solutions}{Page 30}
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
+\solution %1
+\begin{equation*}
+\sin^{2}{\alpha} + \cos^{2}{\alpha} = \left(\frac{4}{5}\right)^2 + \left(\frac{3}{5}\right)^2 = \frac{16}{25} + \frac{9}{25} = \frac{25}{25} = 1
+\end{equation*}
+
+\solution %2
+It's not an error. According to the corollary of the Pythagoream Theorem, this a right triangle: $a^2 + b^2 = 3^2 + 4^2 = 9 + 16 = 25 = c^2$.
+
+\solution %3
+$\sin^{2}{\beta} + \cos^{2}{\beta} = \left(\frac{3}{5}\right)^2 + \left(\frac{4}{5}\right)^2 = \frac{9}{25} + \frac{16}{25} = \frac{25}{25} = 1$
+
+\solution %4
+\begin{align*}
+\cos^2{\alpha} + \sin^{2}{\alpha} &= 1 \\
+\cos^2{\alpha} &= 1 - \sin^{2}{\alpha} = 1- \left(\frac{5}{13}\right)^2 = 1 - \frac{25}{169} = \frac{144}{169} \\
+\cos{\alpha} &= \sqrt{\frac{144}{169}} = \frac{12}{13} 
+\end{align*}
+
+\solution %5
+\begin{align*}
+\cos^2{\alpha} + \sin^{2}{\alpha} &= 1 \\
+\cos^2{\alpha} &= 1 - \sin^{2}{\alpha} = 1- \left(\frac{5}{7}\right)^2 = 1 - \frac{25}{49} = \frac{24}{49} \\
+\cos{\alpha} &= \sqrt{\frac{24}{49}} = \frac{\sqrt{4}\sqrt{6}}{\sqrt{49}} = \frac{2\sqrt{6}}{7}
+\end{align*}
+
+\solution %6
+We will follow the proof at the bottom of Page 29:
+\begin{align*}
+sin^{2}{\alpha} + \sin^{2}{\beta} &= \left(\frac{a}{c}\right)^2 + \left(\frac{b}{c}\right)^2 \\
+&= \frac{a^2}{c^2} + \frac{b^2}{c^2} \\
+&= \frac{a^2 + b^2}{c^2} \\
+&= \frac{a^2 + b^2}{a^2 + b^2} \\
+&= 1
+\end{align*}
+
+\solution %7
+Again, we will follow the proof at the bottom of Page 29:
+\begin{align*}
+cos^{2}{\alpha} + \cos^{2}{\beta} &= \left(\frac{b}{c}\right)^2 + \left(\frac{a}{c}\right)^2 \\
+&= \frac{b^2}{c^2} + \frac{a^2}{c^2} \\
+&= \frac{a^2 + b^2}{c^2} \\
+&= \frac{a^2 + b^2}{a^2 + b^2} \\
+&= 1
+\end{align*}
+
+
 \end{solutions}
 
 \begin{solutions}{Page 31}
@@ -457,19 +517,64 @@ We can observe from the table that $\sin{x}$ increases with the size of the angl
 \end{solutions}
 
 \begin{solutions}{Page 37}
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
+\solution %1
+$\cos{\alpha}=3/5$, $\cos{\beta}=4/5$, $\sin{\alpha}=4/5$, $\sin{\beta}=3/5$, $\tan{\alpha}=4/3$, $\tan{\beta}=3/4$, $\cot{\alpha}=3/4$, $\cot{\beta}=4/3$.
+
+\solution %2
+We can show that this assumption is correct using the corollary of the Pythagorean Theorem:
+$a^2 + b^{2} = 3^{2} + 4^{2} = 25 = c^2$.
+
+\solution %3.
+$\cos{\alpha}=a/c$, $\cos{\beta}=b/c$, $\sin{\alpha}=b/c$, $\sin{\beta}=a/c$, $\tan{\alpha}=b/a$, $\tan{\beta}=a/b$, $\cot{\alpha}=a/b$, $\cot{\beta}=b/a$.
+
+\solution %4
+$c = \sqrt{12^2 + 5^2} = \sqrt{169} = 13$. $\cos{\alpha}=12/13$. $\cos{\beta}=5/13$. $\cot{\alpha}=12/5$. $\cot{\beta}=5/12$.
+
+\solution %5
+First, we will use the Pythagorean Theorem to find the length of the longer leg:
+\begin{align*}
+a^2 + b^2 &= c^2\\
+a^2 + 7^2 &= 25^2\\
+a^2 + 49 &= 625\\
+a^2 &= 576\\
+a &= 24
+\end{align*}
+We can now find the numerical values that were asked for: $\cos{\alpha}=24/25$, $\cos{\beta}=7/25$, $\cot{\alpha}=24/7$, $\cot{\beta}=7/24$.
+
+\solution %6
+\begin{align*}
+\frac{a}{c} &= \sin{\alpha} = \cos{\beta}\\
+\frac{b}{c} &= \cos{\alpha} = \sin{\beta}\\
+\frac{a}{b} &= \tan{\alpha} = \cot{\beta}\\
+\frac{b}{a} &= \cot{\alpha} = \tan{\beta}
+\end{align*}
+
+\solution %7
+First, we will use the Pythagorean Theorem to find the length of the other leg:
+\begin{align*}
+a^2 + b^2 &= c^2\\
+a^2 + 3^2 &= 5^2\\
+a^2 + 9 &= 25\\
+a^2 &= 16\\
+a &= 4
+\end{align*}
+We can now find the numerical values that were asked for: $\cos{\alpha}=4/5$, $\cot{\alpha}=4/3$.
+
+\solution %8
+If $\tan{\alpha} = 1$, then $a/b=1$, implying that $a = b$ and $\alpha = 45\degree$. $\cos{\alpha} = \cos{45\degree} = 1/\sqrt{2}$. $\cot{\alpha} = 1/1 = 1$. 
+
+\solution %9
+$\tan{45\degree} = 1/1 = 1$.
+
+\solution %10
+$\tan{30\degree} = 1/\sqrt{3} \approx 0.57735$.
+
+\solution %11
+$\tan{45\degree} + \sin{30\degree} = 1 + \frac{1}{2} = \frac{3}{2}$. We don't need a calculator because both numbers are rational.
+
 \end{solutions}
 
+\begin{comment}
 \section*{Chapter 2: Relations among Trigonometric Ratios}
 
 \begin{solutions}{Page 43}
@@ -1212,5 +1317,7 @@ We can observe from the table that $\sin{x}$ increases with the size of the angl
 \solution
 \solution
 \end{solutions}
+
+\end{comment}
 
 \end{document}
