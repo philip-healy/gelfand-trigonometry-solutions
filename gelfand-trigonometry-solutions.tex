@@ -5,6 +5,7 @@
 \usepackage{enumitem}
 \usepackage{gensymb}
 \usepackage{hyperref}
+\usepackage{makecell}
 \usepackage{tabularx}
 \usepackage{tikz}
 \usepackage{verbatim}
@@ -165,7 +166,7 @@ $\frac{1}{\sqrt{2}}$ (see the solution for Question 5 on page 8).\\
 $c^2 = a^2 + b^2 = 3^2 + 3^2 = 9 + 9 = 18$. $c = \sqrt{18} = \sqrt{9}\sqrt{2} = 3\sqrt{2}$.
 
 \solution %3
-The hypotenuse of a $30\degree$ right triangle is double the length of the shorter leg. So, in this case the hypotenuse is 10 units long. We can use the Pythagorean Theorem to find the length of the longer leg:
+The hypotenuse of a $30\degree$ right triangle is double the length of the shorter leg. In this instance the hypotenuse is 10 units long. We can use the Pythagorean Theorem to find the length of the longer leg:
 \begin{align*}
 a^2 + b^2 &= c^2\\
 a^2 + 5^2 &= 10^2\\
@@ -423,7 +424,9 @@ In this instance, $\alpha=29\degree$, $\beta=61\degree$, and $\alpha + \beta = 9
 It's not an error. According to the corollary of the Pythagoream Theorem, this a right triangle: $a^2 + b^2 = 3^2 + 4^2 = 9 + 16 = 25 = c^2$.
 
 \solution %3
-$\sin^{2}{\beta} + \cos^{2}{\beta} = \left(\frac{3}{5}\right)^2 + \left(\frac{4}{5}\right)^2 = \frac{9}{25} + \frac{16}{25} = \frac{25}{25} = 1$
+\begin{equation*}
+\sin^{2}{\beta} + \cos^{2}{\beta} = \left(\frac{3}{5}\right)^2 + \left(\frac{4}{5}\right)^2 = \frac{9}{25} + \frac{16}{25} = \frac{25}{25} = 1
+\end{equation*}
 
 \solution %4
 \begin{align*}
@@ -458,8 +461,6 @@ cos^{2}{\alpha} + \cos^{2}{\beta} &= \left(\frac{b}{c}\right)^2 + \left(\frac{a}
 &= \frac{a^2 + b^2}{a^2 + b^2} \\
 &= 1
 \end{align*}
-
-
 \end{solutions}
 
 \begin{solutions}{Page 31}
@@ -493,27 +494,110 @@ $\beta$     & $\frac{3}{5}$        & $\frac{4}{5}$        \\
 \end{equation*}
 
 \solution %4
-We can observe from the table that $\sin{x}$ increases with the size of the angle ($\sin{30\degree} < \sin{45\degree} < \sin{60\degree}$), while $\cos{x}$ decreases with the size of the angle. You can compare the fractions or convert to decimal make sure. We know that $\sin{\alpha} = \frac{4}{5}$. We also know that $\alpha$ is an acute angle.\\
+We can observe from the table that $\sin{x}$ increases with the size of an acute angle ($\sin{30\degree} < \sin{45\degree} < \sin{60\degree}$), while $\cos{x}$ decreases with the size of an acute angle. You can compare the fractions or convert to decimal make sure. We know that $\sin{\alpha} = \frac{4}{5}$. We also know that $\alpha$ is an acute angle.\\
 \textit{Is it larger or smaller than $30\degree$?} Larger, $\frac{4}{5} > \frac{1}{2}$ so $\sin{\alpha} > \sin{30\degree}$.\\
 \textit{Than $45\degree$?} Larger, $\frac{4}{5} > \frac{1}{\sqrt{2}}$ so $\sin{\alpha} > \sin{45\degree}$.\\
 \textit{Than $60\degree$?} Smaller, $\frac{4}{5} < \frac{\sqrt{3}}{2}$ so $\sin{\alpha} < \sin{60\degree}$.
 
 \end{solutions}
 
-\begin{solutions}{Page 34 (First)}
-\solution
-\solution
-\solution
+\begin{solutions}{Page 33 (First)}
+\solution %1
+As the angle $\alpha$ get smaller, the ratio of the opposite side to the hypotenuse approaches 0.
+
+\solution %2
+Recall from the theorem on page 28 that if $\alpha + \beta = 90\degree$, then $\sin{\alpha} = \cos{\beta}$ and $\cos{\alpha} = \sin{\beta}$. So, if $\sin{90\degree} = 1$, then $\cos{0\degree} = 1$.
+
+\solution %3
+$\sin^{2}{0\degree} + \cos^{2}{0\degree} = 0^2 + 1^2 = 0 + 1 = 1$
+
+\solution %4
+$\sin^{2}{90\degree} + \cos^{2}{90\degree} = 1^2 + 0^2 = 1 + 0 = 1$
+
+\solution %5
+Our friend is mistaken; the sine of an angle can never be greater than 1.
+
 \end{solutions}
 
-\begin{solutions}{Page 34 (Second)}
-\solution
-\solution
-\solution
+\begin{solutions}{Page 33 (Second)}
+\solution ~%1
+\begin{center}
+\bgroup
+\def\arraystretch{2}
+\setlength\tabcolsep{15pt}
+\begin{tabular}{ |c|c|c| }
+\hline
+$\sin{0\degree} + \cos{0\degree}$ & $0 + 1$        & $1$ \\
+\hline
+$\sin{30\degree} + \cos{30\degree}$ & $\frac{1}{2} + \frac{\sqrt{3}}{2}$        & $1.366$ (approx.) \\
+\hline
+$\sin{45\degree} + \cos{45\degree}$ & $\frac{1}{\sqrt{2}} + \frac{1}{\sqrt{2}}$ & $1.414$ (approx.) \\
+\hline
+$\sin{60\degree} + \cos{60\degree}$ & $\frac{\sqrt{3}}{2} + \frac{1}{2}$        & $1.366$ (approx.) \\
+\hline
+\makecell{$\sin{\alpha} + \cos{\alpha}$, where $\alpha$\\ is the smaller\ldots} & $\frac{3}{5} + \frac{4}{5}$ & $1.4$ \\
+\hline
+\makecell{$\sin{\alpha} + \cos{\alpha}$, where $\alpha$\\ is the larger\ldots}  & $ \frac{4}{5} + \frac{3}{5}$ & $1.4$ \\
+\hline
+\end{tabular}
+\egroup
+\end{center}
+
+\solution %2
+If $\sin{\alpha} = 1$, then $\cos{\alpha} = 0$ and $\sin{\alpha} + \cos{\alpha} = 1$.
+If $\cos{\alpha} = 1$, then $\sin{\alpha} = 0$ and $\sin{\alpha} + \cos{\alpha} = 1$.
+Otherwise, $\sin{\alpha} < 1$ and $\cos{\alpha} < 1$, so $\sin{\alpha} + \cos{\alpha} < 2$.
+
+\solution %3
+\begin{align*}
+(\sin{\alpha} + \cos{\alpha})^2 &= \sin^{2}{\alpha} + 2\sin{\alpha}\cos{\alpha} + \cos^{2}{\alpha} \\
+&= (\sin^{2}{\alpha} + \cos^{2}{\alpha}) + 2\sin{\alpha}\cos{\alpha} \\
+&= 1 + 2\sin{\alpha}\cos{\alpha}
+\end{align*}
+We know that $0 \leq \sin{\alpha} \leq 1$ and $0 \leq \cos{\alpha} \leq 1$ because $\alpha$ is acute.
+So $2\sin{\alpha}\cos{\alpha}$ is the product of three nonnegative numbers, and is itself a nonnegative number.
+A nonnegative number added to 1 results in a number $\geq 1$.
+Therefore, $1 + 2\sin{\alpha}\cos{\alpha} \geq 1$.
+The square root of a number $\geq 1$ is itself $\geq 1$.
+Therefore, $\sqrt{1 + 2\sin{\alpha}\cos{\alpha}} \geq 1$.
+Rewriting the expression on the left: $\sqrt{1 + 2\sin{\alpha}\cos{\alpha}} = \sqrt{(\sin{\alpha} + \cos{\alpha})^2} = \sin{\alpha} + \cos{\alpha}$.
+So, $\sin{\alpha} + \cos{\alpha} \geq 1$.
+
+\solution %4
+\begin{equation*}
+\sin{45\degree} + \cos{45\degree} = \frac{1}{\sqrt{2}} + \frac{1}{\sqrt{2}} = \frac{2}{\sqrt{2}} = \frac{2\sqrt{2}}{\sqrt{2}\sqrt{2}} = \frac{2\sqrt{2}}{2} = \sqrt{2}
+\end{equation*}
+
+\solution %5
+You should notice that the values for $\sin{\alpha} + \cos{\alpha}$ increase up to $45\degree$, then start to drop.
+
 \end{solutions}
 
 \begin{solutions}{Page 35}
-\solution
+\solution ~
+\begin{center}
+\bgroup
+\def\arraystretch{2}
+\setlength\tabcolsep{15pt}
+\begin{tabular}{ |c|c|c| }
+\hline
+$(\sin{0\degree})(\cos{0\degree})$   & $0\cdot1$        & $0$ \\
+\hline
+$(\sin{30\degree})(\cos{30\degree})$ & $\frac{1}{2}\cdot\frac{\sqrt{3}}{2}$ & $0.433$ (approx.) \\
+\hline
+$(\sin{45\degree})(\cos{45\degree})$ & $\frac{1}{\sqrt{2}}\cdot\frac{1}{\sqrt{2}}$ & $0.5$ \\
+\hline
+$(\sin{60\degree})(\cos{60\degree})$ & $\frac{\sqrt{3}}{2}\cdot\frac{1}{2}$ & $0.433$ (approx.) \\
+\hline
+\makecell{$(\sin{\alpha})(\cos{\alpha})$, where $\alpha$\\ is the smaller\ldots}  & $\frac{3}{5}\cdot\frac{4}{5}$ & $0.48$ \\
+\hline
+\makecell{$(\sin{\alpha})(\cos{\alpha})$, where $\alpha$\\ is the larger\ldots}  & $\frac{4}{5}\cdot\frac{3}{5}$ & $0.48$ \\
+\hline
+\end{tabular}
+\egroup
+\end{center}
+\textit{How large can the product $(\sin{\alpha})(\cos{\alpha})$ get?}
+We can see from the table that the maximum value of the product appears to be when $\alpha = 45\degree$.
 \end{solutions}
 
 \begin{solutions}{Page 37}
