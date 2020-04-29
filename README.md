@@ -4,9 +4,10 @@
 
 <p align="center">
 <img alt="Cover" src="images/cover.png" width="250">
+<br clear="left">
 Solutions:
 <a href="https://philip-healy.github.io/gelfand-trigonometry-solutions/gelfand-trigonometry-solutions.html">[HTML]</a>
-<a href="https://philip-healy.github.io/gelfand-trigonometry-solutions/gelfand-trigonometry-solutions.pdf"[PDF]</a>
+<a href="https://philip-healy.github.io/gelfand-trigonometry-solutions/gelfand-trigonometry-solutions.pdf">[PDF]</a>
 </p>
 
 *Trigonometry* by Gelfand and Saul is often recommended as a precalculus text for self-study.
