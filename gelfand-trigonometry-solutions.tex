@@ -98,23 +98,33 @@ a^2 + a^2 &= c^2\\
 a^2 + a^2 &= 1^2\\
 2a^2 &= 1\\
 a^2 &= \frac{1}{2}\\
-a &= \sqrt{\frac{1}{2}} = \frac{1}{\sqrt{2}}
+a &= \sqrt{\frac{1}{2}} = \frac{\sqrt{1}}{\sqrt{2}} = \frac{1}{\sqrt{2}}
 \end{align*}
 
 \solution %6
-
+From the diagram at the bottom of Page 11, we can see the shorter leg is half the length of the hypotenuse.
+So in this instance the shorter leg has length $1/2$. We can use Statement 1 to find the length of the longer leg:
+\begin{align*}
+a^2 + b^2 &= c^2\\
+a^2 + \left(\frac{1}{2}\right)^2 &= 1^2\\
+a^2 + \frac{1}{4} &= 1\\
+a^2 &= \frac{3}{4}\\
+a &= \sqrt{\frac{3}{4}} = \frac{\sqrt{3}}{\sqrt{4}} = \frac{\sqrt{3}}{2}
+\end{align*}
 
 \solution %7
-
+For any point $Y$, we can draw a triangle with sides $AY$, $BY$ and $AB$.
+Let $a$ be the length of side $AY$, $b$ be the length of side $BY$ and $c$ be the length of side $AB$.
+According to Statement II, the subset of these triangles where $a^2 + b^2 = c^2$ are right triangles with legs of length $a$ and $b$ and hypotenuse $c$.
+Let $X$ be the subset of $Y$ that are vertices of these right triangles.
+This set of points describes a circle with its centre at the midpoint of $AB$, and radius $AB/2$.
 
 \solution %8
 
-
-
 \end{solutions}
 
-\begin{solutions}{Page 9}
 
+\begin{solutions}{Page 9}
 \solution %1
 $6^2 + 8^2 = 36 + 64 = 100 = 10^2$. By Statement II on Page 7 (converse of the Pythagorean Theorem), this is a right triangle.
 
@@ -148,11 +158,28 @@ To find a similar triangle with shorter leg 1, divide all sides by 5, resulting 
 To find a similar triangle with longer leg 1, divide all sides by 12, resulting in sides $5/12$-$1$-$13/12$.
 
 \solution %9
+To formula for the area of a triangle is $\frac{1}{2}bh$ where $b$ is the length of the base and $h$ is the height.
+For right triangles, finding the area is easy: one leg is the base and the other leg is the height.
+For other triangles, finding the height is more difficult: we need to find the length of the altitude drawn from the base.
+The triangles with sides 5-12-13 and 9-12-15 are both right triangles: see Exercise 3 on Page 8 and Exercise 4 on Page 9.
+The triangle with sides 13-14-15 is not a right triangle.
+We can confirm this using Statement I: $a^2 + b^2 = 13^2 + 14^2 = 365$, $c^2 = 15^2 = 225, a^2 + b^2 \neq c^2$.
+However, if we join the 5-12-13 and 9-12-15 triangles using their equal legs, the resulting triangle has the dimensions we are looking for: 13-14-15.
+The base of this combined triangle has length $5 + 9 = 14$. We also know the length of the altitude from the base of the combined triangle: 12.
+So, the area of the 13-14-15 triangle is $\frac{1}{2}\cdot14\cdot12 = 84$ units squared.
 
 \solution %10
 \begin{subsolutions}
 \subsolution
+%$a^2 + b^2 = 25^2 + 39^2 =  625 + 1521 = 2146$. $c^2 = 56^2 = 3136. a^2 + b^2 \neq c^2$
 \subsolution
+%$a^2 + b^2 = 25^2 + 39^2 =  625 + 1521 = 2146$. $c^2 = 16^2 = 256. a^2 + b^2 \neq c^2$
+
+%16 50 56
+%16^2 + 50^2 = 256 + 2500 = 2756
+%56^2 = 3136
+%56 + 16 = 72. 72^2 = 5184
+
 \end{subsolutions}
 
 \end{solutions}
@@ -179,7 +206,7 @@ a &= \sqrt{75} = \sqrt{25}\sqrt{3} = 5\sqrt{3}
 We can solve these by finding  similar triangles to the $30\degree$ right triangle with sides 1-$\sqrt{3}$-2, or the $45\degree$ right triangle with sides 1-1-$\sqrt{2}$.
 \begin{subsolutions}
 \subsolution $x=\sqrt{3}$, $y=2$
-\subsolution $x=1/\sqrt{3}$, $y=2/\sqrt{3}$ CHECK
+\subsolution $x=\sqrt{3}$, $y=2\sqrt{3}$
 \subsolution $x=1/2$, $y=\sqrt{3}/2$
 \subsolution $x=4\sqrt{3}$, $y=8$
 \subsolution $x = y = 2\sqrt{2}$
@@ -221,7 +248,7 @@ In this case $1 + 2 = 3$ which is equal to (not greater than) the third side.
 \subsolution $\sin{\alpha} = 3/5$
 \subsolution $\sin{\alpha} = 12/13$
 \subsolution $\sin{\alpha} = 3/5$
-%\subsolution $c = \sqrt{7^2 + 3^2} = \sqrt{58}. $\sin{\alpha} = 7/\sqrt{58}$.
+\subsolution $c = \sqrt{7^2 + 3^2} = \sqrt{58}$. $\sin{\alpha} = 7/\sqrt{58}$.
 \end{subsolutions}
 
 \solution %2
@@ -399,8 +426,14 @@ The Altitude-on-Hypotenuse Theorem tells us that when an altitude is drawn to th
 \begin{solutions}{Page 28}
 \solution %1
 In this instance, $\alpha=29\degree$, $\beta=61\degree$, and $\alpha + \beta = 90\degree$. According to the theorem above, if $\alpha + \beta = 90\degree$, then $\sin{\alpha} = \cos{\beta}$.
-\solution
-\solution
+
+\solution %2
+$x = 90 - 35 = 55\degree$
+
+\solution %3
+If $\alpha + \beta = 90\degree$, then $\beta =  90\degree - \alpha$.
+According to the theorem above, $\sin{\alpha} = \cos{\beta}$.
+Substituting $(90- \alpha)$ for $\beta$: $\sin{\alpha} = \cos{(90 - \alpha)}$.
 \end{solutions}
 
 \begin{solutionswithpreamble}{Page 29}
@@ -516,7 +549,6 @@ $\sin^{2}{90\degree} + \cos^{2}{90\degree} = 1^2 + 0^2 = 1 + 0 = 1$
 
 \solution %5
 Our friend is mistaken; the sine of an angle can never be greater than 1.
-
 \end{solutions}
 
 \begin{solutions}{Page 33 (Second)}
