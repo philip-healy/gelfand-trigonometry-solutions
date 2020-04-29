@@ -1,5 +1,7 @@
 # Solutions for Gelfand's *Trigonometry*
 
+[![Build Status](https://travis-ci.org/philip-healy/gelfand-trigonometry-solutions.svg?branch=master)](https://travis-ci.org/philip-healy/gelfand-trigonometry-solutions)
+
 <p align="center"><img alt="Cover" src="images/cover.png" width="250"></p>
 
 *Trigonometry* by Gelfand and Saul is often recommended as a precalculus text for self-study.
