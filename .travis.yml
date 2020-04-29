@@ -11,8 +11,9 @@ before_deploy:
 - sudo add-apt-repository --yes ppa:coolwanglu/pdf2htmlex
 - sudo apt-get update
 - sudo apt-get install --no-install-recommends --yes pdf2htmlex
+- cp index.html deploy
 - cd deploy
-- rm *.log *.aux
+- rm *.log *.aux *.out
 - pdf2htmlEX --embed cfijo --printing 0 --optimize-text 1 --dest-dir . --fit-width 1200 gelfand-trigonometry-solutions.pdf
 deploy:
   provider: pages
