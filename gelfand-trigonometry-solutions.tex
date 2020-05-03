@@ -2,6 +2,7 @@
 
 \usepackage{amsmath}
 \usepackage{cancel}
+\usepackage{catchfile}
 \usepackage{enumitem}
 \usepackage{gensymb}
 \usepackage{hyperref}
@@ -9,6 +10,7 @@
 \usepackage{tabularx}
 \usepackage{tikz}
 \usepackage{verbatim}
+\usepackage{xstring}
 
 \newenvironment{solutions}[1]
 {\subsection*{#1}
@@ -31,9 +33,17 @@
 \newcommand{\subsolution}{\item}
 
 
+% Git info
+% See https://tex.stackexchange.com/questions/455396/how-to-include-the-current-git-commit-id-and-branch-in-my-document
+\CatchFileDef{\headfull}{.git/HEAD}{}
+\StrGobbleRight{\headfull}{1}[\head]
+\StrBehind[2]{\head}{/}[\branch]
+\CatchFileDef{\commit}{.git/refs/heads/\branch}{}
+\StrLeft{\commit}{7}[\abbrevcommit]
+
 \title{Solutions for \textit{Trigonometry} by Gelfand \& Saul}
 \author{}
-\date{}
+\date{Git commit \abbrevcommit. Published \today.}
 
 \begin{document}
 \maketitle
