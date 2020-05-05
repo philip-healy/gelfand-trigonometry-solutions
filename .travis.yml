@@ -5,8 +5,9 @@ before_install:
 - sudo apt-get update
 - sudo apt-get install -y texlive-full
 - mkdir deploy
-git:
-  depth: false
+install:
+  - git config remote.origin.fetch +refs/heads/*:refs/remotes/origin/*
+  - git fetch --unshallow --tags
 script:
 - tree .git
 - pdflatex -interaction=nonstopmode -halt-on-error -output-directory deploy gelfand-trigonometry-solutions.tex
