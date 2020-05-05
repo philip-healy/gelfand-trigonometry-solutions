@@ -8,8 +8,8 @@ before_install:
 install:
   - git config remote.origin.fetch +refs/heads/*:refs/remotes/origin/*
   - git fetch
+  - git checkout master
 script:
-- tree .git
 - pdflatex -interaction=nonstopmode -halt-on-error -output-directory deploy gelfand-trigonometry-solutions.tex
 before_deploy:
 - sudo add-apt-repository --yes ppa:coolwanglu/pdf2htmlex
