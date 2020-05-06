@@ -751,13 +751,13 @@ Let the length of the adjacent leg $a$ be $\frac{3}{7}$ and the length of the hy
 \hline
 ~              & $\sin{\alpha}$             & $\cos{\alpha}$             & $\tan{\alpha}$             & $\cot{\alpha}$ \\
 \hline
-$\sin{\alpha}$ & $\alpha$                   & $\sqrt{1 - a^2}$           & $\dfrac{a}{\sqrt{1 - a^2}}$ & $\dfrac{\sqrt{1 - a^2}}{a}$ \\
+$\sin{\alpha}$ & $a$                        & $\sqrt{1 - a^2}$           & $\dfrac{a}{\sqrt{1 - a^2}}$ & $\dfrac{\sqrt{1 - a^2}}{a}$ \\
 \hline
-$\cos{\alpha}$ & $\sqrt{1 - a^2}$           & $\alpha$                   & $\dfrac{\sqrt{1 - a^2}}{a}$ & $\dfrac{a}{\sqrt{1 - a^2}}$ \\
+$\cos{\alpha}$ & $\sqrt{1 - a^2}$           & $a$                        & $\dfrac{\sqrt{1 - a^2}}{a}$ & $\dfrac{a}{\sqrt{1 - a^2}}$ \\
 \hline
-$\tan{\alpha}$ & $\dfrac{a}{\sqrt{1 + a^2}}$ & $\dfrac{1}{\sqrt{1 + a^2}}$ & $\alpha$                   & $\dfrac{1}{a}$ \\
+$\tan{\alpha}$ & $\dfrac{a}{\sqrt{1 + a^2}}$ & $\dfrac{1}{\sqrt{1 + a^2}}$ & $a$                       & $\dfrac{1}{a}$ \\
 \hline
-$\cot{\alpha}$ & $\dfrac{1}{\sqrt{1 + a^2}}$ & $\dfrac{a}{\sqrt{1 + a^2}}$ & $\dfrac{1}{a}$              & $\alpha$ \\
+$\cot{\alpha}$ & $\dfrac{1}{\sqrt{1 + a^2}}$ & $\dfrac{a}{\sqrt{1 + a^2}}$ & $\dfrac{1}{a}$              & $a$ \\
 \hline
 \end{tabular}
 \egroup
@@ -766,16 +766,69 @@ $\cot{\alpha}$ & $\dfrac{1}{\sqrt{1 + a^2}}$ & $\dfrac{a}{\sqrt{1 + a^2}}$ & $\d
 
 \end{solutions}
 
-\begin{solutions}{Page 45}
-\solution Given in text
-\solution
-\solution
+\begin{solutions}{Page 45 (First)}
+\solution %1
+Given in text
+
+\solution %2
+$\sin^{2}{45\degree} = \left(\dfrac{1}{\sqrt{2}}\right)^2 = \dfrac{1}{2}$
+
+\solution ~ %3
+\begin{center}
+\bgroup
+\def\arraystretch{2.1}
+\setlength\tabcolsep{15pt}
+\begin{tabular}{ |c|c|c|c|c| }
+\hline
+~              & $\sin{\alpha}$                                      & $\cos{\alpha}$                           & $\tan{\alpha}$                                      & $\cot{\alpha}$ \\
+\hline
+$\sin{\alpha}$ & $\sin{\alpha}$                                      & $\sqrt{1 - \sin^{2}{\alpha}}$            & $\dfrac{a}{\sqrt{1 - \sin^{2}{\alpha}}}$            & $\dfrac{\sqrt{1 - \sin^{2}{\alpha}}}{\sin{\alpha}}$ \\
+\hline
+$\cos{\alpha}$ & $\sqrt{1 - \cos^{2}{\alpha}}$                       & $\cos{\alpha}$                           & $\dfrac{\sqrt{1 - \cos^{2}{\alpha}}}{\cos{\alpha}}$ & $\dfrac{\cos{\alpha}}{\sqrt{1 - \cos^{2}{\alpha}}}$ \\
+\hline
+$\tan{\alpha}$ & $\dfrac{\tan{\alpha}}{\sqrt{1 + \tan^{2}{\alpha}}}$ & $\dfrac{1}{\sqrt{1 + \tan^{2}{\alpha}}}$ & $\tan{\alpha}$                                      & $\dfrac{1}{\tan{\alpha}}$ \\
+\hline
+$\cot{\alpha}$ & $\dfrac{1}{\sqrt{1 + \cot^{2}{\alpha}}}$            & $\dfrac{a}{\sqrt{1 + \cot^{2}{\alpha}}}$ & $\dfrac{1}{\cot{\alpha}}$                           & $\cot{\alpha}$ \\
+\hline
+\end{tabular}
+\egroup
+\end{center}
 \end{solutions}
+
+
+\begin{solutions}{Page 45 (Second)}
+\solution $\tan{\alpha} = \dfrac{a}{b} = \cot{\beta}$
+\solution $\cot{\alpha} = \dfrac{b}{a} = \tan{\beta}$
+\solution $\sec{\alpha} = \dfrac{c}{a} = \csc{\beta}$
+\solution $\csc{\alpha} = \dfrac{c}{b} = \sec{\beta}$
+\end{solutions}
+
 
 \begin{solutions}{Page 47}
-\solution
-\solution
-\solution
+\solution %1
+\begin{subsolutions}
+\subsolution $\sin^{2}{30\degree} + \cos^{2}{30\degree} = \left(\dfrac{1}{2}\right)^2 + \left(\dfrac{\sqrt{3}}{2}\right)^2 = \dfrac{1}{4} + \dfrac{3}{4} = 1$
+\subsolution $\sin^{2}{45\degree} + \cos^{2}{45\degree} = \left(\dfrac{1}{\sqrt{2}}\right)^2 + \left(\dfrac{1}{\sqrt{2}}\right)^2 = \dfrac{1}{2} + \dfrac{1}{2} = 1$
+\subsolution $\sin^{2}{60\degree} + \cos^{2}{60\degree} = \left(\dfrac{\sqrt{3}}{2}\right)^2 + \left(\dfrac{1}{2}\right)^2= \dfrac{3}{4} + \dfrac{1}{4} = 1$
+\end{subsolutions}
+
+\solution %2
+\begin{align*}
+\sin^{2}{\alpha} + \cos^{2}{\alpha} &= 1 \\
+\left(\dfrac{\sqrt{5}}{4}\right)^2 + \cos^{2}{\alpha} &= 1 \\
+\cos^{2}{\alpha} &= 1 - \left(\frac{\sqrt{5}}{4}\right)^2 = 1 - \frac{5}{16} = \frac{11}{16} \\
+\cos{\alpha} &= \sqrt{\frac{11}{16}} = \frac{\sqrt{11}}{4}
+\end{align*}
+
+\solution %3
+\begin{align*}
+\sin^{2}{\alpha} + \cos^{2}{\alpha} &= 1 \\
+\sin^{2}{\alpha} + \left(\frac{2}{3}\right)^2 &= 1 \\
+\sin^{2}{\alpha} &= 1 - \frac{4}{9} = \frac{5}{9} \\
+\sin{\alpha} &= \sqrt{\frac{5}{9}} = \frac{\sqrt{5}}{3}
+\end{align*}
+
+
 \solution
 \solution
 \solution
@@ -786,6 +839,8 @@ $\cot{\alpha}$ & $\dfrac{1}{\sqrt{1 + a^2}}$ & $\dfrac{a}{\sqrt{1 + a^2}}$ & $\d
 \solution
 \end{solutions}
 
+
+\begin{comment}
 \begin{solutions}{Page 49}
 \solution
 \solution
@@ -879,7 +934,7 @@ $\cot{\alpha}$ & $\dfrac{1}{\sqrt{1 + a^2}}$ & $\dfrac{a}{\sqrt{1 + a^2}}$ & $\d
 \solution
 \end{solutions}
 
-\begin{comment}
+
 \section*{Chapter 3: Relationships in a Triangle}
 
 \begin{solutions}{Page 68}
