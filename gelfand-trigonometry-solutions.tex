@@ -862,19 +862,81 @@ $\dfrac{\tan{x}}{\sin{x}} = \dfrac{\frac{\sin{x}}{\cos{x}}}{\sin{x}} = \dfrac{\f
 $\cos^{2}{\alpha} - \sin^{2}{\alpha} = \cos^{2}{\alpha} - (1 - \cos^{2}{\alpha}) = \cos^{2}{\alpha} - 1 + \cos^{2}{\alpha} = 2\cos^{2}{\alpha} - 1$
 
 \subsolution %d
-This one is tricky. You might need to try a few different approaches (squaring above and below, multiplying above and below by $\cos{\alpha}\sin{\alpha}$). Eventually it becomes clear that you need to multiply above and below by $(1 - \cos{\alpha})$ and find a way to cancel out $\sin{\alpha}$ terms:
+This one is tricky. You might need to try a few different approaches (squaring above and below, multiplying above and below by $\cos{\alpha}\sin{\alpha}$). Eventually it becomes clear that you need to multiply above and below by $(1 - \cos{\alpha})$ and find a way to cancel out the $\sin{\alpha}$ factor in the numerator:
 \begin{align*}
 \frac{\sin{\alpha}}{1 + \cos{\alpha}} &= \frac{\sin{\alpha}(1 - \cos{\alpha})}{(1 + \cos{\alpha})(1 - \cos{\alpha})} = \frac{\sin{\alpha}(1 - \cos{\alpha})}{1 - \cos{\alpha} + \cos{\alpha} - \cos^{2}{\alpha}} \\
 &= \frac{\sin{\alpha}(1 - \cos{\alpha})}{1 - \cos^{2}{\alpha}} = \frac{\sin{\alpha}(1 - \cos{\alpha})}{1 - (1 - \sin^{2}{\alpha})} = \frac{\sin{\alpha}(1 - \cos{\alpha})}{1 - 1 + \sin^{2}{\alpha}} \\
 &= \frac{\sin{\alpha}(1 - \cos{\alpha})}{\sin^{2}{\alpha}} = \frac{1 - \cos{\alpha}}{\sin{\alpha}}
 \end{align*}
 
+\subsolution %e
+\begin{align*}
+\frac{\sin^{2}{\alpha} + 2\cos^{2}{\alpha} - 1}{\cot^{2}{\alpha}} &=  \frac{1 - \cos^{2}{\alpha} + 2\cos^{2}{\alpha} - 1}{\cot^{2}{\alpha}} = \frac{\cos^{2}{\alpha}}{\left(\frac{\cos{\alpha}}{\sin{\alpha}}\right)^2} \\
+&=  \frac{\cos^{2}{\alpha}}{\frac{\cos^{2}{\alpha}}{\sin^{2}{\alpha}}} = \frac{\cos^{2}{\alpha}\sin^{2}{\alpha}}{\cos^{2}{\alpha}} \\
+&= \sin^{2}{\alpha}
+\end{align*}
+
+\subsolution %f
+\begin{align*}
+\cos^{2}{\alpha} &= \frac{\cos^{2}{\alpha}}{1} = \frac{\cos^{2}{\alpha}}{\cos^{2}{\alpha} + \sin^{2}{\alpha}} \\
+&=  \frac{\frac{\cos^{2}{\alpha}}{\cos^{2}{\alpha}}}{\frac{\cos^{2}{\alpha} + \sin^{\alpha}}{\cos^{2}{\alpha}}} = \frac{1}{\frac{\cos^{2}{\alpha}}{\cos^{2}{\alpha}} + \frac{\sin^{2}{\alpha}}{\cos^{2}{\alpha}}} \\
+&= \frac{1}{1 + \tan^{2}{\alpha}}
+\end{align*}
+
+
+\subsolution %g
+\begin{align*}
+\sin^{2}{\alpha} &= \frac{\sin^{2}{\alpha}}{1} = \frac{\cos^{2}{\alpha}}{\cos^{2}{\alpha} + \sin^{2}{\alpha}} \\
+&=  \frac{\frac{\sin^{2}{\alpha}}{\sin^{2}{\alpha}}}{\frac{\cos^{2}{\alpha} + \sin^{\alpha}}{\sin^{2}{\alpha}}} = \frac{1}{\frac{\cos^{2}{\alpha}}{\sin^{2}{\alpha}} + \frac{\sin^{2}{\alpha}}{\sin^{2}{\alpha}}} \\
+&= \frac{1}{\cot^{2}{\alpha} + 1}
+\end{align*}
+
+\subsolution %h
+\begin{align*}
+\frac{1 - \cos{\alpha}}{1 + \cos{\alpha}} &= \frac{(1 - \cos{\alpha})(1 + \cos{\alpha})}{(1 + \cos{\alpha})(1 + \cos{\alpha})} = \frac{1 + \cos{\alpha} - \cos{\alpha} - \cos^{2}{\alpha}}{(1 + \cos{\alpha})^2} \\
+&= \frac{1 - \cos^{2}{\alpha}}{(1 + \cos{\alpha})^2} = \frac{\sin^{2}{\alpha}}{(1 + \cos{\alpha})^2} \\
+&= \left(\frac{\sin{\alpha}}{1 + \cos{\alpha}}\right)^2
+\end{align*}
+
+\subsolution %i
+The key to solving this one is the formula for factoring a difference of cubes: $a^3 - b^3 = (a - b)(a^2 + ab + b^2)$.
+\begin{align*}
+\frac{\sin^{3}{\alpha} - \cos^{3}{\alpha}}{\sin{\alpha} - \cos{\alpha}} &= \frac{(\sin{\alpha} - \cos{\alpha})(\sin^{2}{\alpha} + \sin{\alpha}\cos{\alpha} + \cos^{2}{\alpha})}{\sin{\alpha} - \cos{\alpha}} \\
+&= \sin^{2}{\alpha} + \sin{\alpha}\cos{\alpha} + \cos^{2}{\alpha} \\
+&= 1 + \sin{\alpha}\cos{\alpha}
+\end{align*}
+\end{subsolutions}
+
+\solution %6
+\begin{subsolutions}
+
+\subsolution %a
+We can rewrite the LHS to show that $\sin^{4}{\alpha} - \cos^{4}{\alpha} = \cos^{2}{\alpha} - \sin^{2}{\alpha}$:
+\begin{align*}
+\sin^{4}{\alpha} - \cos^{4}{\alpha} &= (\sin^{2}{\alpha} + \cos^{2}{\alpha})(\sin^{2}{\alpha} - \cos^{2}{\alpha}) = 1(\sin^{2}{\alpha} - \cos^{2}{\alpha}) \\
+&= \sin^{2}{\alpha} - \cos^{2}{\alpha}
+\end{align*}
+Answer: There are no angles $\alpha$ for which $\sin^{4}{\alpha} - \cos^{4}{\alpha} > \cos^{2}{\alpha} - \sin^{2}{\alpha}$ because the expressions on either side of the inequality are equivalent.
+
+\subsolution %b
+$\sin^{4}{\alpha} - \cos^{4}{\alpha} >= \cos^{2}{\alpha} - \sin^{2}{\alpha}$ for all angles $\alpha$ because the expressions on either side of the inequality are equivalent.
 
 \end{subsolutions}
 
-\solution
-\solution
-\solution
+\solution %7
+If we rewrite $2\sin{\alpha}\cos{\alpha}$ as a fraction, we can divide above and below by $\cos{\alpha}$ to convert the numerator and denominator into expressions in terms of $\tan{\alpha}$:
+\begin{align*}
+2\sin{\alpha}\cos{\alpha} &= \frac{2\sin{\alpha}\cos{\alpha}}{1} = \frac{2\sin{\alpha}\cos{\alpha}}{\sin^{2}{\alpha} + \cos^{2}{\alpha}} \\
+&= \frac{\frac{2\sin{\alpha}\cos{\alpha}}{\cos^{2}{\alpha}}}{\frac{\sin^{2}{\alpha} + \cos^{2}{\alpha}}{\cos^{2}{\alpha}}} = \frac{\frac{2\sin{\alpha}}{\cos{\alpha}}}{\frac{\sin^{2}{\alpha}}{\cos^{2}{\alpha}} + \frac{\cos^{2}{\alpha}}{\cos^{2}{\alpha}}} \\
+&= \frac{2\tan{\alpha}}{\tan^{2}{\alpha} + 1}
+\end{align*}
+Now we can plug in the given value for $\tan{\alpha}$ to find the value of $2\sin{\alpha}\cos{\alpha}$ in this instance:
+\begin{equation*}
+2\sin{\alpha}\cos{\alpha} = \frac{2\tan{\alpha}}{\tan^{2}{\alpha} + 1} = \frac{2(\frac{2}{5})}{(\frac{2}{5})^2 + 1} = \frac{\frac{4}{5}}{\frac{4}{25} + 1} = \frac{\frac{4}{5}}{\frac{4}{25} + \frac{25}{25}} = \frac{\frac{20}{25}}{\frac{29}{25}} = \frac{20}{29}
+\end{equation*}
+
+
+
 \solution
 \solution
 \solution
