@@ -983,7 +983,7 @@ Next, we substitute  $\frac{2}{5}$ for $\tan{\alpha}$ and simplify:
 \frac{a\tan{\alpha} + b}{c + d\tan{\alpha}} = \frac{a\left(\frac{2}{5}\right) + b\left(\frac{5}{5}\right)}{c\left(\frac{5}{5}\right) + d\left(\frac{2}{5}\right)} = \frac{\frac{2a + 5b}{5}}{\frac{5c+2d}{5}} = \frac{2a + 5b}{5c + 2d}
 \end{equation*}
 
-Now we can see why the problem included the restriction that $5c + 2d \neq 0$; the value of the expression is undefined if the denominator is zero. The sum of two rational numbers is a rational number. Therefore the numerator and denominator in the expression are rational numbers. The quotient of two rational numbers is a rational number. Therefore, the entire expression evaluates to a rational number for arbitratrary rational values of $a$, $b$, $c$ and $d$.
+Now we can see why the problem included the restriction that $5c + 2d \neq 0$; the value of the expression is undefined if the denominator is zero. The sum of two rational numbers is a rational number. Therefore the numerator and denominator in the expression are both rational numbers. The quotient of two rational numbers is a rational number. Therefore, the entire expression evaluates to a rational number for arbitratrary rational values of $a$, $b$, $c$ and $d$.
 
 \solution %11
 We can expand and simplify the expression:
@@ -999,12 +999,38 @@ As the expression evaluates to a constant, it is as large as possible for all va
 
 \end{solutions}
 
-\begin{comment}
 \begin{solutions}{Page 49}
-\solution
-\solution
+
+\solution %1
+\begin{subsolutions}
+
+\subsolution %a
+$\tan{\alpha}\csc{\alpha} = \dfrac{\sin{\alpha}}{\cos{\alpha}}\cdot\dfrac{1}{\sin{\alpha}} = \dfrac{\sin{\alpha}}{\cos{\alpha}\sin{\alpha}} = \dfrac{1}{\cos{\alpha}} = \sec{\alpha}$
+
+\subsolution %b
+$\cot{\alpha}\sec{\alpha} = \dfrac{\cos{\alpha}}{\sin{\alpha}}\cdot\dfrac{1}{\cos{\alpha}} = \dfrac{\cos{\alpha}}{\sin{\alpha}\cos{\alpha}} = \dfrac{1}{\sin{\alpha}} = \csc{\alpha}$
+
+\subsolution %c
+$\dfrac{1}{\sec{\alpha}}\csc{\alpha} = \dfrac{1}{\frac{1}{\cos{\alpha}}}\cdot\dfrac{1}{\sin{\alpha}} = \cos{\alpha}\dfrac{1}{\sin{\alpha}} = \dfrac{\cos{\alpha}}{\sin{\alpha}} = \cot{\alpha}$
+
+\subsolution %d
+The first thing to notice is that $(\sec{\alpha} + 1)(\sec{\alpha} - 1)$ is a factorization of the difference of squares $\sec^{2}{\alpha} - 1$. So, if we can rewrite $\tan^{2}{\alpha}$ into this form then we can factorize it to get the expression on the RHS in the problem:
+\begin{align*}
+\tan^{2}{\alpha} &= \frac{\sin^{2}{\alpha}}{\cos^{2}{\alpha}} = \frac{1 - \cos^{2}{\alpha}}{\cos^{2}{\alpha}} = \frac{\frac{1 - \cos^{2}{\alpha}}{\cos^{2}{\alpha}}}{\frac{\cos^{2}{\alpha}}{\cos^{2}{\alpha}}} = \frac{\frac{1}{\cos^{2}{\alpha}} - \frac{\cos^{2}{\alpha}}{\cos^{2}{\alpha}}}{1} \\
+&= \frac{1}{\cos^{2}{\alpha}} - 1 = \sec^{2}{\alpha} - 1 = (\sec{\alpha} + 1)(\sec{\alpha} - 1)
+\end{align*}
+
+\subsolution %e
+$\csc^{2}{\alpha} = \dfrac{1}{\sin^{2}{\alpha}} = \dfrac{\sin^{2}{\alpha} + \cos^{2}{\alpha}}{\sin^{2}{\alpha}} = \dfrac{\sin^{2}{\alpha}}{\sin^{2}{\alpha}} + \dfrac{\cos^{2}{\alpha}}{\sin^{2}{\alpha}} = 1 + \cot^{2}{\alpha}$
+\end{subsolutions}
+
+
+\solution %2
+
 \end{solutions}
 
+
+\begin{comment}
 \begin{solutions}{Page 50}
 \solution
 \solution
