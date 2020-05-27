@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/philip-healy/gelfand-trigonometry-solutions.svg?branch=master)](https://travis-ci.org/philip-healy/gelfand-trigonometry-solutions)
 
 <p align="center">
-<img alt="Cover" src="images/cover.png" width="250" style="border:1px solid gray;">
+<img alt="Cover" src="images/cover.png" width="250">
 <br clear="left">
 Solutions:
 <a href="https://philip-healy.github.io/gelfand-trigonometry-solutions/gelfand-trigonometry-solutions.html">[HTML]</a>
