@@ -1,12 +1,39 @@
-name: Publish HTML and PDF output for gelfand-trigonometry-solutions
+name: Publish HTML and PDF
 on:
   push:
     branches:
       - main
+  workflow_dispatch:
+
 jobs:
-  republish-gelfand-trigonometry-solutions
+  republish-gelfand-trigonometry-solutions:
     runs-on: ubuntu-latest
     steps:
-      - run: sudo apt-get install -y texlive-full
-      - run: - mkdir deploy
-      - run: pdflatex -interaction=nonstopmode -halt-on-error -output-directory deploy gelfand-trigonometry-solutions.tex
+      - name: Install texlive
+        uses: teatimeguest/setup-texlive-action@v2
+        with:
+          packages: >-
+            scheme-full
+      
+      - name: Install pdf2htmlex
+        run: |
+          wget https://github.com/pdf2htmlEX/pdf2htmlEX/releases/download/v0.18.8.rc1/pdf2htmlEX-0.18.8.rc1-master-20200630-Ubuntu-bionic-x86_64.deb
+          mv pdf2htmlEX-0.18.8.rc1-master-20200630-Ubuntu-bionic-x86_64.deb pdf2htmlex.deb
+          sudo apt install ./pdf2htmlex.deb
+      
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      
+      - name: Generate PDF and HTML
+        run: |
+          mkdir deploy
+          pdflatex -interaction=nonstopmode -halt-on-error -output-directory deploy gelfand-trigonometry-solutions.tex
+          cp index.html deploy
+          cd deploy
+          rm *.log *.aux *.out
+          pdf2htmlEX --embed cfijo --printing 0 --optimize-text 1 --dest-dir . --fit-width 1200 gelfand-trigonometry-solutions.pdf
+      
+      - name: Publish to GitHub pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: deploy

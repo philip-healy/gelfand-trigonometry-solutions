@@ -3,4 +3,5 @@
 *.out
 gelfand-trigonometry-solutions.pdf
 *.swp
+deploy/
 

@@ -1,6 +1,6 @@
 # Solutions for Gelfand's *Trigonometry*
 
-[![Build Status](https://travis-ci.org/philip-healy/gelfand-trigonometry-solutions.svg?branch=master)](https://travis-ci.org/philip-healy/gelfand-trigonometry-solutions)
+[![Build Status](https://github.com/philip-healy/gelfand-trigonometry-solutions/actions/workflows/main.yml/badge.svg)](https://github.com/philip-healy/gelfand-trigonometry-solutions/actions/workflows/main.yml)
 
 <p align="center">
 <img alt="Cover" src="images/cover.png" width="250">
@@ -12,10 +12,8 @@ Solutions:
 
 *Trigonometry* by Gelfand and Saul is often recommended as a precalculus text for self-study.
 However, those who are learning without the help of a teacher can struggle with the lack of solutions to exercises in the text.
-A [partial set of solutions for *Trignonometry*](https://jbeach50.weebly.com/gelfand--saul-trig-solutions.html) (odd numbered exercises only) has been published by John Beach.
+A [partial set of solutions for *Trigonometry*](https://jbeach50.weebly.com/gelfand--saul-trig-solutions.html) (odd numbered exercises only) has been published by John Beach.
 It is hoped that this repository will eventually contain a complete set of solutions that can be viewed as HTML or downloaded in PDF format.
-
-The Travis CI build configuration is based on [LaTeX-Travis-Pages](https://github.com/prewriter/LaTeX-Travis-Pages).
 
 ## Contributing
 Contributions are welcome! Contributions can be:
