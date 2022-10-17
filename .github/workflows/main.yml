@@ -1,0 +1,12 @@
+name: Publish HTML and PDF output for gelfand-trigonometry-solutions
+on:
+  push:
+    branches:
+      - main
+jobs:
+  republish-gelfand-trigonometry-solutions
+    runs-on: ubuntu-latest
+    steps:
+      - run: sudo apt-get install -y texlive-full
+      - run: - mkdir deploy
+      - run: pdflatex -interaction=nonstopmode -halt-on-error -output-directory deploy gelfand-trigonometry-solutions.tex
