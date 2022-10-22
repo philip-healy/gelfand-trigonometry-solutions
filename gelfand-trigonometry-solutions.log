@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.22)  22 OCT 2022 01:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.22)  22 OCT 2022 01:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -916,7 +916,7 @@ ts/type1/public/amsfonts/cm/cmti12.pfb></home/runner/work/_temp/setup-texlive/2
 mp/setup-texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></ho
 me/runner/work/_temp/setup-texlive/2022/texmf-dist/fonts/type1/public/amsfonts/
 latxfont/line10.pfb>
-Output written on deploy/gelfand-trigonometry-solutions.pdf (26 pages, 276410 b
+Output written on deploy/gelfand-trigonometry-solutions.pdf (26 pages, 276424 b
 ytes).
 PDF statistics:
  570 PDF objects out of 1000 (max. 8388607)
