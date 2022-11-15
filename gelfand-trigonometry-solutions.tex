@@ -1329,7 +1329,6 @@ For a regular hexagon: $360\degree/6 = 60\degree$.
 For a regular octagon: $360\degree/8 = 45\degree$.
 \end{solutions}
 
-\begin{comment}
 \begin{solutions}{Page 64}
 \solution
 \solution
@@ -1621,15 +1620,49 @@ For a regular octagon: $360\degree/8 = 45\degree$.
 \end{solutions}
 
 \begin{solutions}{Page 147}
+\solution 
+    \begin{subsolutions}
+        \solution Since $\sin^2 \alpha + \cos^2\alpha = 1$, we know $\cos\alpha = \sqrt{1-(\frac{7}{25})^2}$ (and cannot be the negative version because $\cos \alpha$ is given as positive).\\
+        Thus $\sin 2\alpha = 2\sin\alpha \cos \alpha = 2\cdot \frac{7}{25}\cdot\sqrt{1-(\frac{7}{25})^2}=0.5376$.\\
+        And $\cos2\alpha =1-2\sin^2\alpha = 1-(\frac{7}{25})^2=0.9216$.
+        \solution This part is similar except that we use the negative version of cosine, namely $\cos\alpha=-\sqrt{1-(\frac{7}{25})^2}$.\\
+        Thus $\sin 2\alpha = 2\sin\alpha \cos \alpha = -0.5376$.\\
+        However, cosine value remains the same: $\cos2\alpha =1-2\sin^2\alpha = 1-(\frac{7}{25})^2=0.9216$.
+    \end{subsolutions}
+
+\solution Firstly, $\sin 2\alpha=2\sin\alpha\cos\alpha$. In other words, the sine value will be a product of rational numbers, so it will also be rational. Similarly, $\cos 2\alpha=2\cos ^2 \alpha - 1$ will be rational because $\cos\alpha$ is rational. Exercise 1 confirms this result. (The decimal solutions for Exercise 1 are not rounded.)
+
+\solution Let's use the double angle formula $\cos 2\alpha=2\cos^2\alpha -1$.\\
+$\begin{aligned}[t]
+    \cos^2\alpha &= \cos2\alpha=2\cos^2\alpha -1\\
+    -\cos\alpha^2&=-1 &\text{(Subtracted $2\cos^2\alpha$ from each side)}\\
+    \cos\alpha^2&=1\\
+    \cos\alpha&=\pm 1
+\end{aligned}$\\
+These values of $\cos\alpha$ can happen only at $\alpha = 0, \pi$.
+
+\solution We start with the given equation:\\
+$\begin{aligned}[t]
+    \sin\alpha+\cos\alpha &= 0.2\\
+    \sin^2\alpha+2\cos\alpha\sin\alpha+\cos^2\alpha&=0.04 &\text{(Squared both sides.)}\\
+    1+2\cos\alpha\sin\alpha&=0.04\\
+    2\cos\alpha\sin\alpha &=-0.96
+\end{aligned}$\\
+Note that that is simply $\sin 2\alpha$. Hooray!
+
+\solution We can follow a very similar strategy here to find $1-2\cos\alpha\sin\alpha=0.09$. Then $\sin 2\alpha=2\cos\alpha\sin\alpha=0.91$.
+
 \solution
 \solution
 \solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
+\solution Yes, the book asked you to prove something incorrect! For counterexample, consider that $\cos 2\alpha$ can be negative but $\cos ^2\alpha$ is never negative. However, we can prove a relationship.\\
+Recall that $\cos 2\alpha=\cos^2\alpha - \sin^2\alpha$. However, $\sin^2\alpha\geq 0$ since it's a square.\\
+$\begin{aligned}[t]
+    \sin^2\alpha&\geq 0\\
+    -\sin^2\alpha&\leq 0\\
+    \cos^2\alpha-\sin^2\alpha&\leq \cos^2\alpha\\
+    \cos 2\alpha &\leq \cos^2\alpha
+\end{aligned}$
 \solution
 \solution
 \solution
@@ -1964,7 +1997,5 @@ For a regular octagon: $360\degree/8 = 45\degree$.
 \solution
 \solution
 \end{solutions}
-
-\end{comment}
 
 \end{document}
