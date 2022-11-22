@@ -1612,23 +1612,23 @@ This identity is not correct.
 \[
 \sin\left(60\degree + 30\degree\right)\sin\left(60\degree - 30\degree\right) = \sin{90\degree} \cdot \sin{30\degree} = 1 \cdot \dfrac{1}{2} = \dfrac{1}{2}
 \]
-This identity is correct.
+This identity is correct for the given angles.
 
 \end{subsolutions}
 
 \solution %4
+See Chapter 2, Section 12 and the Appendix of Chapter 2 to review some of the geometry used in this solution.
 \begin{subsolutions}
-
 \subsolution %a
-Because $\angle{ABC}$ is subtended by the diameter $\overline{AC}$, $\angle{ABC}$ is a right angle and $\triangle{ABC}$ is a right triangle. Therefore, $\sin{\alpha}$ is equal to the length of the opposite side ($BC$) divided by the length of the hypotenuse ($AC$). $\overline{AC}$ is a diameter of the circle, so it has length 1. Thus, we have that $\sin{\alpha}$ is simply equal to $BC$.
+Because $\angle{ABC}$ is subtended by the diameter $\overline{AC}$, $\angle{ABC}$ is a right angle and $\triangle{ABC}$ is a right triangle (this fact is known as \textit{Thales's Theorem}). Therefore, $\sin{\alpha}$ is equal to the length of the opposite side ($BC$) divided by the length of the hypotenuse ($AC$). $\overline{AC}$ is a diameter of the circle, so it has length 1. Thus, we have that $\sin{\alpha}$ is simply equal to $BC$.
 
 A similar argument shows that $\triangle{ADC}$ is a right triangle with hypotenuse $\overline{AC}$ of length 1, which implies that $\sin{\beta} = DC$
 
 \subsolution %b
-Recall that chords of congruent circles which subtend equal angles are themselves equal. This implies that $BC$ in the diagram of part a is equal to $BC$ in the diagram of part b because in both diagrams, the chord $\overline{BC}$ subtends an angle of measure $\alpha$. Similarly, $DC$ is the same in both diagrams because in both diagrams, the chord $\overline{DC}$ subtends an angle of measure $\beta$. Therefore, $BC$ is still equal to $\sin{\alpha}$, and the length of $DC$ is still equal to $\sin{\beta}$.
+Recall that chords of congruent circles which subtend equal angles are themselves equal. This implies that $BC$ in the diagram of part (a) is equal to $BC$ in the diagram of part (b) because in both diagrams, the chord $\overline{BC}$ subtends an angle of measure $\alpha$. Similarly, $DC$ is the same in both diagrams because in both diagrams, the chord $\overline{DC}$ subtends an angle of measure $\beta$. Therefore, $BC$ is still equal to $\sin{\alpha}$, and $DC$ is still equal to $\sin{\beta}$.
 
 \subsolution %c
-From part b above, we can conclude that a chord which subtends an inscribed angle with measure $\alpha$ in a circle with diameter 1 has length $\sin{\alpha}$. Thus, we draw $\overline{BD}$, the chord which subtends $\angle{BAD}$ in both figures and which consequently has length $\sin\left(\alpha+\beta\right)$.
+From part (b) above, we can conclude that a chord which subtends an inscribed angle with measure $\alpha$ in a circle with diameter 1 has length $\sin{\alpha}$. Thus, we draw $\overline{BD}$, the chord which subtends $\angle{BAD}$ in both figures and which consequently has length $\sin\left(\alpha+\beta\right)$.
 \end{subsolutions}
 Note that the above reasoning implies that the sine of an angle with measure less than $180\degree$ cannot exceed 1 since the diameter is the longest chord in a circle.
 
@@ -1707,6 +1707,7 @@ Difference formula for sine ($\alpha = 0$):
 &= 0 \cdot \cos{\beta} - 1 \cdot \sin{\beta} \\
 &= -\sin{\beta}
 \end{align*}
+\quad Notice that this demonstrates that the sine function is \textit{odd}.
 
 Difference formula for cosine ($\alpha = 0$):
 \begin{align*}
@@ -1715,6 +1716,7 @@ Difference formula for cosine ($\alpha = 0$):
 &= 1 \cdot \cos{\beta} + 0 \cdot \sin{\beta} \\
 &= \cos{\beta}
 \end{align*}
+\quad Notice that this demonstrates that the cosine function is \textit{even}.
 
 Addition formula for sine ($\beta = 0$):
 \begin{align*}
@@ -1728,7 +1730,7 @@ Addition formula for cosine ($\beta = 0$):
 \begin{align*}
 \cos\left(\alpha + 0\right) 
 &= \cos{\alpha}\cos{0} - \sin{\alpha}\sin{0} \\
-&= \cos{\alpha} \cdot 1 - \cos{\alpha} \cdot 0 \\
+&= \cos{\alpha} \cdot 1 - \sin{\alpha} \cdot 0 \\
 &= \cos{\alpha}
 \end{align*}
 
@@ -1744,12 +1746,12 @@ Difference formula for cosine ($\beta = 0$):
 \begin{align*}
 \cos\left(\alpha + 0\right) 
 &= \cos{\alpha}\cos{0} + \sin{\alpha}\sin{0} \\
-&= \cos{\alpha} \cdot 1 + \cos{\alpha} \cdot 0 \\
+&= \cos{\alpha} \cdot 1 + \sin{\alpha} \cdot 0 \\
 &= \cos{\alpha}
 \end{align*}
 
 \solution %3
-Following the hint, we notice that in a right triangle, the side opposite one of the acute angles is the side adjacent to the other acute angle. Thus, if $\alpha + \beta = \pi/2$, then $\sin{\alpha} = \cos{\beta}$ and $\sin{\beta} = \cos{\alpha}$ (see also Section 4 of Chapter 1).
+Following the hint, we notice that in a right triangle, the side opposite one of the acute angles is the side adjacent to the other acute angle. Thus, if $\alpha + \beta = \pi/2$, then $\sin{\alpha} = \cos{\beta}$ and $\sin{\beta} = \cos{\alpha}$ (see also Chapter 1, Section 4).
 \begin{align*}
 \sin\left(\alpha + \beta\right)
 &= \sin{\alpha} \cos{\beta}  + \cos{\alpha}\sin{\beta} \\
@@ -1780,25 +1782,26 @@ Addition formula for cosine:
 \end{align*}
 
 \solution %5
+Recall that $\left(A \pm B\right)^2 = A^2 \pm 2AB + B^2$.
 \begin{align*}
 &\left(\sin{\alpha}\cos{\beta} + \cos{\alpha}\sin{\beta}\right)^2 + \left(\cos{\alpha}\cos{\beta} - \sin{\alpha}\sin{\beta}\right)^2 \\
-&=\sin^{2}{\alpha}\cos^{2}{\beta} + 2\sin{\alpha}\cos{\beta}\cos{\alpha}\sin{\beta} + \cos^{2}{\alpha}\sin^{2}{\beta} + \\
-&\cos^{2}{\alpha}\cos^{2}{\beta} - 2\cos{\alpha}\cos{\beta}\sin{\alpha}\sin{\beta} + \sin^{2}{\alpha}\sin^{2}{\beta} \\
-&=\sin^{2}{\alpha}\cos^{2}{\beta} + \cos^{2}{\alpha}\sin^{2}{\beta} + \cos^{2}{\alpha}\cos^{2}{\beta} + \sin^{2}{\alpha}\sin^{2}{\beta} \\
-&=\sin^{2}{\alpha} \left(\cos^{2}{\beta} + \sin^{2}{\beta}\right) + \cos^{2}{\alpha} \left(\sin^{2}{\beta} + \cos^{2}{\beta}\right) \\
-&= \sin^{2}{\alpha} \cdot 1 + \cos^{2}{\alpha} \cdot 1 \\
-&= 1
+&\qquad =\sin^{2}{\alpha}\cos^{2}{\beta} + 2\sin{\alpha}\cos{\beta}\cos{\alpha}\sin{\beta} + \cos^{2}{\alpha}\sin^{2}{\beta} + \\
+&\qquad \phantom{=}\cos^{2}{\alpha}\cos^{2}{\beta} - 2\cos{\alpha}\cos{\beta}\sin{\alpha}\sin{\beta} + \sin^{2}{\alpha}\sin^{2}{\beta} \\
+&\qquad =\sin^{2}{\alpha}\cos^{2}{\beta} + \cos^{2}{\alpha}\sin^{2}{\beta} + \cos^{2}{\alpha}\cos^{2}{\beta} + \sin^{2}{\alpha}\sin^{2}{\beta} \\
+&\qquad =\sin^{2}{\alpha} \left(\cos^{2}{\beta} + \sin^{2}{\beta}\right) + \cos^{2}{\alpha} \left(\sin^{2}{\beta} + \cos^{2}{\beta}\right) \\
+&\qquad = \sin^{2}{\alpha} \cdot 1 + \cos^{2}{\alpha} \cdot 1 \\
+&\qquad = 1
 \end{align*}
 
 \solution %6
-We cleverly add by zero \ldots
+After expanding using the identity $\left(A+B\right)\left(A-B\right) = A^2-B^2$, we cleverly ``add by zero'' to get the desired result.
 \begin{align*}
-\sin\left(\alpha+\beta\right)\sin\left(\alpha-\beta\right) &= \left(\sin{\alpha}\cos{\beta} + \cos{\alpha}\sin{\beta}\right)\left(\sin{\alpha}\cos{\beta} - \cos{\alpha}\sin{\beta}\right)\\
-&= \sin^{2}{\alpha}\cos^{2}{\beta} - \cos^{2}{\alpha}\sin^{2}{\beta} \\
-&= \sin^{2}{\alpha}\cos^{2}{\beta} + \sin^{2}{\alpha}\sin^{2}{\beta} - \sin^{2}{\alpha}\sin^{2}{\beta} - \cos^{2}{\alpha}\sin^{2}{\beta} \\
-&= \sin^{2}{\alpha}\left(\cos^{2}{\beta} + \sin^{2}{\beta}\right) - \sin^{2}{\beta}\left(\sin^{2}{\alpha} + \cos^{2}{\alpha}\right) \\
-&= \sin^{2}{\alpha} \cdot 1 - \sin^2{\beta} \cdot 1 \\
-&= \sin^{2}{\alpha} - \sin^2{\beta}
+&\left(\sin{\alpha}\cos{\beta} + \cos{\alpha}\sin{\beta}\right)\left(\sin{\alpha}\cos{\beta} - \cos{\alpha}\sin{\beta}\right) \\
+&\qquad =\sin^{2}{\alpha}\cos^{2}{\beta} - \cos^{2}{\alpha}\sin^{2}{\beta} \\
+&\qquad =\sin^{2}{\alpha}\cos^{2}{\beta} + \sin^{2}{\alpha}\sin^{2}{\beta} - \sin^{2}{\alpha}\sin^{2}{\beta} - \cos^{2}{\alpha}\sin^{2}{\beta} \\
+&\qquad =\sin^{2}{\alpha}\left(\cos^{2}{\beta} + \sin^{2}{\beta}\right) - \sin^{2}{\beta}\left(\sin^{2}{\alpha} + \cos^{2}{\alpha}\right) \\
+&\qquad =\sin^{2}{\alpha} \cdot 1 - \sin^2{\beta} \cdot 1 \\
+&\qquad =\sin^{2}{\alpha} - \sin^2{\beta}
 \end{align*}
 \end{solutions}
 
@@ -1823,12 +1826,13 @@ We cleverly add by zero \ldots
 \cos\left(30\degree + 30\degree\right)
 &= \cos{30\degree}\cos{30\degree} - \sin{30\degree}\sin{30\degree} \\
 &= \dfrac{\sqrt{3}}{2} \cdot \dfrac{\sqrt{3}}{2} - \dfrac{1}{2} \cdot \dfrac{1}{2}\\
-&= \dfrac{\sqrt{3}}{4} - \dfrac{1}{4} \\
+&= \dfrac{3}{4} - \dfrac{1}{4} \\
 &= \dfrac{1}{2} \\
 &= \cos{60\degree}
 \end{align*}
 
 \solution %2
+Assuming $\alpha$ and $\beta$ are acute angles:
 \[
 \sin{\alpha} = \dfrac{3}{5} \implies \cos{\alpha} = \sqrt{1-\sin^{2}{\alpha}} = \sqrt{1-\left(3/5\right)^2} = \dfrac{4}{5}
 \]
@@ -1847,7 +1851,7 @@ We cleverly add by zero \ldots
 \begin{align*}
 \cos\left(\alpha+\beta\right) &= \cos{\alpha}\cos{\beta} - \sin{\alpha}\sin{\beta} \\
 &= \dfrac{4}{5} \cdot \dfrac{12}{13} - \dfrac{3}{5} \cdot \dfrac{5}{13} \\
-&= \dfrac{48}{65} + \dfrac{15}{65} \\
+&= \dfrac{48}{65} - \dfrac{15}{65} \\
 &= \dfrac{33}{65}
 \end{align*}
 
@@ -1896,12 +1900,12 @@ Yes, let $\alpha = \beta = \pi/4$.
 More generally, we could suppose $\alpha + \beta = \pi/2$ and follow the approach in Exercise 3 of Section 2 earlier in this chapter.
 
 \subsolution %b
-If $\alpha$ and $\beta$ are acute angles, then $0 < \alpha + \beta < \pi$. Using the unit circle, we can see that $\sin\left(\alpha+\beta\right)$ must be positive since $\alpha+\beta$ lies in the upper-half of the plane, where the sine function is positive.
+If $\alpha$ and $\beta$ are acute angles, then $0 < \alpha + \beta < \pi$. Using the unit circle, we can see that $\sin\left(\alpha+\beta\right)$ must be positive since the angle $\alpha+\beta$ lies in the upper-half of the plane, where the sine function is positive.
 
 \subsolution %c
 $\sin\left(\alpha+\beta\right) = \sin{\alpha}\cos{\beta} + \cos{\alpha}\sin{\beta}$ is positive when $\alpha$ and $\beta$ are acute angles since the sum and product of positive real numbers is also positive.
 
-$\cos\left(\alpha+\beta\right)$ need not be positive. As shown in part a of this exercise, $\cos\left(\alpha+\beta\right)$ can equal 0. Furthermore, $\cos\left(\alpha+\beta\right)$ can be negative. Let $\alpha = \beta = \pi/3$. Then,
+$\cos\left(\alpha+\beta\right)$ need not be positive. As shown in part (a) of this exercise, $\cos\left(\alpha+\beta\right)$ can equal 0. Furthermore, $\cos\left(\alpha+\beta\right)$ can be negative. Let $\alpha = \beta = \pi/3$. Then, assuming that we can extend the cosine addition formula to angles $\alpha$ and $\beta$ such that $\alpha + \beta$ is obtuse,
 \begin{align*}
 \cos\left(\dfrac{\pi}{3} + \dfrac{\pi}{3}\right) &= \cos{\dfrac{\pi}{3}}\cos{\dfrac{\pi}{3}} - \sin{\dfrac{\pi}{3}}\sin{\dfrac{\pi}{3}} \\
 &= \dfrac{1}{2} \cdot \dfrac{1}{2} - \dfrac{\sqrt{3}}{2} \cdot \dfrac{\sqrt{3}}{2} \\
@@ -1911,16 +1915,24 @@ $\cos\left(\alpha+\beta\right)$ need not be positive. As shown in part a of this
 \end{subsolutions}
 
 \solution %6
-As we saw in Exercise 1 in Section 1 of this chapter, $\sin{\alpha} + \sin{\beta}$ does not equal $\sin\left(\alpha+\beta\right)$ in general.
+As we saw in Exercise 1 of Section 1 of this chapter, $\sin{\alpha} + \sin{\beta}$ does not equal $\sin\left(\alpha+\beta\right)$ in general. A similar table can be used to show that $\sin{\alpha} - \sin{\beta}$ does not equal $\sin\left(\alpha-\beta\right)$ in general.
 
 \solution %7
-This is not a coincidence, as we will show conclusively in the next exercise. The identity holds true even when substituting more ``arbitrary'' values in for $\alpha$ and $\beta$. For example, using $\alpha=37\degree$ and $\beta=19\degree$, we find that both $\sin^{2}{\alpha} - \sin^{2}{\beta}$ and $\sin\left(\alpha+\beta\right)\sin\left(\alpha-\beta\right)$ are equal to approximately $0.2562$.
+This is not a coincidence. The identity holds true even when substituting more ``arbitrary'' values in for $\alpha$ and $\beta$. For example, using $\alpha=37\degree$ and $\beta=19\degree$, we find that both $\sin^{2}{\alpha} - \sin^{2}{\beta}$ and $\sin\left(\alpha+\beta\right)\sin\left(\alpha-\beta\right)$ are equal to approximately $0.2562$.
 
 \solution %8
-Refer to the proof in Exercise 6 of Section 2 of this chapter.
+You may also refer to the proof in Exercise 6 of Section 2 of this chapter.
+\begin{align*}
+\sin\left(\alpha+\beta\right)\sin\left(\alpha-\beta\right) &= \left(\sin{\alpha}\cos{\beta} + \cos{\alpha}\sin{\beta}\right)\left(\sin{\alpha}\cos{\beta} - \cos{\alpha}\sin{\beta}\right)\\
+&= \sin^{2}{\alpha}\cos^{2}{\beta} - \cos^{2}{\alpha}\sin^{2}{\beta} \\
+&= \sin^{2}{\alpha}\cos^{2}{\beta} + \sin^{2}{\alpha}\sin^{2}{\beta} - \sin^{2}{\alpha}\sin^{2}{\beta} - \cos^{2}{\alpha}\sin^{2}{\beta} \\
+&= \sin^{2}{\alpha}\left(\cos^{2}{\beta} + \sin^{2}{\beta}\right) - \sin^{2}{\beta}\left(\sin^{2}{\alpha} + \cos^{2}{\alpha}\right) \\
+&= \sin^{2}{\alpha} \cdot 1 - \sin^2{\beta} \cdot 1 \\
+&= \sin^{2}{\alpha} - \sin^2{\beta}
+\end{align*}
 
 \solution %9
-We cleverly add by zero \ldots
+This proof is nearly identical to the one in the previous part. We just make a small modification in how we ``add by zero'' in order to obtain to the desired result.
 \begin{align*}
 \sin\left(\alpha+\beta\right)\sin\left(\alpha-\beta\right) &= \left(\sin{\alpha}\cos{\beta} + \cos{\alpha}\sin{\beta}\right)\left(\sin{\alpha}\cos{\beta} - \cos{\alpha}\sin{\beta}\right)\\
 &= \sin^{2}{\alpha}\cos^{2}{\beta} - \cos^{2}{\alpha}\sin^{2}{\beta} \\
@@ -1931,6 +1943,7 @@ We cleverly add by zero \ldots
 \end{align*}
 
 \solution %10
+We apply the sine addition formula in reverse.
 \begin{align*}
 \sin{18\degree}\cos{12\degree} + \cos{18\degree}\sin{12\degree} &= \sin\left(18\degree + 12\degree\right) \\
 &= \sin{30\degree} \\
@@ -1940,13 +1953,15 @@ We cleverly add by zero \ldots
 \solution %11
 \begin{subsolutions}
 \subsolution %a
-Since we have only proved the sine addition formula for acute angles $\alpha$ and $\beta$, we use properties of the sine and cosine functions so we only need to work with acute angles.
+Since we have not proved that the sine addition formula works for all angles $\alpha$ and $\beta$, we use properties of the sine and cosine functions to avoid working with angles larger than $90\degree$.
 \begin{align*}
-\sin{113\degree}\cos{307\degree} + \cos{113\degree}\sin{307\degree} &= \sin{67\degree}\cos{53\degree} + \left(-\cos{67\degree}\right)\left(-\sin{53\degree}\right) \\
-&= \sin\left(67\degree + 53\degree\right) \\
-&= \sin{120\degree} \\
-&= \sin{60\degree} \\
-&= \dfrac{\sqrt{3}}{2}
+&\sin{113\degree}\cos{307\degree} + \cos{113\degree}\sin{307\degree} \\
+&\qquad = \sin\left(180\degree-67\degree\right)\cos\left(360\degree-53\degree\right) + \cos\left(180\degree-67\degree\right)\sin\left(360\degree-53\degree\right) \\
+&\qquad = \sin{67\degree}\cos{53\degree} + \left(-\cos{67\degree}\right)\left(-\sin{53\degree}\right) \\
+&\qquad = \sin\left(67\degree + 53\degree\right) \\
+&\qquad = \sin{120\degree} \\
+&\qquad = \sin{60\degree} \\
+&\qquad = \dfrac{\sqrt{3}}{2}
 \end{align*}
 
 \subsolution %b
@@ -1955,7 +1970,7 @@ Plugging into a calculator,
 \sin{113\degree}\cos{307\degree} + \cos{113\degree}\sin{307\degree} \approx 0.866 \approx \dfrac{\sqrt{3}}{2} = \sin{60\degree}
 \]
 \subsolution %c
-Assuming that the sine addition formulas work for non-acute angles, we arrive at the same result.
+Assuming that the sine addition formula does work for non-acute angles, we arrive at the same result.
 \begin{align*}
 \sin{113\degree}\cos{307\degree} + \cos{113\degree}\sin{307\degree} &= \sin\left(113\degree + 307\degree\right) \\
 &= \sin{420\degree} \\
@@ -1966,6 +1981,7 @@ Assuming that the sine addition formulas work for non-acute angles, we arrive at
 \end{subsolutions}
 
 \solution %12
+We can use the addition formulas for sine and cosine by rewriting $2\alpha$ as $\alpha + \alpha$.
 \begin{align*}
 \sin{2\alpha}\cos{\alpha} - \cos{2\alpha}\sin{\alpha} &= \sin\left(\alpha + \alpha\right)\cos{\alpha} - \cos\left(\alpha + \alpha\right)\sin{\alpha} \\ 
 &= \left(\sin{\alpha}\cos{\alpha} + \cos{\alpha}\sin{\alpha}\right)\cos{\alpha} - \left(\cos{\alpha}\cos{\alpha}-\sin{\alpha}\sin{\alpha}\right)\sin{\alpha} \\
@@ -2003,14 +2019,28 @@ Assuming that the sine addition formulas work for non-acute angles, we arrive at
 \begin{align*}
 \dfrac{\cos\left(\alpha+\beta\right)}{\cos{\alpha}\cos{\beta}} &= \dfrac{\cos{\alpha}\cos{\beta}-\sin{\alpha}\sin{\beta}}{\cos{\alpha}\cos{\beta}} \\
 &= 1 - \dfrac{\sin{\alpha}\sin{\beta}}{\cos{\alpha}\cos{\beta}} \\
+&= 1 - \dfrac{\sin{\alpha}}{\cos{\alpha}} \cdot \dfrac{\sin{\beta}}{\cos{\beta}} \\
 &= 1 - \tan{\alpha}\tan{\beta}
 \end{align*}
 
 \solution %17
-Applying the law of cosines, we have that $\left(b_{1} + b_{2}\right)^2 = c_{1}^2 + c_{2}^2 - 2c_1c_2\cos\left(\alpha+\beta\right)$. Solving for $\cos\left(\alpha+\beta\right)$,
+Applying the law of cosines, we have that $\left(b_{1} + b_{2}\right)^2 = c_{1}^2 + c_{2}^2 - 2c_1c_2\cos\left(\alpha+\beta\right)$. Solving for $\cos\left(\alpha+\beta\right)$, we get
 \[
-\cos\left(\alpha+\beta\right) = \dfrac{c_{1}^2 + c_{2}^2 - \left(b_{1}+b_{2}\right)^2}{2c_{1}c_{2}}
+\cos\left(\alpha+\beta\right) = \dfrac{c_{1}^2 + c_{2}^2 - \left(b_{1}+b_{2}\right)^2}{2c_{1}c_{2}}.
 \]
+Before proceeding further, let's establish some relationships between the variables in the diagram. First, by the Pythagorean theorem, we have that $h^2 = c_{1}^2 - b_{1}^2 = c_{2}^2 - b_{2}^2$. Additionally, we can compute the sines and cosines for the angles $\alpha$ and $\beta$:
+\[
+\sin{\alpha} = \dfrac{b_{1}}{c_{1}}, \sin{\beta} = \dfrac{b_{2}}{c_{2}}, \cos{\alpha} = \dfrac{h}{c_{1}}, \cos{\beta} = \dfrac{h}{c_{2}}.
+\]
+We can now simplify our expression for $\cos\left(\alpha+\beta\right)$.
+\begin{align*}
+\cos\left(\alpha+\beta\right) &= \dfrac{c_{1}^2 + c_{2}^2 - \left(b_{1}+b_{2}\right)^2}{2c_{1}c_{2}} \\
+&= \dfrac{c_{1}^2 + c_{2}^2 - b_{1}^2 - 2b_{1}b_{2} - b_{2}^2}{2c_{1}c_{2}} \\
+&= \dfrac{2h^2 - 2b_{1}b_{2}}{2c_{1}c_{2}} \\
+&= \dfrac{h^2 - b_{1}b_{2}}{c_{1}c_{2}} \\
+&= \dfrac{h}{c_{1}} \cdot \dfrac{h}{c_{2}} - \dfrac{b_{1}}{c_{1}} \cdot \dfrac{b_{2}}{c_{2}} \\
+&= \cos{\alpha}\cos{\beta} - \sin{\alpha}\sin{\beta}
+\end{align*}
 \end{solutions}
 
 
