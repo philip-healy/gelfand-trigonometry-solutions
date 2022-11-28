@@ -2047,122 +2047,871 @@ We can now simplify our expression for $\cos\left(\alpha+\beta\right)$.
 \section*{Chapter 7: Trigonometric Identities}
 
 \begin{solutions}{Page 141}
-\solution
-\solution
-\solution
-\solution
+\solution %1
+\begin{subsolutions}
+\subsolution %a
+Yes
+\subsolution %b
+No
+\subsolution %c
+Yes
+\subsolution %d
+Yes
+\subsolution %e
+No
+\subsolution %f
+No
+\end{subsolutions}
+\solution %2
+\begin{subsolutions}
+\subsolution %a
+\[
+\tan{\alpha} = \dfrac{\sin{\alpha}}{\cos{\alpha}}
+\]
+
+\subsolution %b
+\begin{align*}
+\left(1+\tan{\alpha}\right)\left(1-\tan{\alpha}\right) &= 1-\tan^{2}{\alpha} \\
+&= 1- \dfrac{\sin^{2}{\alpha}}{\cos^{2}{\alpha}} \\
+&= \dfrac{\cos^{2}{\alpha}-\sin^{2}{\alpha}}{\cos^{2}{\alpha}}
+\end{align*}
+
+\subsolution %c
+\begin{align*}
+\dfrac{\tan{\alpha}+\tan{\beta}}{1-\tan{\alpha}\tan{\beta}} &= \dfrac{\tan{\alpha}+\tan{\beta}}{1-\tan{\alpha}\tan{\beta}} \cdot \dfrac{\cos{\alpha}\cos{\beta}}{\cos{\alpha}\cos{\beta}} \\
+&= \dfrac{\sin{\alpha}\cos{\beta}+\cos{\alpha}\sin{\beta}}{\cos{\alpha}\cos{\beta}-\sin{\alpha}\sin{\beta}} %\\
+%&=\dfrac{\sin\left(\alpha + \beta\right)}{\cos\left(\alpha + \beta\right)}
+\end{align*}
+
+\subsolution %d
+\begin{align*}
+\tan^{2}{\alpha}+\cot^{2}{\alpha} &= \dfrac{\sin^{2}{\alpha}}{\cos^{2}{\alpha}} + \dfrac{\cos^{2}{\alpha}}{\sin^{2}{\alpha}} \\
+&= \dfrac{\sin^{4}{\alpha}+\cos^{4}{\alpha}}{\sin^{2}{\alpha}\cos^{2}{\alpha}}
+\end{align*}
+
+\subsolution %e
+\begin{align*}
+\tan{\alpha}\cot{\alpha} &= \dfrac{\sin{\alpha}}{\cos{\alpha}} \cdot \dfrac{\cos{\alpha}}{\sin{\alpha}} \\
+&= 1
+\end{align*}
+
+\subsolution %f
+\begin{align*}
+1+\tan^{2}{\alpha} &= 1 + \dfrac{\sin^{2}{\alpha}}{\cos^{2}{\alpha}} \\
+&= \frac{\cos^{2}{\alpha} + \sin^{2}{\alpha}}{\cos^{2}{\alpha}} \\
+&= \dfrac{1}{\cos^{2}{\alpha}}
+\end{align*}
+
+\end{subsolutions}
+\solution %3
+The Principle of Analytic Continuation does not apply because $\sqrt{1-\sin^{2}{\alpha}}$ is not a rational trigonometric function. The identity is incorrect for $\alpha=2\pi / 3$ as $\cos\left(2\pi / 3\right) = -1/2$, while $\sqrt{1-\sin^{2}\left(2\pi / 3\right)} = 1/2$.
+\solution %4
+The Principle of Analytic Continuation does apply because both $\sin^{2}{\alpha}+\cos^{2}{\alpha}$ and $1$ are rational trigonometric functions. The identity is correct for $\alpha=2\pi / 3$.
+\[
+\sin^{2}{\dfrac{2\pi}{3}}+\cos^{2}{\dfrac{2\pi}{3}} = \left(\dfrac{\sqrt{3}}{2}\right)^2 + \left(\dfrac{1}{2}\right)^2 = \dfrac{3}{4} + \dfrac{1}{4} = 1
+\]
 \end{solutions}
 
 \begin{solutions}{Page 142}
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
+\solution %1
+Since $\alpha$ and $\beta$ are acute angles,
+\[
+\sin{\alpha} = \dfrac{3}{5} \implies \cos{\alpha} = \sqrt{1-\sin^{2}{\alpha}} = \sqrt{1-\left(\dfrac{3}{5}\right)^2} = \dfrac{4}{5}
+\]
+\[
+\sin{\beta} = \dfrac{5}{13} \implies \cos{\beta} = \sqrt{1-\sin^{2}{\beta}} = \sqrt{1-\left(\dfrac{5}{13}\right)^2} = \dfrac{12}{13}
+\]
+\begin{align*}
+\sin\left(\alpha+\beta\right) &= \sin{\alpha}\cos{\beta} + \cos{\alpha}\sin{\beta} \\
+&= \dfrac{3}{5} \cdot \dfrac{12}{13} + \dfrac{4}{5} \cdot \dfrac{5}{13} \\
+&= \dfrac{36}{65} + \dfrac{20}{65} \\
+&= \dfrac{56}{65}
+\end{align*}
+\begin{align*}
+\cos\left(\alpha+\beta\right) &= \cos{\alpha}\cos{\beta} - \sin{\alpha}\sin{\beta} \\
+&= \dfrac{4}{5} \cdot \dfrac{12}{13} - \dfrac{3}{5} \cdot \dfrac{5}{13} \\
+&= \dfrac{48}{65} - \dfrac{15}{65} \\
+&= \dfrac{33}{65}
+\end{align*}
+$\alpha+\beta$ lies in the first quadrant because $\sin\left(\alpha+\beta\right)$ and $\cos\left(\alpha+\beta\right)$ are both positive.
+
+\solution %2
+Since $\alpha$ and $\beta$ are acute angles,
+\[
+\sin{\alpha} = \dfrac{4}{5} \implies \cos{\alpha} = \sqrt{1-\sin^{2}{\alpha}} = \sqrt{1-\left(\dfrac{4}{5}\right)^2} = \dfrac{3}{5}
+\]
+\[
+\sin{\beta} = \dfrac{12}{13} \implies \cos{\beta} = \sqrt{1-\sin^{2}{\beta}} = \sqrt{1-\left(\dfrac{12}{13}\right)^2} = \dfrac{5}{13}
+\]
+\begin{align*}
+\sin\left(\alpha+\beta\right) &= \sin{\alpha}\cos{\beta} + \cos{\alpha}\sin{\beta} \\
+&= \dfrac{4}{5} \cdot \dfrac{5}{13} + \dfrac{3}{5} \cdot \dfrac{12}{13} \\
+&= \dfrac{20}{65} + \dfrac{36}{65} \\
+&= \dfrac{56}{65}
+\end{align*}
+\begin{align*}
+\cos\left(\alpha+\beta\right) &= \cos{\alpha}\cos{\beta} - \sin{\alpha}\sin{\beta} \\
+&= \dfrac{3}{5} \cdot \dfrac{5}{13} - \dfrac{4}{5} \cdot \dfrac{12}{13} \\
+&= \dfrac{15}{65} - \dfrac{48}{65} \\
+&= -\dfrac{33}{65}
+\end{align*}
+
+$\alpha+\beta$ lies in the second quadrant because $\sin\left(\alpha+\beta\right)$ is positive and $\cos\left(\alpha+\beta\right)$ is negative.
+
+\solution %3
+\[
+\sin{\alpha} = \dfrac{3}{5} \implies \cos{\alpha} = \pm \sqrt{1-\sin^{2}{\alpha}} = \pm \sqrt{1-\left(\dfrac{3}{5}\right)^2} = \pm \dfrac{4}{5}
+\]
+\[
+\sin{\beta} = \dfrac{5}{13} \implies \cos{\beta} = \pm \sqrt{1-\sin^{2}{\beta}} = \pm \sqrt{1-\left(\dfrac{5}{13}\right)^2} = \pm \dfrac{12}{13}
+\]
+$\cos{\alpha} > 0$, $\cos{\beta} > 0$:
+\begin{align*}
+\sin\left(\alpha+\beta\right) &= \sin{\alpha}\cos{\beta} + \cos{\alpha}\sin{\beta} \\
+&= \dfrac{3}{5} \cdot \dfrac{12}{13} + \dfrac{4}{5} \cdot \dfrac{5}{13} \\
+&= \dfrac{36}{65} + \dfrac{20}{65} \\
+&= \dfrac{56}{65}
+\end{align*}
+
+$\cos{\alpha} > 0$, $\cos{\beta} < 0$:
+\begin{align*}
+\sin\left(\alpha+\beta\right) &= \sin{\alpha}\cos{\beta} + \cos{\alpha}\sin{\beta} \\
+&= \dfrac{3}{5} \left(-\dfrac{12}{13}\right) + \dfrac{4}{5} \cdot \dfrac{5}{13} \\
+&= -\dfrac{36}{65} + \dfrac{20}{65} \\
+&= -\dfrac{16}{65}
+\end{align*}
+
+$\cos{\alpha} < 0$, $\cos{\beta} > 0$:
+\begin{align*}
+\sin\left(\alpha+\beta\right) &= \sin{\alpha}\cos{\beta} + \cos{\alpha}\sin{\beta} \\
+&= \dfrac{3}{5} \cdot \dfrac{12}{13} + \left(-\dfrac{4}{5}\right) \cdot \dfrac{5}{13} \\
+&= \dfrac{36}{65} - \dfrac{20}{65} \\
+&= \dfrac{16}{65}
+\end{align*}
+
+$\cos{\alpha} < 0$, $\cos{\beta} < 0$:
+\begin{align*}
+\sin\left(\alpha+\beta\right) &= \sin{\alpha}\cos{\beta} + \cos{\alpha}\sin{\beta} \\
+&= \dfrac{3}{5} \left(-\dfrac{12}{13}\right) + \left(-\dfrac{4}{5}\right) \cdot \dfrac{5}{13} \\
+&= -\dfrac{36}{65} - \dfrac{20}{65} \\
+&= -\dfrac{56}{65}
+\end{align*}
+
+There are four possible answers for $\sin\left(\alpha+\beta\right)$.
+
+\solution %4
+\begin{subsolutions}
+\subsolution %a
+\begin{align*}
+\sin{\dfrac{2\pi}{3}}\cos{\dfrac{\pi}{3}} - \cos{\dfrac{2\pi}{3}}\sin{\dfrac{\pi}{3}} &= \dfrac{\sqrt{3}}{2} \cdot \dfrac{1}{2} - \left(-\dfrac{1}{2}\right) \dfrac{\sqrt{3}}{2} \\
+&= \dfrac{\sqrt{3}}{4} + \dfrac{\sqrt{3}}{4} \\
+&= \dfrac{\sqrt{3}}{2} \\
+&= \sin\left(\dfrac{\pi}{3}\right) \\
+&= \sin\left(\dfrac{2\pi}{3} - \dfrac{\pi}{3}\right)
+\end{align*}
+
+\subsolution %b
+\begin{align*}
+\sin{\dfrac{\pi}{4}}\cos{\dfrac{3\pi}{4}} - \cos{\dfrac{\pi}{4}}\sin{\dfrac{3\pi}{4}} &= \dfrac{\sqrt{2}}{2} \left(-\dfrac{\sqrt{2}}{2}\right) - \dfrac{\sqrt{2}}{2} \cdot \dfrac{\sqrt{2}}{2} \\
+&= -\dfrac{1}{2} - \dfrac{1}{2} \\
+&= -1 \\
+&= \sin\left(-\dfrac{\pi}{2}\right) \\
+&= \sin\left(\dfrac{\pi}{4} - \dfrac{3\pi}{4}\right)
+\end{align*}
+
+\subsolution %c
+\begin{align*}
+\sin\left(-\dfrac{\pi}{6}\right)\cos{\dfrac{3\pi}{2}} - \cos\left(-\dfrac{\pi}{6}\right)\sin{\dfrac{3\pi}{2}} &= -\dfrac{1}{2} \cdot 0 - \dfrac{\sqrt{3}}{2} \left(-1\right) \\
+&= \dfrac{\sqrt{3}}{2} \\
+&= \sin\left(\dfrac{\pi}{3}\right) \\
+&= \sin\left(-\dfrac{5\pi}{3}\right) \\
+&= \sin\left(-\dfrac{\pi}{6} - \dfrac{3\pi}{2}\right)
+\end{align*}
+
+\end{subsolutions}
+
+\solution %5
+Applying the identity
+\[
+(A-B)^{2} + (A+B)^{2} = A^2-2AB+B^2 + A^2+2AB+B^2 = 2A^2 + 2B^2,
+\]
+we have that,
+\begin{align*}
+    \cos^{2}\left(\gamma+\delta\right) + \cos^{2}\left(\gamma-\delta\right) &= \left(\cos{\gamma}\cos{\delta} - \sin{\gamma}\sin{\delta}\right)^2 + \left(\cos{\gamma}\cos{\delta} + \sin{\gamma}\sin{\delta}\right)^2 \\
+    &= 2\cos^{2}{\gamma}\cos^{2}{\delta} + 2\sin^{2}{\gamma}\sin^{2}{\delta}.
+\end{align*}
+
+Therefore,
+\begin{align*}
+\cos^{2}{\alpha} + \cos^{2}\left(\dfrac{2\pi}{3} + \alpha\right) +  \cos^{2}\left(\dfrac{2\pi}{3} - \alpha\right) &= \cos^{2}{\alpha} + 2\cos^{2}{\dfrac{2\pi}{3}}\cos^{2}{\alpha} + 2\sin^{2}{\dfrac{2\pi}{3}}\sin^{2}{\alpha} \\
+&= \cos^{2}{\alpha} + 2\left(\dfrac{1}{4}\right)\cos^{2}{\alpha} + 2\left(\dfrac{3}{4}\right)\sin^{2}{\alpha} \\
+&= \dfrac{3}{2} \left(\cos^{2}{\alpha} + \sin^{2}{\alpha}\right) \\
+&= \dfrac{3}{2}
+\end{align*}
+
+\solution %6
+\begin{align*}
+\sin\left(x+y\right) + \sin\left(x-y\right) &= \sin{x}\cos{y} + \cos{x}\sin{y} + \sin{x}\cos{y} - \cos{x}\sin{y} \\
+&= \sin{x}\cos{y} + \sin{x}\cos{y} \\
+&= 2\sin{x}\cos{y}
+\end{align*}
+
+\solution %7
+\begin{align*}
+\cos\left(x+y\right) + \cos\left(x-y\right) &= \cos{x}\cos{y} - \sin{x}\sin{y} + \cos{x}\cos{y} + \sin{x}\sin{y} \\
+&= \cos{x}\cos{y} + \cos{x}\cos{y} \\
+&= 2\cos{x}\cos{y}
+\end{align*}
+
+\solution %8
+Since $(A-B)(A+B)=A^2-B^2$,
+\begin{align*}
+\cos\left(x+y\right)\cos\left(x-y\right) &= \left(\cos{x}\cos{y} - \sin{x}\sin{y}\right) \left(\cos{x}\cos{y} + \sin{x}\sin{y}\right) \\
+&= \cos^{2}{x}\cos^{2}{y} - \sin^{2}{x}\sin^{2}{y}
+\end{align*}
+
+\solution %9
+Since $(A-B)(A+B)=A^2-B^2$,
+\begin{align*}
+\sin\left(x+y\right)\sin\left(x-y\right) &= \left(\sin{x}\cos{y} + \cos{x}\sin{y}\right) \left(\sin{x}\cos{y} - \cos{x}\sin{y}\right) \\
+&= \sin^{2}{x}\cos^{2}{y} - \cos^{2}{x}\sin^{2}{y}
+\end{align*}
+
+\solution %10
+\begin{align*}
+\cos\left(x+y\right)\cos\left(x-y\right) - \sin\left(x+y\right)\sin\left(x-y\right) &= \cos^{2}{x}\cos^{2}{y} - \sin^{2}{x}\sin^{2}{y} - \left(\sin^{2}{x}\cos^{2}{y} - \cos^{2}{x}\sin^{2}{y}\right) \\
+&= \cos^{2}{x}\left(\cos^{2}{y} + \sin^{2}{y}\right) - \sin^{2}{x}\left(\sin^2{y}+\cos^{2}{y}\right) \\
+&= \cos^{2}{x} - \sin^{2}{x}
+\end{align*}
+
+\solution %11
+\begin{align*}
+\cos{2x} &= \cos\left(x+x\right) \\
+&= \cos{x}\cos{x}-\sin{x}\sin{x} \\
+&= \cos^{2}{x} - \sin^{2}{x}
+\end{align*}
+There is no error, because $\cos{2x}=\cos^{2}{x} - \sin^{2}{x}$.
+
+\solution %12
+\begin{align*}
+\cos\left(\alpha+\beta\right)\cos{\beta} + \sin\left(\alpha+\beta\right)\sin{\beta} &= \left(\cos{\alpha}\cos{\beta}-\sin{\alpha}\sin{\beta}\right)\cos{\beta} + \left(\sin{\alpha}\cos{\beta}+\cos{\alpha}\sin{\beta}\right)\sin{\beta} \\
+&= \cos{\alpha}\cos^{2}{\beta} - \sin{\alpha}\sin{\beta}\cos{\beta} + \sin{\alpha}\sin{\beta}\cos{\beta}+\sin^{2}{\beta}\cos{\alpha} \\
+&= \cos{\alpha}\cos^{2}{\beta} + \sin^{2}{\beta}\cos{\alpha} \\
+&= \cos{\alpha} \left(\cos^{2}{\beta}+\sin^{2}{\beta}\right) \\
+&= \cos{\alpha}
+\end{align*}
+Alternatively, by applying the cosine difference formula in reverse,
+\[
+\cos\left(\alpha+\beta\right)\cos{\beta} + \sin\left(\alpha+\beta\right)\sin{\beta} = \cos\left(\alpha+\beta - \beta\right) \\
+= \cos{\alpha}
+\]
 \end{solutions}
 
 \begin{solutions}{Page 144}
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
+\solution %1
+\begin{align*}
+\tan\left(\dfrac{7\pi}{6}+\dfrac{5\pi}{3}\right) &= \dfrac{\tan{\dfrac{7\pi}{6}} + \tan{\dfrac{5\pi}{3}}}{1-\tan{\dfrac{7\pi}{6}}  \tan{\dfrac{5\pi}{3}}} \\
+&= \dfrac{1/\sqrt{3} - \sqrt{3}}{1-\left(1/\sqrt{3}\right)\left(-\sqrt{3}\right)} \\
+&= \dfrac{1/\sqrt{3} - \sqrt{3}}{2} \\
+&= \dfrac{1/\sqrt{3} - \sqrt{3}}{2} \cdot \dfrac{\sqrt{3}}{\sqrt{3}}\\
+&= \dfrac{1 - 3}{2\sqrt{3}} \\
+&= -\dfrac{1}{\sqrt{3}} \\
+&= \tan\left(-\dfrac{\pi}{6}\right) \\
+&= \tan\left(\dfrac{17\pi}{6}\right) \\
+&= \tan\left(\dfrac{7\pi}{6} + \dfrac{5\pi}{3}\right)
+\end{align*}
+
+\solution %2
+Because the tangent function is odd, we know $\tan{-\beta}=-\tan{\beta}$.
+\begin{align*}
+\tan\left(\alpha-\beta\right) &= \tan\left(\alpha + \left(-\beta\right)\right) \\
+&= \dfrac{\tan{\alpha} + \tan{-\beta}}{1-\tan{\alpha}  \tan{-\beta}} \\
+&= \dfrac{\tan{\alpha} - \tan{\beta}}{1+\tan{\alpha}  \tan{\beta}}
+\end{align*}
+
+\solution %3
+\begin{align*}
+\tan\left(\dfrac{\pi}{4}+\alpha\right) &= \dfrac{\tan{\dfrac{\pi}{4}} + \tan{\alpha}}{1-\tan{\dfrac{\pi}{4}}  \tan{\alpha}} \\
+&= \dfrac{1 + \tan{\alpha}}{1 - \tan{\alpha}}
+\end{align*}
+
+\solution %4
+\begin{align*}
+\tan\left(\dfrac{\pi}{4}-\alpha\right) &= \dfrac{\tan{\dfrac{\pi}{4}} - \tan{\alpha}}{1+\tan{\dfrac{\pi}{4}}  \tan{\alpha}} \\
+&= \dfrac{1 - \tan{\alpha}}{1 + \tan{\alpha}}
+\end{align*}
+
+\solution %5
+Since $\beta = \pi/4 - \alpha$,
+\begin{align*}
+\left(1+\tan{\alpha}\right)\left(1+\tan{\beta}\right) &= \left(1+\tan{\alpha}\right)\left(1+\tan\left(\dfrac{\pi}{4}-\alpha\right)\right) \\
+&= \left(1 + \tan{\alpha}\right) \left(1 + \dfrac{1 - \tan{\alpha}}{1 + \tan{\alpha}}\right) \\
+&= 1 + \tan{\alpha} + 1 - \tan{\alpha} \\
+&= 2
+\end{align*}
+
+Alternatively, since $\tan\left(\alpha+\beta\right) = \tan \pi/4 = 1$,
+\begin{align*}
+\left(1+\tan{\alpha}\right)\left(1+\tan{\beta}\right) &= 1 + \tan{\alpha} + \tan{\beta} + \tan{\alpha}\tan{\beta} \\
+&= 1 + \left(\tan{\alpha} + \tan{\beta}\right)\left(\dfrac{1-\tan{\alpha}\tan{\beta}}{1-\tan{\alpha}\tan{\beta}}\right) + \tan{\alpha}\tan{\beta} \\
+&= 1 + \left(1-\tan{\alpha}\tan{\beta}\right)\left(\dfrac{\tan{\alpha} + \tan{\beta}}{1-\tan{\alpha}\tan{\beta}}\right) + \tan{\alpha}\tan{\beta} \\
+&= 1 + \left(1-\tan{\alpha}\tan{\beta}\right)\tan\left(\alpha+\beta\right) + \tan{\alpha}\tan{\beta} \\
+&= 1+ 1-\tan{\alpha}\tan{\beta} + \tan{\alpha}\tan{\beta} \\
+&= 2
+\end{align*}
+
+\solution %6
+\begin{align*}
+\tan\left(\alpha+\beta+\gamma\right) &= \dfrac{\tan\left(\alpha+\beta\right) + \tan{\gamma}}{1-\tan\left(\alpha+\beta\right)\tan{\gamma}} \\
+&= \dfrac{\dfrac{\tan{\alpha} + \tan{\beta}}{1-\tan{\alpha}\tan{\beta}} + \tan\gamma}{1-\dfrac{\tan{\alpha} + \tan{\beta}}{1-\tan{\alpha}\tan{\beta}}\tan\gamma} \\
+&= \dfrac{\dfrac{\tan{\alpha} + \tan{\beta}}{1-\tan{\alpha}\tan{\beta}} + \tan\gamma}{1-\dfrac{\tan{\alpha} + \tan{\beta}}{1-\tan{\alpha}\tan{\beta}}\tan\gamma} \cdot \dfrac{1-\tan{\alpha}\tan{\beta}}{1-\tan{\alpha}\tan{\beta}} \\
+&= \dfrac{\tan{\alpha}+\tan{\beta}+\tan{\gamma}\left(1-\tan{\alpha}\tan{\beta}\right)}{1 - \tan{\alpha}\tan{\beta} - \left(\tan{\alpha} + \tan{\beta}\right)\tan{\gamma}} \\
+&= \dfrac{\tan{\alpha}+\tan{\beta}+\tan{\gamma} -\tan{\alpha}\tan{\beta}\tan{\gamma}}{1 - \tan{\alpha}\tan{\beta} - \tan{\alpha}\tan{\gamma} - \tan{\beta}\tan{\gamma}}
+\end{align*}
+
+\solution %7
+Since $\tan\left(\alpha+\beta+\gamma\right) = \tan{\pi} = 0$, from the previous part, we have
+\[
+\tan{\alpha}+\tan{\beta}+\tan{\gamma} -\tan{\alpha}\tan{\beta}\tan{\gamma} = 0 \implies \tan{\alpha}+\tan{\beta}+\tan{\gamma} = \tan{\alpha}\tan{\beta}\tan{\gamma}.
+\]
+This is because if a fraction equals zero, its numerator must be zero.
+
+\solution %8
+First, applying the tangent addition formula,
+\[
+\tan{3\alpha} = \tan\left(2\alpha+\alpha\right) = \dfrac{\tan{2\alpha} + \tan{\alpha}}{1-\tan{2\alpha}\tan{\alpha}} \implies \tan{2\alpha} + \tan{\alpha} = \tan{3\alpha}\left(1-\tan{2\alpha}\tan{\alpha}\right).
+\]
+Therefore,
+\[
+\tan{3\alpha} - \tan{2\alpha} - \tan{\alpha} = \tan{3\alpha} - \tan{3\alpha}\left(1-\tan{2\alpha}\tan{\alpha}\right) = \tan{3\alpha}\tan{2\alpha}\tan{\alpha}.
+\]
 \end{solutions}
 
 \begin{solutions}{Page 147}
-\solution 
+\solution %1
     \begin{subsolutions}
-        \solution Since $\sin^2 \alpha + \cos^2\alpha = 1$, we know $\cos\alpha = \sqrt{1-(\frac{7}{25})^2}$ (and cannot be the negative version because $\cos \alpha$ is given as positive).\\
+        \solution %a
+        Since $\sin^2 \alpha + \cos^2\alpha = 1$, we know $\cos\alpha = \sqrt{1-(\frac{7}{25})^2}$ (and cannot be the negative version because $\cos \alpha$ is given as positive).\\
         Thus $\sin 2\alpha = 2\sin\alpha \cos \alpha = 2\cdot \frac{7}{25}\cdot\sqrt{1-(\frac{7}{25})^2}=0.5376$.\\
         And $\cos2\alpha =1-2\sin^2\alpha = 1-(\frac{7}{25})^2=0.9216$.
-        \solution This part is similar except that we use the negative version of cosine, namely $\cos\alpha=-\sqrt{1-(\frac{7}{25})^2}$.\\
+        \solution %b
+        This part is similar except that we use the negative version of cosine, namely $\cos\alpha=-\sqrt{1-(\frac{7}{25})^2}$.\\
         Thus $\sin 2\alpha = 2\sin\alpha \cos \alpha = -0.5376$.\\
         However, cosine value remains the same: $\cos2\alpha =1-2\sin^2\alpha = 1-(\frac{7}{25})^2=0.9216$.
     \end{subsolutions}
 
-\solution Firstly, $\sin 2\alpha=2\sin\alpha\cos\alpha$. In other words, the sine value will be a product of rational numbers, so it will also be rational. Similarly, $\cos 2\alpha=2\cos ^2 \alpha - 1$ will be rational because $\cos\alpha$ is rational. Exercise 1 confirms this result. (The decimal solutions for Exercise 1 are not rounded.)
+\solution %2
+Firstly, $\sin 2\alpha=2\sin\alpha\cos\alpha$. In other words, the sine value will be a product of rational numbers, so it will also be rational. Similarly, $\cos 2\alpha=2\cos ^2 \alpha - 1$ will be rational because $\cos\alpha$ is rational. Exercise 1 confirms this result. (The decimal solutions for Exercise 1 are not rounded.)
 
-\solution Let's use the double angle formula $\cos 2\alpha=2\cos^2\alpha -1$.\\
-$\begin{aligned}[t]
-    \cos^2\alpha &= \cos2\alpha=2\cos^2\alpha -1\\
-    -\cos\alpha^2&=-1 &\text{(Subtracted $2\cos^2\alpha$ from each side)}\\
-    \cos\alpha^2&=1\\
-    \cos\alpha&=\pm 1
-\end{aligned}$\\
-These values of $\cos\alpha$ can happen only at $\alpha = 0, \pi$.
+\solution %3
+Let's use the double angle formula $\cos 2\alpha=2\cos^2\alpha -1$.
+\[
+\cos{2\alpha} = \cos^{2}{\alpha} \implies 2\cos^{2}{\alpha}-1 = \cos^{2}{\alpha}  \implies \cos^{2}{\alpha} = 1 \implies \cos{\alpha} = \pm 1
+\]
+$\cos{\alpha}$ has a magnitude of 1 precisely when $\alpha$ is an integer multiple of $\pi$, so the student's angle must have also been an integer multiple of $\pi$.
 
-\solution We start with the given equation:\\
-$\begin{aligned}[t]
-    \sin\alpha+\cos\alpha &= 0.2\\
-    \sin^2\alpha+2\cos\alpha\sin\alpha+\cos^2\alpha&=0.04 &\text{(Squared both sides.)}\\
-    1+2\cos\alpha\sin\alpha&=0.04\\
-    2\cos\alpha\sin\alpha &=-0.96
-\end{aligned}$\\
+\solution %4
+We start with the given equation:
+\begin{align*}
+    \sin{\alpha}+\cos{\alpha} &= 0.2\\
+    \sin^{2}{\alpha}+2\sin{\alpha}\cos{\alpha+}\cos^2\alpha&=0.04 &\text{(Squared both sides.)}\\
+    1+2\sin{\alpha}\cos{\alpha}&=0.04\\
+    2\sin{\alpha}\cos{\alpha} &=-0.96
+\end{align*}
 Note that that is simply $\sin 2\alpha$. Hooray!
 
-\solution We can follow a very similar strategy here to find $1-2\cos\alpha\sin\alpha=0.09$. Then $\sin 2\alpha=2\cos\alpha\sin\alpha=0.91$.
+\solution %5
+We can follow a very similar strategy here to find $1-2\sin{\alpha}\cos{\alpha}=0.09$. Then $\sin {2\alpha}=2\sin{\alpha}\cos\alpha=0.91$.
 
-\solution
-\solution
-\solution
-\solution Yes, the book asked you to prove something incorrect! For counterexample, consider that $\cos 2\alpha$ can be negative but $\cos ^2\alpha$ is never negative. However, we can prove a relationship.\\
-Recall that $\cos 2\alpha=\cos^2\alpha - \sin^2\alpha$. However, $\sin^2\alpha\geq 0$ since it's a square.\\
-$\begin{aligned}[t]
+\solution %6
+\begin{align*}
+\cos{2\alpha}\cos{\alpha} + \sin{2\alpha}\sin{\alpha} &= \left(2\cos^{2}{\alpha}-1\right)\cos{\alpha} + 2\sin{\alpha}\cos{\alpha}\sin{\alpha} \\
+&= \cos{\alpha} \left(2\cos^{2}{\alpha - 1 + 2\sin^{2}{\alpha}}\right) \\
+&= \cos{\alpha} \left(2-1\right) \\
+&= \cos{\alpha}
+\end{align*}
+
+Alternatively, we may use the cosine difference formula.
+\[
+\cos{2\alpha}\cos{\alpha} + \sin{2\alpha}\sin{\alpha} = \cos\left(2\alpha-\alpha\right) \\
+= \cos{\alpha}
+\]
+
+\solution %7
+Applying the sine addition formula,
+\[
+\sin{2\alpha}\cos{\alpha} + \cos{2\alpha}\sin{\alpha} = \sin\left(2\alpha+\alpha\right) = \sin{3\alpha}
+\]
+Applying the sine subtraction formula,
+\[
+\sin{4\alpha}\cos{\alpha} - \cos{4\alpha}\sin{\alpha} = \sin\left(4\alpha-\alpha\right) = \sin{3\alpha}
+\]
+Since both sides of the identity are equal to $\sin{3\alpha}$, the identity is true.
+
+\solution %8
+Yes, the book asked you to prove something incorrect! For counterexample, consider that $\cos {2\alpha}$ can be negative but $\cos^{2}{\alpha}$ is never negative. However, we can prove a relationship.\\
+Recall that $\cos{2\alpha}=\cos^{2}{\alpha} - \sin^{2}{\alpha}$. However, $\sin^{2}{\alpha} \geq 0$ since it's a square.
+\begin{align*}
     \sin^2\alpha&\geq 0\\
     -\sin^2\alpha&\leq 0\\
     \cos^2\alpha-\sin^2\alpha&\leq \cos^2\alpha\\
     \cos 2\alpha &\leq \cos^2\alpha
-\end{aligned}$
-\solution
-\solution
-\solution
+\end{align*}
+
+\solution %9
+\begin{align*}
+\left(\sin{\dfrac{\alpha}{2}} - \cos{\dfrac{\alpha}{2}}\right)^2 &= \sin^{2}{\dfrac{\alpha}{2}} - 2 \sin{\dfrac{\alpha}{2}}\cos{\dfrac{\alpha}{2}} + \cos^{2}{\dfrac{\alpha}{2}} \\
+&= 1 - \sin{\alpha}
+\end{align*}
+
+\solution %10
+Following the hint, we compute the value of $\cos{10\degree}\sin{10\degree}\sin{50\degree}\sin{70\degree}$.
+\begin{align*}
+M\cos{10\degree} &= \cos{10\degree}\sin{10\degree}\sin{50\degree}\sin{70\degree} \\
+&= \dfrac{1}{2}\sin{20\degree}\sin{50\degree}\sin{70\degree} \\
+&= \dfrac{1}{2}\cos{70\degree}\sin{50\degree}\sin{70\degree} \\
+&= \dfrac{1}{4}\sin{140\degree}\sin{50\degree} \\
+&= \dfrac{1}{4}\sin{40\degree}\sin{50\degree} \\
+&= \dfrac{1}{4}\cos{50\degree}\sin{50\degree} \\
+&= \dfrac{1}{8}\sin{100\degree} \\
+&= \dfrac{1}{8}\sin{80\degree} \\
+&= \dfrac{1}{8}\cos{10\degree}
+\end{align*}
+Since $M\cos{10\degree} = \tfrac{1}{8}\cos{10\degree}$, we have that the value of the original expression $M$ is equal to $\tfrac{1}{8}$.
+
+\solution %11
+We begin by computing $\sin{20\degree}\cos{20\degree}\cos{40\degree}\cos{80\degree}$.
+\begin{align*}
+\sin{20\degree}\cos{20\degree}\cos{40\degree}\cos{80\degree} &= \dfrac{1}{2}\sin{40\degree}\cos{40\degree}\cos{80\degree} \\
+&= \dfrac{1}{4}\sin{80\degree}\cos{80\degree} \\
+&= \dfrac{1}{8}\sin{160\degree} \\
+&= \dfrac{1}{8}\sin{20\degree}
+\end{align*}
+This implies that $\cos{20\degree}\cos{40\degree}\cos{80\degree} = 1/8$.
+\solution %12
+We begin by computing $\cos{\pi/10}\sin{\pi/10}\sin{\pi/5}$.
+\begin{align*}
+\cos{\dfrac{\pi}{10}}\sin{\dfrac{\pi}{10}}\cos{\dfrac{\pi}{5}} &= \dfrac{1}{2}\sin{\dfrac{\pi}{5}}\cos{\dfrac{\pi}{5}} \\
+&= \dfrac{1}{4}\sin{\dfrac{2\pi}{5}} \\
+&= \dfrac{1}{4}\cos{\dfrac{\pi}{10}}
+\end{align*}
+This implies that $\sin{\pi/10}\cos{\pi/5} = 1/4$.
 \end{solutions}
 
 \begin{solutions}{Page 148}
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
+\solution %1
+\begin{align*}
+\cos{3\alpha} &= \cos\left(2\alpha+\alpha\right) \\
+&= \cos{2\alpha}\cos{\alpha} - \sin{2\alpha}\sin{\alpha} \\
+&= \left(2\cos^{2}{\alpha}-1\right)\cos{\alpha} - 2\sin{\alpha}\cos{\alpha}\sin{\alpha} \\
+&= 2\cos^{3}{\alpha}-\cos{\alpha}-2\sin^{2}{\alpha}\cos{\alpha} \\
+&= 2\cos^{3}{\alpha}-\cos{\alpha}-2\left(1-\cos^{2}{\alpha}\right)\cos{\alpha} \\
+&= 4\cos^{3}{\alpha} - 3\cos{\alpha}
+\end{align*}
+
+\solution %2
+\begin{align*}
+\sin{3\alpha} &= 3\sin{\alpha}-4\sin^{3}{\alpha} \\
+&= 3\left(\dfrac{3}{5}\right)-4\left(\dfrac{3}{5}\right)^3 \\
+&= \dfrac{9}{5} - 4 \cdot \dfrac{27}{125} \\
+&= \dfrac{117}{125}
+\end{align*}
+
+If $\sin{\alpha}=3/5$, then $\cos{\alpha}=\pm 4/5$. Therefore,
+\begin{align*}
+\cos{3\alpha} &= 4\cos^{3}{\alpha}-3\cos{\alpha} \\
+&= 4\left(\pm \dfrac{4}{5}\right)^3 - 3\left(\pm \dfrac{4}{5}\right) \\
+&= \pm \dfrac{256}{125} \mp \dfrac{12}{5} \\
+&= \mp \dfrac{44}{125}
+\end{align*}
+
+\solution %3
+If $\cos{\alpha}=4/5$, then $\sin{\alpha}=\pm 3/5$. Therefore,
+\begin{align*}
+\sin{3\alpha} &= 3\sin{\alpha}-4\sin^{3}{\alpha} \\
+&= 3\left(\pm \dfrac{3}{5}\right)-4\left(\pm \dfrac{3}{5}\right)^3 \\
+&= \pm \dfrac{9}{5} \mp 4 \cdot \dfrac{27}{125} \\
+&= \pm \dfrac{117}{125}
+\end{align*}
+
+\begin{align*}
+\cos{3\alpha} &= 4\cos^{3}{\alpha}-3\cos{\alpha} \\
+&= 4\left(\dfrac{4}{5}\right)^3 - 3\left(\dfrac{4}{5}\right) \\
+&= \dfrac{256}{125} - \dfrac{12}{5} \\
+&= -\dfrac{44}{125}
+\end{align*}
+
+\solution %4
+\begin{subsolutions}
+\subsolution %a
+\begin{align*}
+\cos{4\alpha} &= 2\cos^{2}{2\alpha} - 1 \\
+&= 2\left(2\cos^{2}{\alpha}-1\right)^2-1 \\
+&= 2\left(4\cos^{4}{\alpha}-4\cos^{2}{\alpha}+1\right)-1 \\
+&= 8\cos^{4}{\alpha} - 8\cos^{2}{\alpha} + 1
+\end{align*}
+
+\subsolution %b
+\begin{align*}
+\cos{4\alpha} &= 1-2\sin^{2}{2\alpha} \\
+&= 1-8\sin^{2}{\alpha}\cos^{2}{\alpha} \\
+&= 1-8\sin^{2}{\alpha}\left(1-\sin^{2}{\alpha}\right) \\
+&= 1-8\sin^{2}{\alpha}+8\sin^{4}{\alpha}
+\end{align*}
+\end{subsolutions}
+
+\solution %5
+\begin{align*}
+\sin{3\alpha}\cos{\alpha}-\cos{3\alpha}\sin{\alpha} &= \left(3\sin{\alpha}-4\sin^{3}{\alpha}\right)\cos{\alpha}-\left(4\cos^{3}{\alpha}-3\cos{\alpha}\right)\sin{\alpha} \\
+&= 3\sin{\alpha}\cos{\alpha}-4\sin^{3}{\alpha}\cos{\alpha}-4\cos^{3}{\alpha}\sin{\alpha}+3\sin{\alpha}\cos{\alpha} \\
+&= 2\sin{\alpha}\cos{\alpha}\left(3 - 2\sin^{2}{\alpha} - 2\cos^{2}{\alpha}\right) \\
+&= 2\sin{\alpha}\cos{\alpha} \\
+&= \sin{2\alpha}
+\end{align*}
+
+Alternatively, applying the sine difference formula,
+\[
+\sin{3\alpha}\cos{\alpha}-\cos{3\alpha}\sin{\alpha} = \sin\left(3\alpha-\alpha\right) = \sin{2\alpha}
+\]
+
+\solution %6
+\begin{align*}
+\dfrac{\sin{3\alpha}}{\sin{\alpha}} - \dfrac{\cos{3\alpha}}{\cos{\alpha}} &= 3-4\sin^{2}{\alpha} - \left(4\cos^{2}{\alpha}-3\right) \\
+&= 6-4\sin^{2}{\alpha}-4\cos^{2}{\alpha} \\
+&= 2
+\end{align*}
+
+\solution %7
+\begin{subsolutions}
+\subsolution %a
+\begin{align*}
+4\sin{\alpha}\sin\left(60\degree+\alpha\right)\sin\left(60\degree-\alpha\right) &= 4\sin{\alpha}\left(\sin^{2}{60\degree}\cos^{2}{\alpha} - \cos^{2}{60\degree}\sin^{2}{\alpha}\right) \\
+&= 4\sin{\alpha}\left(\dfrac{3}{4}\cos^{2}{\alpha} - \dfrac{1}{4}\sin^{2}{\alpha}\right) \\
+&= 3\sin{\alpha}\cos^{2}{\alpha} - \sin^{3}{\alpha} \\
+&= 3\sin{\alpha}\left(1-\sin^{2}{\alpha}\right)  - \sin^{3}{\alpha} \\
+&= 3\sin{\alpha}-4\sin^{3}{\alpha}  \\
+&= \sin{3\alpha}
+\end{align*}
+
+\subsolution %b
+\begin{align*}
+4\cos{\alpha}\cos\left(60\degree+\alpha\right)\cos\left(60\degree-\alpha\right) &= 4\cos{\alpha}\left(\cos^{2}{60\degree}\cos^{2}{\alpha} - \sin^{2}{60\degree}\sin^{2}{\alpha}\right) \\
+&= 4\cos{\alpha}\left(\dfrac{1}{4}\cos^{2}{\alpha} - \dfrac{3}{4}\sin^{2}{\alpha}\right) \\
+&= \cos^{3}{\alpha} - 3\sin^{2}{\alpha}\cos{\alpha} \\
+&= \cos^{3}{\alpha} - 3\left(1-\cos^{2}{\alpha}\right)\cos{\alpha} \\
+&= 4\cos^{3}{\alpha} - 3\cos{\alpha}
+\end{align*}
+
+\end{subsolutions}
+
+\solution %8
+\begin{align*}
+\sin{4\alpha} &= 2\sin{2\alpha}\cos{2\alpha} \\
+&=4\sin{\alpha}\cos{\alpha}\left(2\cos^{2}{\alpha}-1\right) \\
+&= 8\sin{\alpha}\cos^{3}{\alpha}-4\sin{\alpha}\cos{\alpha} \\
+&\implies \dfrac{\sin{4\alpha}}{\sin{\alpha}} = 8\cos^{3}{\alpha}-4\cos{\alpha} 
+\end{align*}
+
+\solution %9
+In the penultimate step, we apply the following identity:
+\[
+\left(A-B\right)^{3} = A^3 - 3A^{2}B + 3AB^{2} - B^3,
+\]
+taking $A=\cos^{2}{\alpha}$ and $B=\sin^{2}{\alpha}$.
+
+\begin{align*}
+\sin{3\alpha}\sin^{3}{\alpha} + \cos{3\alpha}\cos^{3}{\alpha} &= \left(3\sin{\alpha}-4\sin^{3}{\alpha}\right)\sin^{3}{\alpha} + \left(4\cos^{3}{\alpha}-3\cos{\alpha}\right)\cos^{3}{\alpha} \\
+&= 3\sin^{4}{\alpha}-4\sin^{6}{\alpha}+4\cos^{6}{\alpha}-3\cos^{4}{\alpha} \\
+&=3\sin^{4}{\alpha}-4\sin^{4}{\alpha}\left(1-\cos^{2}{\alpha}\right)+4\cos^{4}{\alpha}\left(1-\sin^{2}{\alpha}\right)-3\cos^{4}{\alpha} \\
+&= \sin^{4}{\alpha}\left(4\cos^{2}{\alpha}-1\right) + \cos^{4}{\alpha}\left(1-4\sin^{2}{\alpha}\right) \\
+&= \sin^{4}{\alpha}\left(4\cos^{2}{\alpha}-\sin^{2}{\alpha}-\cos^{2}{\alpha}\right) + \cos^{4}{\alpha}\left(\sin^{2}{\alpha}+\cos^{2}{\alpha}-4\sin^{2}{\alpha}\right) \\
+&=3\sin^{4}{\alpha}\cos^{2}{\alpha}-\sin^{6}{\alpha}+\cos^{6}{\alpha}-3\cos^{4}{\alpha}\sin^{2}{\alpha} \\
+&= \left(\cos^{2}{\alpha}-\sin^{2}{\alpha}\right)^3 \\
+&= \cos^{3}{2\alpha}
+\end{align*}
 \end{solutions}
 
 \begin{solutions}{Page 150}
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
+\solution %1
+\[
+\cos{\alpha}=1 \implies \cos{\dfrac{\alpha}{2}} = \pm \sqrt{\dfrac{1+1}{2}} = \pm 1
+\]
+$\cos{\alpha}$ is equal to 1 when $\alpha$ is an integer multiple of $2\pi$. If $\alpha = 4n\pi$ for some integer $n$ (i.e., an even integer multiple of $2\pi$), then $\cos{\alpha/2} = \cos{2n\pi} = 1$. Otherwise, if $\alpha = \left(4n+2\right)\pi$ for some integer $n$ (i.e., an odd integer multiple of $2\pi$), then $\cos{\alpha/2} = \cos\left(2n+1\right)\pi = -1$.
+
+For a particular example, we may set $n=0$.
+
+$\alpha = 4\left(0\right)\pi = 0$
+\[
+\cos{0} = 1, \cos{\dfrac{0}{2}} = \cos{0} = 1
+\]
+
+$\alpha = \left(4\left(0\right)+2\right)\pi = 2\pi$
+\[
+\cos{2\pi} = 1, \cos{\dfrac{2\pi}{2}} = \cos{\pi} = -1
+\]
+
+\solution %2
+\begin{subsolutions}
+\subsolution %a
+We take the positive square root because $60\degree / 2 = 30\degree$ lies in the first quadrant.
+\begin{align*}
+\cos \dfrac{60\degree}{2} &= \sqrt{\dfrac{1+\cos{60\degree}}{2}} \\
+&= \sqrt{\dfrac{1+1/2}{2}} \\
+&= \sqrt{\dfrac{3}{4}} \\
+&= \dfrac{\sqrt{3}}{2}
+\end{align*}
+
+\subsolution %b
+We take the positive square root because $120\degree / 2 = 60\degree$ lies in the first quadrant.
+\begin{align*}
+\cos \dfrac{120\degree}{2} &= \sqrt{\dfrac{1+\cos{120\degree}}{2}} \\
+&= \sqrt{\dfrac{1-1/2}{2}} \\
+&= \sqrt{\dfrac{1}{4}} \\
+&= \dfrac{1}{2}
+\end{align*}
+
+\subsolution %c
+We take the negative square root because $240\degree / 2 = 120\degree$ lies in the second quadrant.
+\begin{align*}
+\cos \dfrac{240\degree}{2} &= -\sqrt{\dfrac{1+\cos{240\degree}}{2}} \\
+&= -\sqrt{\dfrac{1-1/2}{2}} \\
+&= -\sqrt{\dfrac{1}{4}} \\
+&= -\dfrac{1}{2}
+\end{align*}
+\end{subsolutions}
+
+\solution ~ %3
+\begin{center}
+\bgroup
+\def\arraystretch{2.1}
+\setlength\tabcolsep{15pt}
+\begin{tabular}{ |c|c|c|c|c| }
+\hline
+$\alpha$
+& Quadrant $\alpha$?
+& $\alpha / 2$
+& Quadrant $\alpha / 2$?
+& $\cos{\alpha / 2}$\\
+\hline
+$780\degree$
+& I
+& $390\degree$
+& I
+& $\sqrt{3} / 2$\\
+\hline
+$1020\degree$
+& IV
+& $510\degree$
+& II
+& $-\sqrt{3} / 2$\\
+\hline
+$1140\degree$
+& I
+& $570\degree$
+& III
+& $-\sqrt{3} / 2$\\
+\hline
+$1380\degree$
+& IV
+& $690\degree$
+& IV
+& $\sqrt{3} / 2$\\
+\hline
+$-60\degree$
+& IV
+& $-30\degree$
+& IV
+& $\sqrt{3} / 2$\\
+\hline
+$-300\degree$
+& I
+& $-150\degree$
+& III
+& $-\sqrt{3} / 2$\\
+\hline
+$-420\degree$
+& IV
+& $-210\degree$
+& II
+& $-\sqrt{3} / 2$\\
+\hline
+$-660\degree$
+& I
+& $-330\degree$
+& I
+& $\sqrt{3} / 2$\\
+\hline
+$-780\degree$
+& IV
+& $-390\degree$
+& IV
+& $\sqrt{3} / 2$\\
+\hline
+\end{tabular}
+\egroup
+\end{center}
+
+\solution %4
+\begin{align*}
+\sin{15\degree} &= \sqrt{\dfrac{1-\cos{30\degree}}{2}} \\
+&= \sqrt{\dfrac{1-\sqrt{3}/2}{2}} \\
+&= \sqrt{\dfrac{2-\sqrt{3}}{4}} \\
+&= \dfrac{\sqrt{2-\sqrt{3}}}{2}
+\end{align*}
+
+\begin{align*}
+\cos{15\degree} &= \sqrt{\dfrac{1+\cos{30\degree}}{2}} \\
+&= \sqrt{\dfrac{1+\sqrt{3}/2}{2}} \\
+&= \sqrt{\dfrac{2+\sqrt{3}}{4}} \\
+&= \dfrac{\sqrt{2+\sqrt{3}}}{2}
+\end{align*}
+
+\solution %5
+Because $\left\lvert \cos{\alpha} \right\rvert \leq 1$, $1 \pm \cos{\alpha} \geq 0$. Thus the expressions under the square roots in the sine and cosine half angle formulas will not be negative.
+
+\solution %6
+The square root sign in the half angle formula prevents it from being a rational trigonometric function, so the Principle of Analytic Continuation does not apply.
+
+\solution %7
+\begin{subsolutions}
+\subsolution %a
+\begin{align*}
+\tan{\dfrac{\alpha}{2}}\tan{\dfrac{\beta}{2}} + \tan{\dfrac{\alpha}{2}}\tan{\dfrac{\gamma}{2}} + \tan{\dfrac{\beta}{2}}\tan{\dfrac{\gamma}{2}} &= \tan{\dfrac{\alpha}{2}}\tan{\dfrac{\beta}{2}} + \tan{\dfrac{\gamma}{2}} \left(\tan{\dfrac{\alpha}{2}} + \tan{\dfrac{\beta}{2}}\right) \\
+&= \tan{\dfrac{\alpha}{2}}\tan{\dfrac{\beta}{2}} + \tan{\dfrac{\gamma}{2}}\tan{\dfrac{\alpha+\beta}{2}}\left(1-\tan{\dfrac{\alpha}{2}}\tan{\dfrac{\beta}{2}}\right) \\
+&= \tan{\dfrac{\alpha}{2}}\tan{\dfrac{\beta}{2}} + 1-\tan{\dfrac{\alpha}{2}}\tan{\dfrac{\beta}{2}} \\
+&= 1
+\end{align*}
+Alternatively, we can recall the extended tangent addition formula derived in Exercise 6 of Section 4 of this chapter:
+\[
+\tan\left(\alpha+\beta+\gamma\right) = \dfrac{\tan{\alpha}+\tan{\beta}+\tan{\gamma} -\tan{\alpha}\tan{\beta}\tan{\gamma}}{1 - \tan{\alpha}\tan{\beta} - \tan{\alpha}\tan{\gamma} - \tan{\beta}\tan{\gamma}}
+\]
+Since $\alpha/2 + \beta/2 + \gamma/2 = \pi / 2$, $\tan\left(\alpha/2 + \beta/2 + \gamma/2\right)$ is undefined. This implies that the denominator of the tangent addition formula is 0 (assuming that none of $\tan{\alpha/2}$, $\tan{\beta/2}$, or $\tan{\gamma/2}$ are undefined). Therefore, we can conclude
+\[
+\tan{\dfrac{\alpha}{2}}\tan{\dfrac{\beta}{2}} + \tan{\dfrac{\alpha}{2}}\tan{\dfrac{\gamma}{2}} + \tan{\dfrac{\beta}{2}}\tan{\dfrac{\gamma}{2}} = 1.
+\]
+\subsolution %b
+Following a similar approach as to the previous part, we begin by noting that $\sin{\tfrac{\alpha+\beta}{2}} = \cos{\tfrac{\gamma}{2}}$.
+\begin{align*}
+4\cos{\dfrac{\alpha}{2}}\cos{\dfrac{\beta}{2}}\cos{\dfrac{\gamma}{2}} &= 4\cos{\dfrac{\alpha}{2}}\cos{\dfrac{\beta}{2}}\sin{\dfrac{\alpha+\beta}{2}} \\
+&=4\cos{\dfrac{\alpha}{2}}\cos{\dfrac{\beta}{2}}\left(\sin{\dfrac{\alpha}{2}}\cos{\dfrac{\beta}{2}} + \cos{\dfrac{\alpha}{2}}\sin{\dfrac{\beta}{2}}\right) \\
+&= 4\sin{\frac{\alpha}{2}}\cos{\dfrac{\alpha}{2}}\cos^{2}{\dfrac{\beta}{2}} + 4\sin{\dfrac{\beta}{2}}\cos{\dfrac{\beta}{2}}\cos^{2}{\dfrac{\alpha}{2}} \\
+&= 2\sin{\alpha}\cos^{2}{\dfrac{\beta}{2}}+2\sin{\beta}\cos^{2}{\dfrac{\alpha}{2}} \\
+&= 2\sin{\alpha}\left(\dfrac{1+\cos{\beta}}{2}\right)+2\sin{\beta}\left(\dfrac{1+\cos{\alpha}}{2}\right) \\
+&= \sin{\alpha} + \sin{\alpha}\cos{\beta} + \sin{\beta} + \sin{\beta}\cos{\alpha} \\
+&= \sin{\alpha} + \sin{\beta} + \sin\left(\alpha+\beta\right) \\
+&= \sin{\alpha} + \sin{\beta} + \sin\left(\pi - \alpha - \beta\right) \\
+&= \sin{\alpha} + \sin{\beta} + \sin{\gamma}
+\end{align*}
+\end{subsolutions}
 \end{solutions}
 
 \begin{solutions}{Page 152}
-\solution
-\solution
+\solution %1
+Because $1+\cos{\alpha}$ is non-negative, division by $1+\cos{\alpha}$ does not change the sign of $\sin{\alpha}$, which means $\tan \left(\alpha / 2\right)$ and $\sin{\alpha} / \left(1+\cos{\alpha}\right)$ have the same sign.
+
+\solution %2
+\begin{align*}
+\tan{\dfrac{\alpha}{2}} &= \pm \sqrt{\dfrac{1-\cos{\alpha}}{1+\cos{\alpha}}} \\
+&= \pm \sqrt{\dfrac{1-\cos{\alpha}}{1+\cos{\alpha}} \cdot \dfrac{1-\cos{\alpha}}{1-\cos{\alpha}}} \\
+&= \pm \sqrt{\dfrac{\left(1-\cos{\alpha}\right)^2}{1-\cos^{2}{\alpha}}} \\
+&= \pm \sqrt{\dfrac{\left(1-\cos{\alpha}\right)^2}{\sin^{2}{\alpha}}} \\
+&= \pm \dfrac{1-\cos{\alpha}}{\sin{\alpha}}
+\end{align*}
+For acute angles $\alpha$, we need to take the positive branch of the square root so that the signs of both sides of the half angle formula agree. By the Principle of Analytic Continuation, since the positive branch is correct for all acute angles and both sides of the formula are rational trigonometric expressions, it is correct for all angles in general, so we have
+\[
+\tan{\dfrac{\alpha}{2}} = \dfrac{1-\cos{\alpha}}{\sin{\alpha}}
+\]
+
 \end{solutions}
 
 \begin{solutions}{Page 153}
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
+\solution %1
+\begin{align*}
+\dfrac{1}{2}\cos\left(\alpha-\beta\right) - \dfrac{1}{2}\cos\left(\alpha+\beta\right) &= \dfrac{1}{2}\left(\cos{\alpha}\cos{\beta}+\sin{\alpha}\sin{\beta}-\cos{\alpha}\cos{\beta} + \sin{\alpha}\sin{\beta}\right) \\
+&= \dfrac{1}{2}\left(2\sin{\alpha}\sin{\beta}\right) \\
+&= \sin{\alpha}\sin{\beta}
+\end{align*}
+
+\begin{align*}
+\dfrac{1}{2}\sin\left(\alpha+\beta\right) + \dfrac{1}{2}\sin\left(\alpha-\beta\right) &= \dfrac{1}{2}\left(\sin{\alpha}\cos{\beta}+\cos{\alpha}\sin{\beta}+\sin{\alpha}\cos{\beta} - \cos{\alpha}\sin{\beta}\right) \\
+&= \dfrac{1}{2}\left(2\sin{\alpha}\cos{\beta}\right) \\
+&= \sin{\alpha}\cos{\beta}
+\end{align*}
+
+\solution %2
+\begin{align*}
+\sin{75\degree}\sin{15\degree} &= \dfrac{1}{2}\cos\left(75\degree-15\degree\right) - \dfrac{1}{2}\cos\left(75\degree+15\degree\right) \\
+&= \dfrac{1}{2}\cos{60\degree} - \dfrac{1}{2}\cos{90\degree} \\
+&= \dfrac{1}{2} \cdot \dfrac{1}{2} - \dfrac{1}{2} \cdot 0 \\
+&= \dfrac{1}{4}
+\end{align*}
+
+\solution %3
+\begin{align*}
+\sin{75\degree}\cos{15\degree} &= \dfrac{1}{2}\sin\left(75\degree+15\degree\right) + \dfrac{1}{2}\sin\left(75\degree-15\degree\right) \\
+&= \dfrac{1}{2}\sin{90\degree} + \dfrac{1}{2}\sin{60\degree} \\
+&= \dfrac{1}{2} \cdot 1 + \dfrac{1}{2} \cdot \dfrac{\sqrt{3}}{2} \\
+&= \dfrac{2+\sqrt{3}}{4}
+\end{align*}
+
+\solution %4
+\begin{subsolutions}
+\subsolution %a
+\begin{align*}
+\cos{75\degree}\cos{15\degree} &= \dfrac{1}{2}\cos\left(75\degree+15\degree\right) + \dfrac{1}{2}\cos\left(75\degree-15\degree\right) \\
+&= \dfrac{1}{2}\cos{90\degree} + \dfrac{1}{2}\cos{60\degree} \\
+&= \dfrac{1}{2} \cdot 0 + \dfrac{1}{2} \cdot \dfrac{1}{2} \\
+&= \dfrac{1}{4}
+\end{align*}
+
+Alternatively, by the cosine subtraction formula, $\cos{60\degree} = \cos{75\degree}\cos{15\degree} + \sin{75\degree}\sin{15\degree}$ so
+\[
+\cos{75\degree}\cos{15\degree} = \cos{60\degree} - \sin{75\degree}\sin{15\degree} = \dfrac{1}{2} - \dfrac{1}{4} = \dfrac{1}{4}
+\]
+
+Alternatively, using the idea of sine and cosine being cofunctions,
+\[
+\cos{75\degree}\cos{15\degree} = \sin\left(90\degree-75\degree\right)\sin\left(90\degree-15\degree\right) = \sin{15\degree}\sin{75\degree} = \dfrac{1}{4}
+\]
+For the above two alternative solutions, we apply the result from Exercise 2 above that $\sin{75\degree}\sin{15\degree} = 1/4$.
+
+\subsolution %b
+\begin{align*}
+\cos{75\degree}\sin{15\degree} &= \dfrac{1}{2}\sin\left(15\degree+75\degree\right) + \dfrac{1}{2}\sin\left(15\degree-75\degree\right) \\
+&= \dfrac{1}{2}\sin{90\degree} - \dfrac{1}{2}\sin{60\degree} \\
+&= \dfrac{1}{2} \cdot 1 - \dfrac{1}{2} \cdot \dfrac{3}{2} \\
+&= \dfrac{2-\sqrt{3}}{4}
+\end{align*}
+
+Alternatively, by the sine addition formula, $\sin{90\degree} = \sin{75\degree}\cos{15\degree} + \cos{75\degree}\sin{15\degree}$ so
+\[
+\cos{75\degree}\sin{15\degree} = \sin{90\degree} - \sin{75\degree}\cos{15\degree} = 1 - \dfrac{2+\sqrt{3}}{4} = \dfrac{2-\sqrt{3}}{4}
+\]
+For the above alternative solution, we apply the result from Exercise 3 above that $\sin{75\degree}\cos{15\degree} = \left(2+\sqrt{3}\right)/4$.
+\end{subsolutions}
+
+\solution %5
+\begin{align*}
+2\cos\left(\dfrac{\pi}{4}+\alpha\right)\cos\left(\dfrac{\pi}{4}-\alpha\right) &= \cos\left(\dfrac{\pi}{4} + \alpha + \dfrac{\pi}{4} - \alpha\right) + \cos\left(\dfrac{\pi}{4} + \alpha - \dfrac{\pi}{4} + \alpha\right) \\
+&= \cos{\dfrac{\pi}{2}} \cos{2\alpha} \\
+&= \cos{2\alpha}
+\end{align*}
+
+\solution %6
+\begin{align*}
+&\sin\left(\alpha+\beta\right)\sin\left(\alpha-\beta\right) + \sin\left(\beta+\gamma\right)\sin\left(\beta-\gamma\right) + \sin\left(\gamma+\alpha\right)\sin\left(\gamma-\alpha\right) \\
+&= \dfrac{1}{2}\cos{2\beta} - \dfrac{1}{2}\cos{2\alpha} + \dfrac{1}{2}\cos{2\gamma} - \dfrac{1}{2}\cos{2\beta} + \dfrac{1}{2}\cos{2\alpha} - \dfrac{1}{2}\cos{2\gamma} \\
+&= 0
+\end{align*}
+
+\solution %7
+\begin{align*}
+&\sin{\alpha}\sin\left(\beta-\gamma\right) + \sin{\beta}\sin\left(\gamma-\alpha\right) + \sin{\gamma}\sin\left(\alpha-\beta\right) \\
+&= \dfrac{1}{2}\cos\left(\alpha-\beta+\gamma\right) - \dfrac{1}{2}\cos\left(\alpha+\beta-\gamma\right) + \dfrac{1}{2}\cos\left(\beta-\gamma+\alpha\right) - \dfrac{1}{2}\cos\left(\beta+\gamma-\alpha\right) \\
+&+ \dfrac{1}{2}\cos\left(\gamma-\alpha+\beta\right) - \dfrac{1}{2}\cos\left(\gamma+\alpha-\beta\right) \\
+&= 0
+\end{align*}
+
 \end{solutions}
 
 \begin{solutions}{Page 155}
@@ -2181,49 +2930,167 @@ $\begin{aligned}[t]
 \end{solutions}
 
 \begin{solutions}{Page 158}
-\solution
-\solution
+\solution %1
+Let $\beta=2\gamma$.
+\begin{align*}
+\sin^{2}{\beta} + \cos^{2}{\beta} &= \sin^{2}{2\gamma} + \cos^{2}{2\gamma} \\
+&= \left(\dfrac{2a}{1+a^{2}}\right)^2 + \left(\dfrac{1-a^{2}}{1+a^{2}}\right)^2 \\
+&= \dfrac{4a^{2}}{1+2a^{2}+a^{4}} + \dfrac{1-2a^{2}+a^{4}}{1+2a^{2}+a^{4}} \\
+&= \dfrac{1+2a^{2}+a^{4}}{1+2a^{2}+a^{4}} \\
+&= 1
+\end{align*}
+
+\solution %2
+\begin{align*}
+\tan{2\beta} &= \dfrac{2a}{1-a^2} \\
+&= \dfrac{\dfrac{2a}{1+a^{2}}}{\dfrac{1-a^{2}}{1+a^{2}}} \\
+&= \dfrac{\sin{2\beta}}{\cos{2\beta}}
+\end{align*}
 \end{solutions}
 
 \begin{solutions}{Page 160}
-\solution
-\solution
-\solution
+\solution %1
+\[
+\sin{\alpha} = \dfrac{2 \cdot 2 \cdot 3}{2^{2}+3^{2}} = \dfrac{12}{13}
+\]
+\[
+\cos{\alpha} = \dfrac{2^{2} - 3^{2}}{2^{2}+3^{2}} = \dfrac{-5}{13}
+\]
+These values give the Pythagorean triple 5, 12, 13, provided we take the absolute value of $\cos{\alpha}$.
+
+\solution %2
+\[
+\sin{\alpha} = \dfrac{2 \cdot 8 \cdot 5}{8^{2}+5^{2}} = \dfrac{80}{89}
+\]
+\[
+\cos{\alpha} = \dfrac{8^{2} - 5^{2}}{8^{2}+5^{2}} = \dfrac{39}{89}
+\]
+This corresponds to the Pythagorean triple 80, 39, 89.
+
+\solution %3
+\[
+\left(2pq\right)^{2} + \left(q^{2}-p^{2}\right)^{2} = 4p^{2}q^{2} + q^4 - 2q^{2}p^{2} + p^{4} = q^{4} + 2q^{2}p^{2} + p^{4} = \left(q^{2}+p^{2}\right)^{2}
+\]
+The above shows that $q^{2}+p^{2}$ is the hypotenuse.
+
 \end{solutions}
 
 \begin{solutions}{Page 161 (First)}
-\solution
-\solution
+\solution %1
+\begin{itemize}
+    \item $\sin{20\degree}\cos{20\degree} \approx 0.3214\ldots$
+    \item $\sin{10\degree}\cos{10\degree} \approx 0.1710\ldots$
+    \item $\sin{5\degree}\cos{5\degree} \approx 0.0868\ldots$
+    \item $\sin{1\degree}\cos{1\degree} \approx 0.0174\ldots$
+    \item $\sin{70\degree}\cos{70\degree} \approx 0.3214\ldots$
+    \item $\sin{80\degree}\cos{80\degree} \approx 0.1710\ldots$
+    \item $\sin{85\degree}\cos{85\degree} \approx 0.0868\ldots$
+    \item $\sin{89\degree}\cos{89\degree} \approx 0.0174\ldots$
+\end{itemize}
+
+\solution %2
+\[
+\sin{30\degree}\cos{30\degree} = \dfrac{1}{2} \cdot \dfrac{\sqrt{3}}{2} = \dfrac{\sqrt{3}}{4}
+\]
+\[
+\sin{45\degree}\cos{45\degree} = \dfrac{\sqrt{2}}{2} \cdot \dfrac{\sqrt{2}}{2} = \dfrac{1}{2}
+\]
+\[
+\sin{60\degree}\cos{60\degree} = \dfrac{\sqrt{3}}{2} \dfrac{1}{2}  = \dfrac{\sqrt{3}}{4}
+\]
 \end{solutions}
 
 \begin{solutions}{Page 161 (Second)}
-\solution
-\solution
-\solution
+\solution %1
+In the below answers to this question, $n$ represents an arbitrary integer.
+\begin{subsolutions}
+\subsolution %a
+\begin{align*}
+\sin{x}\cos{x} = \dfrac{1}{2} &\implies \dfrac{1}{2}\sin{2x} = \dfrac{1}{2} \\
+&\implies \sin{2x} = 1 \\
+&\implies 2x = \dfrac{\pi}{2} + 2n\pi \\
+&\implies x = \dfrac{\pi}{4} + n\pi
+\end{align*}
+
+\subsolution %b
+\[
+\sin{x}\cos{x} = \dfrac{\sqrt{3}}{2} \implies \dfrac{1}{2}\sin{2x} = \dfrac{\sqrt{3}}{2} \implies \sin{2x} = \sqrt{3}
+\]
+Because $\sqrt{3} > 1$, there are no values of $x$ which satisfy the given equation.
+
+\subsolution %c
+\begin{align*}
+\sin{x}\cos{x} = \dfrac{\sqrt{3}}{4} &\implies \dfrac{1}{2}\sin{2x} = \dfrac{\sqrt{3}}{4} \\
+&\implies \sin{2x} = \dfrac{\sqrt{3}}{2} \\
+&\implies 2x = \left(\dfrac{\pi}{2} \pm \dfrac{2\pi}{3}\right) + 2n\pi \\
+& \implies x = \left(\dfrac{\pi}{4} \pm \dfrac{\pi}{3}\right) + n\pi
+\end{align*}
+
+\end{subsolutions}
+
+\solution %2
+(c) has no solution because $\sin{x}\cos{x} \leq 0.5 < 0.6$.
+
+\solution %3
+$\sin{x}\cos{x}=N$ has a solution for $\left\lvert N \right\rvert \leq 1/2$.
+\[
+\sin{x}\cos{x} = N \implies \dfrac{1}{2}\sin{2x} = N
+\implies \sin{2x} = 2N
+\]
+Positive, Zero, Negative $\pm 1/2$.
+\[
+x = \dfrac{1}{2} \left(\arcsin{2N} + 2n\pi\right)
+\]
 \end{solutions}
 
 \begin{solutions}{Page 162 (First)}
-\solution
-\solution
-\solution
+\solution %1
+\[
+\sin{30\degree}+\cos{30\degree} = \dfrac{1}{2} + \dfrac{\sqrt{3}}{2} > \dfrac{1}{2} + \dfrac{1}{2} = 1
+\]
+
+\solution %2
+\[
+\sin{0}+\cos{0} = 1
+\]
+
+\solution %3
+\[
+\sin{\dfrac{\pi}{4}} + \cos{\frac{\pi}{4}} = \dfrac{\sqrt{2}}{2} + \dfrac{\sqrt{2}}{2} = \sqrt{2}
+\]
 \end{solutions}
 
 \begin{solutions}{Page 162 (Second)}
-\solution
-\solution
-\solution
-\solution
+\solution %1
+Yes, because $1.414 < \sqrt{2}$. (Note: $\sin{x}+\cos{x}$ must attain the value $1.414$ for some $x$ because of the Intermediate Value Theorem).
+
+\solution %2
+No, because $1.415 > \sqrt{2}$.
+
+\solution %3
+\solution %4
 \end{solutions}
 
 \begin{solutions}{Page 163 (First)}
-\solution
-\solution
+\solution %1
+\[
+x = \dfrac{\pi}{4} + 2n\pi
+\]
+\solution %2
+The minimum value of $\sin{x}+\cos{x}$ is $-\sqrt{2}$. This is achieved when
+\[
+x = -\dfrac{3\pi}{4} + 2n\pi
+\]
 \end{solutions}
 
 \begin{solutions}{Page 163 (Second)}
-\solution
-\solution
-\solution
+\solution %1
+Yes, because $\sin{\alpha}$ and $\cos{\alpha}$ are both positive.
+
+\solution %2
+The minimum value of $3\sin{x}+4\cos{x}$ is $-5$.
+
+\solution %3
 \end{solutions}
 
 \begin{solutions}{Page 164}
@@ -2252,7 +3119,6 @@ $\begin{aligned}[t]
 \solution
 \solution
 \end{solutions}
-
 
 \section*{Chapter 8: Graphs of Trigonometric Functions}
 
