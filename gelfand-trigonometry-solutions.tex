@@ -49,6 +49,10 @@
 
 \newcommand{\subsolution}{\item}
 
+\newcommand\bigangle[2][]{ 
+    \draw[->,domain=0:#2,variable=\t,samples=200,>=latex,#1]
+    plot ({(\t+#2)*cos(\t)/(#2)},{(\t+#2)*sin(\t)/(#2)})
+}
 
 % Git info
 % See https://tex.stackexchange.com/questions/455396/how-to-include-the-current-git-commit-id-and-branch-in-my-document
@@ -1442,30 +1446,519 @@ For a regular octagon: $360\degree/8 = 45\degree$.
 \solution
 \end{solutions}
 
-
 \section*{Chapter 4: Angles and Rotations}
 
 \begin{solutions}{Page 93}
-\solution
+\solution %1
+\begin{subsolutions}
+\subsolution %a
+\begin{tikzpicture}[scale=0.5]
+\def\rad{4};
+\def\ang{160};
+\draw (0,0) circle [radius=\rad];
+\draw (0,0) -- (\ang:\rad);
+\draw[fill=black] (\ang:\rad) circle [radius=0.1];
+\draw (0,0) -- (0:\rad);
+\draw[fill=black] (0:\rad) circle [radius=0.1] node[above right] {$A$};
+\draw [-latex,domain=0:\ang] plot ({1.5*cos(\x)}, {1.5*sin(\x)});
+\node[below=.05cm] at (\ang:1.5) {$\ang\degree$};
+\end{tikzpicture}
+
+\subsolution %b
+\begin{tikzpicture}[scale=0.5]
+\def\rad{4};
+\def\ang{190};
+\draw (0,0) circle [radius=\rad];
+\draw (0,0) -- (\ang:\rad);
+\draw[fill=black] (\ang:\rad) circle [radius=0.1];
+\draw (0,0) -- (0:\rad);
+\draw[fill=black] (0:\rad) circle [radius=0.1] node[above right] {$A$};
+\draw [-latex,domain=0:\ang] plot ({1.5*cos(\x)}, {1.5*sin(\x)});
+\node[below=.05cm] at (\ang:1.5) {$\ang\degree$};
+\end{tikzpicture}
+
+\subsolution %c
+\begin{tikzpicture}[scale=0.5]
+\def\rad{4};
+\def\ang{400};
+\draw (0,0) circle [radius=\rad];
+\draw (0,0) -- (\ang:\rad);
+\draw[fill=black] (\ang:\rad) circle [radius=0.1];
+\draw (0,0) -- (0:\rad);
+\draw[fill=black] (0:\rad) circle [radius=0.1] node[above right] {$A$};
+\bigangle{\ang} node[right=.25cm] {$\ang\degree$};
+\end{tikzpicture}
+
+\subsolution %d
+\begin{tikzpicture}[scale=0.5]
+\def\rad{4};
+\def\ang{600};
+\draw (0,0) circle [radius=\rad];
+\draw (0,0) -- (\ang:\rad);
+\draw[fill=black] (\ang:\rad) circle [radius=0.1];
+\draw (0,0) -- (0:\rad);
+\draw[fill=black] (0:\rad) circle [radius=0.1] node[above right] {$A$};
+\bigangle{\ang} node[below right=.1cm] {$\ang\degree$};
+\end{tikzpicture}
+
+\subsolution %e
+\begin{tikzpicture}[scale=0.5]
+\def\rad{4};
+\def\ang{1200};
+\draw (0,0) circle [radius=\rad];
+\draw (0,0) -- (\ang:\rad);
+\draw[fill=black] (\ang:\rad) circle [radius=0.1];
+\draw (0,0) -- (0:\rad);
+\draw[fill=black] (0:\rad) circle [radius=0.1] node[above right] {$A$};
+\bigangle{\ang} node[above right=.3cm] {$\ang\degree$};
+\end{tikzpicture}
+
+\subsolution %f
+\begin{tikzpicture}[scale=0.5]
+\def\rad{4};
+\def\ang{-70};
+\draw (0,0) circle [radius=\rad];
+\draw (0,0) -- (\ang:\rad);
+\draw[fill=black] (\ang:\rad) circle [radius=0.1];
+\draw (0,0) -- (0:\rad);
+\draw[fill=black] (0:\rad) circle [radius=0.1] node[above right] {$A$};
+\draw [-latex,domain=0:\ang] plot ({1.5*cos(\x)}, {1.5*sin(\x)});
+\node[left=.05cm] at (\ang:1.5) {$\ang\degree$};
+\end{tikzpicture}
+
+\subsolution %g
+\begin{tikzpicture}[scale=0.5]
+\def\rad{4};
+\def\ang{-400};
+\draw (0,0) circle [radius=\rad];
+\draw (0,0) -- (\ang:\rad);
+\draw[fill=black] (\ang:\rad) circle [radius=0.1];
+\draw (0,0) -- (0:\rad);
+\draw[fill=black] (0:\rad) circle [radius=0.1] node[above right] {$A$};
+\bigangle{\ang} node[below left=.05cm] {$\ang\degree$};
+\end{tikzpicture}
+
+\subsolution %h
+\begin{tikzpicture}[scale=0.5]
+\def\rad{4};
+\def\ang{360};
+\draw (0,0) circle [radius=\rad];
+\draw (0,0) -- (\ang:\rad);
+\draw[fill=black] (\ang:\rad) circle [radius=0.1];
+\draw (0,0) -- (0:\rad);
+\draw[fill=black] (0:\rad) circle [radius=0.1] node[above right] {$A$};
+\bigangle{\ang} node[above=.05cm] {$\ang\degree$};
+\end{tikzpicture}
+
+\subsolution %i
+\begin{tikzpicture}[scale=0.5]
+\def\rad{4};
+\def\ang{-270};
+\draw (0,0) circle [radius=\rad];
+\draw (0,0) -- (\ang:\rad);
+\draw[fill=black] (\ang:\rad) circle [radius=0.1];
+\draw (0,0) -- (0:\rad);
+\draw[fill=black] (0:\rad) circle [radius=0.1] node[above right] {$A$};
+\draw [-latex,domain=0:\ang] plot ({1.5*cos(\x)}, {1.5*sin(\x)});
+\node[right=.05cm] at (\ang:1.5) {$\ang\degree$};
+\end{tikzpicture}
+
+\end{subsolutions}
+
 \end{solutions}
 
 \begin{solutions}{Page 98}
-\solution
-\solution
+\solution %1
+\begin{subsolutions}
+\subsolution %a
+\begin{tikzpicture}
+\def\rad{1.5};
+\def\fac{1.5};
+\def\ang{30};
+
+\draw (0,0) circle [radius=\rad];
+\draw[-latex] (-\fac*\rad,0) -- (\fac*\rad,0);
+\draw[-latex] (0,-\fac*\rad) -- (0,\fac*\rad);
+
+\draw (0,0) -- (\ang:\rad);
+\draw[fill=black] (\ang:\rad) circle [radius=0.05];
+\draw [-latex,domain=0:\ang] plot ({0.5*cos(\x)}, {0.5*sin(\x)});
+\node[above=.05cm] at (\ang:0.5) {$\ang\degree$};
+\end{tikzpicture}
+
+Because $390\degree = 360\degree + 30\degree$, a point rotated through an angle of $390\degree$ would end up at the same location as a point rotated through an angle of $30\degree$. Therefore,
+\[
+\sin{390\degree} = \sin{30\degree} = \dfrac{1}{2}.
+\]
+
+\subsolution %b
+\begin{tikzpicture}
+\def\rad{1.5};
+\def\fac{1.5};
+\def\ang{120};
+
+\draw (0,0) circle [radius=\rad];
+\draw[-latex] (-\fac*\rad,0) -- (\fac*\rad,0);
+\draw[-latex] (0,-\fac*\rad) -- (0,\fac*\rad);
+
+\draw (0,0) -- (\ang:\rad);
+\draw[fill=black] (\ang:\rad) circle [radius=0.05];
+\draw [-latex,domain=0:\ang] plot ({0.5*cos(\x)}, {0.5*sin(\x)});
+\node[above right=.15cm] at (\ang:0.5) {$\ang\degree$};
+
+\draw [-latex,domain=180:\ang] plot ({0.5*cos(\x)}, {0.5*sin(\x)});
+\node[left=.05cm] at (\ang:0.5) {$60\degree$};
+\end{tikzpicture}
+
+Because $3720\degree = 10 \cdot 360\degree + 120\degree$, a point rotated through an angle of $3720\degree$ would end up at the same location as a point rotated through an angle of $120\degree$. Therefore,
+\[
+\cos{3720\degree} = \cos{120\degree} = -\cos{60\degree} = -\dfrac{1}{2}.
+\]
+
+\subsolution %c
+\begin{tikzpicture}
+\def\rad{1.5};
+\def\fac{1.5};
+\def\ang{45};
+
+\draw (0,0) circle [radius=\rad];
+\draw[-latex] (-\fac*\rad,0) -- (\fac*\rad,0);
+\draw[-latex] (0,-\fac*\rad) -- (0,\fac*\rad);
+
+\draw (0,0) -- (\ang:\rad);
+\draw[fill=black] (\ang:\rad) circle [radius=0.05];
+\draw [-latex,domain=0:\ang] plot ({0.5*cos(\x)}, {0.5*sin(\x)});
+\node[above=.05cm] at (\ang:0.5) {$\ang\degree$};
+\end{tikzpicture}
+
+Because $1845\degree = 5 \cdot 360\degree + 45\degree$, a point rotated through an angle of $1845\degree$ would end up at the same location as a point rotated through an angle of $45\degree$. Therefore,
+\[
+\tan{1845\degree} = \tan{45\degree} = \dfrac{\sin{45\degree}}{\cos{45\degree}} = \dfrac{\sqrt{2}/2}{\sqrt{2}/2} = 1.
+\]
+\subsolution %d
+\begin{tikzpicture}
+\def\rad{1.5};
+\def\fac{1.5};
+\def\ang{315};
+
+\draw (0,0) circle [radius=\rad];
+\draw[-latex] (-\fac*\rad,0) -- (\fac*\rad,0);
+\draw[-latex] (0,-\fac*\rad) -- (0,\fac*\rad);
+
+\draw (0,0) -- (\ang:\rad);
+\draw[fill=black] (\ang:\rad) circle [radius=0.05];
+\draw [-latex,domain=0:\ang] plot ({0.5*cos(\x)}, {0.5*sin(\x)});
+\node[below=.1cm] at (\ang:0.5) {$\ang\degree$};
+\draw [-latex,domain=360:\ang] plot ({0.5*cos(\x)}, {0.5*sin(\x)});
+\node[right=.05cm] at (\ang:0.5) {$45\degree$};
+\end{tikzpicture}
+
+Because $315\degree = 360\degree - 45\degree$, a point rotated through an angle of $315\degree$ would end up at the same location as a point rotated through an angle of $-45\degree$. Therefore,
+\[
+\sin{315\degree} = \sin\left(-45\degree\right) = -\sin{45\degree} = -\dfrac{\sqrt{2}}{2}
+\]
+
+\subsolution %e
+\begin{tikzpicture}
+\def\rad{1.5};
+\def\fac{1.5};
+\def\ang{60};
+
+\draw (0,0) circle [radius=\rad];
+\draw[-latex] (-\fac*\rad,0) -- (\fac*\rad,0);
+\draw[-latex] (0,-\fac*\rad) -- (0,\fac*\rad);
+
+\draw (0,0) -- (\ang:\rad);
+\draw[fill=black] (\ang:\rad) circle [radius=0.05];
+\draw [-latex,domain=0:\ang] plot ({0.5*cos(\x)}, {0.5*sin(\x)});
+\node[right=.05cm] at (\ang:0.5) {$\ang\degree$};
+\end{tikzpicture}
+
+Because $420\degree = 360\degree + 60\degree$, a point rotated through an angle of $420\degree$ would end up at the same location as a point rotated through an angle of $60\degree$. Therefore,
+\[
+\cot{420\degree} = \cot{60\degree} = \dfrac{\cos{60\degree}}{\sin{60\degree}} = \dfrac{1/2}{\sqrt{3}/2} = \dfrac{1}{\sqrt{3}}.
+\]
+
+\subsolution %f
+\begin{tikzpicture}
+\def\rad{1.5};
+\def\fac{1.5};
+\def\ang{-30};
+
+\draw (0,0) circle [radius=\rad];
+\draw[-latex] (-\fac*\rad,0) -- (\fac*\rad,0);
+\draw[-latex] (0,-\fac*\rad) -- (0,\fac*\rad);
+
+\draw (0,0) -- (\ang:\rad);
+\draw[fill=black] (\ang:\rad) circle [radius=0.05];
+\draw [-latex,domain=0:\ang] plot ({0.5*cos(\x)}, {0.5*sin(\x)});
+\node[right=.05cm] at (\ang:0.5) {$\ang\degree$};
+\end{tikzpicture}
+
+\[
+\tan\left(-30\degree\right) = \dfrac{\sin\left(-30\degree\right)}{\cos\left(-30\degree\right)} = \dfrac{-\sin{30\degree}}{\cos{30\degree}} = -\dfrac{1/2}{\sqrt{3}/2} = -\dfrac{1}{\sqrt{3}}
+\]
+
+\end{subsolutions}
+
+\solution %2
+\begin{subsolutions}
+\subsolution %a
+\[
+\tan{360\degree} = \tan{0\degree} = \dfrac{\sin{0\degree}}{\cos{0\degree}} = \dfrac{0}{1} = 0
+\]
+\subsolution %b
+\[
+\sin{180\degree} = \sin{0\degree} = 0
+\]
+\subsolution %c
+\[
+\cos{180\degree} = -\cos{0\degree} = -1
+\]
+\subsolution %d
+\[
+\cot{90\degree} = \dfrac{\cos{90\degree}}{\sin{90\degree}} = \dfrac{0}{1} = 0
+\]
+\subsolution %e
+\[
+\cot{360\degree} = \cot{0\degree} = \dfrac{\cos{0\degree}}{\sin{0\degree}} = \dfrac{1}{0} \implies \cot{360\degree} \text{ is undefined.}
+\]
+\subsolution %f
+\[
+\tan\left(-270\degree\right) = \tan{90\degree} = \dfrac{\sin{90\degree}}{\cos{90\degree}} = \dfrac{1}{0} \implies \tan\left(-270\degree\right) \text{ is undefined.}
+\]
+\end{subsolutions}
 \end{solutions}
 
 \begin{solutions}{Page 100}
-\solution
-\solution
-\solution
-\solution
-\solution
+\solution %1
+$400\degree = 360\degree + 40\degree$, so $P$ will be in the first quadrant.
+
+$3600\degree = 10 \cdot 360\degree + 0\degree$, so $P$ will lie in the first quadrant (on the positive x-axis).
+
+$1845\degree = 5 \cdot 360\degree + 45\degree$, so $P$ will lie in the first quadrant.
+
+$-30\degree = -360\degree + 330\degree$, so $P$ will lie in the fourth quadrant.
+
+$-359\degree = -360\degree + 1\degree$, so $P$ will lie in the first quadrant.
+
+\solution ~ %2
+\begin{center}
+\bgroup
+\def\arraystretch{2.1}
+\setlength\tabcolsep{15pt}
+\begin{tabular}{ |c|c|c|c| }
+\hline
+$\sin{30\degree}$
+& $1/2$
+& $\sin\left(-30\degree\right)$
+& $-1/2$ \\
+\hline
+$\sin{135\degree}$
+& $\sqrt{2}/2$
+& $\sin\left(-135\degree\right)$
+& $-\sqrt{2}/2$ \\
+\hline
+$\sin{210\degree}$
+& $-1/2$
+& $\sin\left(-210\degree\right)$
+& $1/2$ \\
+\hline
+$\sin{300\degree}$
+& $-\sqrt{3}/2$
+& $\sin\left(-300\degree\right)$
+& $\sqrt{3}/2$ \\
+\hline
+$\sin{390\degree}$
+& $1/2$
+& $\sin\left(-390\degree\right)$
+& $-1/2$ \\
+\hline
+$\sin{480\degree}$
+& $\sqrt{3}/2$
+& $\sin\left(-480\degree\right)$
+& $-\sqrt{3}/2$ \\
+\hline
+\end{tabular}
+\egroup
+\end{center}
+
+\solution %3
+\begin{subsolutions}
+\subsolution %a
+\[
+\sin{\alpha}=0 \implies \alpha=180\degree
+\]
+\subsolution %b
+\[
+\cos{\alpha}=0 \implies \alpha=90\degree, 270\degree
+\]
+\subsolution %c
+\[
+\sin{\alpha}=1 \implies \alpha=90\degree
+\]
+\subsolution %d
+$\cos{\alpha}=1$ is true for $\alpha=0\degree$ and $\alpha=360\degree$, but these are outside the interval $0 < \alpha < 360\degree$.
+\subsolution %e
+\[
+\sin{\alpha}=-1 \implies \alpha=270\degree
+\]
+\subsolution %f
+\[
+\cos{\alpha}=\dfrac{1}{2} \implies \alpha=60\degree,300\degree
+\]
+\subsolution %g
+\[
+\sin{\alpha}=-\dfrac{1}{2} \implies \alpha=210\degree,330\degree
+\]
+\subsolution %h
+\[
+\sin^{2}{\alpha} = \dfrac{1}{2} \implies \sin{\alpha} = \pm \dfrac{\sqrt{2}}{2} \implies \alpha=45\degree,135\degree,225\degree,315\degree
+\]
+\subsolution %i
+This equation has no solutions because the square of a real number cannot be negative.
+
+\end{subsolutions}
+\solution %4
+\begin{subsolutions}
+\subsolution %a
+If $\sin{\alpha}=5/13$, then $\alpha$ can lie in either the first or second quadrant. $\cos{\alpha}=12/13$ when $\alpha$ is in the first quadrant, and $\cos{\alpha}=-12/13$ when $\alpha$ is in the second quadrant.
+
+\subsolution %b
+If $\sin{\alpha}=-5/13$, then $\alpha$ can lie in either the third or fourth quadrant. $\cos{\alpha}=12/13$ when $\alpha$ is in the fourth quadrant, and $\cos{\alpha}=-12/13$ when $\alpha$ is in the third quadrant.
+
+\end{subsolutions}
+
+\solution %5
+\begin{tikzpicture}
+\def\rad{1.5};
+\def\fac{1.5};
+\def\ang{130};
+
+\draw (0,0) circle [radius=\rad];
+\draw[-latex] (-\fac*\rad,0) -- (\fac*\rad,0);
+\draw[-latex] (0,-\fac*\rad) -- (0,\fac*\rad);
+
+\draw (0,0) -- (\ang:\rad);
+\draw[fill=black] (\ang:\rad) circle [radius=0.05] node[above left] {$P=(a,b)$};
+\draw [-latex,domain=0:\ang] plot ({0.5*cos(\x)}, {0.5*sin(\x)});
+\node[above right] at (\ang/2:0.5) {$\theta$};
+
+
+\end{tikzpicture}
+
+Let $P = (a,b)$ be a point on the coordinate plane. Since $a^2+b^2=1$, $P$ lies on a circle of radius 1 centered at the origin (\textit{the unit circle}). Consider an angle between the positive x-axis and the line segment connecting $P$ to the origin, and call this angle $\theta$. By the extended definitions of the sine and cosine functions, $\sin{\theta} = b$ and $\cos{\theta} = a$.
 \end{solutions}
 
 \begin{solutions}{Page 102}
-\solution
-\solution
-\solution
+\solution %1
+\begin{subsolutions}
+\subsolution %a
+Even
+\[
+f\left(-x\right) = \left(-x\right)^6-\left(-x\right)^2+7 = x^6-x^2+7 = f\left(x\right)
+\]
+\subsolution %b
+Odd
+\[
+f\left(-x\right) = \left(-x\right)^3-\sin\left(-x\right)= -x^3+\sin{x}= -f\left(x\right)
+\]
+\subsolution %c
+Neither
+\[
+f\left(-x\right) = \dfrac{1}{-x+1}
+\]
+\subsolution %d
+Even
+\[
+f\left(-x\right) = \sec\left(-x\right) = \dfrac{1}{\cos\left(-x\right)} = \dfrac{1}{\cos{x}} = \sec{x} = f\left(x\right)
+\]
+\subsolution %e
+Odd
+\[
+f\left(-x\right) = \csc\left(-x\right) = \dfrac{1}{\sin\left(-x\right)} = -\dfrac{1}{\sin\left(x\right)} =-\csc{x} = -f\left(x\right)
+\]
+\subsolution %f
+Odd
+\[
+f\left(-x\right) = 2\sin\left(-x\right)\cos\left(-x\right) = -2\sin\left(x\right)\cos\left(x\right) = -f\left(x\right)
+\]
+\subsolution %g
+Even
+\[
+f\left(-x\right) = \sin^{2}\left(-x\right)  = \left(-\sin{x}\right)^{2} = \sin^{2}{x} = f\left(x\right)
+\]
+
+\subsolution %h
+Even
+\[
+f\left(-x\right) = \cos^{2}\left(-x\right) = \left(\cos{x}\right)^{2} = \cos^{2}{x} = f\left(x\right)
+\]
+
+\subsolution %i
+Even
+\[
+f\left(-x\right) = \sin^{2}\left(-x\right) + \cos^{2}\left(-x\right) =  \sin^{2}{x} + \cos^{2}{x} = f\left(x\right)
+\]
+\end{subsolutions}
+
+\solution %2
+\[
+g\left(-x\right) = \dfrac{1}{2}\left[f\left(-x\right)+f\left(-\left(-x\right)\right)\right] = \dfrac{1}{2}\left[f\left(-x\right)+f\left(x\right)\right] = g\left(x\right),
+\]
+so $g\left(x\right)$ is even.
+
+\[
+h\left(-x\right) = \dfrac{1}{2}\left[f\left(-x\right)-f\left(-\left(-x\right)\right)\right] = \dfrac{1}{2}\left[f\left(-x\right)-f\left(x\right)\right] = -h\left(x\right),
+\]
+so $h\left(x\right)$ is odd.
+
+For any function $f\left(x\right)$,
+\[
+f\left(x\right) = \dfrac{1}{2}\left[f\left(x\right) + f\left(-x\right)\right] + \dfrac{1}{2}\left[f\left(x\right) - f\left(-x\right)\right] = g\left(x\right) + h\left(x\right)
+\]
+
+\solution %3
+Following the notation of the previous question, we denote the even part of $f\left(x\right)$ as $g\left(x\right)$ and the odd part of $f\left(x\right)$ as $h\left(x\right)$.
+\begin{subsolutions}
+\subsolution %a
+Since we know $\cos{x}$ is an even function and $\sin{x}$ is an odd function,
+\[
+g\left(x\right)=\cos{x}, h\left(x\right)=\sin{x}
+\]
+
+\subsolution %b
+Since a polynomial is an even function when all variables are raised to even exponents and an odd function when all variables are raised to odd exponents,
+\[
+g\left(x\right)=x^{2}+1, h\left(x\right)=x^{3}+x
+\]
+
+\subsolution %c
+Applying the result from the previous problem,
+\[
+g\left(x\right)=\dfrac{1}{2}\left(2^{x}+2^{-x}\right), h\left(x\right)=\dfrac{1}{2}\left(2^{x}-2^{-x}\right)
+\]
+
+\subsolution %d
+Applying the result from the previous problem,
+\[
+g\left(x\right)=\dfrac{1}{2}\left(\dfrac{1-\sin{x}}{1+\sin{x}} + \dfrac{1+\sin{x}}{1-\sin{x}}\right) = \dfrac{1}{2}\left(\dfrac{2+2\sin^{2}{x}}{1-\sin^{2}{x}}\right) = \dfrac{1+\sin^{2}{x}}{1-\sin^{2}{x}}
+\]
+\[
+h\left(x\right)=\dfrac{1}{2}\left(\dfrac{1-\sin{x}}{1+\sin{x}} - \dfrac{1+\sin{x}}{1-\sin{x}}\right) = \dfrac{1}{2}\left(\dfrac{-4\sin{x}}{1-\sin^{2}{x}}\right) = \dfrac{-2\sin{x}}{1-\sin^{2}{x}} 
+\]
+
+\subsolution %e
+Applying the result from the previous problem,
+\[
+g\left(x\right)=\dfrac{1}{2}\left(\dfrac{1}{x+2} + \dfrac{1}{-x+2}\right)=\dfrac{1}{2}\left(\dfrac{4}{4-x^2}\right) = \dfrac{2}{4-x^2}
+\]
+
+\[
+h\left(x\right)=\dfrac{1}{2}\left(\dfrac{1}{x+2} - \dfrac{1}{-x+2}\right)=\dfrac{1}{2}\left(\dfrac{-2x}{4-x^2}\right) = -\dfrac{x}{4-x^2}
+\]
+
+\end{subsolutions}
 \end{solutions}
 
 
