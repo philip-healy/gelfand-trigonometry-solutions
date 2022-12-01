@@ -3691,123 +3691,1363 @@ For $y=f(\frac{x}{3})$
 
 \begin{solutions}{Page 179}
 \solution
+$y= 2\sin\left(x\right)$
+
+\begin{tikzpicture}[xscale=1,yscale=0.5]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-2.4) grid (2.1*pi,2.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,2.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-2.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-2,-1,0,1,2}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:2*pi,samples=90] (\x,{2*sin(\x r)});
+\end{tikzpicture}
+
 \solution
+$y= \frac{1}{2}\sin\left(x\right)$
+
+\begin{tikzpicture}[xscale=1,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-1.4) grid (2.1*pi,1.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,0,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:2*pi,samples=90] (\x,{0.5*sin(\x r)});
+\end{tikzpicture}
+
 \solution
+$y= 3\sin\left(2x\right)$
+
+\begin{tikzpicture}[xscale=1,yscale=0.5]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-3.4) grid (2.1*pi,3.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,3.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-3.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-3,-2,...,3}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:2*pi,samples=90] (\x,{3*sin(\x r)});
+\end{tikzpicture}
+
 \solution
+$y= \frac{1}{2}\sin\left(3x\right)$
+
+\begin{tikzpicture}[xscale=1,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-1.4) grid (2.1*pi,1.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,0,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:2*pi,samples=90] (\x,{0.5*sin(3*\x r))});
+\end{tikzpicture}
+
 \solution
+$y= 4\cos\left(x\right)$
+
+\begin{tikzpicture}[xscale=1,yscale=0.5]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-4.4) grid (2.1*pi,4.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,4.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-4.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-4,-3,...,4}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:2*pi,samples=90] (\x,{4*cos(\x r))});
+\end{tikzpicture}
+
 \solution
+For $y=3f(x)$
+
+\begin{tikzpicture}[xscale=1,yscale=0.5]
+    \draw[help lines,xstep=1,ystep=1,color=gray!50,dashed](-1.5,-3.4) grid (6.5,3.4);
+    \draw[->,thick] (-1.5,0)--(6.5,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,3.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-3.5);
+    %Draw marks on x axis
+    \foreach \i in {-1,0,...,6}
+    \draw [very thin,gray](\i,-0.1)--(\i,0.1) node[below right] at (\i,-0.1) {$\i$};
+    %Draw marks on y axis
+    \foreach \yticks in {-3,-2,...,3}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red] plot[domain=-1:6,samples=180] (\x,{3*asin(sin(\x*pi r))/90});
+\end{tikzpicture}
+
 \solution
+For $y=\frac{1}{3}f(x)$
+
+\begin{tikzpicture}[xscale=1,yscale=1]
+    \draw[help lines,xstep=1,ystep=1,color=gray!50,dashed](-1.5,-1.4) grid (6.5,1.4);
+    \draw[->,thick] (-1.5,0)--(6.5,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {-1,0,...,6}
+    \draw [very thin,gray](\i,-0.1)--(\i,0.1) node[below right] at (\i,-0.1) {$\i$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,0,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red] plot[domain=-1:6,samples=180] (\x,{1/3*asin(sin(\x*pi r))/90});
+\end{tikzpicture}
+
 \end{solutions}
 
 \begin{solutions}{Page 181}
 \solution
+$y= \sin\left(x-\frac{\pi}{6}\right)$
+
+\begin{tikzpicture}[xscale=1,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-1.4) grid (2.1*pi,1.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,0,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:2*pi,samples=90] (\x,{sin((\x - pi/6) r)});
+\end{tikzpicture}
+
 \solution
+$y= \sin\left(x+\frac{\pi}{6}\right) $
+
+\begin{tikzpicture}[xscale=1,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-1.4) grid (2.1*pi,1.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,0,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:2*pi,samples=90] (\x,{sin((\x + pi/6) r)});
+\end{tikzpicture}
+
 \solution
+$y= 2\sin\left(x-\frac{\pi}{2}\right)$
+
+\begin{tikzpicture}[xscale=1,yscale=0.5]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-2.4) grid (2.1*pi,2.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,2.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-2.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-2,-1,0,1,2}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:2*pi,samples=90] (\x,{2*sin((\x - pi/2) r)});
+\end{tikzpicture}
+
 \solution
+$y= \frac{1}{2}\sin\left(x+\frac{\pi}{2}\right)$
+
+\begin{tikzpicture}[xscale=1,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-1.4) grid (2.1*pi,1.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,0,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:2*pi,samples=90] (\x,{0.5*sin((\x + pi/2) r)});
+\end{tikzpicture}
+
 \solution
+$y= \cos\left(x-\frac{\pi}{4}\right)$
+
+\begin{tikzpicture}[xscale=1,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-1.4) grid (2.1*pi,1.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,0,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:2*pi,samples=90] (\x,{cos((\x - pi/4) r)});
+\end{tikzpicture}
+
 \solution
+$y= 3\cos\left(x+\frac{\pi}{3}\right)$
+
+\begin{tikzpicture}[xscale=1,yscale=0.5]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-3.4) grid (2.1*pi,3.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,3.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-3.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-3,-2,...,3}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:2*pi,samples=90] (\x,{3*cos((\x + pi/3) r)});
+\end{tikzpicture}
+
 \solution
+$y= \sin\left(x-2x\right)$ 
+
+\begin{tikzpicture}[xscale=1,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-1.4) grid (2.1*pi,1.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,0,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:2*pi,samples=90] (\x,{cos((\x - 2*pi) r)});
+\end{tikzpicture}
+
+\solution
+Since the sine wave has shifted right by $\frac{\pi}{3}$. The equation is \[y=\sin\left(x-\frac{\pi}{3}\right) \]
+
+\solution
+Since the sine wave has shifted right by $\frac{2\pi}{3}$. The equation is \[y=\sin\left(x-\frac{2\pi}{3}\right) \]
+
+\solution
+Since the sine wave has shifted left by $\frac{\pi}{6}$. The equation is \[y=\sin\left(x-\frac{\pi}{6}\right) \]
+
+\solution
+Note: this looks like the sine wave has shifted right by $\frac{\pi}{4}$, but at that point, the sine wave is on its wave down. 
+
+The actual shift is the $x$ intercept on the far left, calculate its location by $\frac{\pi}{4}- \pi = -\frac{3\pi}{4}$ as it's half a period away, that is, if $2\pi$ radians is one period, then $\pi$ radians is a half period
+
+Therefore, the sine wave has shifted left by $\frac{3\pi}{4}$. The equation is \[y=\sin\left(x+\frac{3\pi}{4}\right) \]
 \end{solutions}
 
 \begin{solutions}{Page 183}
 \solution
+$y= \sin \frac{1}{2}\left(x-\frac{\pi}{6}\right)$
+
+\begin{tikzpicture}[xscale=0.5,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-1.4) grid (4.1*pi,1.4);
+    \draw[->,thick] (0,0)--(4.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2,3,4}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,0,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:4*pi,samples=90] (\x,{sin(0.5*(\x - pi/6) r)});
+\end{tikzpicture}
+
 \solution
+$y= \sin \left(\frac{1}{3}x-\frac{\pi}{6}\right)$
+
+\begin{tikzpicture}[xscale=0.5,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-1.4) grid (4.1*pi,1.4);
+    \draw[->,thick] (0,0)--(4.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2,3,4}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,0,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:4*pi,samples=90] (\x,{sin((0.5*\x - pi/6) r)});
+\end{tikzpicture}
+
 \solution
+$y= \cos 2\left(x+\frac{\pi}{3}\right)$
+
+\begin{tikzpicture}[xscale=0.5,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-1.4) grid (4.1*pi,1.4);
+    \draw[->,thick] (0,0)--(4.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2,3,4}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,0,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:4*pi,samples=90] (\x,{cos((2*(\x+pi/3))  r)});
+\end{tikzpicture}
+
 \solution
+Since period is $\pi$, making $k=\frac{2\pi}{\pi}=2$, making the equation \[y=\sin 2(x-\beta) \]
+
+To solve for $\beta$, substitute $x=0,y=-1$, as the sine wave passes point $(0,-1)$, giving
+\begin{align*}
+    -1 &= \sin 2(0-\beta)\\
+    -1 &= \sin -2\beta\\
+    -\frac{\pi}{2} &= -2\beta\\
+    \frac{\pi}{4} &= \beta\\
+    \beta &= \frac{\pi}{4}
+\end{align*}
+
+Therefore the equation is \[y=\sin 2\left(x-\frac{\pi}{4}\right)\]
+
 \solution
+Since half period is $2\pi$, its full period is $4\pi $making $k=\frac{2\pi}{4\pi}=\frac{1}{2}$, making the equation \[y=\sin \frac{1}{2}(x-\beta) \]
+
+To solve for $\beta$, substitute $x=\frac{5\pi}{6},y=1$, as the sine wave passes point $(\frac{5\pi}{6},1)$, giving
+\begin{align*}
+    1 &= \sin \frac{1}{2} \left( \frac{5\pi}{6}-\beta \right)\\
+    \frac{\pi}{2} &= \frac{1}{2}\left(\frac{5\pi}{6}-\beta\right)\\
+    \pi &= \frac{5\pi}{6}-\beta\\
+    \frac{\pi}{6} &= -\beta\\
+    \beta &= -\frac{\pi}{6}
+\end{align*}
+
+Therefore the equation is \[y=\sin \frac{1}{2}\left(x-\frac{\pi}{6}\right)\]
 \end{solutions}
 
-\begin{solutions}{Page 183}
+
+\begin{solutions}{Page 186}
 \solution
+Answer A) equal to $\sin x$ since
+
+\begin{align*}
+    \sin (x+2\pi) &= \sin (x+2\pi - 2\pi)\\
+                  &= \sin (x)
+\end{align*}
+
 \solution
+
+Answer C) equal to $-\sin x$ since
+
+\begin{align*}
+    \sin (x+3\pi) &= \sin (x+3\pi - 2\pi)\\
+                  &= \sin (x+\pi)\\
+                  &= -\sin(x)
+\end{align*}
+
 \solution
+Answer B) equal to $\cos x$ since
+
+\begin{align*}
+    \sin \left(x+\frac{9}{2}\pi\right) &= \sin \left(x+\frac{9}{2}\pi - 4\pi\right)\\
+                       &= \sin \left(x+\frac{\pi}{2}\right)\\
+                      &= \cos(x)
+\end{align*}
+
 \solution
+Answer D) equal to $-\cos x$ since
+
+\begin{align*}
+    \sin \left(x-\frac{\pi}{2}\right) &= -\cos(x) 
+\end{align*}
+
 \solution
+Answer B) equal to $\cos x$ since
+
+\begin{align*}
+    \sin \left(x-\frac{3}{2}\pi\right) &= \sin \left(-\frac{3}{2}\pi + 2\pi\right)\\
+                       &= \sin \left(x+\frac{\pi}{2}\right)\\
+                      &= \cos(x)
+\end{align*}
+
 \solution
+Answer D) equal to $-\cos x$ since
+
+\begin{align*}
+    \sin \left(x+\frac{19}{2}\pi\right) &= \sin \left(x+\frac{19}{2}\pi - 10\pi\right)\\
+                       &= \sin \left(x-\frac{\pi}{2}\right)\\
+                      &= -\cos(x)
+\end{align*}
+
 \solution
+Answer D) equal to $-\cos x$ since
+
+\begin{align*}
+    -\sin \left(x-\frac{19}{2}\pi\right) &= -\sin \left(x+\frac{19}{2}\pi + 10\pi\right)\\
+                       &= -\sin \left(x+\frac{\pi}{2}\right)\\
+                      &= -\cos(x)
+\end{align*}
+
 \solution
+Answer B) equal to $\cos x$ since
+
+\begin{align*}
+    \sin \left(x+\frac{157}{2}\pi\right) &= \sin \left(x+\frac{157}{2}\pi - 78\pi\right)\\
+                       &= \sin \left(x+\frac{\pi}{2}\right)\\
+                      &= \cos(x)
+\end{align*}
+
 \solution
+Answer D) equal to $-\cos x$ since
+
+\begin{align*}
+    \sin \left(x-\frac{157}{2}\pi\right) &= \sin \left(x-\frac{157}{2}\pi + 78\pi\right)\\
+                       &= \sin \left(x-\frac{\pi}{2}\right)\\
+                      &= -\cos(x)
+\end{align*}
+
 \solution
+Note: there is no question 10 in textbook (printing error?)
+
+\solution %need more work
+Using definition that $p$ is called a half-period of function $f$ is $f(x+p)= -f(x)$, for all values of x which $f(x)$ and $f(x+p)$ are defined
+
+Since $\cos (x) $ has period of $2\pi$ radians, therefore its half-period is $\pi$ radians, or we can compare diagrams
+
+\begin{tikzpicture}[xscale=0.5,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-1.4) grid (4.1*pi,1.4);
+    \draw[->,thick] (0,0)--(4.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2,3,4}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,0,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:4*pi,samples=90] (\x,{cos(\x r)}) node[above] at (4*pi,1) {$y=\cos(x)$};
+    \draw[blue]plot[domain=0:4*pi,samples=90] (\x,{cos((\x + pi) r)}) node[below] at (4*pi,-1) {$y=\cos(x+\pi)$};
+\end{tikzpicture}
+
+Which can be seen that $\cos(x+\pi)$ is the same as $-\cos (x)$, therefore by definition, $\cos x$ has a half-period of $\pi$ radians
+
+For $y = \tan x$
+\begin{align*}
+    \tan (x + \pi) &= \frac{\sin (x+\pi)}{\cos (x+\pi)}\\
+           &= \frac{-\sin x}{-\cos x}\\
+           &= \tan x
+\end{align*}
+So $\pi$ is period of $y=\tan x$ 
+
+For $y=\cot x$
+\begin{align*}
+    \cot (x + \pi) &= \frac{\cos (x+\pi)}{\sin (x+\pi)}\\
+           &= \frac{-\cos x}{-\sin x}\\
+           &= \cot x
+\end{align*}
+
+So $\pi$ is period of $y=\cot x$ 
+
 \solution
+Using definition that $q$ is called a half-period of function $f$ is $f(x+q)= -f(x)$, for all values of x which $f(x)$ and $f(x+q)$ are defined
+
+\begin{align*}
+    f(x+2q) &= f\left(x+q+q \right)\\
+            &= -f\left(x+q \right)\\
+            &= -\left(-f(x)\right)\\
+            &= f(x)
+\end{align*}
+Therefore if $q$ is half period of some function $f$, then $2q$ is a period of $f$
+
 \solution
+\begin{subsolutions}
+
+\subsolution
+\begin{align*}
+    \cos \left( x+k\pi/2  \right) &= \cos \left( x+ \frac{\pi(4n+1)}{2}\right) \\
+              &= \cos \left( x+ 2n\pi + \pi/2  \right)\\
+              &= \cos (x+ \pi/2)\\
+              &= -\sin x
+\end{align*}
+
+\subsolution
+\begin{align*}
+    \cos \left( x+k\pi/2  \right) &= \cos \left( x+ \frac{\pi(4n+2)}{2}\right) \\
+              &= \cos \left( x+ 2n\pi + \pi  \right)\\
+              &= \cos (x+ \pi)\\
+              &= -\cos x
+\end{align*}
+
+\subsolution
+\begin{align*}
+    \cos \left( x+k\pi/2  \right) &= \cos \left( x+ \frac{\pi(4n+3)}{2}\right) \\
+          &= \cos \left( x+ 2n\pi + \frac{3\pi}{2} \right)\\
+          &= \cos (x+ \frac{3\pi}{2})\\
+          &= \cos (x - \frac{\pi}{2})\\
+          &= \sin x
+\end{align*}
+
+\subsolution
+\begin{align*}
+    \cos \left( x+k\pi/2  \right) &= \cos \left( x+ \frac{\pi(4n)}{2}\right) \\
+          &= \cos \left( x+ 2n\pi\right)\\
+          &= \cos x
+\end{align*}
+
+\end{subsolutions}
 \solution
+
+\begin{subsolutions}
+\subsolution
+As the equation has a negative coefficient, we need to shift this by a half-period of $\pi$ radians
+
+\begin{align*}
+    y&=-2 \sin x\\
+    &= 2 \sin (x + \pi)
+\end{align*}
+Comparing coefficients, we get $a=2$ and $k=1$ and $\beta=\pi$
+
+\subsolution
+As the equation has a negative coefficient, we need to shift this by a half-period of $\pi$ radians
+
+\begin{align*}
+    y&=2 \sin (x-\pi/3)\\
+    &= 2 \sin (x -\pi/3+ \pi)\\
+    &= 2 \sin (x +2\pi/3)
+\end{align*}
+Comparing coefficients, we get $a=2$ and $k=1$ and $\beta=-2\pi/3$
+
+\subsolution
+As the equation has a negative coefficient, we need to shift this by a half-period of $\pi$ radians
+
+\begin{align*}
+    y&=-2 \sin (x+\pi/4)\\
+    &= 2 \sin (x +\pi/4+ \pi)\\
+    &= 2 \sin (x +5\pi/4)
+\end{align*}
+Comparing coefficients, we get $a=2$ and $k=1$ and $\beta=-5\pi/4$
+
+\subsolution
+As the equation is a cosine function, we need to re-express as a sine function
+
+\begin{align*}
+    3 \cos x &= 3 \sin(x+\pi/2)\\
+\end{align*}
+Comparing coefficients, we get $a=3$ and $k=1$ and $\beta=\pi/2$
+
+\subsolution
+As the equation is a cosine function, we need to re-express as a sine function
+
+\begin{align*}
+    y&=3 \cos (x-\pi/6)\\ 
+     &= 3 \sin(x-\pi/6+\pi/2)\\
+     &= 3 \sin(x+\pi/3)
+\end{align*}
+Comparing coefficients, we get $a=3$ and $k=1$ and $\beta=-\pi/3$
+
+\subsolution
+As the equation is a cosine function, we need to re-express as a sine function. Then re-express as a postive amplitude
+
+\begin{align*}
+    y&=-3 \cos (x-\pi/6)\\ 
+     &=-3 \sin(x-\pi/6+\pi/2)\\
+     &=3 \sin(x-\pi/6+\pi/2+\pi)\\
+     &=3 \sin(x+4\pi/3)
+\end{align*}
+Comparing coefficients, we get $a=3$ and $k=1$ and $\beta=-4\pi/3$
+\end{subsolutions}
+
 \solution
+\[\cos(x-\pi/5) \]
+\begin{tikzpicture}[xscale=0.5,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-1.4) grid (4.1*pi,1.4);
+    \draw[->,thick] (0,0)--(4.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2,3,4}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,0,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:4*pi,samples=90] (\x,{cos((\x-pi/5)  r)});
+\end{tikzpicture}
+
 \solution
+We need to shift to the right by $\frac{\pi}{2}$
+
+We need to shift to the left by $\frac{3\pi}{2}$
+
 \solution
-\solution
+
+To express $k$ as an odd number, let $k=2n+1$ for any integer $n$
+\begin{align*}
+    \tan \left( x+k\pi/2  \right) &= \tan \left( x+ \frac{\pi(2n+1)}{2}\right) \\
+          &= \tan \left( x+ 2n\pi + \pi/2\right)\\
+          &= \tan \left(x + \pi/2\right)\\
+          &= \frac{\sin(x+\pi/2)}{\cos(x+\pi/2)}\\
+          &= \frac{-\cos x}{\sin x}\\
+          &= -\cot x
+\end{align*}
+
+To express $k$ as an even number, let $k=2n$ for any integer $n$
+\begin{align*}
+    \tan \left( x+k\pi/2  \right) &= \tan \left( x+ \frac{\pi(2n)}{2}\right) \\
+          &= \tan \left( x+ 2n\pi \right)\\
+          &= \tan x\\ 
+\end{align*}
+
 \end{solutions}
+
 
 \begin{solutions}{Page 188}
 \solution
+a) $y= \tan\left(x -\frac{\pi}{6}\right)$
+
+\begin{tikzpicture}[xscale=1,yscale=0.5]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-3.4) grid (2.1*pi,3.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,3.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-3.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-3,-2,...,3}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw asymptotes
+    \draw [thin,dashed, blue](2/3*pi,-3.5)--(2/3*pi,3.5) node [below right] at (2/3*pi,0) {$\frac{2\pi}{3}$};
+    \draw [thin,dashed, blue](5/3*pi,-3.5)--(5/3*pi,3.5) node [below right] at (5/3*pi,0) {$\frac{2\pi}{3}$};
+    %Draw the curve
+    \draw[red]plot[domain=0:.56*pi,samples=30] (\x,{tan((\x - pi/6) r)});
+    \draw[red]plot[domain=0.77*pi:1.56*pi,samples=60] (\x,{tan((\x - pi/6) r)});
+    \draw[red]plot[domain=1.77*pi:2*pi,samples=30] (\x,{tan((\x - pi/6) r)});
+\end{tikzpicture}
+
+b) $y= 3\tan\left(x\right)$
+
+\begin{tikzpicture}[xscale=1,yscale=0.5]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-3.4) grid (2.1*pi,3.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,3.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-3.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-3,-2,...,3}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw asymptotes
+    \draw [thin,dashed, blue](0.5*pi,-3.5)--(0.5*pi,3.5) node [below right] at (0.5*pi,0) {$\frac{\pi}{2}$};
+    \draw [thin,dashed, blue](1.5*pi,-3.5)--(1.5*pi,3.5) node [below right] at (1.5*pi,0) {$\frac{3\pi}{2}$};
+    %Draw the curve
+    \draw[red]plot[domain=0:0.25*pi,samples=30](\x,{3*tan(\x r)});
+    \draw[red]plot[domain=0.75*pi:1.25*pi,samples=30](\x,{3*tan(\x r)});
+    \draw[red]plot[domain=1.75*pi:2*pi,samples=30] (\x,{3*tan(\x r)});
+\end{tikzpicture}
+
+c) $y= \cot\left(x+\frac{\pi}{4}\right)$
+
+\begin{tikzpicture}[xscale=1,yscale=0.5]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-3.4) grid (2.1*pi,3.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,3.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-3.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-3,-2,...,3}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw asymptotes
+    \draw [thin,dashed, blue](0.75*pi,-3.5)--(0.75*pi,3.5) node [below right] at (0.75*pi,0) {$\frac{3\pi}{4}$};
+    \draw [thin,dashed, blue](1.75*pi,-3.5)--(1.75*pi,3.5) node [below right] at (1.75*pi,0) {$\frac{7\pi}{4}$};
+    %Draw the curve
+    \draw[red]plot[domain=0:0.64*pi,samples=30](\x,{cot((\x+pi/4)  r)});
+    \draw[red]plot[domain=0.85*pi:1.64*pi,samples=30](\x,{cot((\x+pi/4) r)});
+    \draw[red]plot[domain=1.85*pi:2*pi,samples=30] (\x,{cot((\x+pi/4) r)});
+\end{tikzpicture}
+
 \solution
+Not really, although there is a trigonometric identity where \[\tan x = \cot\left(\frac{\pi}{2} -x\right)\]
+
+This equation has a negative $x$ inside. Therefore it won't be in form of $y= \cot(x+\phi)$ (note the positive x inside)
+
 \end{solutions}
 
 \begin{solutions}{Page 189}
+
 \solution
+\begin{subsolutions}
+\subsolution
+For $y = y_1+y_2$
+
+\begin{tikzpicture}[xscale=1,yscale=0.5]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-5.4) grid (2.1*pi,5.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,5.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-5.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-4,-3,...,4}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:2*pi,samples=90] (\x,{2*sin(\x r) + sin((\x-pi/4) r))});
+\end{tikzpicture}
+
+\subsolution
+For $y = y_1+y_2$
+
+\begin{tikzpicture}[xscale=1,yscale=0.5]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-5.4) grid (2.1*pi,5.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,5.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-5.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-4,-3,...,4}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:2*pi,samples=90] (\x,{2*sin(\x r) + 3*sin((2*\x) r))});
+\end{tikzpicture}
+
+\subsolution
+For $y = y_2+y_3$
+
+\begin{tikzpicture}[xscale=1,yscale=0.5]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-5.4) grid (2.1*pi,5.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,5.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-5.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-4,-3,...,4}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:2*pi,samples=90] (\x,{3*sin((2*\x) r)+3*sin(2*\x r)});
+\end{tikzpicture}
+\end{subsolutions}
+
 \solution
+Graph 1a appear to be a sinusoidal function
 \end{solutions}
 
 \begin{solutions}{Page 191}
 \solution
+For $y=2\sin x + 3 \cos x$, compare with standard form $y=A\sin kx + B \cos kx$, we get values of $A=2$, $B=3$, and $k=1$
+
+To convert to the other standard form $y=a\sin k(x+\phi)$, we calculate its amplitude by
+\begin{align*}
+    a &= \sqrt{A^2+B^2}\\
+      &= \sqrt{2^2 + 3^2}\\
+      &= \sqrt{13}
+\end{align*}
+While its phase $\phi=\alpha/k$ is calculated by
+\begin{align*}
+    \cos \alpha &= \frac{A}{\sqrt{A^2+B^2}}\\
+    \cos \alpha &= \frac{2}{\sqrt{13}}\\
+    \alpha &= \arccos(2/\sqrt{13})
+    \text{Since } & k=1 \\ 
+    \phi &= \arccos(2/\sqrt{13})
+\end{align*}
+Therefore the equation is $y=\sqrt{2}\sin\left(x+\phi\right)$ where $\phi=\arccos{2\sqrt{13}}$
+
+Since amplitude is $\sqrt{2}$, then its maximum value is $\sqrt{2}$
+
 \solution
+Since amplitude is $\sqrt{13}$, then its maximum value is $\sqrt{13}$
+
 \solution
+For $y=\sin x + \cos x$, compare with standard form $y=A\sin kx + B \cos kx$, we get values of $A=1$, $B=1$, and $k=1$
+
+To convert to the other standard form $y=a\sin k(x+\phi)$, we calculate its amplitude $a$ by
+\begin{align*}
+    a &= \sqrt{A^2+B^2}\\
+      &= \sqrt{1^2 + 1^2}\\
+      &= \sqrt{2}
+\end{align*}
+While its phase $\phi=\alpha/k$ is calculated by
+\begin{align*}
+    \cos \alpha &= \frac{A}{\sqrt{A^2+B^2}}\\
+    \cos \alpha &= \frac{1}{\sqrt{2}}\\
+        \alpha &= \pi/4\\
+    \text{Since } & k=1 \\ 
+        \phi &= \pi/4\\
+\end{align*}
+Therefore the equation is $y=\sqrt{2}sin\left(x+\pi/4\right)$
+
+Since amplitude is $\sqrt{2}$, then its maximum value is $\sqrt{2}$
+
 \solution
+For $y=\sin x - \cos x$, compare with standard form $y=A\sin kx + B \cos kx$, we get values of $A=1$, $B=1$, and $k=1$
+
+To convert to the other standard form $y=a\sin k(x-\beta)$, we calculate its amplitude by
+\begin{align*}
+    a &= \sqrt{A^2+B^2}\\
+      &= \sqrt{1^2 + 1^2}\\
+      &= \sqrt{2}
+\end{align*}
+While its phase $\beta=\alpha/k$ is calculated by
+\begin{align*}
+    \cos \alpha &= \frac{A}{\sqrt{A^2+B^2}}\\
+    \cos \alpha &= \frac{1}{\sqrt{2}}\\
+        \alpha &= \pi/4\\
+    \text{Since } & k=1 \\ 
+        \beta &= \pi/4
+\end{align*}
+Therefore the equation is $y=\sqrt{2}\sin\left(x-\pi/4\right)$
+
+Since amplitude is $\sqrt{2}$, then its maximum value is $\sqrt{2}$
+
 \solution
+For $y=4\sin x + 3\cos x$, compare with standard form $y=A\sin kx + B \cos kx$, we get values of $A=4$, $B=3$, and $k=1$
+
+To convert to the other standard form $y=a\sin k(x+\phi)$, we calculate its amplitude by
+\begin{align*}
+    a &= \sqrt{A^2+B^2}\\
+      &= \sqrt{4^2 + 3^2}\\
+      &= \sqrt{25}\\
+      &= 5
+\end{align*}
+While its phase $\phi=\alpha/k$ is calculated by
+\begin{align*}
+    \cos \alpha &= \frac{A}{\sqrt{A^2+B^2}}\\
+    \cos \alpha &= \frac{4}{5}\\
+    \alpha &= \arccos(\frac{4}{5})\\
+    \text{Since } & k=1 \\ 
+    \phi &= \arccos(\frac{4}{5})\\
+\end{align*}
+Therefore the equation is $y=5\sin\left(x+\phi\right)$ where $\phi=\arccos(4/5)$
+
+Since amplitude is 5, then its maximum value is 5
+
 \solution
+For $y=\sin 2x + 3\cos 2x$, compare with standard form $y=A\sin kx + B \cos kx$, we get values of $A=1$, $B=3$, and $k=2$
+
+To convert to the other standard form $y=a\sin k(x+\phi)$, we calculate its amplitude by
+\begin{align*}
+    a &= \sqrt{A^2+B^2}\\
+      &= \sqrt{1^2 + 3^2}\\
+      &= \sqrt{10}
+\end{align*}
+While its phase $\phi=\alpha/k$ is calculated by
+\begin{align*}
+    \cos \alpha &= \frac{A}{\sqrt{A^2+B^2}}\\
+    \cos \alpha &= \frac{1}{\sqrt{10}}\\
+    \alpha &= \arccos(1/\sqrt{10})\\
+    \text{Since } & k=2 \\ 
+    \phi &= \frac{1}{2}\arccos(\frac{1}{\sqrt{10}})\\
+\end{align*}
+Therefore the equation is $y=\sqrt{10}\sin\left(x+\phi\right)$ where $\phi = \frac{1}{2}\arccos(\frac{1}{\sqrt{10}})$
+
 \solution
+For $y=\sin(x-\pi/4)$, compare with standard form $y=a\sin k(x-\beta)$, we get values of $a=1$, $\beta=\pi/4$, and $k=1$
+
+To convert to the other standard form $y=A\sin kx - B \cos kx$, we need to solve for $A$ and $B$ using the definition $A=a\cos k\beta$ and $B=a\sin k\beta$
+\begin{align*}
+    A &= 1 \cos (\pi/4)\\
+      &= \frac{1}{\sqrt{2}}\\
+    B &= 1 \sin (\pi/4)\\
+      &= \frac{1}{\sqrt{2}}
+\end{align*}
+Therefore the equation is $y=\frac{1}{\sqrt{2}} \sin x - \frac{1}{\sqrt{2}i} \cos x $
+
 \solution
+For $y=4\sin(x+\pi/6)$, compare with standard form $y=a\sin k(x+\phi)$, we get values of $a=4$, $\phi=\pi/6$, and $k=2$
+
+To convert to the other standard form $y=A\sin kx + B \cos kx$, we need to solve for $A$ and $B$ using the definition $A=a\cos k\beta$ and $B=a\sin k\beta$
+\begin{align*}
+    A &= 4 \cos (2\pi/6)\\
+      &= 4 \times 1/2\\
+      &= 2\\
+    B &= 4 \sin (2\pi/6)\\
+      &= 4 \times \sqrt{3}/2\\
+      &= 2\sqrt{3}
+\end{align*}
+Therefore the equation is $y=  2\sin 2x + 2\sqrt{3} \cos 2x $
+
 \end{solutions}
 
 \begin{solutions}{Page 194}
 \solution
+\begin{subsolutions}
+
+\subsolution
+\begin{align*}
+    y&= 2\sin(x+\pi/6) + \cos(x+\pi/6)\\
+    y&= 2\left(\sin x \cos \pi/6 + \cos x \sin \pi/6 \right) + \left( \cos x \cos \pi/6 - \sin x \sin \pi/6 \right)\\
+    y&= 2\left(\frac{\sqrt{3}}{2}\sin x+ \frac{1}{2}\cos x \right) + \left(\frac{\sqrt{3}}{2} \cos x -\frac{1}{2} \sin x\right)\\
+    y&= \sqrt{3}\sin x + \cos x +\frac{\sqrt{3}}{2} \cos x -\frac{1}{2} \sin x\\
+    y&= \left(\sqrt{3} -\frac{1}{2} \right)\sin x + \left(1 + \frac{\sqrt{3}}{2}\right) \cos x
+\end{align*}
+
+\subsolution
+\begin{align*}
+    y&= 2\sin2(x+\pi/4) - \cos2(x+\pi/4)\\
+    y&= 2\sin(2x+\pi/2) - \cos(2x+\pi/2)\\
+    y&= 2\left(\sin 2x \cos \pi/2 + \cos 2x \sin \pi/2 \right) + \left( \cos 2x \cos \pi/2 - \sin 2x \sin \pi/2 \right)\\
+    y&= 2\left(\sin 2x \times 0 + \cos 2x \times 1\right) + \left( \cos 2x \times 0 - \sin 2x \times 1 \right)\\
+    y&= 2\cos 2x -\sin 2x\\
+    y&= -\sin 2x + 2\cos 2x
+\end{align*}
+\end{subsolutions}
+
 \solution
+\begin{subsolutions}
+\subsolution
+\begin{align*}
+    y_1 + y_1 &= 2\sin x + \sin (x-\pi/4)\\
+              &= 2\sin x + \left(\sin x  \cos \pi/4 - \cos x \sin \pi/4 \right)\\
+              &= 2\sin x + \frac{1}{\sqrt{2}}\sin x - \frac{1}{\sqrt{2}}\cos x\\
+              &= \left(2+ \frac{1}{\sqrt{2}} \right)\sin x - \frac{1}{\sqrt{2}} \cos x
+\end{align*}
+
+\subsolution
+The functions have different frequencies, which would need advanced mathematics topics such as Fourier Series
+\end{subsolutions}
 \end{solutions}
 
 \begin{solutions}{Page 196}
 \solution
+\[y=-x+\sin x \]
+\begin{tikzpicture}[xscale=0.5,yscale=0.5]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](-2.1*pi,-5.4) grid (2.1*pi,5.4);
+    \draw[->,thick] (-2.1*pi,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,5.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-5.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-5,-4,...,5}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=-2*pi:2*pi,samples=90] (\x,{-\x + sin(\x r))});
+\end{tikzpicture}
+
 \solution
+\[y=x^2+\sin x \]
+\begin{tikzpicture}[xscale=2,yscale=1]
+    \draw[help lines,xstep=pi/4,ystep=0.5,color=gray!50,dashed](-pi/2,0) grid (pi/2,2.4);
+    \draw[->,thick] (0,0)--(0.6*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(-0.6*pi,0);
+    \draw[->,thick] (0,0)--(0,2.5) node[right]{$y$};
+    %Draw marks on x axis
+    \draw [very thin,gray](-pi/2,-0.1)--(-pi/2,0.1) node[below right] at (-pi/2,-0.1) {-$\frac{\pi}{2}$};
+    \draw [very thin,gray](pi/2,-0.1)--(pi/2,0.1) node[below right] at (pi/2,-0.1) {$\frac{\pi}{2}$};
+    %Draw marks on y axis
+    \foreach \yticks in {1,2}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=-pi/2:pi/2,samples=90] (\x,{(\x)^2 + sin(\x r))});
+\end{tikzpicture}
+
 \solution
+\[y=x^2+\cos x \]
+Note this is an even function since $f(-x)=f(x)$
+
+\begin{tikzpicture}[xscale=2,yscale=1]
+    \draw[help lines,xstep=pi/4,ystep=0.5,color=gray!50,dashed](-pi/2,0) grid (pi/2,2.4);
+    \draw[->,thick] (0,0)--(0.6*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(-0.6*pi,0);
+    \draw[->,thick] (0,0)--(0,2.5) node[right]{$y$};
+    %Draw marks on x axis
+    \draw [very thin,gray](-pi/2,-0.1)--(-pi/2,0.1) node[below right] at (-pi/2,-0.1) {-$\frac{\pi}{2}$};
+    \draw [very thin,gray](pi/2,-0.1)--(pi/2,0.1) node[below right] at (pi/2,-0.1) {$\frac{\pi}{2}$};
+    %Draw marks on y axis
+    \foreach \yticks in {1,2}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=-pi/2:pi/2,samples=90] (\x,{(\x)^2 + cos((\x) r))});
+\end{tikzpicture}
+
 \solution
+\[y=x^3+\sin x \]
+\begin{tikzpicture}[xscale=2,yscale=0.5]
+    \draw[help lines,xstep=pi/4,ystep=1,color=gray!50,dashed](-pi/2,-5.4) grid (pi/2,5.4);
+    \draw[->,thick] (0,0)--(0.55*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(-0.55*pi,0);
+    \draw[->,thick] (0,0)--(0,5.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-5.5);
+    %Draw marks on x axis
+    \draw [very thin,gray](-pi/2,-0.1)--(-pi/2,0.1) node[below right] at (-pi/2,-0.1) {-$\frac{\pi}{2}$};
+    \draw [very thin,gray](pi/2,-0.1)--(pi/2,0.1) node[below right] at (pi/2,-0.1) {$\frac{\pi}{2}$};
+    %Draw marks on y axis
+    \foreach \yticks in {-5,-4,...,5}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=-pi/2:pi/2,samples=90] (\x,{(\x)^3 + sin(\x r))});
+\end{tikzpicture}
+
 \solution
+\[y=x^2+\frac{1}{10}\sin x \]
+\begin{tikzpicture}[xscale=2,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=0.5,color=gray!50,dashed](-pi/2,0) grid (pi/2,2.4);
+    \draw[->,thick] (0,0)--(0.6*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(-0.6*pi,0);
+    \draw[->,thick] (0,0)--(0,2.5) node[right]{$y$};
+    %Draw marks on x axis
+    \draw [very thin,gray](-pi/2,-0.1)--(-pi/2,0.1) node[below right] at (-pi/2,-0.1) {-$\frac{\pi}{2}$};
+    \draw [very thin,gray](pi/2,-0.1)--(pi/2,0.1) node[below right] at (pi/2,-0.1) {$\frac{\pi}{2}$};
+    %Draw marks on y axis
+    \foreach \yticks in {1,2}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=-pi/2:pi/2,samples=90] (\x,{(\x)^2 + 0.1*sin((10*\x) r))});
+\end{tikzpicture}
+
 \solution
+\[y=\cos x + \frac{1}{10}\sin 20x \]
+\begin{tikzpicture}[xscale=0.5,yscale=0.5]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](-2.1*pi,-2.4) grid (2.1*pi,2.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(-2.1*pi,0);
+    \draw[->,thick] (0,0)--(0,2.4) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-2.4);
+    %Draw marks on x axis
+    \foreach \i in {-2,-1,1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-2,-1,1,2}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=-2*pi:2*pi,samples=180] (\x,{cos (\x r) + 0.1*sin((20*\x) r))});
+\end{tikzpicture}
+
 \solution
+\[y=2\sin x + \frac{1}{10}\sin 20x \]
+\begin{tikzpicture}[xscale=0.5,yscale=0.5]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](-2.1*pi,-2.4) grid (2.1*pi,2.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(-2.1*pi,0);
+    \draw[->,thick] (0,0)--(0,2.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-2.5);
+    %Draw marks on x axis
+    \foreach \i in {-2,-1,1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-2,-1,1,2}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=-2*pi:2*pi,samples=90] (\x,{2*sin(\x r) + 0.1*sin((20*\x) r))});
+\end{tikzpicture}
 \end{solutions}
 
 \begin{solutions}{Page 197}
 \solution
+In $y=\sin 2x + \sin 3x$. The period of $\sin 2x$ has form of $m(2\pi/2)$, while the period of $\sin 3x$ has form of $n(2\pi/3)$.
+
+To be a period of both parts
+\begin{align*}
+    m\times \frac{2\pi}{2} &= n\times \frac{2\pi}{3}\\
+                         3m  &= 2n
+\end{align*}
+
+Using $m=2$ and $n=3$. the period of each part will be $2\pi$ radians
+
+\solution
+In $y=\sin 3x + \sin 6x$. The period of $\sin 3x$ has form of $m(2\pi/3)$, while the period of $\sin 6x$ has form of $n(2\pi/6)$.
+
+To be a period of both parts
+\begin{align*}
+    m\times \frac{2\pi}{3} &= n\times \frac{2\pi}{6}\\
+                         6m  &= 3n\\
+                         2m &= 1n
+\end{align*}
+
+Using $m=1$ and $n=2$. the period of each part will be $2\pi/3$ radians
+
+\solution
+In $y=\sin 4x + \sin 6x$. The period of $\sin 4x$ has form of $m(2\pi/4)$, while the period of $\sin 6x$ has form of $n(2\pi/6)$.
+
+To be a period of both parts
+\begin{align*}
+    m\times \frac{2\pi}{4} &= n\times \frac{2\pi}{6}\\
+                         6m  &= 4n\\
+                         3m &= 2n
+\end{align*}
+
+Using $m=2$ and $n=3$. the period of each part will be $\pi$ radians
+
 \solution
 \solution
-\solution
+In $y=\sin \sqrt{2}x + \sin 3\sqrt{2}x$. The period of $\sin \sqrt{2}x$ has form of $m(2\pi/\sqrt{2})$, while the period of $\sin 3\sqrt{2}x$ has form of $n(2\pi/3\sqrt{2})$.
+
+To be a period of both parts
+\begin{align*}
+    m\times \frac{2\pi}{\sqrt{2}} &= n\times \frac{2\pi}{3\sqrt{2}}\\
+                         3m &= 1n
+\end{align*}
+
+Using $m=1$ and $n=3$. the period of each part will be $2\pi/\sqrt{2}= \sqrt{2}\pi$ radians
 \end{solutions}
 
 \begin{solutions}{Page 199}
 \solution
+\[y=\sin x -\frac{1}{2}\sin 2x + \frac{1}{3} \sin 3x\]
+\begin{tikzpicture}[xscale=0.5,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](-2.1*pi,-1.4) grid (2.1*pi,1.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(-2.1*pi,0);
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {-2,-1,1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=-2*pi:2*pi,samples=90] (\x,{sin(\x r) - 0.5*sin((2*\x) r) +1/3*sin((3*\x) r))});
+\end{tikzpicture}
+
 \solution
+\[y=\sin x -\frac{1}{2}\sin 2x + \frac{1}{3} \sin 3x - \frac{1}{4} \sin 4x + \frac{1}{5}\sin 5x
+\]
+\begin{tikzpicture}[xscale=0.5,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](-2.1*pi,-1.4) grid (2.1*pi,1.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(-2.1*pi,0);
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {-2,-1,1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=-2*pi:2*pi,samples=90] (\x,{sin(\x r) - 0.5*sin((2*\x) r) +1/3*sin((3*\x) r)) - 1/4*sin((4*\x) r) + 1/5*sin((5*\x) r)});
+\end{tikzpicture}
+
 \solution
+The limit will be a sawtooth wave
+
+\begin{tikzpicture}[xscale=0.5,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](-2.1*pi,-1.4) grid (2.1*pi,1.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(-2.1*pi,0);
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {-2,-1,1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=-2*pi:2*pi,samples=90] (\x,{2*Mod((\x-pi/2)/pi,1)-1});
+\end{tikzpicture}
+
 \solution
+\[y=\cos x -\frac{1}{9}\cos 3x + \frac{1}{25} \cos 5x - \frac{1}{49} \cos 7x\] 
+
+\begin{tikzpicture}[xscale=0.5,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](-2.1*pi,-1.4) grid (2.1*pi,1.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$t$};
+    \draw[->,thick] (0,0)--(-2.1*pi,0);
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {-2,-1,1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=-2*pi:2*pi,samples=90] (\x,{cos (\x r)+ 1/9*cos((3*\x) r)+ 1/25*cos((5*\x) r)+ 1/49*cos((7*\x) r)});
+\end{tikzpicture}
+
+Therefore, the limiting function is the triangular function
+
+\begin{tikzpicture}[xscale=0.5,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](-2.1*pi,-1.4) grid (2.1*pi,1.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(-2.1*pi,0);
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {-2,-1,1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=-2*pi:0,samples=90] (\x,{abs((\x+pi)/(pi/2))-1});
+    \draw[red]plot[domain=0:2*pi,samples=90] (\x,{abs((\x-pi)/(pi/2))-1});
+\end{tikzpicture}
+
 \end{solutions}
 
 \begin{solutions}{Page 200}
 \solution
+The graph will be 
+
+\begin{tikzpicture}[xscale=1,yscale=1]
+    \draw[help lines,xstep=1,ystep=1,color=gray!50,dashed](0,0) grid (2.1*pi,1.4);
+    \draw[->,thick] (0,0)--(6.5,0) node[right]{$t$};
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    %Draw marks on x axis
+    \foreach \i in {1,2,3,4,5,6}
+    \draw [very thin,gray](\i,-0.1)--(\i,0.1) node[below] at (\i,-0.1) {$\i$};
+    %Draw marks on y axis
+    \foreach \yticks in {1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:2,samples=90] (\x,{-abs(\x-1)+1});
+    \draw[red]plot[domain=2:4,samples=90] (\x,{-abs(\x-3)+1});
+    \draw[red]plot[domain=4:6,samples=90] (\x,{-abs(\x-5)+1});
+\end{tikzpicture}
+
 \solution
+The graph will be 
+
+\begin{tikzpicture}[xscale=1,yscale=1]
+    \draw[help lines,xstep=1,ystep=1,color=gray!50,dashed](0,-1.4) grid (2.1*pi,1.4);
+    \draw[->,thick] (0,0)--(6,0) node[right]{$t$};
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2,3,4,5,6}
+    \draw [very thin,gray](\i,-0.1)--(\i,0.1) node[below] at (\i,-0.1) {$\i$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:3,samples=90] (\x,{-abs(\x-1)+1});
+    \draw[red]plot[domain=3:6,samples=90] (\x,{-abs(\x-5)+1});
+\end{tikzpicture}
+
 \solution
+The graph will be 
+
+\begin{tikzpicture}[xscale=0.25,yscale=0.25]
+    \draw[help lines,xstep=8,ystep=8,color=gray!50,dashed](0,0) grid (32,8);
+    \draw[->,thick] (0,0)--(32.5,0) node[right]{$t$};
+    \draw[->,thick] (0,0)--(0,8.5) node[right]{$y$};
+    %Draw marks on x axis
+    \foreach \i in {8,16,24,32}
+    \draw [very thin,gray](\i,-0.1)--(\i,0.1) node[below] at (\i,-0.1) {$\i$};
+    %Draw marks on y axis
+    \draw [very thin,gray](-0.1,8)--(0.1,8) node[left] at (0,8) {$8$};
+    %Draw the curve
+    \draw[red]plot[domain=0:8,samples=90] (\x,\x);
+    \draw[red]plot[domain=8:16,samples=90] (\x,8);
+    \draw[red]plot[domain=16:24,samples=90] (\x,-\x+24);
+    \draw[red]plot[domain=24:32,samples=90] (\x,0);
+\end{tikzpicture}
+
 \solution
+The graph will be 
+
+\begin{tikzpicture}[xscale=0.25,yscale=0.125]
+    \draw[help lines,xstep=6,ystep=10,color=gray!50,dashed](0,0) grid (24,40);
+    \draw[->,thick] (0,0)--(24.5,0) node[right]{$t$};
+    \draw[->,thick] (0,0)--(0,40.5) node[right]{$y$};
+    %Draw marks on x axis
+    \foreach \i in {6,12,18,24}
+    \draw [very thin,gray](\i,-0.1)--(\i,0.1) node[below] at (\i,-0.1) {$\i$};
+    %Draw marks on y axis
+    \foreach \yticks in {4,40}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red](0,4)--(1,7)--(2,13)--(3,22)--(4,31)--(5,37)--(6,40);
+    \draw[red](6,40)--(7,37)--(8,31)--(9,22)--(10,13)--(11,7)--(12,4);
+    \draw[red](12,4)--(13,7)--(14,13)--(15,22)--(16,31)--(17,37)--(18,40);
+    \draw[red](18,40)--(19,37)--(20,31)--(21,22)--(22,13)--(23,7)--(24,4);
+\end{tikzpicture}
+
+Tide is rising fastest at 3rd, 4th, 15th, and 16th hour 
+
+Tide is receding fastest at 9th, 10th, 21st, and 22nd hour 
+
+Tide is rising slowest at 1st, 5th, 13th and 17th hour 
+
+Tide is receding slowest at 7th, 11th, 19th and 23rd hour 
+
 \end{solutions}
 
 \begin{solutions}{Page 203}
 \solution
+Substituing $x$ values
+\begin{itemize}
+    \item $\sin \pi=0$
+    \item $\sin 2\pi=0$
+    \item $\sin 3\pi=0$
+    \item $\sin 4\pi=0$
+\end{itemize}
+
 \solution
+For $y=\sin 4\pi x$, the value of $k$ is $k=4\pi$, therefore the period is $\frac{2\pi}{4\pi}$, so the period is $\frac{1}{2}$
+
 \solution
+Since period is $\frac{2\pi}{k}$, if period is 3
+\begin{align*}
+    3 &= \frac{2\pi}{k}\\
+    k &= \frac{2\pi}{3}
+\end{align*}
+Therefore the equation is $y=\sin \frac{2\pi}{3}x$
+
 \solution
+Since period is $\frac{2\pi}{k}$, if period is 2
+\begin{align*}
+    2 &= \frac{2\pi}{k}\\
+    k &= \frac{2\pi}{2}
+\end{align*}
+Therefore the equation is $y=\sin \pi x$
+
 \solution
+Since period is $\frac{2\pi}{k}$, if period is $n$
+\begin{align*}
+    n &= \frac{2\pi}{k}\\
+    k &= \frac{2\pi}{n}
+\end{align*}
+Therefore the equation is $y=\sin \frac{2\pi}{n} x$
 \end{solutions}
 
 \begin{solutions}{Page 205}
 \solution
-\solution
-\solution
-\end{solutions}
+The period is estimated to be 12 months by distance between peaks at $t=8$ and $t=20$. Therefore the value for $k$ is $k=2\pi/20$
 
+The amplitude is estimated to be mid-way between peak (15) and trough (9.5), which is $(15-9.5)/2 =2.75 $
+
+Therefore the equation is $y=2.75 \sin \frac{\pi}{10}(x-\pi)$
+
+\solution
+If (a) is in northern hemisphere, (b) and (c) would be in northern hemisphere too as the peaks occur at similar month. (d) would be in southern hemispehere as the wave is shifted by half-period
+
+\solution
+For all graphs, the 'average' number of daylight hours occur at month 4, month 10, month 16, and month 22
+\end{solutions}
 
 \section*{Chapter 9: Inverse Functions and Trigonometric Equations}
 
