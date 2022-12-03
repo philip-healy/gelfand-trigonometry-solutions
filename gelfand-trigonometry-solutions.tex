@@ -1732,7 +1732,7 @@ Because $420\degree = 360\degree + 60\degree$, a point rotated through an angle 
 
 \begin{solutions}{Page 100}
 \solution %1
-$400\degree = 360\degree + 40\degree$, so $P$ will be in the first quadrant.
+$400\degree = 360\degree + 40\degree$, so $P$ will lie in the first quadrant.
 
 $3600\degree = 10 \cdot 360\degree + 0\degree$, so $P$ will lie in the first quadrant (on the positive x-axis).
 
@@ -1783,6 +1783,8 @@ $\sin{480\degree}$
 \egroup
 \end{center}
 
+From the table, we can see that $\sin\left(-\alpha\right)=-\sin{\alpha}$.
+
 \solution %3
 \begin{subsolutions}
 \subsolution %a
@@ -1798,7 +1800,7 @@ $\sin{480\degree}$
 \sin{\alpha}=1 \implies \alpha=90\degree
 \]
 \subsolution %d
-$\cos{\alpha}=1$ is true for $\alpha=0\degree$ and $\alpha=360\degree$, but these are outside the interval $0 < \alpha < 360\degree$.
+$\cos{\alpha}=1$ is true for $\alpha=0\degree$ and $\alpha=360\degree$, but these are not in the interval $0 < \alpha < 360\degree$.
 \subsolution %e
 \[
 \sin{\alpha}=-1 \implies \alpha=270\degree
@@ -1829,7 +1831,8 @@ If $\sin{\alpha}=-5/13$, then $\alpha$ can lie in either the third or fourth qua
 
 \end{subsolutions}
 
-\solution %5
+\solution ~ %5
+\begin{center}
 \begin{tikzpicture}
 \def\rad{1.5};
 \def\fac{1.5};
@@ -1843,11 +1846,10 @@ If $\sin{\alpha}=-5/13$, then $\alpha$ can lie in either the third or fourth qua
 \draw[fill=black] (\ang:\rad) circle [radius=0.05] node[above left] {$P=(a,b)$};
 \draw [-latex,domain=0:\ang] plot ({0.5*cos(\x)}, {0.5*sin(\x)});
 \node[above right] at (\ang/2:0.5) {$\theta$};
-
-
 \end{tikzpicture}
+\end{center}
 
-Let $P = (a,b)$ be a point on the coordinate plane. Since $a^2+b^2=1$, $P$ lies on a circle of radius 1 centered at the origin (\textit{the unit circle}). Consider an angle between the positive x-axis and the line segment connecting $P$ to the origin, and call this angle $\theta$. By the extended definitions of the sine and cosine functions, $\sin{\theta} = b$ and $\cos{\theta} = a$.
+Let $P = (a,b)$ be a point on the coordinate plane. Since $a^2+b^2=1$, $P$ lies on a circle of radius 1 centered at the origin (\textit{the unit circle}). Consider an angle $\theta$ between the positive x-axis and the line segment connecting $P$ to the origin. By the extended definitions of the sine and cosine functions, $\sin{\theta} = b$ and $\cos{\theta} = a$.
 \end{solutions}
 
 \begin{solutions}{Page 102}
@@ -1915,8 +1917,9 @@ so $h\left(x\right)$ is odd.
 
 For any function $f\left(x\right)$,
 \[
-f\left(x\right) = \dfrac{1}{2}\left[f\left(x\right) + f\left(-x\right)\right] + \dfrac{1}{2}\left[f\left(x\right) - f\left(-x\right)\right] = g\left(x\right) + h\left(x\right)
+f\left(x\right) = \dfrac{1}{2}\left[f\left(x\right) + f\left(-x\right)\right] + \dfrac{1}{2}\left[f\left(x\right) - f\left(-x\right)\right] = g\left(x\right) + h\left(x\right),
 \]
+so $f\left(x\right)$ can be written as the sum of an even function and an odd function.
 
 \solution %3
 Following the notation of the previous question, we denote the even part of $f\left(x\right)$ as $g\left(x\right)$ and the odd part of $f\left(x\right)$ as $h\left(x\right)$.
@@ -1934,13 +1937,13 @@ g\left(x\right)=x^{2}+1, h\left(x\right)=x^{3}+x
 \]
 
 \subsolution %c
-Applying the result from the previous problem,
+Applying the result from the previous exercise,
 \[
 g\left(x\right)=\dfrac{1}{2}\left(2^{x}+2^{-x}\right), h\left(x\right)=\dfrac{1}{2}\left(2^{x}-2^{-x}\right)
 \]
 
 \subsolution %d
-Applying the result from the previous problem,
+Applying the result from the previous exercise,
 \[
 g\left(x\right)=\dfrac{1}{2}\left(\dfrac{1-\sin{x}}{1+\sin{x}} + \dfrac{1+\sin{x}}{1-\sin{x}}\right) = \dfrac{1}{2}\left(\dfrac{2+2\sin^{2}{x}}{1-\sin^{2}{x}}\right) = \dfrac{1+\sin^{2}{x}}{1-\sin^{2}{x}}
 \]
@@ -1949,7 +1952,7 @@ h\left(x\right)=\dfrac{1}{2}\left(\dfrac{1-\sin{x}}{1+\sin{x}} - \dfrac{1+\sin{x
 \]
 
 \subsolution %e
-Applying the result from the previous problem,
+Applying the result from the previous exercise,
 \[
 g\left(x\right)=\dfrac{1}{2}\left(\dfrac{1}{x+2} + \dfrac{1}{-x+2}\right)=\dfrac{1}{2}\left(\dfrac{4}{4-x^2}\right) = \dfrac{2}{4-x^2}
 \]
@@ -1965,72 +1968,623 @@ h\left(x\right)=\dfrac{1}{2}\left(\dfrac{1}{x+2} - \dfrac{1}{-x+2}\right)=\dfrac
 \section*{Chapter 5: Radian Measure}
 
 \begin{solutions}{Page 107}
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
+\solution %1
+$180\degree$ is equal to $\pi$ radians. $90\degree$ is equal to $\pi/2$ radians.
+
+\solution %2
+$2$ radians is equal to $360\degree/\pi \approx 114.6\degree$.
+
+\solution %3
+Since a full rotation is $2\pi$ radians, a quarter rotation is $\pi/2$ radians.
+
+\solution %4
+$45\degree$ is equal to $\pi/4$ radians.
+
+\solution ~%5
+\begin{center}
+\bgroup
+\def\arraystretch{2.1}
+\setlength\tabcolsep{15pt}
+\begin{tabular}{ |c|c| }
+\hline
+Degree Measure
+& Radian Measure\\
+\hline
+$90$
+& $\mathbf{\pi / 2}$\\
+\hline
+$180$
+& $\mathbf{\pi}$\\
+\hline
+$270$
+& $\mathbf{3\pi / 2}$\\
+\hline
+$360$
+& $\mathbf{2\pi}$\\
+\hline
+$\mathbf{90}$
+& $\pi / 2$\\
+\hline
+$\mathbf{180}$
+& $\pi$\\
+\hline
+$\mathbf{270}$
+& $3\pi / 2$\\
+\hline
+$\mathbf{360}$
+& $2\pi$\\
+\hline
+\end{tabular}
+\egroup
+\end{center}
+
+\solution ~%6
+\begin{center}
+\bgroup
+\def\arraystretch{2.1}
+\setlength\tabcolsep{15pt}
+\begin{tabular}{ |c|c| }
+\hline
+Degree Measure
+& Radian Measure\\
+\hline
+$0$
+& $\mathbf{0}$\\
+\hline
+$30$
+& $\mathbf{\pi/6}$\\
+\hline
+$72$
+& $\mathbf{2\pi / 5}$\\
+\hline
+$120$
+& $\mathbf{2\pi/3}$\\
+\hline
+$135$
+& $\mathbf{3\pi / 4}$\\
+\hline
+$\mathbf{30}$
+& $\pi/6$\\
+\hline
+$\mathbf{36}$
+& $\pi / 5$\\
+\hline
+$\mathbf{45}$
+& $\pi/4$\\
+\hline
+$\mathbf{60}$
+& $\pi/3$\\
+\hline
+$\mathbf{120}$
+& $2\pi/3$\\
+\hline
+$\mathbf{126}$
+& $7\pi/10$\\
+\hline
+\end{tabular}
+\egroup
+\end{center}
+
+\begin{center}
+\bgroup
+\def\arraystretch{2.1}
+\setlength\tabcolsep{15pt}
+\begin{tabular}{ |c|c| }
+\hline
+Degree Measure
+& Radian Measure\\
+\hline
+$198$
+& $\mathbf{11\pi/10}$\\
+\hline
+$210$
+& $\mathbf{7\pi/6}$\\
+\hline
+$216$
+& $\mathbf{6\pi / 5}$\\
+\hline
+$225$
+& $\mathbf{5\pi/4}$\\
+\hline
+$240$
+& $\mathbf{4\pi / 3}$\\
+\hline
+$\mathbf{198}$
+& $11\pi/10$\\
+\hline
+$\mathbf{200}$
+& $10\pi / 9$\\
+\hline
+$\mathbf{210}$
+& $7\pi/6$\\
+\hline
+$\mathbf{216}$
+& $6\pi/5$\\
+\hline
+$\mathbf{225}$
+& $5\pi/4$\\
+\hline
+$\mathbf{240}$
+& $4\pi/3$\\
+\hline
+\end{tabular}
+\egroup
+\end{center}
+
+\solution %7
+$1$ degree is equal to $\pi/180$ radians.
+
+\solution %8
+$\sin{1} \approx 0.8415$, $\sin{1\degree} \approx 0.0175$.
+
+\solution ~%9
+\begin{center}
+\bgroup
+\def\arraystretch{2.1}
+\setlength\tabcolsep{15pt}
+\begin{tabular}{ |c|c|c| }
+\hline
+$\alpha$ (in radian)
+& $\sin{\alpha}$
+& $\cos{\alpha}$\\
+\hline
+$\pi / 6$
+& $1/2$
+& $\sqrt{3}/2$\\
+\hline
+$\pi / 3$
+& $\sqrt{3}/2$
+& $1/2$\\
+\hline
+$\pi / 2$
+& $1$
+& $0$\\
+\hline
+$2\pi / 3$
+& $\sqrt{3}/2$
+& $-1/2$\\
+\hline
+$7\pi / 6$
+& $-1/2$
+& $-\sqrt{3}/2$\\
+\hline
+$5\pi / 4$
+& $-\sqrt{2}/2$
+& $-\sqrt{2}/2$\\
+\hline
+$3\pi / 2$
+& $-1$
+& $0$\\
+\hline
+$11\pi / 6$
+& $-1/2$
+& $\sqrt{3}/2$\\
+\hline
+\end{tabular}
+\egroup
+\end{center}
+
+\solution %10
+In a circle of radius 1, the length of an arc cut off by a central angle of $t$ radians is $t$ (i.e., the length of the arc is equal to the measure of the central angle in radians).
+
+\solution %11
+In a circle of radius 3, the length of an arc cut off by a central angle of $t$ radians is $3t$ (i.e., the length of the arc is triple the measure of the central angle in radians).
+
+\solution %12
+Using the fact that sine and cosine are cofunctions (see Section 4 of Chapter 1),
+\[
+\sin{\dfrac{\pi}{9}} = \cos\left(\dfrac{\pi}{2}-\dfrac{\pi}{9}\right) = \cos{\dfrac{7\pi}{18}},
+\]
+so $\alpha = 7\pi / 18$.
+
+\solution %13
+Again, invoking the properties of cofunctions, we know that $\sin{\alpha} = \cos\left(\pi/2 - \alpha\right)$.
+
+\solution ~ %14
+\begin{center}
+\begin{tikzpicture}
+\def\rad{3}
+\draw (0,0) circle [radius=\rad];
+\draw (-\rad,0) -- (\rad,0);
+\draw (120:\rad) -- (300:\rad);
+\draw (60:\rad) -- (240:\rad);
+\draw (0:\rad) -- (60:\rad) -- (120:\rad) -- (180:\rad) -- (240:\rad) -- (300:\rad) -- (0:\rad);
+\node[below left=0.15cm] at (0,0) {$O$};
+\node[right] at (\rad,0) {$A$};
+\node[above right] at (60:\rad) {$B$};
+\node[above left] at (120:\rad) {$C$};
+\node[left] at (180:\rad) {$D$};
+\node[below left] at (240:\rad) {$E$};
+\node[below right] at (300:\rad) {$F$};
+\end{tikzpicture}
+\end{center}
+
+In the diagram above, we place the six points $A$ through $F$ so that they are equally spaced across the circle $O$. This means that adjacent points on the circle are separated by $360\degree / 6 = 60\degree$. Focusing on $\triangle{AOB}$, we notice that this triangle is isosceles because $AO$ and $BO$ are both equal to the radius of the circle. This implies that $\angle{OAB}$ is congruent to $\angle{OBA}$. Because the three angles in a triangle total to $180\degree$, we have that
+\[
+m\angle{AOB} = m\angle{OAB} =  m\angle{OBA} = 60\degree.
+\]
+In other words, $\triangle{AOB}$ is an equilateral triangle. This means that the side $AB$ is equal to the radius of $O$. Therefore, the arc that is intercepted by the chord $AB$ must be longer than the radius of $O$ because the shortest path between two points is a straight line. This implies that the central angle $\angle{AOB}$ is greater than 1 radian. Since $\angle{AOB}$ is a $60\degree$ angle, we have shown that $60\degree$ is greater than $1$ radian.
 \end{solutions}
 
 \begin{solutions}{Page 111}
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
+\solution %1
+5 radians
+
+\solution %2
+\[
+5\text{ rad} \cdot \dfrac{180\degree}{\pi\text{ rad}}  = \dfrac{900\degree}{\pi}
+\]
+
+\solution %3
+4 feet
+
+\solution %4
+\[
+120\degree \cdot \dfrac{2\pi\left(1\text{ feet}\right)}{360\degree} = \dfrac{2}{3}\pi \text{ feet}
+\]
+
+\solution %5
+In a circle with radius $1$, the length of an arc cut off by an angle with radian measure $\alpha$ is $\alpha$. Thus, if the angle is $1/2$ radians, then the length of the corresponding arc is $1/2$. Similarly, if the angle is $\pi/2$ radians, then the length of the corresponding arc is $\pi/2$.
+
+\solution %6
+\begin{itemize}
+    \item $720\degree = 4\pi$ radians
+    \item $1440\degree = 8\pi$ radians
+    \item $3600\degree = 20\pi$ radians
+    \item $15120\degree = 84\pi$ radians
+    \item $12\pi \text{ radians} = 2160\degree$
+    \item $15\pi \text{ radians} = 2700\degree$
+    \item $100\pi \text{ radians} = 18000\degree$
+\end{itemize}
+
+\solution %7
+In a circle with radius $3$, the length of an arc cut off by an angle with radian measure $\alpha$ is $3\alpha$. Thus, if the angle is $1/2$ radians, then the length of the corresponding arc is $3/2$. Similarly, if the angle is $\pi/2$ radians, then the length of the corresponding arc is $3\pi/2$.
+
+\solution %8
+\[
+3 \cdot 1.5 = 4.5
+\]
+
+\solution %9
+\[
+80\degree \cdot \dfrac{2\pi\left(5\right)}{360\degree} = \dfrac{20}{9}\pi
+\]
+
+\solution %10
+\[
+\dfrac{3}{2} = 1.5\text{ radians}
+\]
+
+\solution %11
+\[
+\dfrac{2}{6} \cdot \dfrac{180\degree}{\pi} = \dfrac{60\degree}{\pi}
+\]
+
+\solution %12
+\[
+\dfrac{20}{7}
+\]
+
+\solution %13
+\[
+150\degree \cdot \dfrac{2\pi\left(8\right)}{360\degree} = \dfrac{20}{3}\pi
+\]
+
+\solution %14
+In twelve hours, the hour hand makes a complete rotation around the watch face (e.g., 12:00 AM to 12:00 PM), so in one hour, the hour hand makes $1/12$ of a full rotation. Because the hands of a clock rotate in a clockwise sense, the angle of rotation will be negative. Thus, the angle through which the hour hand rotates in one hour is
+\[
+-\dfrac{1}{12} \cdot 2\pi = -\dfrac{\pi}{6}.
+\]
+
+\solution %15
+In one hour, the minute hand makes one complete rotation around the watch face, so it rotates through an angle of $-2\pi$. In the same time, the second hand makes 60 complete rotations around the watch face since it completes one rotation in one minute. Therefore, the second hand rotates through an angle of $-60 \cdot 2\pi = -120\pi$.
+
+\solution %16
+Because the hands of a watch travel clockwise, Joe's angle should be negative since counterclockwise rotations are positive by convention.
+
+\solution %17
+\[
+\dfrac{1000 \text{ in.}}{2\pi \text{ in.}} \approx 159.2
+\]
+This trip consists of about 159 full rotations of the hour hand. Multiplying by 12 gives the number of hours the trip takes.
+\[
+\dfrac{1000}{2\pi} \cdot 12\text{ hours} \approx 1910\text{ hours}
+\]
+
+\solution %18
+The angular speed of the hour hand on a pocket watch and the hour hand on Big Ben should be the same because in one hour, the hour hand travels the same angular distance on both clocks. Since in both this exercise and the previous exercise the clocks are traveling through an angle of 1000 radians, both trips should take the same length of time: 1910 hours.
+
+\solution %19
+The wheel turns $2\pi$ radians before the spoke returns to the same position. After the wheel turns $\pi$ radians, the spoke will go from pointing vertically downwards to pointing vertically upwards. 
+
+\solution %20
+\begin{subsolutions}
+\subsolution %a
+$2\pi$ meters
+\subsolution %b
+$2\pi$ radians
+\subsolution %c
+Not more than once. Suppose we have a red dot and a blue dot coinciding. When they next coincide, the distance between the two coincidences will be equal to $3n$ (measuring using the gaps between red dots) or $2\pi m$ (measuring using the gaps between blue dots), where $n$ and $m$ are positive integers. Because these are two equivalent ways to measure the same distance, we can say that $3n = 2\pi m$. Solving for $\pi$, we find that $\pi = \tfrac{3n}{2m}$. However, this is not possible as $\pi$ is irrational, so it cannot be expressed as the ratio of integers. This contradiction means that if a red dot and blue dot do coincide, then they cannot coincide again.
+
+\subsolution ~ %d
+\begin{center}
+\begin{tikzpicture}
+\def\rad{2}
+\def\ang{16.2}
+\def\t{0.05}
+\draw (0,0) circle [radius=\rad];
+\path [fill=blue] (87:\rad) circle [radius=\t];
+\foreach \x in {0,...,22}
+    \path [fill=red] (20+\x*\ang:\rad) circle [radius=\t];
+\end{tikzpicture}
+\end{center}
+
+Let's consider how the red marks hit the wheel as it rolls. Hitting three red marks in a row corresponds to traveling 6 meters (count the space in between the marks). Because the radius of the wheel is 1 meter, when the wheel hits a triple of red marks, the last mark will hit the wheel in a position that is 6 radians ahead of the position where the first mark was hit. Alternatively, we can say that the last mark hits the wheel in a position that is $2\pi - 6$ radians \textit{behind} the position of the first mark. In the above diagram, the red marks are separated by $2\pi-6$ radians, so they represent the positions of every other red mark that hits the wheel in some period of time. Notice that the position of the red marks on the wheel implies that the blue mark cannot be more than $2\pi-6$ radians away from a red mark. This means that no matter how far the wheel travels, the blue mark will eventually be placed within $2\pi-6$ meters of a red mark.
+
+\subsolution %e
+We assume that the blue dot and red dot coincide to begin with. 100 rotations corresponds to the wheel travelling $200\pi$ meters. Notice that $200\pi \approx 209 \cdot 3 + 1.3$. Because $\tfrac{1}{4} \cdot 3 < 1.3 < \tfrac{1}{2} \cdot 3$, the blue dot will be between two pink dots: one of the pink dots will be at the midpoint of two red dots, and the second pink dot will be directly behind the first.
+\end{subsolutions}
 \end{solutions}
 
 \begin{solutions}{Page 114}
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
+\solution %1
+Radian mode
+\solution %2
+\begin{align*}
+0.2 - \sin{0.2} &\approx 1.33 \times 10^{-3} \\
+0.15 - \sin{0.15} &\approx 5.62 \times 10^{-4} \\
+0.05 - \sin{0.05} &\approx 2.08 \times 10^{-5}
+\end{align*}
+In each case, $x > \sin{x}$.
+
+\solution %3
+\begin{align*}
+\left(0.2 - \dfrac{0.2^{3}}{6}\right) - \sin{0.2} &\approx -2.66 \times 10^{-6} \\
+\left(0.15 - \dfrac{0.15^{3}}{6}\right) - \sin{0.15} &\approx -6.32 \times 10^{-7} \\
+\left(0.05 - \dfrac{0.05^{3}}{6}\right) - \sin{0.05} &\approx -2.60 \times 10^{-9}
+\end{align*}
+
+\solution %4
+\[
+\dfrac{10\degree}{60\degree}  - \sin{10\degree} \approx -6.98 \times 10^{-3}
+\]
+
+\solution %5
+\begin{subsolutions}
+\subsolution %a
+\[
+\sin{0.1} \approx 0.1 - \dfrac{0.1^{3}}{6} = \dfrac{1}{10} - \dfrac{1}{6000} = \dfrac{599}{6000}
+\]
+Error: $\sin{0.1}$ is greater than $599/6000$ by $8.33 \times 10^{-8}$.
+
+\subsolution %b
+\[
+\sin{0.1\degree} = \sin{\dfrac{\pi}{1800}} \approx  \dfrac{\pi}{1800} \approx \dfrac{3.14}{1800} = \dfrac{157}{90000}
+\]
+Error: $\sin{0.1\degree}$ is greater than $157/90000$ by $8.84 \times 10^{-7}$.
+\end{subsolutions}
+
+\solution %6
+\begin{subsolutions}
+\subsolution %a
+\[
+\sin{1000\degree} \approx -0.9848
+\]
+\subsolution %b
+\[
+\sin{1000} \approx 0.8269
+\]
+\end{subsolutions}
+
+\solution %7
+\begin{subsolutions}
+\subsolution %a
+\[
+\sin\left(\sin{1000}\right) \approx 0.7358
+\]
+\subsolution %b
+\[
+\sin{3.14} \approx 0.0016
+\]
+\end{subsolutions}
+
+\solution %8
+Let $\varepsilon = \pi/2 - 1.5707 \approx 9.6 \times 10^{-5}$.
+\[
+\cos{1.5707} = \cos\left(\dfrac{\pi}{2}-\varepsilon\right) = \sin{\varepsilon} < \varepsilon < 0.0001
+\]
 \end{solutions}
 
 \begin{solutions}{Page 116}
-\solution
+\solution %1
+In parts (a) and (b), we refer to the approximation $\cos{x} \approx 1 - \tfrac{1}{2}x^{2}$. This approximation can be derived from the approximation $\sin{x} \approx x$ using the identity $\sin^{2}{x} + \cos^{2}{x} = 1$. Let us suppose that $x$ is a positive angle close to zero. Replacing $\sin{x}$ with $x$ in the aforementioned identity, we get $\cos{x} \approx \sqrt{1 - x^{2}}$. Using the binomial approximation, $\left(1 + z\right)^{\alpha} \approx 1 + \alpha z$, we arrive at the desired approximation for $\cos{x}$:
+\[
+\cos{x} \approx \sqrt{1-x^{2}} = \left[1 + \left(-x^{2}\right) \right]^{1/2} \approx 1-\dfrac{1}{2}x^{2}.
+\]
+\begin{subsolutions}
+\subsolution %a
+$\sin{7\pi / 5}$ is negative because $\pi < 7\pi / 5 < 2\pi$. Using the approximation $\cos{x} \approx 1 - \tfrac{1}{2}x^{2}$, 
+\[
+\sin{\dfrac{7\pi}{5}} = -\sin{\dfrac{2\pi}{5}} = -\sin\left(\dfrac{\pi}{2}-\dfrac{\pi}{10}\right) = -\cos{\dfrac{\pi}{10}} \approx \dfrac{1}{2}\left(\dfrac{\pi}{10}\right)^{2} - 1 \approx \dfrac{1}{20} - 1 = -0.95.
+\]
+
+\subsolution %b
+$\sin{-3\pi / 7}$ is negative because $-\pi < -3\pi / 7 < 0$. Using the approximation $\cos{x} \approx 1 - \tfrac{1}{2}x^{2}$, 
+\[
+\sin{\dfrac{-3\pi}{7}} = -\sin{\dfrac{3\pi}{7}} = -\sin\left(\dfrac{\pi}{2}-\dfrac{\pi}{14}\right) = -\cos{\dfrac{\pi}{14}} \approx \dfrac{1}{2}\left(\dfrac{\pi}{14}\right)^{2} - 1 \approx \dfrac{1}{40} - 1 = -0.975
+\]
+
+\subsolution %c
+By symmetry, $\sin\left(\pi - \pi/6\right) = \sin{5\pi/6} = 1/2$. By periodicity, $\sin\left(2\pi+\pi/6\right) = \sin{13\pi/6} = 1/2$. In general, $\sin{x}=1/2$ when $x=\pi/6 + 2\pi n$ or $x=5\pi/6 + 2\pi n$, where $n$ is an integer.
+
+\subsolution %d
+$x=\pi/12$, $x=\pi - \pi/12 = 11\pi/12$, $x=2\pi + \pi/12 = 25\pi/12$.
+
+\subsolution %e
+Notice that $\sin{\pi/4} = \sqrt{2}/2 \approx 0.70$ and $\sin{\pi/3} = \sqrt{3}/2 \approx 0.85$. Taking a weighted average, we can estimate that the sine of
+\[
+\dfrac{1}{3} \cdot \dfrac{\pi}{4} + \dfrac{2}{3} \cdot
+\dfrac{\pi}{3} = \dfrac{11\pi}{36}
+\]
+is approximately $0.8$. Then, based on the properties of the sine function, $25\pi/36$ and $83\pi/36$ should also have sines of approximately 0.8.
+\end{subsolutions}
+
 \end{solutions}
 
 \begin{solutions}{Page 120}
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\end{solutions}
+\solution ~%1
+\begin{center}
+\bgroup
+\def\arraystretch{2.1}
+\setlength\tabcolsep{15pt}
+\begin{tabular}{ |c|c|c| }
+\hline
+$\alpha$ (radians)
+& $\alpha$ (degrees)
+& $\sin{\alpha}$\\
+\hline
+$1$
+& $57.29578$
+& $0.84147$\\
+\hline
+$0.5$
+& $28.64789$
+& $0.47943$\\
+\hline
+$0.2$
+& $11.45916$
+& $0.19867$\\
+\hline
+$0.1$
+& $5.729578$
+& $0.09983$\\
+\hline
+$0.01$
+& $0.5729578$
+& $0.0099998$\\
+\hline
+$0.02$
+& $1.145916$
+& $0.019999$\\
+\hline
+$0.001$
+& $0.05729578$
+& $0.0009999998$\\
+\hline
+$0.002$
+& $0.1145916$
+& $0.001999999$\\
+\hline
+$0.005$
+& $0.2864789$
+& $0.00499998$\\
+\hline
+\end{tabular}
+\egroup
+\end{center}
 
+\solution %2
+\[
+\sin{0.00123456} \approx 0.00123456
+\]
+This is an overestimate.
+
+\solution %3
+\begin{subsolutions}
+\subsolution ~%a
+\begin{center}
+\bgroup
+\def\arraystretch{2.1}
+\setlength\tabcolsep{15pt}
+\begin{tabular}{ |c|c|c| }
+\hline
+$\alpha$
+& $\alpha - \alpha^{3}/6$
+& $\sin{\alpha}$\\
+\hline
+$1$
+& $0.83333$
+& $0.84147$\\
+\hline
+$0.5$
+& $0.47917$
+& $0.47943$\\
+\hline
+$0.2$
+& $0.19867$
+& $0.19867$\\
+\hline
+$0.1$
+& $0.09983$
+& $0.09983$\\
+\hline
+$0.05$
+& $0.04998$
+& $0.04998$\\
+\hline
+$0.01$
+& $0.00999$
+& $0.00999$\\
+\hline
+$0.001$
+& $0.00099$
+& $0.00099$\\
+\hline
+\end{tabular}
+\egroup
+\end{center}
+
+\subsolution %b
+Recall that we can multiply the degree measure of an angle by $\pi/180$ to get the radian measure, so we simply replace $\alpha$ by $\pi D / 180$ in our approximation. This gives
+\[
+\sin{D} \approx \dfrac{\pi D}{180} - \dfrac{1}{6}\left(\dfrac{\pi D}{180}\right)^{3} = \dfrac{\pi D}{180} - \dfrac{\pi^{3}D^{3}}{34 992 000}
+\]
+\end{subsolutions}
+For $D=1\degree$, the above approximation gives $\sin{1\degree} \approx 0.017421$. This is an underestimate by $3.1 \times 10^{-5}$.
+\solution %4
+\[
+\dfrac{1}{120} \left(\dfrac{\pi D}{180}\right)^{5} = \dfrac{\pi^{5}D^{5}}{22 674 816 000 000}
+\]
+
+\solution %5
+\[
+\dfrac{x^{5}}{120} < 0.001 \implies x < 0.65439
+\]
+\solution %6
+The next term is $x^{5}/120$, giving the approximation
+\[
+\sin{x} = x - \dfrac{x^{3}}{6} + \dfrac{x^{5}}{120}.
+\]
+\solution %7
+The aliens appear to take clockwise angles to be positive, which is the opposite of the convention we typically use. Furthermore, it is not clear that the aliens even use counterclockwise angles since all of the examples only feature clockwise angles. This could mean that the aliens only work with non-negative (or in our system, non-positive) angles.
+
+The aliens do consider angles corresponding to rotations greater than a full rotation, as we do. $\varphi$ seems to be used to denote one complete rotation. Comparing to our system, $\varphi = -2\pi$ radians.
+
+\solution %8
+\[
+0 < 1 < \dfrac{\pi}{2} \implies \text{QI}
+\]
+\[
+\dfrac{\pi}{2} < 2 < \pi \implies \text{QII}
+\]
+\[
+\dfrac{\pi}{2} < 3 < \pi \implies \text{QII}
+\]
+\[
+\pi < 4 < \dfrac{3\pi}{2} \implies \text{QIII}
+\]
+\[
+\dfrac{3\pi}{2} < 5 < 2\pi \implies \text{QIV}
+\]
+\[
+\dfrac{3\pi}{2} < 6 < 2\pi \implies \text{QIV}
+\]
+\[
+318\pi < 1000 < 318\pi + \dfrac{\pi}{2} \implies \text{QI}
+\]
+\solution %9
+See solution below question.
+\end{solutions}
 
 \section*{Chapter 6: The Addition Formulas}
 
