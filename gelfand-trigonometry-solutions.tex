@@ -1969,22 +1969,26 @@ h\left(x\right)=\dfrac{1}{2}\left(\dfrac{1}{x+2} - \dfrac{1}{-x+2}\right)=\dfrac
 
 \begin{solutions}{Page 107}
 \solution %1
-$180\degree$ is equal to $\pi$ radians. $90\degree$ is equal to $\pi/2$ radians.
+180 degrees is equal to $\pi$ radians. 90 degrees is equal to $\pi/2$ radians.
 
 \solution %2
-$2$ radians is equal to $360\degree/\pi \approx 114.6\degree$.
+\[
+\pi^r = 180\degree \implies 1^r = (180/\pi)\degree \implies 2^r = (360/\pi)\degree \approx 114.6\degree
+\]
 
 \solution %3
-Since a full rotation is $2\pi$ radians, a quarter rotation is $\pi/2$ radians.
+Since a full rotation is $2\pi$ radians, 1/4 of a full rotation will be $\pi/2$ radians.
 
 \solution %4
-$45\degree$ is equal to $\pi/4$ radians.
+Since 45 degrees is 1/8 of full rotation, 1/4 of a full rotation will be $\pi/4$ radians.
 
-\solution ~%5
+\solution %5
+Filled table below
+
 \begin{center}
 \bgroup
-\def\arraystretch{2.1}
-\setlength\tabcolsep{15pt}
+\def\arraystretch{1.1}
+\setlength\tabcolsep{10pt}
 \begin{tabular}{ |c|c| }
 \hline
 Degree Measure
@@ -2018,11 +2022,13 @@ $\mathbf{360}$
 \egroup
 \end{center}
 
-\solution ~%6
+\solution %6
+Filled tables below
+
 \begin{center}
 \bgroup
-\def\arraystretch{2.1}
-\setlength\tabcolsep{15pt}
+\def\arraystretch{1.1}
+\setlength\tabcolsep{10pt}
 \begin{tabular}{ |c|c| }
 \hline
 Degree Measure
@@ -2067,8 +2073,8 @@ $\mathbf{126}$
 
 \begin{center}
 \bgroup
-\def\arraystretch{2.1}
-\setlength\tabcolsep{15pt}
+\def\arraystretch{1.1}
+\setlength\tabcolsep{10pt}
 \begin{tabular}{ |c|c| }
 \hline
 Degree Measure
@@ -2112,16 +2118,21 @@ $\mathbf{240}$
 \end{center}
 
 \solution %7
-$1$ degree is equal to $\pi/180$ radians.
+Since 360 degrees is equal to $2\pi$ radians, then 1 degree is equal to $2\pi \/360$, or $\pi/180$, radians
 
 \solution %8
-$\sin{1} \approx 0.8415$, $\sin{1\degree} \approx 0.0175$.
+\begin{subsolutions}
+    \subsolution $\sin (1^r) \approx  0.8415$
+    \subsolution $\sin (1^{\circ}) \approx 0.0175$
+\end{subsolutions}
 
-\solution ~%9
+\solution %9
+Filled table below
+
 \begin{center}
 \bgroup
-\def\arraystretch{2.1}
-\setlength\tabcolsep{15pt}
+\def\arraystretch{1.3}
+\setlength\tabcolsep{10pt}
 \begin{tabular}{ |c|c|c| }
 \hline
 $\alpha$ (in radian)
@@ -2165,10 +2176,18 @@ $11\pi / 6$
 \end{center}
 
 \solution %10
-In a circle of radius 1, the length of an arc cut off by a central angle of $t$ radians is $t$ (i.e., the length of the arc is equal to the measure of the central angle in radians).
+With an angle of 2 radians and a radius of 1, the length of the arc is $2 \times 1 = 2$.
+
+With an angle of 3 radians and a radius of 1, the length of the arc is $3 \times 1 = 3$.
+
+With an angle of $\pi$ radians and a radius of 1, the length of the arc is $\pi \times 1 = \pi$.
 
 \solution %11
-In a circle of radius 3, the length of an arc cut off by a central angle of $t$ radians is $3t$ (i.e., the length of the arc is triple the measure of the central angle in radians).
+With an angle of 2 radians and a radius of 3, the length of the arc is $2 \times 3 = 6$.
+
+With an angle of 3 radians and a radius of 3, the length of the arc is $3 \times 3 = 9$.
+
+With an angle of $\pi$ radians and a radius of 3, the length of the arc is $\pi \times 3 = 3\pi$.
 
 \solution %12
 Using the fact that sine and cosine are cofunctions (see Section 4 of Chapter 1),
@@ -2178,9 +2197,14 @@ Using the fact that sine and cosine are cofunctions (see Section 4 of Chapter 1)
 so $\alpha = 7\pi / 18$.
 
 \solution %13
-Again, invoking the properties of cofunctions, we know that $\sin{\alpha} = \cos\left(\pi/2 - \alpha\right)$.
+Again, applying the properties of cofunctions, we know that $\sin{\alpha} = \cos\left(\pi/2 - \alpha\right)$.
 
-\solution ~ %14
+\solution %14
+A complete rotation around a circle corresponds to an angle of $2\pi$ radians, so each of the six sectors in the diagram is an angle of $2\pi/6$, which is a bit more than 1 radian (since $2\pi > 6$). 
+
+However, $2\pi/6$ radians is equal to 60 degrees, so if $2\pi/6$ is a bit more than 1, then 1 radian is less than 60 degrees
+
+Geometric solution:
 \begin{center}
 \begin{tikzpicture}
 \def\rad{3}
@@ -2204,71 +2228,80 @@ In the diagram above, we place the six points $A$ through $F$ so that they are e
 m\angle{AOB} = m\angle{OAB} =  m\angle{OBA} = 60\degree.
 \]
 In other words, $\triangle{AOB}$ is an equilateral triangle. This means that the side $AB$ is equal to the radius of $O$. Therefore, the arc that is intercepted by the chord $AB$ must be longer than the radius of $O$ because the shortest path between two points is a straight line. This implies that the central angle $\angle{AOB}$ is greater than 1 radian. Since $\angle{AOB}$ is a $60\degree$ angle, we have shown that $60\degree$ is greater than $1$ radian.
+
 \end{solutions}
 
 \begin{solutions}{Page 111}
 \solution %1
-5 radians
+Since a circle of radius 1 traveling 1 foot corresponds to a rotation of 1 radian, a circle of radius 1 traveling 5 feet down a road corresponds to a rotation of 5 radians.
 
 \solution %2
-\[
-5\text{ rad} \cdot \dfrac{180\degree}{\pi\text{ rad}}  = \dfrac{900\degree}{\pi}
-\]
+From the previous question, the circle has rotated 5 radians, which is equal to $5 \cdot 180\degree / \pi \approx 286.48\degree$ (two decimal places).
 
 \solution %3
-4 feet
+Since a circle of radius 1 rotates 1 radian to travel 1 foot, if it rotates 4 radians, then it has traveled 4 feet.
 
 \solution %4
-\[
-120\degree \cdot \dfrac{2\pi\left(1\text{ feet}\right)}{360\degree} = \dfrac{2}{3}\pi \text{ feet}
-\]
+Since $120\degree = 2\pi/3$ radians, the wheel has traveled $2\pi/3$ feet down the road.
 
-\solution %5
-In a circle with radius $1$, the length of an arc cut off by an angle with radian measure $\alpha$ is $\alpha$. Thus, if the angle is $1/2$ radians, then the length of the corresponding arc is $1/2$. Similarly, if the angle is $\pi/2$ radians, then the length of the corresponding arc is $\pi/2$.
+\solution %4
+A sector of radius 1 with angle $\alpha$ radians has an arc length of $1 \times \alpha$, so:
+
+An angle of $1/2$ radian has an arc length of $1/2$.
+
+An angle of $\pi/2$ radian has an arc length of $\pi/2$.
+
+An angle of $\alpha$ radian has an arc length of $\alpha$.
 
 \solution %6
-\begin{itemize}
-    \item $720\degree = 4\pi$ radians
-    \item $1440\degree = 8\pi$ radians
-    \item $3600\degree = 20\pi$ radians
-    \item $15120\degree = 84\pi$ radians
-    \item $12\pi \text{ radians} = 2160\degree$
-    \item $15\pi \text{ radians} = 2700\degree$
-    \item $100\pi \text{ radians} = 18000\degree$
-\end{itemize}
+Since $2\pi$ radians equal to $360\degree$ then
+
+$720\degree = 4\pi$ radians
+
+$1440\degree = 8\pi$ radians
+
+$3600\degree = 20\pi$ radians
+
+$15120\degree = 84\pi$ radians
+
+$12\pi$ radians = $2160\degree$
+
+$12\pi$ radians = $2160\degree$
+
+$15\pi$ radians = $2700\degree$
+
+$100\pi$ radians = $18000\degree$
 
 \solution %7
-In a circle with radius $3$, the length of an arc cut off by an angle with radian measure $\alpha$ is $3\alpha$. Thus, if the angle is $1/2$ radians, then the length of the corresponding arc is $3/2$. Similarly, if the angle is $\pi/2$ radians, then the length of the corresponding arc is $3\pi/2$.
+A sector of radius 3 with angle $\alpha$ radians has an arc length of $3\alpha$, so:
+
+An angle of $1/2$ radian has an arc length of $3/2$.
+
+An angle of $\pi/2$ radian has an arc length of $3\pi/2$.
+
+An angle of $\alpha$ radian has an arc length of $3\alpha$.
 
 \solution %8
-\[
-3 \cdot 1.5 = 4.5
-\]
+A sector of radius 3 and angle $\alpha$ has arc length of $3\alpha$.
+
+An angle of 1.5 radians has an arc length of 4.5.
 
 \solution %9
-\[
-80\degree \cdot \dfrac{2\pi\left(5\right)}{360\degree} = \dfrac{20}{9}\pi
-\]
+A sector of radius 5 and angle $\alpha$ has arc length of $5\alpha$.
+
+An angle of 80 degrees is equal to $4\pi/9$ radians. Thereforem its arc length is $5 \times 4\pi/9 = 20\pi/9$.
 
 \solution %10
-\[
-\dfrac{3}{2} = 1.5\text{ radians}
-\]
+A sector of radius 2 and angle $\alpha$ has an arc length of $2\alpha$. This means that for an arc length of $\alpha$, its angle would be $\alpha/2$. If the arc length is 3, then its central angle is 3/2 radians.
 
 \solution %11
-\[
-\dfrac{2}{6} \cdot \dfrac{180\degree}{\pi} = \dfrac{60\degree}{\pi}
-\]
+A sector of radius 6 and angle $\alpha$ has an arc length of $6\alpha$. This means that for arc length of $\alpha$, its angle would be $\alpha/6$. If the arc length is 2, then its central angle is 1/3 radians, which is equal to $\left(60/\pi\right)\degree \approx 19.1\degree$.
 
 \solution %12
-\[
-\dfrac{20}{7}
-\]
+A circle of radius 7 units will travel 7 units with a rotation of 1 radian. That is, each unit of travel requires a rotation of 1/7 radians. Therefore, 20 units of travel require 20/7 radians of rotation.
 
 \solution %13
-\[
-150\degree \cdot \dfrac{2\pi\left(8\right)}{360\degree} = \dfrac{20}{3}\pi
-\]
+A circle of radius 8 units will travel 8 units with a rotation of 1 radian. Since 150 degrees is equal to $5\pi/6$ radians, the circle has rolled $8 \times 5\pi/6 = 20\pi/3$ units.
 
 \solution %14
 In twelve hours, the hour hand makes a complete rotation around the watch face (e.g., 12:00 AM to 12:00 PM), so in one hour, the hour hand makes $1/12$ of a full rotation. Because the hands of a clock rotate in a clockwise sense, the angle of rotation will be negative. Thus, the angle through which the hour hand rotates in one hour is
@@ -2286,7 +2319,7 @@ Because the hands of a watch travel clockwise, Joe's angle should be negative si
 \[
 \dfrac{1000 \text{ in.}}{2\pi \text{ in.}} \approx 159.2
 \]
-This trip consists of about 159 full rotations of the hour hand. Multiplying by 12 gives the number of hours the trip takes.
+This trip consists of about 159 full rotations of the hour hand. Multiplying by 12 gives the number of hours the trip takes since a complete rotation of the hour hand takes 12 hours.
 \[
 \dfrac{1000}{2\pi} \cdot 12\text{ hours} \approx 1910\text{ hours}
 \]
@@ -2300,20 +2333,20 @@ The wheel turns $2\pi$ radians before the spoke returns to the same position. Af
 \solution %20
 \begin{subsolutions}
 \subsolution %a
-$2\pi$ meters
+A wheel of radius one meter will roll $2\pi$ meters each revolution, so the blue marks will be $2\pi$ meters apart.
 \subsolution %b
-$2\pi$ radians
+The wheel will make a full revolution in this time, so it has rolled through an angle of $2\pi$ radians.
 \subsolution %c
-Not more than once. Suppose we have a red dot and a blue dot coinciding. When they next coincide, the distance between the two coincidences will be equal to $3n$ (measuring using the gaps between red dots) or $2\pi m$ (measuring using the gaps between blue dots), where $n$ and $m$ are positive integers. Because these are two equivalent ways to measure the same distance, we can say that $3n = 2\pi m$. Solving for $\pi$, we find that $\pi = \tfrac{3n}{2m}$. However, this is not possible as $\pi$ is irrational, so it cannot be expressed as the ratio of integers. This contradiction means that if a red dot and blue dot do coincide, then they cannot coincide again.
+Not more than once. Suppose we have a red mark and a blue mark coinciding. When they next coincide, the distance between the two coincidences will be equal to $3n$ (measuring using the gaps between red dots) or $2\pi m$ (measuring using the gaps between blue dots), where $n$ and $m$ are positive integers. Because these are two equivalent ways to measure the same distance, we can say that $3n = 2\pi m$. Solving for $\pi$, we find that $\pi = \tfrac{3n}{2m}$. However, this is not possible as $\pi$ is irrational, so it cannot be expressed as the ratio of integers. This contradiction means that if a red dot and blue dot do coincide, then they cannot coincide again.
 
-\subsolution ~ %d
+\subsolution ~%d
 \begin{center}
 \begin{tikzpicture}
 \def\rad{2}
 \def\ang{16.2}
 \def\t{0.05}
 \draw (0,0) circle [radius=\rad];
-\path [fill=blue] (87:\rad) circle [radius=\t];
+\path [fill=blue] (88:\rad) circle [radius=\t];
 \foreach \x in {0,...,22}
     \path [fill=red] (20+\x*\ang:\rad) circle [radius=\t];
 \end{tikzpicture}
@@ -2321,33 +2354,108 @@ Not more than once. Suppose we have a red dot and a blue dot coinciding. When th
 
 Let's consider how the red marks hit the wheel as it rolls. Hitting three red marks in a row corresponds to traveling 6 meters (count the space in between the marks). Because the radius of the wheel is 1 meter, when the wheel hits a triple of red marks, the last mark will hit the wheel in a position that is 6 radians ahead of the position where the first mark was hit. Alternatively, we can say that the last mark hits the wheel in a position that is $2\pi - 6$ radians \textit{behind} the position of the first mark. In the above diagram, the red marks are separated by $2\pi-6$ radians, so they represent the positions of every other red mark that hits the wheel in some period of time. Notice that the position of the red marks on the wheel implies that the blue mark cannot be more than $2\pi-6$ radians away from a red mark. This means that no matter how far the wheel travels, the blue mark will eventually be placed within $2\pi-6$ meters of a red mark.
 
+Another perspective:
+
+Compare the location of marks by plotting the marks' locations
+
+\begin{tikzpicture}[xscale=0.25]
+    \draw[help lines,xstep=5,color=gray!50,dashed](0,0)grid(40,2);
+    \draw[thick] (0,0)--(40,0);
+    \draw[thick] (0,0)--(0,2.5);
+%    %Draw marks on x axis
+    \foreach \xticks in {5,10,...,40}
+    \node[below] at (\xticks,0) {\xticks};
+%    %Draw the marks 
+    \foreach \reds in {0,1,...,13}
+    \filldraw[red] (\reds*3,2) circle (0.2);
+    \foreach \blues in {0,1,...,5}
+    \filldraw[blue] (\blues*2*pi,1) circle (0.2);
+\end{tikzpicture}
+
+Note the distance between blue and red markers will be different but the closest they come together are
+
+%\begin{table}[]
+\begin{tabular}{|c|c|c|}
+\hline
+Red & Blue & Difference (approx)\\
+\hline
+6 & $2\pi$ & 0.283 \\
+\hline
+12 & $4\pi$ & -0.566 \\
+\hline
+18 & $6\pi$ & -0.850 \\
+\hline
+24 & $8\pi$ & -1.133 \\
+\hline
+30 & $10\pi$ & -1.416 \\
+\hline
+\end{tabular}
+%\end{table}
+
 \subsolution %e
 We assume that the blue dot and red dot coincide to begin with. 100 rotations corresponds to the wheel travelling $200\pi$ meters. Notice that $200\pi \approx 209 \cdot 3 + 1.3$. Because $\tfrac{1}{4} \cdot 3 < 1.3 < \tfrac{1}{2} \cdot 3$, the blue dot will be between two pink dots: one of the pink dots will be at the midpoint of two red dots, and the second pink dot will be directly behind the first.
+
 \end{subsolutions}
+
 \end{solutions}
 
 \begin{solutions}{Page 114}
 \solution %1
-Radian mode
-\solution %2
-\begin{align*}
-0.2 - \sin{0.2} &\approx 1.33 \times 10^{-3} \\
-0.15 - \sin{0.15} &\approx 5.62 \times 10^{-4} \\
-0.05 - \sin{0.05} &\approx 2.08 \times 10^{-5}
-\end{align*}
-In each case, $x > \sin{x}$.
+The calculator was in radian mode, since $\sin (1^r) \approx  0.8415$, while $\sin (1^{\circ}) \approx 0.0175$.
+
+\solution ~ %2
+
+\begin{center}
+\bgroup
+\def\arraystretch{1.3}
+\setlength\tabcolsep{10pt}
+\begin{tabular}{ |c|c|c| }
+\hline
+$x$ (in radians)
+& $\sin{x}$
+& Difference (approx.)\\
+\hline
+$0.2$
+& $0.19867$
+& $1.33 \times 10^{-3}$\\
+\hline
+$0.15$
+& $0.14944$
+& $5.62 \times 10^{-4}$\\
+\hline
+$0.05$
+& $0.04998$
+& $2.08 \times 10^{-5}$\\
+\hline
+\end{tabular}
+\egroup
+\end{center}
+
+In all cases, $x > \sin x$.
 
 \solution %3
-\begin{align*}
-\left(0.2 - \dfrac{0.2^{3}}{6}\right) - \sin{0.2} &\approx -2.66 \times 10^{-6} \\
-\left(0.15 - \dfrac{0.15^{3}}{6}\right) - \sin{0.15} &\approx -6.32 \times 10^{-7} \\
-\left(0.05 - \dfrac{0.05^{3}}{6}\right) - \sin{0.05} &\approx -2.60 \times 10^{-9}
-\end{align*}
+In the below table, the difference being calculated is $x-x^3/6 - \sin{x}$.
+
+\begin{center}
+\bgroup
+\def\arraystretch{1.3}
+\setlength\tabcolsep{10pt}
+\begin{tabular}{|c|c|c|c|}
+\hline
+$x$ (in radians) & $\sin x$ & $x-x^3/6$ & Difference (approx.)\\
+\hline
+0.2 & 0.1986693 & 0.1986667 & $-2.66 \times 10^{-6}$\\
+\hline
+0.15 & 0.1494381 & 0.1494375 & $ -6.32 \times 10^{-7}$\\
+\hline
+0.05 & 0.0499792 & 0.0499792 & $-2.60 \times 10^{-9}$\\
+\hline
+\end{tabular}
+\egroup
+\end{center}
 
 \solution %4
-\[
-\dfrac{10\degree}{60\degree}  - \sin{10\degree} \approx -6.98 \times 10^{-3}
-\]
+$\sin 10\degree \approx 0.174$, and $10/60 \approx 0.167$, so the error in the approximation is $0.007$.
 
 \solution %5
 \begin{subsolutions}
@@ -2366,26 +2474,16 @@ Error: $\sin{0.1\degree}$ is greater than $157/90000$ by $8.84 \times 10^{-7}$.
 
 \solution %6
 \begin{subsolutions}
-\subsolution %a
-\[
-\sin{1000\degree} \approx -0.9848
-\]
-\subsolution %b
-\[
-\sin{1000} \approx 0.8269
-\]
+    \subsolution %a
+    $\sin 1000\degree \approx -0.9848$
+    \subsolution %b
+    $\sin 1000^r \approx 0.8269$
 \end{subsolutions}
 
-\solution %7
+\solution
 \begin{subsolutions}
-\subsolution %a
-\[
-\sin\left(\sin{1000}\right) \approx 0.7358
-\]
-\subsolution %b
-\[
-\sin{3.14} \approx 0.0016
-\]
+    \subsolution $\sin(\sin 1000^r) \approx 0.7358$
+    \subsolution $\sin 3.14^r \approx 0.00159$
 \end{subsolutions}
 
 \solution %8
@@ -2396,32 +2494,87 @@ Let $\varepsilon = \pi/2 - 1.5707 \approx 9.6 \times 10^{-5}$.
 \end{solutions}
 
 \begin{solutions}{Page 116}
-\solution %1
-In parts (a) and (b), we refer to the approximation $\cos{x} \approx 1 - \tfrac{1}{2}x^{2}$. This approximation can be derived from the approximation $\sin{x} \approx x$ using the identity $\sin^{2}{x} + \cos^{2}{x} = 1$. Let us suppose that $x$ is a positive angle close to zero. Replacing $\sin{x}$ with $x$ in the aforementioned identity, we get $\cos{x} \approx \sqrt{1 - x^{2}}$. Using the binomial approximation, $\left(1 + z\right)^{\alpha} \approx 1 + \alpha z$, we arrive at the desired approximation for $\cos{x}$:
-\[
-\cos{x} \approx \sqrt{1-x^{2}} = \left[1 + \left(-x^{2}\right) \right]^{1/2} \approx 1-\dfrac{1}{2}x^{2}.
-\]
+\solution
+Using the graph below
+
+\begin{tikzpicture}[xscale=1,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=0.5,color=gray!50,dashed](-pi,-1.4) grid (2.1*pi,1.4);
+    \draw[->,thick] (-pi,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {-1,1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,0,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=-pi:2*pi,samples=90] (\x,{sin(\x r)});
+    \draw[blue, dashed](7*pi/5,-0.98)--(7*pi/5,0)node[below]{$7\pi/5$};
+    \draw[blue, dashed](-3*pi/7,-0.98)--(-3*pi/7,0)node[below]{$-3\pi/7$};
+\end{tikzpicture}
+
 \begin{subsolutions}
 \subsolution %a
-$\sin{7\pi / 5}$ is negative because $\pi < 7\pi / 5 < 2\pi$. Using the approximation $\cos{x} \approx 1 - \tfrac{1}{2}x^{2}$, 
-\[
-\sin{\dfrac{7\pi}{5}} = -\sin{\dfrac{2\pi}{5}} = -\sin\left(\dfrac{\pi}{2}-\dfrac{\pi}{10}\right) = -\cos{\dfrac{\pi}{10}} \approx \dfrac{1}{2}\left(\dfrac{\pi}{10}\right)^{2} - 1 \approx \dfrac{1}{20} - 1 = -0.95.
-\]
+$\sin{7\pi / 5}$ is negative because $\pi < 7\pi / 5 < 2\pi$.
+
+Estimated  $x\approx-1$ (actual is $-0.9511$)
 
 \subsolution %b
-$\sin{-3\pi / 7}$ is negative because $-\pi < -3\pi / 7 < 0$. Using the approximation $\cos{x} \approx 1 - \tfrac{1}{2}x^{2}$, 
-\[
-\sin{\dfrac{-3\pi}{7}} = -\sin{\dfrac{3\pi}{7}} = -\sin\left(\dfrac{\pi}{2}-\dfrac{\pi}{14}\right) = -\cos{\dfrac{\pi}{14}} \approx \dfrac{1}{2}\left(\dfrac{\pi}{14}\right)^{2} - 1 \approx \dfrac{1}{40} - 1 = -0.975
-\]
+$\sin{-3\pi / 7}$ is negative because $-\pi < -3\pi / 7 < 0$.
 
+Estimated $x\approx-1$ (actual is $-0.9749$)
 \subsolution %c
 By symmetry, $\sin\left(\pi - \pi/6\right) = \sin{5\pi/6} = 1/2$. By periodicity, $\sin\left(2\pi+\pi/6\right) = \sin{13\pi/6} = 1/2$. In general, $\sin{x}=1/2$ when $x=\pi/6 + 2\pi n$ or $x=5\pi/6 + 2\pi n$, where $n$ is an integer.
 
 \subsolution %d
-$x=\pi/12$, $x=\pi - \pi/12 = 11\pi/12$, $x=2\pi + \pi/12 = 25\pi/12$.
+Draw a line at $y=\sin(\pi/12) \approx 0.26$ and then estimate the location of the  intersections with the sine wave.
+\begin{align*}
+    x &= \pi/12, 11\pi/12, 25\pi/12, \ldots\\
+      &\approx 0.26, 2.88, 6.54, \ldots
+\end{align*}
+
+\begin{tikzpicture}[xscale=1,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=0.5,color=gray!50,dashed](-pi,-1.4) grid (2.1*pi,1.4);
+    \draw[->,thick] (-pi,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {-1,1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,0,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=-pi:2*pi,samples=90] (\x,{sin(\x r)});
+    \draw[blue, dashed] (0,{sin((pi/12) r)}) -- (2*pi,{sin((pi/12) r)});
+    \draw[blue, dashed](0.26,0.25)--(0.25, 0) node[below]{0.26};
+    \draw[blue, dashed](2.88,0.25)--(2.89, 0) node[below]{2.88};
+\end{tikzpicture}
 
 \subsolution %e
-Notice that $\sin{\pi/4} = \sqrt{2}/2 \approx 0.70$ and $\sin{\pi/3} = \sqrt{3}/2 \approx 0.85$. Taking a weighted average, we can estimate that the sine of
+Draw a line at $y=0.8$ and then estimate the location of the intersections with the sine wave.
+$x \approx 0.93, 2.21, 7.21, \ldots$
+
+\begin{tikzpicture}[xscale=1,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=0.5,color=gray!50,dashed](-pi,-1.4) grid (2.1*pi,1.4);
+    \draw[->,thick] (-pi,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {-1,1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,0,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=-pi:2*pi,samples=90] (\x,{sin(\x r)});
+    \draw[blue, dashed] (0, 0.8) -- (2*pi,0.8);
+    \draw[blue, dashed](0.93,0.8)--(0.93, 0) node[below]{0.93};
+    \draw[blue, dashed](2.21,0.8)--(2.21, 0) node[below]{2.21};
+\end{tikzpicture}
+
+Alternatively, notice that $\sin{\pi/4} = \sqrt{2}/2 \approx 0.70$ and $\sin{\pi/3} = \sqrt{3}/2 \approx 0.85$. Taking a weighted average, we can estimate that the sine of
 \[
 \dfrac{1}{3} \cdot \dfrac{\pi}{4} + \dfrac{2}{3} \cdot
 \dfrac{\pi}{3} = \dfrac{11\pi}{36}
@@ -2431,72 +2584,59 @@ is approximately $0.8$. Then, based on the properties of the sine function, $25\
 
 \end{solutions}
 
+Note: For parts (a) and (b) of the above exercise, we can use the approximation $\cos{x} \approx 1 - \tfrac{1}{2}x^{2}$ to get better estimates. This approximation can be derived from the approximation $\sin{x} \approx x$ using the identity $\sin^{2}{x} + \cos^{2}{x} = 1$. Let us suppose that $x$ is a positive angle close to zero. Replacing $\sin{x}$ with $x$ in the aforementioned identity, we get $\cos{x} \approx \sqrt{1 - x^{2}}$. Using the binomial approximation, $\left(1 + z\right)^{\alpha} \approx 1 + \alpha z$, we arrive at the desired approximation for $\cos{x}$:
+\[
+\cos{x} \approx \sqrt{1-x^{2}} = \left[1 + \left(-x^{2}\right) \right]^{1/2} \approx 1-\dfrac{1}{2}x^{2}.
+\]
+
+\noindent For part (a), we get the estimate
+\[
+\sin{\dfrac{7\pi}{5}} = -\sin{\dfrac{2\pi}{5}} = -\sin\left(\dfrac{\pi}{2}-\dfrac{\pi}{10}\right) = -\cos{\dfrac{\pi}{10}} \approx \dfrac{1}{2}\left(\dfrac{\pi}{10}\right)^{2} - 1 \approx \dfrac{1}{20} - 1 = -0.95.
+\]
+For part (b), we get the estimate
+\[
+\sin{\dfrac{-3\pi}{7}} = -\sin{\dfrac{3\pi}{7}} = -\sin\left(\dfrac{\pi}{2}-\dfrac{\pi}{14}\right) = -\cos{\dfrac{\pi}{14}} \approx \dfrac{1}{2}\left(\dfrac{\pi}{14}\right)^{2} - 1 \approx \dfrac{1}{40} - 1 = -0.975.
+\]
+Both of these estimates improve upon the first-order approximation of $-1$.
+
 \begin{solutions}{Page 120}
-\solution ~%1
+\solution %1
+Results are written to 5 decimal places.
+
 \begin{center}
 \bgroup
-\def\arraystretch{2.1}
-\setlength\tabcolsep{15pt}
-\begin{tabular}{ |c|c|c| }
+\def\arraystretch{1.3}
+\setlength\tabcolsep{10pt}
+\begin{tabular}{|c|c|c|}
 \hline
-$\alpha$ (radians)
-& $\alpha$ (degrees)
-& $\sin{\alpha}$\\
-\hline
-$1$
-& $57.29578$
-& $0.84147$\\
-\hline
-$0.5$
-& $28.64789$
-& $0.47943$\\
-\hline
-$0.2$
-& $11.45916$
-& $0.19867$\\
-\hline
-$0.1$
-& $5.729578$
-& $0.09983$\\
-\hline
-$0.01$
-& $0.5729578$
-& $0.0099998$\\
-\hline
-$0.02$
-& $1.145916$
-& $0.019999$\\
-\hline
-$0.001$
-& $0.05729578$
-& $0.0009999998$\\
-\hline
-$0.002$
-& $0.1145916$
-& $0.001999999$\\
-\hline
-$0.005$
-& $0.2864789$
-& $0.00499998$\\
-\hline
+$\alpha$ (radians) & $\alpha$ (degrees)  & $\sin{\alpha}$\\ \hline
+1       & 57.29578 & 0.84147   \\ \hline
+0.5     & 28.64789 & 0.47943   \\ \hline
+0.2     & 11.45916 & 0.19867   \\ \hline
+0.1     & 5.72958  & 0.09983   \\ \hline
+0.01    & 0.57296  & 0.01000   \\ \hline
+0.02    & 1.14592  & 0.02000   \\ \hline
+0.001   & 0.05730  & 0.00100   \\ \hline
+0.002   & 0.11459  & 0.00200   \\ \hline
+0.005   & 0.28648  & 0.00500   \\ \hline
 \end{tabular}
 \egroup
 \end{center}
 
 \solution %2
-\[
-\sin{0.00123456} \approx 0.00123456
-\]
-This is an overestimate.
+Since $\sin x \approx x$ for angles close to zero (when $x$ is in radians), $\sin 0.00123456 \approx 0.00123456$. Since $x > \sin{x}$ for positive angles, we know this is an overestimate. The calculator result is $0.0012345597$, so our estimate is accurate to 7 decimal places.
 
 \solution %3
 \begin{subsolutions}
-\subsolution ~%a
+
+\subsolution %a
+Results are written to 5 decimal places.
+
 \begin{center}
 \bgroup
-\def\arraystretch{2.1}
-\setlength\tabcolsep{15pt}
-\begin{tabular}{ |c|c|c| }
+\def\arraystretch{1.3}
+\setlength\tabcolsep{10pt}
+\begin{tabular}{|c|c|c|}
 \hline
 $\alpha$
 & $\alpha - \alpha^{3}/6$
@@ -2539,52 +2679,68 @@ Recall that we can multiply the degree measure of an angle by $\pi/180$ to get t
 \[
 \sin{D} \approx \dfrac{\pi D}{180} - \dfrac{1}{6}\left(\dfrac{\pi D}{180}\right)^{3} = \dfrac{\pi D}{180} - \dfrac{\pi^{3}D^{3}}{34 992 000}
 \]
+
+For $D=1\degree$, the above approximation gives $\sin{1\degree} \approx 0.017421$, while the calculator result is $0.017452$. This is an underestimate by $3.1 \times 10^{-5}$.
 \end{subsolutions}
-For $D=1\degree$, the above approximation gives $\sin{1\degree} \approx 0.017421$. This is an underestimate by $3.1 \times 10^{-5}$.
+
 \solution %4
+Using the fact that $\alpha = \pi D/180$ from the previous part, the largest possible error for an angle measured in degrees is given by
 \[
-\dfrac{1}{120} \left(\dfrac{\pi D}{180}\right)^{5} = \dfrac{\pi^{5}D^{5}}{22 674 816 000 000}
+\dfrac{1}{120} \left(\dfrac{\pi D}{180}\right)^{5} = \dfrac{\pi^{5}D^{5}}{22 674 816 000 000}.
 \]
 
 \solution %5
-\[
-\dfrac{x^{5}}{120} < 0.001 \implies x < 0.65439
-\]
+\begin{align*}
+    x^5/120 &< 0.001\\
+    x^5 &< 0.12\\
+x &< \sqrt[5]{0.12}\\
+x &< 0.65438
+\end{align*}
+
 \solution %6
-The next term is $x^{5}/120$, giving the approximation
-\[
-\sin{x} = x - \dfrac{x^{3}}{6} + \dfrac{x^{5}}{120}.
-\]
+The signs are alternating between terms, so the third term should be positive.
+
+The exponent of $x$ increases by two in each successive term, so the third term should have an exponent of 5.
+
+The denominator of first term is 1! and the denominator of second term is 3!. Therefore the denominator of the fifth term should be $5! = 120$.
+
+Therefore, the third term is \[+\frac{x^5}{120}. \]
+
+Hint: This is the Taylor Series for $\sin{x}$.
+
+Note: \textbf{!} is used to denote the factorial function, where the factorial of a positive integer $n$ is the product of all positive integers less than or equal to $n$.
+
 \solution %7
 The aliens appear to take clockwise angles to be positive, which is the opposite of the convention we typically use. Furthermore, it is not clear that the aliens even use counterclockwise angles since all of the examples only feature clockwise angles. This could mean that the aliens only work with non-negative (or in our system, non-positive) angles.
 
 The aliens do consider angles corresponding to rotations greater than a full rotation, as we do. $\varphi$ seems to be used to denote one complete rotation. Comparing to our system, $\varphi = -2\pi$ radians.
 
 \solution %8
-\[
-0 < 1 < \dfrac{\pi}{2} \implies \text{QI}
-\]
-\[
-\dfrac{\pi}{2} < 2 < \pi \implies \text{QII}
-\]
-\[
-\dfrac{\pi}{2} < 3 < \pi \implies \text{QII}
-\]
-\[
-\pi < 4 < \dfrac{3\pi}{2} \implies \text{QIII}
-\]
-\[
-\dfrac{3\pi}{2} < 5 < 2\pi \implies \text{QIV}
-\]
-\[
-\dfrac{3\pi}{2} < 6 < 2\pi \implies \text{QIV}
-\]
-\[
-318\pi < 1000 < 318\pi + \dfrac{\pi}{2} \implies \text{QI}
-\]
+It is easier to rewrite each of the radian angle measurements as multiples of $\pi$ since the first quadrant contains angles between $0$ and $0.5\pi$, the second quadrant contains angles between $0.5\pi$ and $\pi$, etc.
+
+\begin{center}
+\bgroup
+\def\arraystretch{1.3}
+\setlength\tabcolsep{10pt}
+\begin{tabular}{|c|c|c|}
+\hline
+Angle in radians      & Angle in terms of $\pi$    & Quadrant \\ \hline
+1     & $0.318\pi$ & 1        \\ \hline
+2     & $0.636\pi$ & 2        \\ \hline
+3     & $0.954\pi$ & 2        \\ \hline
+4     & $1.273\pi$ & 3        \\ \hline
+5     & $1.591\pi$ & 4        \\ \hline
+6     & $1.909\pi$ & 4           \\ \hline
+\end{tabular}
+\egroup
+\end{center}
+
+1000 radians is approximately equal to $318.31\pi$, which represents 159 full rotations with a remainder of $0.31\pi$ radians. Thus an angle of 1000 radians lies in the first quadrant.
+
+1000 degrees corresponds to $1000/360 \approx 2.78$ rotations, which represents 2 whole rotations and a further 0.78 of a rotation, which is slightly more than a $3/4$ rotation. Thus, an angle of 1000 degrees lies in the fourth quadrant.
+
 \solution %9
-See solution below question.
-\end{solutions}
+Approximately 1/4 of the angles lie in each quadrant. See the solution below the question in the textbook.
 
 \section*{Chapter 6: The Addition Formulas}
 
@@ -4738,123 +4894,1363 @@ For $y=f(\frac{x}{3})$
 
 \begin{solutions}{Page 179}
 \solution
+$y= 2\sin\left(x\right)$
+
+\begin{tikzpicture}[xscale=1,yscale=0.5]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-2.4) grid (2.1*pi,2.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,2.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-2.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-2,-1,0,1,2}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:2*pi,samples=90] (\x,{2*sin(\x r)});
+\end{tikzpicture}
+
 \solution
+$y= \frac{1}{2}\sin\left(x\right)$
+
+\begin{tikzpicture}[xscale=1,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-1.4) grid (2.1*pi,1.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,0,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:2*pi,samples=90] (\x,{0.5*sin(\x r)});
+\end{tikzpicture}
+
 \solution
+$y= 3\sin\left(2x\right)$
+
+\begin{tikzpicture}[xscale=1,yscale=0.5]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-3.4) grid (2.1*pi,3.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,3.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-3.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-3,-2,...,3}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:2*pi,samples=90] (\x,{3*sin(\x r)});
+\end{tikzpicture}
+
 \solution
+$y= \frac{1}{2}\sin\left(3x\right)$
+
+\begin{tikzpicture}[xscale=1,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-1.4) grid (2.1*pi,1.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,0,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:2*pi,samples=90] (\x,{0.5*sin(3*\x r))});
+\end{tikzpicture}
+
 \solution
+$y= 4\cos\left(x\right)$
+
+\begin{tikzpicture}[xscale=1,yscale=0.5]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-4.4) grid (2.1*pi,4.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,4.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-4.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-4,-3,...,4}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:2*pi,samples=90] (\x,{4*cos(\x r))});
+\end{tikzpicture}
+
 \solution
+For $y=3f(x)$
+
+\begin{tikzpicture}[xscale=1,yscale=0.5]
+    \draw[help lines,xstep=1,ystep=1,color=gray!50,dashed](-1.5,-3.4) grid (6.5,3.4);
+    \draw[->,thick] (-1.5,0)--(6.5,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,3.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-3.5);
+    %Draw marks on x axis
+    \foreach \i in {-1,0,...,6}
+    \draw [very thin,gray](\i,-0.1)--(\i,0.1) node[below right] at (\i,-0.1) {$\i$};
+    %Draw marks on y axis
+    \foreach \yticks in {-3,-2,...,3}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red] plot[domain=-1:6,samples=180] (\x,{3*asin(sin(\x*pi r))/90});
+\end{tikzpicture}
+
 \solution
+For $y=\frac{1}{3}f(x)$
+
+\begin{tikzpicture}[xscale=1,yscale=1]
+    \draw[help lines,xstep=1,ystep=1,color=gray!50,dashed](-1.5,-1.4) grid (6.5,1.4);
+    \draw[->,thick] (-1.5,0)--(6.5,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {-1,0,...,6}
+    \draw [very thin,gray](\i,-0.1)--(\i,0.1) node[below right] at (\i,-0.1) {$\i$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,0,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red] plot[domain=-1:6,samples=180] (\x,{1/3*asin(sin(\x*pi r))/90});
+\end{tikzpicture}
+
 \end{solutions}
 
 \begin{solutions}{Page 181}
 \solution
+$y= \sin\left(x-\frac{\pi}{6}\right)$
+
+\begin{tikzpicture}[xscale=1,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-1.4) grid (2.1*pi,1.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,0,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:2*pi,samples=90] (\x,{sin((\x - pi/6) r)});
+\end{tikzpicture}
+
 \solution
+$y= \sin\left(x+\frac{\pi}{6}\right) $
+
+\begin{tikzpicture}[xscale=1,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-1.4) grid (2.1*pi,1.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,0,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:2*pi,samples=90] (\x,{sin((\x + pi/6) r)});
+\end{tikzpicture}
+
 \solution
+$y= 2\sin\left(x-\frac{\pi}{2}\right)$
+
+\begin{tikzpicture}[xscale=1,yscale=0.5]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-2.4) grid (2.1*pi,2.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,2.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-2.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-2,-1,0,1,2}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:2*pi,samples=90] (\x,{2*sin((\x - pi/2) r)});
+\end{tikzpicture}
+
 \solution
+$y= \frac{1}{2}\sin\left(x+\frac{\pi}{2}\right)$
+
+\begin{tikzpicture}[xscale=1,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-1.4) grid (2.1*pi,1.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,0,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:2*pi,samples=90] (\x,{0.5*sin((\x + pi/2) r)});
+\end{tikzpicture}
+
 \solution
+$y= \cos\left(x-\frac{\pi}{4}\right)$
+
+\begin{tikzpicture}[xscale=1,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-1.4) grid (2.1*pi,1.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,0,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:2*pi,samples=90] (\x,{cos((\x - pi/4) r)});
+\end{tikzpicture}
+
 \solution
+$y= 3\cos\left(x+\frac{\pi}{3}\right)$
+
+\begin{tikzpicture}[xscale=1,yscale=0.5]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-3.4) grid (2.1*pi,3.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,3.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-3.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-3,-2,...,3}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:2*pi,samples=90] (\x,{3*cos((\x + pi/3) r)});
+\end{tikzpicture}
+
 \solution
+$y= \sin\left(x-2x\right)$ 
+
+\begin{tikzpicture}[xscale=1,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-1.4) grid (2.1*pi,1.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,0,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:2*pi,samples=90] (\x,{cos((\x - 2*pi) r)});
+\end{tikzpicture}
+
+\solution
+Since the sine wave has shifted right by $\frac{\pi}{3}$. The equation is \[y=\sin\left(x-\frac{\pi}{3}\right) \]
+
+\solution
+Since the sine wave has shifted right by $\frac{2\pi}{3}$. The equation is \[y=\sin\left(x-\frac{2\pi}{3}\right) \]
+
+\solution
+Since the sine wave has shifted left by $\frac{\pi}{6}$. The equation is \[y=\sin\left(x-\frac{\pi}{6}\right) \]
+
+\solution
+Note: this looks like the sine wave has shifted right by $\frac{\pi}{4}$, but at that point, the sine wave is on its wave down. 
+
+The actual shift is the $x$ intercept on the far left, calculate its location by $\frac{\pi}{4}- \pi = -\frac{3\pi}{4}$ as it's half a period away, that is, if $2\pi$ radians is one period, then $\pi$ radians is a half period
+
+Therefore, the sine wave has shifted left by $\frac{3\pi}{4}$. The equation is \[y=\sin\left(x+\frac{3\pi}{4}\right) \]
 \end{solutions}
 
 \begin{solutions}{Page 183}
 \solution
+$y= \sin \frac{1}{2}\left(x-\frac{\pi}{6}\right)$
+
+\begin{tikzpicture}[xscale=0.5,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-1.4) grid (4.1*pi,1.4);
+    \draw[->,thick] (0,0)--(4.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2,3,4}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,0,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:4*pi,samples=90] (\x,{sin(0.5*(\x - pi/6) r)});
+\end{tikzpicture}
+
 \solution
+$y= \sin \left(\frac{1}{3}x-\frac{\pi}{6}\right)$
+
+\begin{tikzpicture}[xscale=0.5,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-1.4) grid (4.1*pi,1.4);
+    \draw[->,thick] (0,0)--(4.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2,3,4}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,0,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:4*pi,samples=90] (\x,{sin((0.5*\x - pi/6) r)});
+\end{tikzpicture}
+
 \solution
+$y= \cos 2\left(x+\frac{\pi}{3}\right)$
+
+\begin{tikzpicture}[xscale=0.5,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-1.4) grid (4.1*pi,1.4);
+    \draw[->,thick] (0,0)--(4.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2,3,4}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,0,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:4*pi,samples=90] (\x,{cos((2*(\x+pi/3))  r)});
+\end{tikzpicture}
+
 \solution
+Since period is $\pi$, making $k=\frac{2\pi}{\pi}=2$, making the equation \[y=\sin 2(x-\beta) \]
+
+To solve for $\beta$, substitute $x=0,y=-1$, as the sine wave passes point $(0,-1)$, giving
+\begin{align*}
+    -1 &= \sin 2(0-\beta)\\
+    -1 &= \sin -2\beta\\
+    -\frac{\pi}{2} &= -2\beta\\
+    \frac{\pi}{4} &= \beta\\
+    \beta &= \frac{\pi}{4}
+\end{align*}
+
+Therefore the equation is \[y=\sin 2\left(x-\frac{\pi}{4}\right)\]
+
 \solution
+Since half period is $2\pi$, its full period is $4\pi $making $k=\frac{2\pi}{4\pi}=\frac{1}{2}$, making the equation \[y=\sin \frac{1}{2}(x-\beta) \]
+
+To solve for $\beta$, substitute $x=\frac{5\pi}{6},y=1$, as the sine wave passes point $(\frac{5\pi}{6},1)$, giving
+\begin{align*}
+    1 &= \sin \frac{1}{2} \left( \frac{5\pi}{6}-\beta \right)\\
+    \frac{\pi}{2} &= \frac{1}{2}\left(\frac{5\pi}{6}-\beta\right)\\
+    \pi &= \frac{5\pi}{6}-\beta\\
+    \frac{\pi}{6} &= -\beta\\
+    \beta &= -\frac{\pi}{6}
+\end{align*}
+
+Therefore the equation is \[y=\sin \frac{1}{2}\left(x-\frac{\pi}{6}\right)\]
 \end{solutions}
 
-\begin{solutions}{Page 183}
+
+\begin{solutions}{Page 186}
 \solution
+Answer A) equal to $\sin x$ since
+
+\begin{align*}
+    \sin (x+2\pi) &= \sin (x+2\pi - 2\pi)\\
+                  &= \sin (x)
+\end{align*}
+
 \solution
+
+Answer C) equal to $-\sin x$ since
+
+\begin{align*}
+    \sin (x+3\pi) &= \sin (x+3\pi - 2\pi)\\
+                  &= \sin (x+\pi)\\
+                  &= -\sin(x)
+\end{align*}
+
 \solution
+Answer B) equal to $\cos x$ since
+
+\begin{align*}
+    \sin \left(x+\frac{9}{2}\pi\right) &= \sin \left(x+\frac{9}{2}\pi - 4\pi\right)\\
+                       &= \sin \left(x+\frac{\pi}{2}\right)\\
+                      &= \cos(x)
+\end{align*}
+
 \solution
+Answer D) equal to $-\cos x$ since
+
+\begin{align*}
+    \sin \left(x-\frac{\pi}{2}\right) &= -\cos(x) 
+\end{align*}
+
 \solution
+Answer B) equal to $\cos x$ since
+
+\begin{align*}
+    \sin \left(x-\frac{3}{2}\pi\right) &= \sin \left(-\frac{3}{2}\pi + 2\pi\right)\\
+                       &= \sin \left(x+\frac{\pi}{2}\right)\\
+                      &= \cos(x)
+\end{align*}
+
 \solution
+Answer D) equal to $-\cos x$ since
+
+\begin{align*}
+    \sin \left(x+\frac{19}{2}\pi\right) &= \sin \left(x+\frac{19}{2}\pi - 10\pi\right)\\
+                       &= \sin \left(x-\frac{\pi}{2}\right)\\
+                      &= -\cos(x)
+\end{align*}
+
 \solution
+Answer D) equal to $-\cos x$ since
+
+\begin{align*}
+    -\sin \left(x-\frac{19}{2}\pi\right) &= -\sin \left(x+\frac{19}{2}\pi + 10\pi\right)\\
+                       &= -\sin \left(x+\frac{\pi}{2}\right)\\
+                      &= -\cos(x)
+\end{align*}
+
 \solution
+Answer B) equal to $\cos x$ since
+
+\begin{align*}
+    \sin \left(x+\frac{157}{2}\pi\right) &= \sin \left(x+\frac{157}{2}\pi - 78\pi\right)\\
+                       &= \sin \left(x+\frac{\pi}{2}\right)\\
+                      &= \cos(x)
+\end{align*}
+
 \solution
+Answer D) equal to $-\cos x$ since
+
+\begin{align*}
+    \sin \left(x-\frac{157}{2}\pi\right) &= \sin \left(x-\frac{157}{2}\pi + 78\pi\right)\\
+                       &= \sin \left(x-\frac{\pi}{2}\right)\\
+                      &= -\cos(x)
+\end{align*}
+
 \solution
+Note: there is no question 10 in textbook (printing error?)
+
+\solution %need more work
+Using definition that $p$ is called a half-period of function $f$ is $f(x+p)= -f(x)$, for all values of x which $f(x)$ and $f(x+p)$ are defined
+
+Since $\cos (x) $ has period of $2\pi$ radians, therefore its half-period is $\pi$ radians, or we can compare diagrams
+
+\begin{tikzpicture}[xscale=0.5,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-1.4) grid (4.1*pi,1.4);
+    \draw[->,thick] (0,0)--(4.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2,3,4}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,0,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:4*pi,samples=90] (\x,{cos(\x r)}) node[above] at (4*pi,1) {$y=\cos(x)$};
+    \draw[blue]plot[domain=0:4*pi,samples=90] (\x,{cos((\x + pi) r)}) node[below] at (4*pi,-1) {$y=\cos(x+\pi)$};
+\end{tikzpicture}
+
+Which can be seen that $\cos(x+\pi)$ is the same as $-\cos (x)$, therefore by definition, $\cos x$ has a half-period of $\pi$ radians
+
+For $y = \tan x$
+\begin{align*}
+    \tan (x + \pi) &= \frac{\sin (x+\pi)}{\cos (x+\pi)}\\
+           &= \frac{-\sin x}{-\cos x}\\
+           &= \tan x
+\end{align*}
+So $\pi$ is period of $y=\tan x$ 
+
+For $y=\cot x$
+\begin{align*}
+    \cot (x + \pi) &= \frac{\cos (x+\pi)}{\sin (x+\pi)}\\
+           &= \frac{-\cos x}{-\sin x}\\
+           &= \cot x
+\end{align*}
+
+So $\pi$ is period of $y=\cot x$ 
+
 \solution
+Using definition that $q$ is called a half-period of function $f$ is $f(x+q)= -f(x)$, for all values of x which $f(x)$ and $f(x+q)$ are defined
+
+\begin{align*}
+    f(x+2q) &= f\left(x+q+q \right)\\
+            &= -f\left(x+q \right)\\
+            &= -\left(-f(x)\right)\\
+            &= f(x)
+\end{align*}
+Therefore if $q$ is half period of some function $f$, then $2q$ is a period of $f$
+
 \solution
+\begin{subsolutions}
+
+\subsolution
+\begin{align*}
+    \cos \left( x+k\pi/2  \right) &= \cos \left( x+ \frac{\pi(4n+1)}{2}\right) \\
+              &= \cos \left( x+ 2n\pi + \pi/2  \right)\\
+              &= \cos (x+ \pi/2)\\
+              &= -\sin x
+\end{align*}
+
+\subsolution
+\begin{align*}
+    \cos \left( x+k\pi/2  \right) &= \cos \left( x+ \frac{\pi(4n+2)}{2}\right) \\
+              &= \cos \left( x+ 2n\pi + \pi  \right)\\
+              &= \cos (x+ \pi)\\
+              &= -\cos x
+\end{align*}
+
+\subsolution
+\begin{align*}
+    \cos \left( x+k\pi/2  \right) &= \cos \left( x+ \frac{\pi(4n+3)}{2}\right) \\
+          &= \cos \left( x+ 2n\pi + \frac{3\pi}{2} \right)\\
+          &= \cos (x+ \frac{3\pi}{2})\\
+          &= \cos (x - \frac{\pi}{2})\\
+          &= \sin x
+\end{align*}
+
+\subsolution
+\begin{align*}
+    \cos \left( x+k\pi/2  \right) &= \cos \left( x+ \frac{\pi(4n)}{2}\right) \\
+          &= \cos \left( x+ 2n\pi\right)\\
+          &= \cos x
+\end{align*}
+
+\end{subsolutions}
 \solution
+
+\begin{subsolutions}
+\subsolution
+As the equation has a negative coefficient, we need to shift this by a half-period of $\pi$ radians
+
+\begin{align*}
+    y&=-2 \sin x\\
+    &= 2 \sin (x + \pi)
+\end{align*}
+Comparing coefficients, we get $a=2$ and $k=1$ and $\beta=\pi$
+
+\subsolution
+As the equation has a negative coefficient, we need to shift this by a half-period of $\pi$ radians
+
+\begin{align*}
+    y&=2 \sin (x-\pi/3)\\
+    &= 2 \sin (x -\pi/3+ \pi)\\
+    &= 2 \sin (x +2\pi/3)
+\end{align*}
+Comparing coefficients, we get $a=2$ and $k=1$ and $\beta=-2\pi/3$
+
+\subsolution
+As the equation has a negative coefficient, we need to shift this by a half-period of $\pi$ radians
+
+\begin{align*}
+    y&=-2 \sin (x+\pi/4)\\
+    &= 2 \sin (x +\pi/4+ \pi)\\
+    &= 2 \sin (x +5\pi/4)
+\end{align*}
+Comparing coefficients, we get $a=2$ and $k=1$ and $\beta=-5\pi/4$
+
+\subsolution
+As the equation is a cosine function, we need to re-express as a sine function
+
+\begin{align*}
+    3 \cos x &= 3 \sin(x+\pi/2)\\
+\end{align*}
+Comparing coefficients, we get $a=3$ and $k=1$ and $\beta=\pi/2$
+
+\subsolution
+As the equation is a cosine function, we need to re-express as a sine function
+
+\begin{align*}
+    y&=3 \cos (x-\pi/6)\\ 
+     &= 3 \sin(x-\pi/6+\pi/2)\\
+     &= 3 \sin(x+\pi/3)
+\end{align*}
+Comparing coefficients, we get $a=3$ and $k=1$ and $\beta=-\pi/3$
+
+\subsolution
+As the equation is a cosine function, we need to re-express as a sine function. Then re-express as a postive amplitude
+
+\begin{align*}
+    y&=-3 \cos (x-\pi/6)\\ 
+     &=-3 \sin(x-\pi/6+\pi/2)\\
+     &=3 \sin(x-\pi/6+\pi/2+\pi)\\
+     &=3 \sin(x+4\pi/3)
+\end{align*}
+Comparing coefficients, we get $a=3$ and $k=1$ and $\beta=-4\pi/3$
+\end{subsolutions}
+
 \solution
+\[\cos(x-\pi/5) \]
+\begin{tikzpicture}[xscale=0.5,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-1.4) grid (4.1*pi,1.4);
+    \draw[->,thick] (0,0)--(4.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2,3,4}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,0,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:4*pi,samples=90] (\x,{cos((\x-pi/5)  r)});
+\end{tikzpicture}
+
 \solution
+We need to shift to the right by $\frac{\pi}{2}$
+
+We need to shift to the left by $\frac{3\pi}{2}$
+
 \solution
-\solution
+
+To express $k$ as an odd number, let $k=2n+1$ for any integer $n$
+\begin{align*}
+    \tan \left( x+k\pi/2  \right) &= \tan \left( x+ \frac{\pi(2n+1)}{2}\right) \\
+          &= \tan \left( x+ 2n\pi + \pi/2\right)\\
+          &= \tan \left(x + \pi/2\right)\\
+          &= \frac{\sin(x+\pi/2)}{\cos(x+\pi/2)}\\
+          &= \frac{-\cos x}{\sin x}\\
+          &= -\cot x
+\end{align*}
+
+To express $k$ as an even number, let $k=2n$ for any integer $n$
+\begin{align*}
+    \tan \left( x+k\pi/2  \right) &= \tan \left( x+ \frac{\pi(2n)}{2}\right) \\
+          &= \tan \left( x+ 2n\pi \right)\\
+          &= \tan x\\ 
+\end{align*}
+
 \end{solutions}
+
 
 \begin{solutions}{Page 188}
 \solution
+a) $y= \tan\left(x -\frac{\pi}{6}\right)$
+
+\begin{tikzpicture}[xscale=1,yscale=0.5]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-3.4) grid (2.1*pi,3.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,3.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-3.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-3,-2,...,3}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw asymptotes
+    \draw [thin,dashed, blue](2/3*pi,-3.5)--(2/3*pi,3.5) node [below right] at (2/3*pi,0) {$\frac{2\pi}{3}$};
+    \draw [thin,dashed, blue](5/3*pi,-3.5)--(5/3*pi,3.5) node [below right] at (5/3*pi,0) {$\frac{2\pi}{3}$};
+    %Draw the curve
+    \draw[red]plot[domain=0:.56*pi,samples=30] (\x,{tan((\x - pi/6) r)});
+    \draw[red]plot[domain=0.77*pi:1.56*pi,samples=60] (\x,{tan((\x - pi/6) r)});
+    \draw[red]plot[domain=1.77*pi:2*pi,samples=30] (\x,{tan((\x - pi/6) r)});
+\end{tikzpicture}
+
+b) $y= 3\tan\left(x\right)$
+
+\begin{tikzpicture}[xscale=1,yscale=0.5]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-3.4) grid (2.1*pi,3.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,3.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-3.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-3,-2,...,3}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw asymptotes
+    \draw [thin,dashed, blue](0.5*pi,-3.5)--(0.5*pi,3.5) node [below right] at (0.5*pi,0) {$\frac{\pi}{2}$};
+    \draw [thin,dashed, blue](1.5*pi,-3.5)--(1.5*pi,3.5) node [below right] at (1.5*pi,0) {$\frac{3\pi}{2}$};
+    %Draw the curve
+    \draw[red]plot[domain=0:0.25*pi,samples=30](\x,{3*tan(\x r)});
+    \draw[red]plot[domain=0.75*pi:1.25*pi,samples=30](\x,{3*tan(\x r)});
+    \draw[red]plot[domain=1.75*pi:2*pi,samples=30] (\x,{3*tan(\x r)});
+\end{tikzpicture}
+
+c) $y= \cot\left(x+\frac{\pi}{4}\right)$
+
+\begin{tikzpicture}[xscale=1,yscale=0.5]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-3.4) grid (2.1*pi,3.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,3.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-3.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-3,-2,...,3}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw asymptotes
+    \draw [thin,dashed, blue](0.75*pi,-3.5)--(0.75*pi,3.5) node [below right] at (0.75*pi,0) {$\frac{3\pi}{4}$};
+    \draw [thin,dashed, blue](1.75*pi,-3.5)--(1.75*pi,3.5) node [below right] at (1.75*pi,0) {$\frac{7\pi}{4}$};
+    %Draw the curve
+    \draw[red]plot[domain=0:0.64*pi,samples=30](\x,{cot((\x+pi/4)  r)});
+    \draw[red]plot[domain=0.85*pi:1.64*pi,samples=30](\x,{cot((\x+pi/4) r)});
+    \draw[red]plot[domain=1.85*pi:2*pi,samples=30] (\x,{cot((\x+pi/4) r)});
+\end{tikzpicture}
+
 \solution
+Not really, although there is a trigonometric identity where \[\tan x = \cot\left(\frac{\pi}{2} -x\right)\]
+
+This equation has a negative $x$ inside. Therefore it won't be in form of $y= \cot(x+\phi)$ (note the positive x inside)
+
 \end{solutions}
 
 \begin{solutions}{Page 189}
+
 \solution
+\begin{subsolutions}
+\subsolution
+For $y = y_1+y_2$
+
+\begin{tikzpicture}[xscale=1,yscale=0.5]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-5.4) grid (2.1*pi,5.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,5.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-5.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-4,-3,...,4}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:2*pi,samples=90] (\x,{2*sin(\x r) + sin((\x-pi/4) r))});
+\end{tikzpicture}
+
+\subsolution
+For $y = y_1+y_2$
+
+\begin{tikzpicture}[xscale=1,yscale=0.5]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-5.4) grid (2.1*pi,5.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,5.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-5.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-4,-3,...,4}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:2*pi,samples=90] (\x,{2*sin(\x r) + 3*sin((2*\x) r))});
+\end{tikzpicture}
+
+\subsolution
+For $y = y_2+y_3$
+
+\begin{tikzpicture}[xscale=1,yscale=0.5]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-5.4) grid (2.1*pi,5.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,5.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-5.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-4,-3,...,4}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:2*pi,samples=90] (\x,{3*sin((2*\x) r)+3*sin(2*\x r)});
+\end{tikzpicture}
+\end{subsolutions}
+
 \solution
+Graph 1a appear to be a sinusoidal function
 \end{solutions}
 
 \begin{solutions}{Page 191}
 \solution
+For $y=2\sin x + 3 \cos x$, compare with standard form $y=A\sin kx + B \cos kx$, we get values of $A=2$, $B=3$, and $k=1$
+
+To convert to the other standard form $y=a\sin k(x+\phi)$, we calculate its amplitude by
+\begin{align*}
+    a &= \sqrt{A^2+B^2}\\
+      &= \sqrt{2^2 + 3^2}\\
+      &= \sqrt{13}
+\end{align*}
+While its phase $\phi=\alpha/k$ is calculated by
+\begin{align*}
+    \cos \alpha &= \frac{A}{\sqrt{A^2+B^2}}\\
+    \cos \alpha &= \frac{2}{\sqrt{13}}\\
+    \alpha &= \arccos(2/\sqrt{13})
+    \text{Since } & k=1 \\ 
+    \phi &= \arccos(2/\sqrt{13})
+\end{align*}
+Therefore the equation is $y=\sqrt{2}\sin\left(x+\phi\right)$ where $\phi=\arccos{2\sqrt{13}}$
+
+Since amplitude is $\sqrt{2}$, then its maximum value is $\sqrt{2}$
+
 \solution
+Since amplitude is $\sqrt{13}$, then its maximum value is $\sqrt{13}$
+
 \solution
+For $y=\sin x + \cos x$, compare with standard form $y=A\sin kx + B \cos kx$, we get values of $A=1$, $B=1$, and $k=1$
+
+To convert to the other standard form $y=a\sin k(x+\phi)$, we calculate its amplitude $a$ by
+\begin{align*}
+    a &= \sqrt{A^2+B^2}\\
+      &= \sqrt{1^2 + 1^2}\\
+      &= \sqrt{2}
+\end{align*}
+While its phase $\phi=\alpha/k$ is calculated by
+\begin{align*}
+    \cos \alpha &= \frac{A}{\sqrt{A^2+B^2}}\\
+    \cos \alpha &= \frac{1}{\sqrt{2}}\\
+        \alpha &= \pi/4\\
+    \text{Since } & k=1 \\ 
+        \phi &= \pi/4\\
+\end{align*}
+Therefore the equation is $y=\sqrt{2}sin\left(x+\pi/4\right)$
+
+Since amplitude is $\sqrt{2}$, then its maximum value is $\sqrt{2}$
+
 \solution
+For $y=\sin x - \cos x$, compare with standard form $y=A\sin kx + B \cos kx$, we get values of $A=1$, $B=1$, and $k=1$
+
+To convert to the other standard form $y=a\sin k(x-\beta)$, we calculate its amplitude by
+\begin{align*}
+    a &= \sqrt{A^2+B^2}\\
+      &= \sqrt{1^2 + 1^2}\\
+      &= \sqrt{2}
+\end{align*}
+While its phase $\beta=\alpha/k$ is calculated by
+\begin{align*}
+    \cos \alpha &= \frac{A}{\sqrt{A^2+B^2}}\\
+    \cos \alpha &= \frac{1}{\sqrt{2}}\\
+        \alpha &= \pi/4\\
+    \text{Since } & k=1 \\ 
+        \beta &= \pi/4
+\end{align*}
+Therefore the equation is $y=\sqrt{2}\sin\left(x-\pi/4\right)$
+
+Since amplitude is $\sqrt{2}$, then its maximum value is $\sqrt{2}$
+
 \solution
+For $y=4\sin x + 3\cos x$, compare with standard form $y=A\sin kx + B \cos kx$, we get values of $A=4$, $B=3$, and $k=1$
+
+To convert to the other standard form $y=a\sin k(x+\phi)$, we calculate its amplitude by
+\begin{align*}
+    a &= \sqrt{A^2+B^2}\\
+      &= \sqrt{4^2 + 3^2}\\
+      &= \sqrt{25}\\
+      &= 5
+\end{align*}
+While its phase $\phi=\alpha/k$ is calculated by
+\begin{align*}
+    \cos \alpha &= \frac{A}{\sqrt{A^2+B^2}}\\
+    \cos \alpha &= \frac{4}{5}\\
+    \alpha &= \arccos(\frac{4}{5})\\
+    \text{Since } & k=1 \\ 
+    \phi &= \arccos(\frac{4}{5})\\
+\end{align*}
+Therefore the equation is $y=5\sin\left(x+\phi\right)$ where $\phi=\arccos(4/5)$
+
+Since amplitude is 5, then its maximum value is 5
+
 \solution
+For $y=\sin 2x + 3\cos 2x$, compare with standard form $y=A\sin kx + B \cos kx$, we get values of $A=1$, $B=3$, and $k=2$
+
+To convert to the other standard form $y=a\sin k(x+\phi)$, we calculate its amplitude by
+\begin{align*}
+    a &= \sqrt{A^2+B^2}\\
+      &= \sqrt{1^2 + 3^2}\\
+      &= \sqrt{10}
+\end{align*}
+While its phase $\phi=\alpha/k$ is calculated by
+\begin{align*}
+    \cos \alpha &= \frac{A}{\sqrt{A^2+B^2}}\\
+    \cos \alpha &= \frac{1}{\sqrt{10}}\\
+    \alpha &= \arccos(1/\sqrt{10})\\
+    \text{Since } & k=2 \\ 
+    \phi &= \frac{1}{2}\arccos(\frac{1}{\sqrt{10}})\\
+\end{align*}
+Therefore the equation is $y=\sqrt{10}\sin\left(x+\phi\right)$ where $\phi = \frac{1}{2}\arccos(\frac{1}{\sqrt{10}})$
+
 \solution
+For $y=\sin(x-\pi/4)$, compare with standard form $y=a\sin k(x-\beta)$, we get values of $a=1$, $\beta=\pi/4$, and $k=1$
+
+To convert to the other standard form $y=A\sin kx - B \cos kx$, we need to solve for $A$ and $B$ using the definition $A=a\cos k\beta$ and $B=a\sin k\beta$
+\begin{align*}
+    A &= 1 \cos (\pi/4)\\
+      &= \frac{1}{\sqrt{2}}\\
+    B &= 1 \sin (\pi/4)\\
+      &= \frac{1}{\sqrt{2}}
+\end{align*}
+Therefore the equation is $y=\frac{1}{\sqrt{2}} \sin x - \frac{1}{\sqrt{2}i} \cos x $
+
 \solution
+For $y=4\sin(x+\pi/6)$, compare with standard form $y=a\sin k(x+\phi)$, we get values of $a=4$, $\phi=\pi/6$, and $k=2$
+
+To convert to the other standard form $y=A\sin kx + B \cos kx$, we need to solve for $A$ and $B$ using the definition $A=a\cos k\beta$ and $B=a\sin k\beta$
+\begin{align*}
+    A &= 4 \cos (2\pi/6)\\
+      &= 4 \times 1/2\\
+      &= 2\\
+    B &= 4 \sin (2\pi/6)\\
+      &= 4 \times \sqrt{3}/2\\
+      &= 2\sqrt{3}
+\end{align*}
+Therefore the equation is $y=  2\sin 2x + 2\sqrt{3} \cos 2x $
+
 \end{solutions}
 
 \begin{solutions}{Page 194}
 \solution
+\begin{subsolutions}
+
+\subsolution
+\begin{align*}
+    y&= 2\sin(x+\pi/6) + \cos(x+\pi/6)\\
+    y&= 2\left(\sin x \cos \pi/6 + \cos x \sin \pi/6 \right) + \left( \cos x \cos \pi/6 - \sin x \sin \pi/6 \right)\\
+    y&= 2\left(\frac{\sqrt{3}}{2}\sin x+ \frac{1}{2}\cos x \right) + \left(\frac{\sqrt{3}}{2} \cos x -\frac{1}{2} \sin x\right)\\
+    y&= \sqrt{3}\sin x + \cos x +\frac{\sqrt{3}}{2} \cos x -\frac{1}{2} \sin x\\
+    y&= \left(\sqrt{3} -\frac{1}{2} \right)\sin x + \left(1 + \frac{\sqrt{3}}{2}\right) \cos x
+\end{align*}
+
+\subsolution
+\begin{align*}
+    y&= 2\sin2(x+\pi/4) - \cos2(x+\pi/4)\\
+    y&= 2\sin(2x+\pi/2) - \cos(2x+\pi/2)\\
+    y&= 2\left(\sin 2x \cos \pi/2 + \cos 2x \sin \pi/2 \right) + \left( \cos 2x \cos \pi/2 - \sin 2x \sin \pi/2 \right)\\
+    y&= 2\left(\sin 2x \times 0 + \cos 2x \times 1\right) + \left( \cos 2x \times 0 - \sin 2x \times 1 \right)\\
+    y&= 2\cos 2x -\sin 2x\\
+    y&= -\sin 2x + 2\cos 2x
+\end{align*}
+\end{subsolutions}
+
 \solution
+\begin{subsolutions}
+\subsolution
+\begin{align*}
+    y_1 + y_1 &= 2\sin x + \sin (x-\pi/4)\\
+              &= 2\sin x + \left(\sin x  \cos \pi/4 - \cos x \sin \pi/4 \right)\\
+              &= 2\sin x + \frac{1}{\sqrt{2}}\sin x - \frac{1}{\sqrt{2}}\cos x\\
+              &= \left(2+ \frac{1}{\sqrt{2}} \right)\sin x - \frac{1}{\sqrt{2}} \cos x
+\end{align*}
+
+\subsolution
+The functions have different frequencies, which would need advanced mathematics topics such as Fourier Series
+\end{subsolutions}
 \end{solutions}
 
 \begin{solutions}{Page 196}
 \solution
+\[y=-x+\sin x \]
+\begin{tikzpicture}[xscale=0.5,yscale=0.5]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](-2.1*pi,-5.4) grid (2.1*pi,5.4);
+    \draw[->,thick] (-2.1*pi,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,5.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-5.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-5,-4,...,5}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=-2*pi:2*pi,samples=90] (\x,{-\x + sin(\x r))});
+\end{tikzpicture}
+
 \solution
+\[y=x^2+\sin x \]
+\begin{tikzpicture}[xscale=2,yscale=1]
+    \draw[help lines,xstep=pi/4,ystep=0.5,color=gray!50,dashed](-pi/2,0) grid (pi/2,2.4);
+    \draw[->,thick] (0,0)--(0.6*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(-0.6*pi,0);
+    \draw[->,thick] (0,0)--(0,2.5) node[right]{$y$};
+    %Draw marks on x axis
+    \draw [very thin,gray](-pi/2,-0.1)--(-pi/2,0.1) node[below right] at (-pi/2,-0.1) {-$\frac{\pi}{2}$};
+    \draw [very thin,gray](pi/2,-0.1)--(pi/2,0.1) node[below right] at (pi/2,-0.1) {$\frac{\pi}{2}$};
+    %Draw marks on y axis
+    \foreach \yticks in {1,2}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=-pi/2:pi/2,samples=90] (\x,{(\x)^2 + sin(\x r))});
+\end{tikzpicture}
+
 \solution
+\[y=x^2+\cos x \]
+Note this is an even function since $f(-x)=f(x)$
+
+\begin{tikzpicture}[xscale=2,yscale=1]
+    \draw[help lines,xstep=pi/4,ystep=0.5,color=gray!50,dashed](-pi/2,0) grid (pi/2,2.4);
+    \draw[->,thick] (0,0)--(0.6*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(-0.6*pi,0);
+    \draw[->,thick] (0,0)--(0,2.5) node[right]{$y$};
+    %Draw marks on x axis
+    \draw [very thin,gray](-pi/2,-0.1)--(-pi/2,0.1) node[below right] at (-pi/2,-0.1) {-$\frac{\pi}{2}$};
+    \draw [very thin,gray](pi/2,-0.1)--(pi/2,0.1) node[below right] at (pi/2,-0.1) {$\frac{\pi}{2}$};
+    %Draw marks on y axis
+    \foreach \yticks in {1,2}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=-pi/2:pi/2,samples=90] (\x,{(\x)^2 + cos((\x) r))});
+\end{tikzpicture}
+
 \solution
+\[y=x^3+\sin x \]
+\begin{tikzpicture}[xscale=2,yscale=0.5]
+    \draw[help lines,xstep=pi/4,ystep=1,color=gray!50,dashed](-pi/2,-5.4) grid (pi/2,5.4);
+    \draw[->,thick] (0,0)--(0.55*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(-0.55*pi,0);
+    \draw[->,thick] (0,0)--(0,5.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-5.5);
+    %Draw marks on x axis
+    \draw [very thin,gray](-pi/2,-0.1)--(-pi/2,0.1) node[below right] at (-pi/2,-0.1) {-$\frac{\pi}{2}$};
+    \draw [very thin,gray](pi/2,-0.1)--(pi/2,0.1) node[below right] at (pi/2,-0.1) {$\frac{\pi}{2}$};
+    %Draw marks on y axis
+    \foreach \yticks in {-5,-4,...,5}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=-pi/2:pi/2,samples=90] (\x,{(\x)^3 + sin(\x r))});
+\end{tikzpicture}
+
 \solution
+\[y=x^2+\frac{1}{10}\sin x \]
+\begin{tikzpicture}[xscale=2,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=0.5,color=gray!50,dashed](-pi/2,0) grid (pi/2,2.4);
+    \draw[->,thick] (0,0)--(0.6*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(-0.6*pi,0);
+    \draw[->,thick] (0,0)--(0,2.5) node[right]{$y$};
+    %Draw marks on x axis
+    \draw [very thin,gray](-pi/2,-0.1)--(-pi/2,0.1) node[below right] at (-pi/2,-0.1) {-$\frac{\pi}{2}$};
+    \draw [very thin,gray](pi/2,-0.1)--(pi/2,0.1) node[below right] at (pi/2,-0.1) {$\frac{\pi}{2}$};
+    %Draw marks on y axis
+    \foreach \yticks in {1,2}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=-pi/2:pi/2,samples=90] (\x,{(\x)^2 + 0.1*sin((10*\x) r))});
+\end{tikzpicture}
+
 \solution
+\[y=\cos x + \frac{1}{10}\sin 20x \]
+\begin{tikzpicture}[xscale=0.5,yscale=0.5]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](-2.1*pi,-2.4) grid (2.1*pi,2.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(-2.1*pi,0);
+    \draw[->,thick] (0,0)--(0,2.4) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-2.4);
+    %Draw marks on x axis
+    \foreach \i in {-2,-1,1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-2,-1,1,2}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=-2*pi:2*pi,samples=180] (\x,{cos (\x r) + 0.1*sin((20*\x) r))});
+\end{tikzpicture}
+
 \solution
+\[y=2\sin x + \frac{1}{10}\sin 20x \]
+\begin{tikzpicture}[xscale=0.5,yscale=0.5]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](-2.1*pi,-2.4) grid (2.1*pi,2.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(-2.1*pi,0);
+    \draw[->,thick] (0,0)--(0,2.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-2.5);
+    %Draw marks on x axis
+    \foreach \i in {-2,-1,1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-2,-1,1,2}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=-2*pi:2*pi,samples=90] (\x,{2*sin(\x r) + 0.1*sin((20*\x) r))});
+\end{tikzpicture}
 \end{solutions}
 
 \begin{solutions}{Page 197}
 \solution
+In $y=\sin 2x + \sin 3x$. The period of $\sin 2x$ has form of $m(2\pi/2)$, while the period of $\sin 3x$ has form of $n(2\pi/3)$.
+
+To be a period of both parts
+\begin{align*}
+    m\times \frac{2\pi}{2} &= n\times \frac{2\pi}{3}\\
+                         3m  &= 2n
+\end{align*}
+
+Using $m=2$ and $n=3$. the period of each part will be $2\pi$ radians
+
+\solution
+In $y=\sin 3x + \sin 6x$. The period of $\sin 3x$ has form of $m(2\pi/3)$, while the period of $\sin 6x$ has form of $n(2\pi/6)$.
+
+To be a period of both parts
+\begin{align*}
+    m\times \frac{2\pi}{3} &= n\times \frac{2\pi}{6}\\
+                         6m  &= 3n\\
+                         2m &= 1n
+\end{align*}
+
+Using $m=1$ and $n=2$. the period of each part will be $2\pi/3$ radians
+
+\solution
+In $y=\sin 4x + \sin 6x$. The period of $\sin 4x$ has form of $m(2\pi/4)$, while the period of $\sin 6x$ has form of $n(2\pi/6)$.
+
+To be a period of both parts
+\begin{align*}
+    m\times \frac{2\pi}{4} &= n\times \frac{2\pi}{6}\\
+                         6m  &= 4n\\
+                         3m &= 2n
+\end{align*}
+
+Using $m=2$ and $n=3$. the period of each part will be $\pi$ radians
+
 \solution
 \solution
-\solution
+In $y=\sin \sqrt{2}x + \sin 3\sqrt{2}x$. The period of $\sin \sqrt{2}x$ has form of $m(2\pi/\sqrt{2})$, while the period of $\sin 3\sqrt{2}x$ has form of $n(2\pi/3\sqrt{2})$.
+
+To be a period of both parts
+\begin{align*}
+    m\times \frac{2\pi}{\sqrt{2}} &= n\times \frac{2\pi}{3\sqrt{2}}\\
+                         3m &= 1n
+\end{align*}
+
+Using $m=1$ and $n=3$. the period of each part will be $2\pi/\sqrt{2}= \sqrt{2}\pi$ radians
 \end{solutions}
 
 \begin{solutions}{Page 199}
 \solution
+\[y=\sin x -\frac{1}{2}\sin 2x + \frac{1}{3} \sin 3x\]
+\begin{tikzpicture}[xscale=0.5,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](-2.1*pi,-1.4) grid (2.1*pi,1.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(-2.1*pi,0);
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {-2,-1,1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=-2*pi:2*pi,samples=90] (\x,{sin(\x r) - 0.5*sin((2*\x) r) +1/3*sin((3*\x) r))});
+\end{tikzpicture}
+
 \solution
+\[y=\sin x -\frac{1}{2}\sin 2x + \frac{1}{3} \sin 3x - \frac{1}{4} \sin 4x + \frac{1}{5}\sin 5x
+\]
+\begin{tikzpicture}[xscale=0.5,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](-2.1*pi,-1.4) grid (2.1*pi,1.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(-2.1*pi,0);
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {-2,-1,1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=-2*pi:2*pi,samples=90] (\x,{sin(\x r) - 0.5*sin((2*\x) r) +1/3*sin((3*\x) r)) - 1/4*sin((4*\x) r) + 1/5*sin((5*\x) r)});
+\end{tikzpicture}
+
 \solution
+The limit will be a sawtooth wave
+
+\begin{tikzpicture}[xscale=0.5,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](-2.1*pi,-1.4) grid (2.1*pi,1.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(-2.1*pi,0);
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {-2,-1,1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=-2*pi:2*pi,samples=90] (\x,{2*Mod((\x-pi/2)/pi,1)-1});
+\end{tikzpicture}
+
 \solution
+\[y=\cos x -\frac{1}{9}\cos 3x + \frac{1}{25} \cos 5x - \frac{1}{49} \cos 7x\] 
+
+\begin{tikzpicture}[xscale=0.5,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](-2.1*pi,-1.4) grid (2.1*pi,1.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$t$};
+    \draw[->,thick] (0,0)--(-2.1*pi,0);
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {-2,-1,1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=-2*pi:2*pi,samples=90] (\x,{cos (\x r)+ 1/9*cos((3*\x) r)+ 1/25*cos((5*\x) r)+ 1/49*cos((7*\x) r)});
+\end{tikzpicture}
+
+Therefore, the limiting function is the triangular function
+
+\begin{tikzpicture}[xscale=0.5,yscale=1]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](-2.1*pi,-1.4) grid (2.1*pi,1.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(-2.1*pi,0);
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {-2,-1,1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=-2*pi:0,samples=90] (\x,{abs((\x+pi)/(pi/2))-1});
+    \draw[red]plot[domain=0:2*pi,samples=90] (\x,{abs((\x-pi)/(pi/2))-1});
+\end{tikzpicture}
+
 \end{solutions}
 
 \begin{solutions}{Page 200}
 \solution
+The graph will be 
+
+\begin{tikzpicture}[xscale=1,yscale=1]
+    \draw[help lines,xstep=1,ystep=1,color=gray!50,dashed](0,0) grid (2.1*pi,1.4);
+    \draw[->,thick] (0,0)--(6.5,0) node[right]{$t$};
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    %Draw marks on x axis
+    \foreach \i in {1,2,3,4,5,6}
+    \draw [very thin,gray](\i,-0.1)--(\i,0.1) node[below] at (\i,-0.1) {$\i$};
+    %Draw marks on y axis
+    \foreach \yticks in {1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:2,samples=90] (\x,{-abs(\x-1)+1});
+    \draw[red]plot[domain=2:4,samples=90] (\x,{-abs(\x-3)+1});
+    \draw[red]plot[domain=4:6,samples=90] (\x,{-abs(\x-5)+1});
+\end{tikzpicture}
+
 \solution
+The graph will be 
+
+\begin{tikzpicture}[xscale=1,yscale=1]
+    \draw[help lines,xstep=1,ystep=1,color=gray!50,dashed](0,-1.4) grid (2.1*pi,1.4);
+    \draw[->,thick] (0,0)--(6,0) node[right]{$t$};
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2,3,4,5,6}
+    \draw [very thin,gray](\i,-0.1)--(\i,0.1) node[below] at (\i,-0.1) {$\i$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:3,samples=90] (\x,{-abs(\x-1)+1});
+    \draw[red]plot[domain=3:6,samples=90] (\x,{-abs(\x-5)+1});
+\end{tikzpicture}
+
 \solution
+The graph will be 
+
+\begin{tikzpicture}[xscale=0.25,yscale=0.25]
+    \draw[help lines,xstep=8,ystep=8,color=gray!50,dashed](0,0) grid (32,8);
+    \draw[->,thick] (0,0)--(32.5,0) node[right]{$t$};
+    \draw[->,thick] (0,0)--(0,8.5) node[right]{$y$};
+    %Draw marks on x axis
+    \foreach \i in {8,16,24,32}
+    \draw [very thin,gray](\i,-0.1)--(\i,0.1) node[below] at (\i,-0.1) {$\i$};
+    %Draw marks on y axis
+    \draw [very thin,gray](-0.1,8)--(0.1,8) node[left] at (0,8) {$8$};
+    %Draw the curve
+    \draw[red]plot[domain=0:8,samples=90] (\x,\x);
+    \draw[red]plot[domain=8:16,samples=90] (\x,8);
+    \draw[red]plot[domain=16:24,samples=90] (\x,-\x+24);
+    \draw[red]plot[domain=24:32,samples=90] (\x,0);
+\end{tikzpicture}
+
 \solution
+The graph will be 
+
+\begin{tikzpicture}[xscale=0.25,yscale=0.125]
+    \draw[help lines,xstep=6,ystep=10,color=gray!50,dashed](0,0) grid (24,40);
+    \draw[->,thick] (0,0)--(24.5,0) node[right]{$t$};
+    \draw[->,thick] (0,0)--(0,40.5) node[right]{$y$};
+    %Draw marks on x axis
+    \foreach \i in {6,12,18,24}
+    \draw [very thin,gray](\i,-0.1)--(\i,0.1) node[below] at (\i,-0.1) {$\i$};
+    %Draw marks on y axis
+    \foreach \yticks in {4,40}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red](0,4)--(1,7)--(2,13)--(3,22)--(4,31)--(5,37)--(6,40);
+    \draw[red](6,40)--(7,37)--(8,31)--(9,22)--(10,13)--(11,7)--(12,4);
+    \draw[red](12,4)--(13,7)--(14,13)--(15,22)--(16,31)--(17,37)--(18,40);
+    \draw[red](18,40)--(19,37)--(20,31)--(21,22)--(22,13)--(23,7)--(24,4);
+\end{tikzpicture}
+
+Tide is rising fastest at 3rd, 4th, 15th, and 16th hour 
+
+Tide is receding fastest at 9th, 10th, 21st, and 22nd hour 
+
+Tide is rising slowest at 1st, 5th, 13th and 17th hour 
+
+Tide is receding slowest at 7th, 11th, 19th and 23rd hour 
+
 \end{solutions}
 
 \begin{solutions}{Page 203}
 \solution
+Substituing $x$ values
+\begin{itemize}
+    \item $\sin \pi=0$
+    \item $\sin 2\pi=0$
+    \item $\sin 3\pi=0$
+    \item $\sin 4\pi=0$
+\end{itemize}
+
 \solution
+For $y=\sin 4\pi x$, the value of $k$ is $k=4\pi$, therefore the period is $\frac{2\pi}{4\pi}$, so the period is $\frac{1}{2}$
+
 \solution
+Since period is $\frac{2\pi}{k}$, if period is 3
+\begin{align*}
+    3 &= \frac{2\pi}{k}\\
+    k &= \frac{2\pi}{3}
+\end{align*}
+Therefore the equation is $y=\sin \frac{2\pi}{3}x$
+
 \solution
+Since period is $\frac{2\pi}{k}$, if period is 2
+\begin{align*}
+    2 &= \frac{2\pi}{k}\\
+    k &= \frac{2\pi}{2}
+\end{align*}
+Therefore the equation is $y=\sin \pi x$
+
 \solution
+Since period is $\frac{2\pi}{k}$, if period is $n$
+\begin{align*}
+    n &= \frac{2\pi}{k}\\
+    k &= \frac{2\pi}{n}
+\end{align*}
+Therefore the equation is $y=\sin \frac{2\pi}{n} x$
 \end{solutions}
 
 \begin{solutions}{Page 205}
 \solution
-\solution
-\solution
-\end{solutions}
+The period is estimated to be 12 months by distance between peaks at $t=8$ and $t=20$. Therefore the value for $k$ is $k=2\pi/20$
 
+The amplitude is estimated to be mid-way between peak (15) and trough (9.5), which is $(15-9.5)/2 =2.75 $
+
+Therefore the equation is $y=2.75 \sin \frac{\pi}{10}(x-\pi)$
+
+\solution
+If (a) is in northern hemisphere, (b) and (c) would be in northern hemisphere too as the peaks occur at similar month. (d) would be in southern hemispehere as the wave is shifted by half-period
+
+\solution
+For all graphs, the 'average' number of daylight hours occur at month 4, month 10, month 16, and month 22
+\end{solutions}
 
 \section*{Chapter 9: Inverse Functions and Trigonometric Equations}
 
