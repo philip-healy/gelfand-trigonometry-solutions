@@ -6258,68 +6258,750 @@ For all graphs, the 'average' number of daylight hours occur at month 4, month 1
 
 \begin{solutions}{Page 213}
 \solution
+\begin{subsolutions}
+    \subsolution $\arcsin 0.5 = \pi/6$
+    \subsolution $\arccos 0.5 = \pi/3$
+    \subsolution $\arctan 0.5 = \pi/4$
+    \subsolution $\arcsin (-\sqrt{3}/2) = -\pi/3$
+    \subsolution $\arccos (-\sqrt{3}/2) = 5\pi/6$
+    \subsolution $\arctan (-\sqrt{3}) = -\pi/3$
+    \subsolution Note: not valid as the domain of $\arcsin x$ is $-1 \leq x \leq 1$
+\end{subsolutions}
 \solution
+\begin{subsolutions}
+    \subsolution 
+    \begin{align*}
+        &\sin(\arcsin 0.5)\\
+        &=\sin(\pi/6) \\
+        &=-0.5
+    \end{align*}
+    \subsolution 
+    \begin{align*}
+        &\cos(\arccos 0.5)\\
+        &=\cos(\pi/3)\\
+        &= 0.5
+    \end{align*}
+    \subsolution 
+    \begin{align*}
+        &\tan(\arctan (-1))\\
+        &=\tan(\pi/4)\\
+        &= -\pi/4
+    \end{align*}
+    \subsolution 
+    \begin{align*}
+        &\arcsin(\sin (\pi/3))\\
+        &=\arcsin(-\sqrt{3}/2)\\
+        &= \pi/3
+    \end{align*}
+    \subsolution 
+    \begin{align*}
+        &\arccos (\cos 11\pi/6) \\
+        &=\arccos(-\sqrt{3}/2)\\
+        &= \pi/6
+    \end{align*}
+\end{subsolutions}
 \solution
+Let $\theta = \arccos b$ which mean $\cos \theta = b$. If we assume angle $\theta$ is acute, then we can draw a right angle triangle
+
+    \begin{tikzpicture}[scale=1,font=\sffamily]
+    \coordinate (C) at (0,0);
+    \coordinate (A) at (-2,0);
+    \coordinate (B) at (0,1.5);
+    \draw (C) -- node[right] {$\sqrt{1-b^2}$} (B) -- node[above] {$1$} (A) -- node[below] {$b$} (C);
+    \node (theta) at ([shift=({0.4,0.15})]A) {$\theta$};
+    \draw (C) rectangle (-0.2,0.2);
+    \end{tikzpicture}
+    
+    Giving $\sin \theta = \sqrt{1-b^2}$ when $0 \leq \theta \leq \pi/2$
+
+For $\pi/2 \leq \theta \pi$, $\sin \theta = \sin (\pi - \theta)$, making the sign positive
+
+For $\pi \leq \theta 3\pi/2$, $\sin \theta = -\sin (\theta-\pi)$, making the sign negative
+
+For $3\pi/2 \leq \theta 2\pi$, $\sin \theta = -\sin (2\theta-\theta)$, making the sign negative
+
 \solution
+Let $\theta = \arcsin b$ which mean $\sin \theta = b$. If we assume angle $\theta$ is acute, then we can draw a right angle triangle
+
+    \begin{tikzpicture}[scale=1,font=\sffamily]
+    \coordinate (C) at (0,0);
+    \coordinate (A) at (-2,0);
+    \coordinate (B) at (0,1.5);
+    \draw (C) -- node[right] {$b$} (B) -- node[above] {$1$} (A) -- node[below] {$\sqrt{1-b^2}$} (C);
+    \node (theta) at ([shift=({0.4,0.15})]A) {$\theta$};
+    \draw (C) rectangle (-0.2,0.2);
+    \end{tikzpicture}
+    
+    Giving $\tan \theta = \frac{b}{\sqrt{1-b^2}}$ when $0 \leq \theta \leq \pi/2$
+
+For $\pi/2 \leq \theta \pi$, $\tan \theta = -\tan (\pi - \theta)$, making the sign negative
+
+For $\pi \leq \theta 3\pi/2$, $\tan \theta = \tan (\theta-\pi)$, making the sign positive
+
+For $3\pi/2 \leq \theta 2\pi$, $\tan \theta = -\tan (2\theta-\theta)$, making the sign negative
+
 \solution
+Let $\theta = \arctan b$ which mean $\tan \theta = b$. If we assume angle $\theta$ is acute, then we can draw a right angle triangle
+
+    \begin{tikzpicture}[scale=1,font=\sffamily]
+    \coordinate (C) at (0,0);
+    \coordinate (A) at (-2,0);
+    \coordinate (B) at (0,1.5);
+    \draw (C) -- node[right] {$b$} (B) -- node[above left] {$\sqrt{1+b^2}$} (A) -- node[below] {$1$} (C);
+    \node (theta) at ([shift=({0.4,0.15})]A) {$\theta$};
+    \draw (C) rectangle (-0.2,0.2);
+    \end{tikzpicture}
+    
+    Giving $\cos \theta = \frac{1}{\sqrt{1+b^2}}$ when $0 \leq \theta \leq \pi/2$
+
+For $\pi/2 \leq \theta \pi$, $\cos \theta = -\cos (\pi - \theta)$, making the sign negative
+
+For $\pi \leq \theta 3\pi/2$, $\cos \theta = -\cos (\theta-\pi)$, making the sign negative
+
+For $3\pi/2 \leq \theta 2\pi$, $\cos \theta = \cos (2\theta-\theta)$, making the sign positive
+
 \solution
+Since angle $\alpha$ is acute, then we can draw a right angle triangle 
+
+    \begin{tikzpicture}[scale=1,font=\sffamily]
+    \coordinate (C) at (0,0);
+    \coordinate (A) at (-2,0);
+    \coordinate (B) at (0,1.5);
+    \draw (C) -- node[right] {$a$} (B) -- node[above] {$c$} (A) -- node[below] {$b$} (C);
+    \node (alpha) at ([shift=({0.4,0.15})]A) {$\alpha$};
+    \node (beta) at ([shift=({-0.4,-0.5})]B) {$\beta$};
+    \draw (C) rectangle (-0.2,0.2);
+    \end{tikzpicture}
+
+Note that $\sin \alpha = a/b$ and $\cos \beta =a/b$, and $\beta = \pi/2-\alpha$
+\begin{align*}
+    \sin \alpha &= \cos \beta\\
+    \arccos (\sin \alpha) &= \beta\\
+    \arccos (\sin \alpha) &= \pi/2 - \alpha
+\end{align*}
+
+For $\pi/2 \leq \alpha \leq  \pi$, the expression $\sin\alpha$ becomes $\sin (\pi - \alpha)$, therefore making 
+\begin{align*}
+    \arccos(\sin \alpha) &= \arccos(\sin (\pi-\alpha))\\
+                         &= \pi/2 - (\pi/2-\alpha)\\
+                         &= \alpha
+\end{align*}
+
+For $\pi \leq \alpha \leq  3\pi/2$, the expression $\sin\alpha$ becomes $-\sin (\alpha - \pi)$, therefore making 
+\begin{align*}
+    \arccos(\sin \alpha) &= \arccos(-\sin (\alpha-\pi))\\
+                         &= \arccos(\sin (-\alpha+\pi))\\
+                         &= \pi/2 - (-\alpha + \pi)\\
+                         &= \alpha-\pi/2
+\end{align*}
+
+For $3\pi/2 \leq \alpha \leq  2\pi$, the expression $\sin\alpha$ becomes $-\sin (2\pi - \alpha)$, therefore making 
+\begin{align*}
+    \arccos(\sin \alpha) &= \arccos(-\sin (2\pi-\alpha))\\
+                        &= \arccos(\sin (-2\pi+\alpha))\\
+                        &= \arccos(\sin (\alpha))\\
+                         &= \pi/2 - \alpha
+\end{align*}
+
 \solution
+Note that the angles for parts (a) to (e) are less than $\pi/2$, so no change in angle is needed, unlike (f)
+\begin{subsolutions}
+    \subsolution $\arcsin (\sin \pi/11) = \pi/11$
+    \subsolution $\arcsin (\sin 2\pi/11) = 2\pi/11$
+    \subsolution $\arcsin (\sin 3\pi/11) = 3\pi/11$
+    \subsolution $\arcsin (\sin 4\pi/11) = 4\pi/11$
+    \subsolution $\arcsin (\sin 5\pi/11) = 5\pi/11$
+    \subsolution 
+    \begin{align*}
+        &\arcsin (\sin 6\pi/11) \\
+        &= \arcsin (\sin (\pi-6\pi/11))\\
+        &= \arcsin (\sin 5\pi/11)\\
+        &= 5\pi/11
+    \end{align*}
+\end{subsolutions}
 \solution
+Graph of $y=\cos(\arccos x)$
+
+\begin{tikzpicture}[xscale=2,yscale=2]
+    \draw[help lines,xstep=1,ystep=1,color=gray!50,dashed](-1.5,-1.5) grid (1.5,1.5);
+    \draw[->,thick] (-1.5,0)--(1.5,0) node[right]{$x$};
+    \draw[->,thick] (0,-1.5)--(0,1.5) node[right]{$y$};
+    %Draw marks on x axis
+    \foreach \i in {-1,1}
+    \draw [very thin,gray](\i,-0.1)--(\i,0.1) node[below] at (\i,-0.1) {$\i$};
+    %Draw marks on y axis
+    \foreach \yticks in {1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red] (-1,-1) -- (1,1);
+\end{tikzpicture}
 \solution
+Graph of $y=\arccos(\cos x)$
+
+\begin{tikzpicture}[xscale=1,yscale=1]
+    \draw[help lines,xstep=pi,ystep=pi,color=gray!50,dashed](-2*pi,-pi) grid (2*pi,pi);
+    \draw[->,thick] (-2*pi,0)--(2*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,-pi)--(0,pi) node[right]{$y$};
+    %Draw marks on x axis
+    \foreach \i in {-2,-1,1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below] at (\i*pi,-0.1) {$\i \pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks \pi$};
+    %Draw the curve
+    \draw[red] (-2*pi,0)--(-pi,-pi)--(0,0)--(pi, pi)--(2*pi,0); 
+\end{tikzpicture}
 \solution
+Letting $\alpha=\arcsin 3/5$ and $\beta=\arcsin 5/13$. Then drawing the triangles
+
+    \begin{tikzpicture}[scale=1,font=\sffamily]
+    \coordinate (C) at (0,0);
+    \coordinate (A) at (-2,0);
+    \coordinate (B) at (0,1.5);
+    \draw (C) -- node[right] {$3$} (B) -- node[above] {$5$} (A) -- node[below] {$4$} (C);
+    \node (alpha) at ([shift=({0.4,0.15})]A) {$\alpha$};
+    \draw (C) rectangle (-0.2,0.2);
+    \end{tikzpicture}
+
+    \begin{tikzpicture}[scale=1,font=\sffamily]
+    \coordinate (C) at (0,0);
+    \coordinate (A) at (-2,0);
+    \coordinate (B) at (0,1.5);
+    \draw (C) -- node[right] {$5$} (B) -- node[above] {$13$} (A) -- node[below] {$12$} (C);
+    \node (beta) at ([shift=({0.4,0.15})]A) {$\beta$};
+    \draw (C) rectangle (-0.2,0.2);
+    \end{tikzpicture}
+
+\begin{align*}
+    \sin (\alpha + \beta)&=\sin\alpha \cos\beta +\cos\alpha \sin\beta\\
+    &=3/5 \times 12/13 + 4/5 \times  5/13\\
+    &= 56/65
+\end{align*}
 \solution
+Letting $\alpha = \arctan a$ and $\beta = \arctan b$. Therefore we have $\tan \alpha = a$ amd $\tan \beta = b$
+\begin{align*}
+    \tan(\alpha + \beta)&= \frac{\tan \alpha + \tan \beta}{1-\tan \alpha \tan \beta}\\
+                        &= \frac{a+b}{1-ab}
+\end{align*}
+
 \solution
+Let $\tan \alpha = 1/3$ and $\tan \beta = 1/2$ and $\tan \gamma = 1$
+\begin{align*}
+    \tan(\alpha + \beta)&= \frac{\tan \alpha + \tan \beta}{1-\tan \alpha \tan \beta}\\
+              \tan(\alpha + \beta)&= \frac{1/3+1/2}{1-1/3 \times 1/2}\\
+              \tan(\alpha + \beta)&= 1
+          \end{align*}
+But Since both $\tan (\alpha + \beta)=1$ and $\tan \gamma =1$. Therefore $\alpha + \beta = \gamma$
+
+Note: I think the author meant Question 11 instead of 'Problem 8'
 \solution
+Using plane geometry, draw another row of squares underneath the diagram and draw lines $AH$ and $HC$.
+
+Note that the lengths of $AH$ and $HC$ are the same, making triangle $AHC$ an isosceles triangle, therefore $\angle CAH = \angle ACH$
+
+Since triangle $AHG$ and $HEC$ is congruent with triangle $BCD$, $\angle BAH = \beta$, and $\angle HCE = \beta$
+
+Since triangle $FCA$ is congruent with triangle $ACD$, $\angle FCA = \alpha$
+
+Therefore 
+\begin{align*}
+    \angle FCA + \angle ACH + \angle HCE &= 90^{\circ}\\
+    \alpha + \angle ACH + \beta = 90^{\circ}\\
+    \angle ACH = 90^{\circ} -\alpha -\beta
+\end{align*}
+
+Since $\angle \gamma = 45^{\circ }$, $\angle CAH = \alpha + \beta$ and $\angle CAH = \angle ACH$
+
+\begin{align*}
+    \alpha + \beta &= 90^{\circ} -\alpha -\beta\\
+    2(\alpha + \beta) &= 90^{\circ}\\
+    \alpha + \beta &= 45^{\circ}\\
+    \alpha + \beta &= \gamma
+\end{align*}
+
+    \begin{tikzpicture}[scale=1,font=\sffamily]
+    \draw[help lines,xstep=2,ystep=2,color=gray!50,dashed](0,-2) grid (6,2);
+    \coordinate (A) at (0,0);
+    \coordinate (B) at (2,0);
+    \coordinate (C) at (6,2);
+    \coordinate (G) at (4,0);
+    \coordinate (E) at (6,-2);
+    \coordinate (F) at (0,2);
+    \coordinate (H) at (4,-2);
+    \draw (A)--(C)--(G)--cycle;
+    \draw (B)--(C);
+    \draw (A)--(H)--(C);
+    %\draw (C) -- node[right] {$b$} (B) -- node[above] {$\sqrt{1+b^2}$} (A) -- node[below] {$1$} (C);
+    \node (A) at ([shift=({1,0.15})]A) {$\alpha$};
+    \node (B) at ([shift=({0.8,0.15})]B) {$\beta$};
+    \node (G) at ([shift=({0.5,0.15})]G) {$\gamma$};
+    \node[below] at (0,0) {$A$};
+    \node[below] at (2,0) {$B$};
+    \node[right] at (6,2) {$C$};
+    \node[right] at (6,0) {$D$};
+    \node[right] at (0,2) {$E$};
+    \node[below] at (4,0) {$G$};
+    \node[below] at (4,-2) {$H$};
+    %\draw (C) rectangle (-0.2,0.2);
+    \end{tikzpicture}
+
+
+Note: I think the author meant Question 12 instead of 'Problem 9'
 \end{solutions}
 
 \begin{solutions}{Page 220}
 \solution
+From the graph, $\sin x > 1/2$ when $\pi/6 \leq x \leq 5\pi/6$ and $13\pi/6 \leq x \leq 17\pi/6$
 \solution
+Using the general equation $\pi k + (-1)^k (\alpha)$ for any integer $k$
+
+For $\sin x = -1/2$, the value for $\alpha$ is $\arcsin(-1/2) = -\pi/6$, so the solution is $\pi k + (-1)^k (-\pi/6)$
 \solution
+Using the general equation $2n\pi \pm (\alpha)$ for any integer $n$
+
+For $\cos x = \sqrt{2}/2$, the value for $\alpha$ is $\arccos(\sqrt{2}/2) = \pi/4$, so the solution is $2\pi n \pm \pi/4$
 \solution
+Using the general equation $n\pi + (\alpha)$ for any integer $n$
+
+For $\tan x = 1$, the value for $\alpha$ is $\arctan(1) = \pi/4$, so the solution is $\pi n + \pi/4$
 \solution
+Using the general equation $\pi k + (-1)^k (\alpha)$ for any integer $k$
+
+For $\sin x = -1$, the value for $\alpha$ is $\arcsin(-1) = -\pi/2$, so the solution is $\pi k + (-1)^k (-\pi/2)$
 \end{solutions}
 
 \begin{solutions}{Page 221}
 \solution
+Using the general equation $\pi k + (-1)^k (\alpha)$ for any integer $k$
+
+For $\sin x = \sin \pi/5$, the value for $\alpha$ is $\pi/5$, so the solution is $\pi k + (-1)^k (\pi/5)$
 \solution
+Using the general equation $\pi k + (-1)^k (\alpha)$ for any integer $k$
+
+For $\sin x = \sin \pi/2$, the value for $\alpha$ is $\pi/2$, so the solution is $\pi k + (-1)^k (\pi/2)$
 \solution
+\begin{tikzpicture}[xscale=0.5,yscale=1]
+    \draw[help lines,xstep=pi,ystep=1,color=gray!50,dashed](0,-1.4) grid (6.1*pi,1.4);
+    \draw[->,thick] (0,0)--(6.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \foreach \i in {1,2,...,6}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,0,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:6*pi, samples=90] (\x,{cos(\x r)});
+    \draw[blue] (6*pi,1/2)--(0,1/2) node[left] at (0,1/2){$\cos \alpha$};
+    \draw[blue] (pi/3,1/2)--(pi/3,0) node[below] at (pi/3,0){$\alpha$};
+    \draw[blue] (5*pi/3,1/2)--(5*pi/3,0) node[below] at (5*pi/3,0){$2\pi - \alpha$};
+\end{tikzpicture}
+
+Since period of $\cos x$ is $2\pi$, the solutions are $2\pi n+ \alpha$ and $2\pi n- \alpha$ for any integer n
 \solution
+Using the general equation $2n\pi \pm (\alpha)$ for any integer $n$
+
+For $\cos x = \cos \pi/5$, the value for $\alpha$ is $\pi/5$, so the solution is $2\pi n \pm \pi/5$
+
 \solution
+Since period of $\tan x$ is $\pi$, then if $\alpha$ is a solution, then the general equation for solutions are $\alpha + \pi n$ for any integer n
+
+\begin{tikzpicture}[xscale=1,yscale=0.5]
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-3.4) grid (2.1*pi,3.4);
+    \draw[->,thick] (0,0)--(2.1*pi,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,3.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-3.5);
+%    %Draw marks on x axis
+    \foreach \i in {1,2}
+    \draw [very thin,gray](\i*pi,-0.1)--(\i*pi,0.1) node[below right] at (\i*pi,-0.1) {$\i\pi$};
+%    %Draw marks on y axis
+    \foreach \yticks in {-3,-2,...,3}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw asymptotes
+    \draw [thin,dashed, blue](0.5*pi,-3.5)--(0.5*pi,3.5) node [below right] at (0.5*pi,0) {$\frac{\pi}{2}$};
+    \draw [thin,dashed, blue](1.5*pi,-3.5)--(1.5*pi,3.5) node [below right] at (1.5*pi,0) {$\frac{3\pi}{2}$};
+    %Draw the curve
+    \draw[red]plot[domain=0:0.4*pi,samples=30](\x,{tan(\x r)});
+    \draw[red]plot[domain=0.60*pi:1.4*pi,samples=30](\x,{tan(\x r)});
+    \draw[red]plot[domain=1.60*pi:2*pi,samples=30] (\x,{tan(\x r)});
+    \draw[blue] (0.25*pi,1)--(0.25*pi,0) node[below]at(0.25*pi,0) {$\alpha$};
+    \draw[blue] (1.25*pi,1)--(1.25*pi,0) node[below]at(1.25*pi,0) {$\alpha+\pi$};
+\end{tikzpicture}
+
 \solution
+Using the general equation $n\pi + (\alpha)$ for any integer $n$
+
+For $\tan x = \tan \pi/5$, the value for $\alpha$ is $\pi/5$, so the solution is $\pi n + \pi/5$
+
 \solution
+Using the general equation $\pi k + (-1)^k (\alpha)$ for any integer $k$
+\begin{align*}
+    \sin x &= -\sin \alpha\\
+    \sin x &= \sin (-\alpha)\\
+    x &= \pi k + (-1)^k (-\alpha)
+\end{align*}
 \solution
+Using the general equation $2n\pi \pm (\alpha)$ for any integer $n$
+\begin{align*}
+    \cos x &= -\cos \alpha\\
+    \cos x &= \cos (\pi-\alpha)\\
+    x &= 2n\pi \pm (\pi-\alpha)
+\end{align*}
 \solution
+Using the general equation $\pi k + (-1)^k (\alpha)$ for any integer $k$
+\begin{align*}
+    \sin x &= \sin \alpha\\
+    \sin x &= \sin (\alpha)\\
+    x &= \pi k + (-1)^k (\alpha)
+\end{align*}
 \end{solutions}
 
 \begin{solutions}{Page 225}
 \solution
+Using the general equation $\pi k + (-1)^k (\alpha)$ for any integer $k$
+\begin{align*}
+    \sin 2x &= 1\\
+    2x &= \pi k + (-1)^k \times \arcsin 1\\
+    2x &= \pi k + (-1)^k \times \pi/2\\
+    x &= \frac{1}{2}\left(\pi k + (-1)^k \times \pi/2\right)
+\end{align*}
 \solution
+Using the general equation $\pi k + (-1)^k (\alpha)$ for any integer $k$
+\begin{align*}
+    \sin x/2 &= 1/2\\
+    x/2 &= \pi k + (-1)^k \times \arcsin 1/2\\
+    x/2 &= \pi k + (-1)^k \times \pi/6\\
+    x &= 2\left(\pi k + (-1)^k \times \pi/6\right)
+\end{align*}
 \solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\end{solutions}
+\begin{align*}
+    \cos x &= \sin 2x\\
+    \cos x &= 2\sin x \cos x\\
+    0&= 2\sin x \cos x- \cos x\\
+    0&= \cos x\left(2\sin x - 1\right)\\
+\end{align*}
+Therefore there are two set of solutions. Using general solutions $2n\pi \pm (\alpha)$ 
+\begin{align*}
+    \cos x &= 0\\
+    x &= 2n\pi \pm (\arccos 0)\\
+    x &= 2n\pi \pm (\pi/2)\\
+\end{align*}
+and $\pi k + (-1)^k (\alpha)$
+\begin{align*}
+    2\sin x -1 &= 0\\
+    \sin x &= 1/2\\
+    x &= \pi k + (-1)^k (\arcsin 1/2)\\
+    x &= \pi k + (-1)^k (\pi/6)\\
+\end{align*}
 
+Note: I think the question is supposed to be $\cos x = \sin^2 x$?
+
+\solution
+\begin{align*}
+    \sin x &= \sin 3x\\
+    \sin x &= \sin (2x+x)\\
+    \sin x &= \sin 2x \cos x + \cos 2x \sin x\\
+    \sin x &= 2\sin x\cos x \cos x + (\cos^2 x - \sin^2 x)\sin x\\
+    \sin x &= 2\sin x(1-\sin^2 x)+ (1-\sin^2 x -\sin^2 x)\sin x\\
+    \sin x &= 2\sin x-2\sin^3 x+ \sin x-2\sin^3 x\\
+    0 &= -4\sin^3 x + 2\sin x\\
+    0 &= -2\sin x (2\sin^2-1)
+\end{align*}
+
+Therefore there are multiple sets of solutions to solve and using the general equation $\pi k + (-1)^k (\alpha)$
+\begin{align*}
+    \sin x &= 0\\
+    x &= \pi k + (-1)^k (\arcsin 0)\\
+    x &= \pi k
+\end{align*}
+
+The other sets of solutions are 
+\begin{align*}
+    2\sin^2 x -1 &= 0\\
+    \sin^2 x &= 1/2\\
+    \sin x &= \pm 1/\sqrt{2}\\
+    \text{For } \sin x &= 1/\sqrt{2}\\
+    x  &= \pi k + (-1)^k (\arcsin 1/\sqrt{2})\\
+    x &= \pi k + (-1)^k \times \pi/4\\
+    \text{For } \sin x &= -1/\sqrt{2}\\
+    x  &= \pi k + (-1)^k (\arcsin -1/\sqrt{2})\\
+    x &= \pi k + (-1)^k \times -\pi/4\\
+\end{align*}
+
+Note: I think the questions is supposed to be $\sin x = \sin^3 x$?
+\solution
+\begin{align*}
+    \cos x &= \sin 4x\\
+    \cos x &= 2\sin 2x \cos 2x\\
+    \cos x &= 2 \times 2\sin x \cos x \times (\cos^2 x - \sin^2 x)\\
+    \cos x &= 4\sin x \cos x \times (1- \sin^2 x - \sin^2 x)\\
+    0 &= 4\sin x \cos x \times (1- 2\sin^2 x) - \cos x\\
+    0 &= \cos x \left(4\sin x (1- 2\sin^2 x) - 1\right)\\
+    0 &= \cos x \left(-8 \sin ^3 x + 4\sin x - 1\right)
+\end{align*}
+
+Therefore there are multiple sets of solutions to solve and using the general equation $\pi k + (-1)^k (\alpha)$ and $2n\pi \pm (\alpha)$
+\begin{align*}
+    \cos x &= 0\\
+    x &= 2n\pi \pm \arccos 0\\
+    x &= 2n\pi \pm \pi/2
+\end{align*}
+
+Solving $-8\sin^3 x+ 4\sin x -1=0$ requires using cubic functions, which is advanced level and is beyond this book's level
+
+Note: I think the question is supposed to be $\cos x = \sin 4x$?
+
+\solution
+\begin{align*}
+    26\sin^2 x + \cos^2 x &= 10\\
+    26\sin^2 x + 1- \sin^2 x -10 =0\\
+    25\sin^2 x -9 = 0\\
+    (5\sin x +3)(5\sin x-3)=0
+\end{align*}
+
+Therefore there are multiple sets of solutions to solve and using the general equation $\pi k + (-1)^k (\alpha)$
+
+For $5\sin x+3 = 0$
+\begin{align*}
+    5\sin x +3 &= 0\\
+    \sin x &= -3/5\\
+    x &= \pi k + (-1)^k (\arcsin -3/5)
+\end{align*}
+
+For $5\sin x-3 = 0$
+\begin{align*}
+    5\sin x -3 &= 0\\
+    \sin x &= 3/5\\
+    x &= \pi k + (-1)^k (\arcsin 3/5)
+\end{align*}
+\solution
+\begin{align*}
+    \cos^2 x - \cos x &= \sin^2 x \\
+    \cos^2 x - \cos x &= 1-\cos^2 x\\
+    2\cos^2 x -\cos x -1 &=0\\
+    (2\cos x +1)(\cos x -1) &=0
+\end{align*}
+
+Therefore there are multiple sets of solutions to solve and using the general equation $2\pi n \pm (\alpha)$
+
+For $2\cos x +1=0$
+\begin{align*}
+    2\cos x +1&=0\\
+    \cos x &= -1/2\\
+    x &= 2\pi n \pm \arccos(-1/2)\\
+    x &= 2\pi n \pm 2\pi/3\\
+\end{align*}
+
+For $2\cos x -1=0$
+\begin{align*}
+    2\cos x -1&=0\\
+    \cos x &= 1/2\\
+    x &= 2\pi n \pm \arccos(1/2)\\
+    x &= 2\pi n \pm \pi/3\\
+\end{align*}
+\solution
+\begin{align*}
+    3\tan^2 x &= 12\\
+    \tan^2 x &= 4\\
+    \tan^2 x -4&= 0\\
+    (\tan x +2)(\tan x -2)= 0
+\end{align*}
+
+Therefore there are multiple sets of solutions to solve and using the general equation $\pi k + (\alpha)$
+
+For $\tan x +2 =0$
+\begin{align*}
+    \tan x +2 &= 0\\
+    \tan x &= -2\\
+     x &= \pi k + \arctan -2
+\end{align*}
+
+For $\tan x -2 =0$
+\begin{align*}
+    \tan x -2 &= 0\\
+    \tan x &= 2\\
+     x &= \pi k + \arctan 2
+\end{align*}
+\solution
+\begin{align*}
+    \cos 2x &= 2\sin^2 x\\
+    \cos^2 x - \sin^2 x &= 2\sin^2 x\\
+    1-\sin^2 x -\sin^2 x &= 2\sin^2 x\\
+    1 - 4\sin^2 x &=0\\
+    (1-2\sin x)(1+2\sin x) &=0
+\end{align*}
+
+Therefore there are multiple sets of solutions to solve and using the general equation $\pi k + (-1)^k (\alpha)$
+
+For $1-2\sin x =0$
+\begin{align*}
+    1-2\sin x &=0\\
+    \sin x &= 1/2\\
+    x &= \pi k + (-1)^k \arcsin 1/2\\
+    x &= \pi k + (-1)^k \pi/6
+\end{align*}
+
+For $1+2\sin x =0$
+\begin{align*}
+    1+2\sin x &=0\\
+    \sin x &= -1/2\\
+    x &= \pi k + (-1)^k \arcsin -1/2\\
+    x &= \pi k + (-1)^k (-\pi/6)
+\end{align*}
+\solution
+\begin{align*}
+    \tan^2 x &= \cot x\\
+    \tan^3 x &= 1\\
+    \tan^3 x -1 &= 0\\
+    (\tan x -1)(\tan^2 x + \tan x +1)&= 0
+\end{align*}
+Therefore there are multiple sets of solutions to solve and using the general equation $\pi k + \alpha$
+
+For $\tan x -1=0$
+\begin{align*}
+    \tan x - 1 &= 0\\
+    \tan x =& 1\\
+    x &= \pi k + \arctan 1\\
+    x &= \pi k + \pi/4\\
+\end{align*}
+
+For $\tan^2 x + \tan x +1 =0$, apply quadratic formula
+\begin{align*}
+    \tan x &= \frac{-1 \pm \sqrt{1^2 - 4(1)(1)}}{2(1)}\\
+    \tan x &= \frac{-1 \pm \sqrt{-3}}{2}
+\end{align*}
+Which does not have any solutiosn as the number inside the square root is negative
+\solution
+\begin{align*}
+    \frac{5}{\cos^2 x} &= 7 \tan x +3\\
+    5\sec^2 x &= 7 \tan x +3\\
+    5(\tan^2 x + 1) &= 7 \tan x +3\\
+    5\tan^2 x + 5 &= 7 \tan x +3\\
+    5\tan^2 x -7\tan x + 2 &= 0
+\end{align*}
+Apply quadratic formula
+\begin{align*}
+    \tan x &= \frac{7\pm \sqrt{49-4(5)(2)}}{2(5)}\\
+    \tan x &= \frac{7\pm 3}{10}\\
+\end{align*}
+Therefore there are multiple sets of solutions to solve and using the general equation $\pi k + \alpha$
+
+For $\tan x = \frac{7+3}{10}$
+\begin{align*}
+    \tan x &= 1\\
+    x &= \pi k + \arctan 1\\
+    x &= \pi k + \pi/4
+\end{align*}
+For $\tan x = \frac{7-3}{10}$
+\begin{align*}
+    \tan x &= 2/5\\
+    x &= \pi k + \arctan 2/5
+\end{align*}
+\solution
+\begin{align*}
+    \sqrt{3}\tan^2 x + 1 &= (1+\sqrt{3})\tan x\\
+    (\sqrt{3}\tan x +1)(\tan x +1) &= 0
+\end{align*}
+Therefore there are multiple sets of solutions to solve and using the general equation $\pi k + \alpha$
+
+For $\sqrt{3}\tan x+1 =0$
+\begin{align*}
+    \sqrt{3}\tan x + 1 &= 0\\
+    \sqrt{3} \tan x &= -1\\
+    \tan x &= -1/\sqrt{3}\\
+    x &= \pi n + \arctan -1/\sqrt{3}\\
+    x &= \pi n + (-\pi/6)
+\end{align*}
+
+For $\tan x + 1 = 0$
+\begin{align*}
+    \tan x + 1 &= 0\\
+    \tan x &= -1\\
+    x &= \pi n + \arctan -1\\
+    x &= \pi n + (-\pi/4)\\
+\end{align*}
+\solution
+
+For Solution 1, re-express the equations such that
+\begin{align*}
+    \text{with n}\\
+    x&= \pi/6 + 2\pi n/3\\
+    \text{with n+1}\\
+     &= \pi/6 +2\pi(n+1)/3\\
+     &= \pi/6 + 2\pi n/3 + 2\pi/3\\
+     &= 5\pi/6 + 2\pi n/3\\
+     \text{with n+2}\\
+     &= \pi/6 +2\pi(n+2)/3\\
+     &= \pi/6 + 2\pi n/3 + 4\pi/3\\
+     &= 9\pi/6 + 2\pi n/3\\
+     &= 3\pi/2 + 2\pi n/3
+\end{align*}
+\end{solutions}
+Which corresponds to each line of Solution 2, provided that the number n for Solution 1 is multiples of 3
 \begin{solutions}{Page 227}
 \solution
+If $\alpha = 1.6$ then
+\begin{align*}
+    x &= \alpha - \tan \alpha\\
+      &\approx 35.8325
+\end{align*}
+Since near $x=\pi/2$, the tangent will be very flat and only reaches the x-axis after travelling a long distance
+
 \solution
+If $\alpha = \pi/4$ then
+\begin{align*}
+    x &= \alpha - \tan \alpha\\
+      &\approx -0.2146
+\end{align*}
+Since the tangent is intersecting x axis to the left
+
+Note, the smaller the $\alpha$, the closer to it intersecting x-axis at $x=0$
+
+If $\alpha = 0.1$ then
+\begin{align*}
+    x &= \alpha - \tan \alpha\\
+      &\approx -0.000334
+\end{align*}
 \solution
+To solve for location of R where $x=0$ and noting $x \approx \tan x$ for small $x$ value
+\begin{align*}
+    x &= \alpha -\tan \alpha\\
+    0 &= \alpha -\tan \alpha\\
+    \tan \alpha &= \alpha \\
+    \alpha &= 0
+\end{align*}
+Therefore R will be at origin when we take a tangent at $x=0$
 \solution
+if $x=\pi/2$, then the tangent will be horizontal, therefore not intersecting with x-axis at all
+
+If x is a bit smaller than $\pi/2$, then the tangent will intersect with x-axis to the left (far away)
+
+If x is a bit bigger than $\pi/2$, then the tangent will intersect with x-axis to the right (far away)
 \end{solutions}
 
 \begin{solutions}{Page 229}
 \solution
+Using $A \approx \frac{h}{\sin h/2}$, where $h=\pi/n$
+
+Using $n=4$, so $h=\pi/4$ gives $A \approx \frac{\pi/4}{\sin \pi/8}$, which is 2.05234
+
+Using $n=8$, so $h=\pi/8$ gives $A \approx \frac{\pi/8}{\sin \pi/16}$, which is 2.01291
 \solution
+Since area between $0 \leq x \leq \pi$ is approximately 2, threfore the area under curve $y=\sin x$ from $x=0$ to $x=\pi/2$ would be around 1
 \solution
-\solution
+\begin{align*}
+    &h\sin x_1 + h\sin x_2 + h\sin x_3 +\cdots + h\sin x_m  \\
+    &=h\left( \sin \frac{\pi}{n} + \sin \frac{2\pi}{n}+ \cdots + \sin \frac{n\pi}{2\pi} \right)\\
+    &= h \frac{\sin \frac{n+1}{2} \frac{\pi}{2n} \sin \frac{n}{2}\frac{\pi}{2n}}{\sin \frac{\pi}{2n}}\\
+    &= h \frac{\sin \frac{n+1}{2}\frac{\pi}{2n}}{\sin \frac{\pi}{2n}} \sin \frac{\pi}{4}\\
+    &= h \frac{\sin \frac{n+1}{n}\frac{\pi}{4}}{\sin \frac{\pi}{2n}} \frac{1}{\sqrt{2}} \\
+    \text{if n is very large}\\
+    &\approx h\frac{\sin \pi/4}{\sin \pi/2n}\frac{1}{\sqrt{2}} \\
+    &\approx \frac{h}{2\sin h/2}
+\end{align*}
+letting $n=8$, giving $h = \pi/8$, gives approximate area of $\frac{\pi/8}{2\sin \pi/16} \approx 1.00645$ 
+
 \end{solutions}
 
 \end{document}
