@@ -1277,51 +1277,257 @@ $\arcsin{0.6} = 36.8699\degree$
 Half of $\sin{30\degree}$ (0.25) seems like a reasonable estimate. The actual value is $0.2588$.
 
 \solution %6
+Entering $\arcsin 0.3$ in calculator, we get $17.458^{\circ}$
+
+If we enter $\sin 17.458^{\circ}$
 
 \solution %7
+With $\arcsin x = 53^{\circ}$, to find value of $x$, we do $x = \sin 53^{\circ}$, which gives us $x = 0.7986$
+
+If we take $\arcsin 0.7986$, we will get 52.9966
 
 \solution %8
+$x = \sqrt{3}/2$
 
 \solution %9
-
+$\arcsin (\sin 17\circ) = 17\circ$
 \solution %10
-
+$\sin (\arcsin 0.4) = 0.4$
 \solution %11
+$\arcsin (\sin 30^{\circ})) = 30^{\circ}$
 
+$\arcsin 1/2 = 30^\{circ\}$. Since $\sin 30^{\circ} = 0.5$ as in question 5
 \solution %12
+$\cos^2 20^{\circ} + \sin^2 20^{\circ} = 1$
+
+$\cos^2 80^{\circ} + \sin^2 80^{\circ} = 1$
 
 \solution %13
+$\tan 20^{\circ} = 0.36397$ and $\frac{\sin 20^{\circ}}{\cos 20^{\circ}} = \frac{0.34202}{0.93969}\approx 0.36397$
 
+Note $\tan 80^{\circ} = 5.67128$ and $\frac{\sin 80^{\circ}}{\cos 80^{\circ}} = \frac{0.98481}{0.17365}\approx 5.67128$
 \solution %14
+\begin{tikzpicture}
+    \draw[help lines,xstep=pi/2,ystep=1,color=gray!50,dashed](0,-1.4) grid (6.9,1.4);
+    \draw[->,thick] (0,0)--(7,0) node[right]{$x$};
+    \draw[->,thick] (0,0)--(0,1.5) node[right]{$y$};
+    \draw[->,thick] (0,0)--(0,-1.5);
+    %Draw marks on x axis
+    \draw [very thin,gray](pi/2,-0.1)--(pi/2,0.1) node[below right] at (pi/2,-0.1) {$\frac{\pi}{2}$};
+    \draw [very thin,gray](pi,-0.1)--(pi,0.1) node[below right] at (pi,-0.1) {$\pi$};
+    \draw [very thin,gray](3*pi/2,-0.1)--(3*pi/2,0.1) node[below right] at (3*pi/2,-0.1) {$\frac{3\pi}{2}$};
+    \draw [very thin,gray](2*pi,-0.1)--(2*pi,0.1) node[below right] at (2*pi,-0.1) {$2\pi$};
+    %Draw marks on y axis
+    \foreach \yticks in {-1,0,1}
+    \draw [very thin,gray](-0.1,\yticks)--(0.1,\yticks) node[left] at (0,\yticks) {$\yticks$};
+    %Draw the curve
+    \draw[red]plot[domain=0:2*pi, samples=90]  (\x,{sin(\x r)});
+\end{tikzpicture}
 
 \end{solutions}
 
 \begin{solutions}{Page 55}
 \solution
+    \begin{tikzpicture}[scale=1,font=\sffamily]
+    \coordinate (C) at (0,0);
+    \coordinate (A) at (-2,0);
+    \coordinate (B) at (0,1.5);
+    \draw (C) -- node[right] {$a$} (B) -- node[above] {$9$} (A) -- node[below] {$b$} (C);
+    \node (alpha) at ([shift=({0.6,0.15})]A) {$\alpha = 72$};
+    \node (beta) at ([shift=({-0.4,-0.5})]B) {$\beta$};
+    \draw (C) rectangle (-0.2,0.2);
+    \end{tikzpicture}
+
+    To find $a$
+    \begin{align*}
+        \sin \alpha &= \frac{a}{c}\\
+        \sin 72^{\circ} &= \frac{a}{9}\\
+        a &= 9 \times \sin 72^{\circ}\\
+        a&\approx 8.5595
+    \end{align*}
+    To find $b$
+    \begin{align*}
+        \cos \alpha &= \frac{b}{c}\\
+        \cos 72^{\circ} &= \frac{b}{9}\\
+        b &= 9 \times \cos 72^{\circ}\\
+        b&\approx 2.7812
+    \end{align*}
 \solution
+    \begin{tikzpicture}[scale=1,font=\sffamily]
+    \coordinate (C) at (0,0);
+    \coordinate (A) at (-2,0);
+    \coordinate (B) at (0,1.5);
+    \draw (C) -- node[right] {$7$} (B) -- node[above] {$c$} (A) -- node[below] {$10$} (C);
+    \node (alpha) at ([shift=({0.4,0.15})]A) {$\alpha$};
+    \node (beta) at ([shift=({-0.4,-0.5})]B) {$\beta$};
+    \draw (C) rectangle (-0.2,0.2);
+    \end{tikzpicture}
+
+To find the hypotenuse $c$, use pythagoras theorem
+\begin{align*}
+    c &= \sqrt{a^2 + b^2} \\
+    c &= \sqrt{149}
+\end{align*}
+
+    To find $\alpha$
+    \begin{align*}
+        \tan \alpha &= \frac{b}{a}\\
+        \tan \alpha &= \frac{7}{10}\\
+        \alpha &= \arctan \frac{7}{10}\\
+        \alpha &\approx 34.992^{\circ}
+    \end{align*}
+    To find $\beta$
+    \begin{align*}
+        \tan \beta &= \frac{a}{b}\\
+        \tan \beta &= \frac{10}{7}\\
+        \beta &= \arctan \frac{10}{7}\\
+        \beta &\approx 55.008^{\circ}
+    \end{align*}
 \solution
+    \begin{tikzpicture}[scale=1,font=\sffamily]
+    \coordinate (C) at (0,0);
+    \coordinate (A) at (-2,0);
+    \coordinate (B) at (0,1.5);
+    \draw (C) -- node[right] {$a$} (B) -- node[above] {$c$} (A) -- node[below] {$12$} (C);
+    \node (alpha) at ([shift=({0.4,0.15})]A) {$\alpha$};
+    \node (beta) at ([shift=({0,-0.5})]B) {$\beta = 27$};
+    \draw (C) rectangle (-0.2,0.2);
+    \end{tikzpicture}
+
+    To other acute angle will be $90-27 = 63$ degrees
+
+    To find length of hypotenuse $c$
+    \begin{align*}
+        \sin \beta &= \frac{12}{c}\\
+        c &= \frac{12}{\sin 27}\\
+          &= 26.432
+    \end{align*}
+
+    To find length of the other leg $a$
+    \begin{align*}
+        \tan \beta &= \frac{12}{a}\\
+        a &= \frac{12}{\tan 27}\\
+          &= 23.551
+    \end{align*}
 \solution
+    \begin{tikzpicture}[scale=1,font=\sffamily]
+    \coordinate (C) at (0,0);
+    \coordinate (A) at (-2,0);
+    \coordinate (B) at (0,1.5);
+    \draw (C) -- node[right] {$20$} (B) -- node[above] {$c$} (A) -- node[below] {$a$} (C);
+    \node (alpha) at ([shift=({0.6,0.15})]A) {$\alpha=73$};
+    \node (beta) at ([shift=({-0.4,-0.5})]B) {$\beta$};
+    \draw (C) rectangle (-0.2,0.2);
+    \end{tikzpicture}
+
+    To other acute angle will be $90-73 = 17$ degrees
+
+    To find length of hypotenuse $c$
+    \begin{align*}
+        \sin \beta &= \frac{20}{c}\\
+        c &= \frac{20}{\sin 73}\\
+          &= 20.914
+    \end{align*}
+
+    To find length of the other leg $a$
+    \begin{align*}
+        \tan \beta &= \frac{20}{a}\\
+        a &= \frac{20}{\tan 73}\\
+          &= 6.115
+    \end{align*}
 \end{solutions}
 
 \begin{solutions}{Page 56}
 \solution
+    \begin{tikzpicture}[scale=1,font=\sffamily]
+    \coordinate (C) at (0,0);
+    \coordinate (A) at (-2,0);
+    \coordinate (B) at (0,1.5);
+    \draw (C) -- node[right] {$50$} (B) --(A) -- node[below] {$a$} (C);
+    \node (alpha) at ([shift=({0.6,0.15})]A) {$\alpha=46$};
+    %\node (beta) at ([shift=({-0.4,-0.5})]B) {$\beta$};
+    \draw (C) rectangle (-0.2,0.2);
+    \end{tikzpicture}
+
+    To find length of shadow $a$
+    \begin{align*}
+        \tan \alpha &=\frac{50}{a}\\
+        a &= \frac{50}{\tan 46}\\
+        a &=  48.284
+    \end{align*}
+    Therefore the length of shadow is 48.284 feet
+
 \solution
+    \begin{tikzpicture}[scale=1,font=\sffamily]
+    \coordinate (C) at (0,0);
+    \coordinate (A) at (-2,0);
+    \coordinate (B) at (0,1.5);
+    \draw (C) -- node[right] {$a$} (B) -- (A) -- node[below] {$35$} (C);
+    \node (alpha) at ([shift=({0.6,0.15})]A) {$\alpha=32$};
+    %\node (beta) at ([shift=({-0.4,-0.5})]B) {$\beta$};
+    \draw (C) rectangle (-0.2,0.2);
+    \end{tikzpicture}
+
+    To find length of shadow $a$
+    \begin{align*}
+        \tan \alpha &=\frac{a}{35}\\
+        a &= 35\tan 32\\
+        a &=  21.87
+    \end{align*}
+    Therefore the height of flagpole is 21.87 feet
+
 \solution
+Shadow is the longest in the morning as the sun is at lower altitude
+
+Shadow is shortest during mid day as the sun is exactly above the pole
+
 \solution
+There will be no shadow when the sun is exactly above the flag pole, which happens at a specific time during 'zero shadow day' (search online for exact time and day for your location)
 \end{solutions}
 
 \begin{solutions}{Page 59}
 \solution
+Draw point C on the left side of circle, by circle geometry, the angle in that triangle vertex will be $\theta/2$. Then apply the relation $\sin \alpha = \frac{AB}{2r}$, where AB is the opposite side of angle $\alpha$. Therefore $\sin \theta/2 = AB$ since radius is 1/2
+ 
 \solution
+Draw point C on the left side of circle, by circle geometry, the angle in that triangle vertex will be $\theta/2$. Then apply the relation $\sin \alpha = \frac{AB}{2r}$, where AB is the opposite side of angle $\alpha$. Therefore $\sin \theta/2 = \frac{AB}{2}$ since radius is 1, rearranging the equation gives $2\sin \theta/2 = AB$
+
 \solution
+From question 1, for circle of diameter 1, we have the relation $\sin \theta/2 = AB$. Therefore if angle $\phi > \theta$ then the opposite side of angle $\phi$ will be longer too, therefore $\sin \phi > \sin \theta$
 \solution
+Assuming the three points are on a circle, and realising that the sides 6, 8 and 10 form a right angle triangle, therefore the side of length 10 would have been the diameter of the circle. Therefore the radius for the circle is 5
 \solution
+Since $\sin \alpha = \frac{PB}{2r}$, re-arranging the equation gives $\frac{PB}{\sin \alpha } = 2r$. That is, the ratio of $a:\sin \alpha$ is equal to the diameter of circle (double of radius)
 \solution
+let a be opposite side of angle $\alpha$
+let b be opposite side of angle $\beta$
+let c be opposite side of angle $\gamma$
+
+Exercise shows that $\frac{a}{\sin \alpha} = 2r$, $\frac{b}{\sin \beta} = 2r$, $\frac{c}{\sin \gamma} = 2r$. Since all are equal to $2r$ then they are ratios with same value, that is
+\[\frac{a}{\sin \alpha} = \frac{b}{\beta} = \frac{c}{\gamma} \]
+
 \solution
+Since $\sin \alpha = \frac{AB}{2\times 1/2}$, then chord $AB=\sin \alpha$. Since arc AC is double of arc AB, then chord $AC = 2\sin \alpha$ 
+
+But the diagram shows that in triangle ABC and using triangle inequality, $AB+BC \geq AC$. Therefore $\sin 2\alpha < 2\sin \alpha$
+
 \solution
+Using $\sin \alpha = \frac{AB}{2r}$, if $\alpha = 60^{\circ}$ and radius is 10/2=5
+
+The chord AB would be $2\times 5 \times \sin 60^{\circ} = 5\sqrt{3}$ units long
 \solution
+Using $\sin \alpha = \frac{AB}{2r}$, if $\alpha = 30^{\circ}$ (as central angle is double of angle on circle) and radius is 10/2=5
+
+The chord AB would be $2\times 5 \times \sin 30^{\circ} = 5$ units long
+
 \solution
+The diagonal of a square inside a circle will be the diameter of circle and the angle of each triangle corner is $45^{\circ}$
+
+Using $\sin \alpha = \frac{AB}{2r}$, where 2r is 10 (diameter) and angle $\alpha = 45^{\circ}$, we get $AB = 10\sin 45^{\circ} = 5\sqrt{2}$ units long for each side of square inside a circle
 \solution
+Using $\sin \alpha = \frac {AB}{2r}$, then letting one side of pentagon $AB = 2r \times \sin \alpha$. Nothing that a pentagon can be cut into three distinct triangles, therefore the internal angles add up to $180 \times 3 =540$ making each internal angle $540 \div 5 = 108$ degrees large
+
+As each vertex is divided into three equal angles, it will give $\alpha = 108 \div 3 = 36$ degrees. As diameter is 10, each side of pentagon will be $10 \times \sin 36$ 
 \end{solutions}
 
 \begin{solutions}{Page 62}
@@ -1335,16 +1541,45 @@ For a regular octagon: $360\degree/8 = 45\degree$.
 
 \begin{solutions}{Page 64}
 \solution
+Let AB be an arc on the circle and points Q and R are two other points on the circle
+
+The angle in the centre will be double of angle AQB, which will be double of angle ARB as well, therefore the both aangles AQB and ARB must be equal
+
 \solution
+A regular pentagon can be divided into three equal circles, therefore a pentagon's total internal angle is $180 \times 3 = 540$ degrees.
+
+Since the intenal angles are equal size for a regular pentagon, then each angle is $540 \div 5 = 108$ degrees large
 \solution
+Let points ABCD be points on a circle, then draw line AC. Note that the angle AOC will be double of ABC
+
+Meawhile on the other side of AOC will be double of ADC, these two sides makes a full revolution (360 degrees). Therefore we have $2\angle ABC + 2\angle ADC = 360$, that is $\angle ABC + \angle ADC = 180$ degrees
+
 \end{solutions}
 
 \begin{solutions}{Page 65}
 \solution
+As it is larger than 60 degrees, then the points will be inside the circle
 \solution
+
+As it is 90 degrees, then the points will be on the circle with AB being the diameter of the circle
 \solution
+Triangle AQB would have a larger inscribed circle of radius R, therefore the relation $\sin \alpha = \frac{AB}{2R}$ that is $2R = \frac{AB}{\sin \alpha}$
+
+Triangle APB is inside a smaller circle of radius r, therefore the relation $\sin Q = \frac{AB}{2r}$. That is $2r = \frac{AB}{\sin Q}$
+
+The ratio r:R will be $\frac{AB}{\sin Q} \div \frac{AB}{\sin \alpha} = \frac{\sin \alpha}{\sin Q}$. That is $\frac{r}{R}=\frac{\sin \alpha}{\sin Q}$
+
+if $r < R$ then $\sin \alpha < \sin Q$. That is $\alpha < Q$ for the left diagram
+if $r > R$ then $\sin \alpha > \sin Q$. That is $\alpha > Q$ for the right diagram
+
 \solution
+Following above proof, let angle Q be $0.5\alpha$. Since $\sin \alpha > \sin 0.5\alpha$, then $r>R$, so it will be inscribed in the circle of original arc
 \solution
+
+On the same side, the angle subtended will be $\alpha$, where angle subtended in the centre would be $2\alpha$. The other side of the centre angle would be $360-2\alpha$, which gives $180-\alpha$ as size of subtended angle on the other arc side
+
+Note, this is proof for opposite angles of a cyclic quadrilateral are supplementary
+
 \end{solutions}
 
 
