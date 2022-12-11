@@ -1586,99 +1586,890 @@ Note, this is proof for opposite angles of a cyclic quadrilateral are supplement
 \section*{Chapter 3: Relationships in a Triangle}
 
 \begin{solutions}{Page 68}
-\solution
+\solution ~ %1
+\begin{center}
+\bgroup
+\def\arraystretch{1.3}
+\setlength\tabcolsep{10pt}
+\begin{tabular}{ |c|c|c|c| }
+\hline
+& Data
+& Determine a triangle?
+& Restrictions? \\
+\hline
+1 & $ABa$ & Yes & $0\degree < m\angle{A}, m\angle{B}, m\angle{A} + m\angle{B} < 180\degree$ \\
+\hline
+2 & $ABb$  & Yes (Duplicate of 1) & $0\degree < m\angle{A}, m\angle{B}, m\angle{A} + m\angle{B} < 180\degree$ \\
+\hline
+3 & $ABc$ & Yes & $0\degree < m\angle{A}, m\angle{B}, m\angle{A} + m\angle{B} < 180\degree$ \\
+\hline
+4 & $AbC$ & Yes (Duplicate of 3) & $0\degree < m\angle{A}, m\angle{B}, m\angle{A} + m\angle{B} < 180\degree$ \\
+\hline
+5 & $ABC$ & No & One side length must also be given. \\
+\hline
+6 & $Abc$ & Yes & $0\degree < m\angle{A} < 180\degree$ \\
+\hline
+7 & $Bbc$ & No & $b \geq c\sin{B}$. Also, $m\angle{A}$ must be given in some cases. \\
+\hline
+8 & $Cbc$ & No (Duplicate of 7) & $c \geq b\sin{C}$. Also, $m\angle{A}$ must be given in some cases. \\
+\hline
+\end{tabular}
+\egroup
+\end{center}
 \end{solutions}
 
 \begin{solutions}{Page 70}
-\solution
-\solution
-\solution
-\solution
+\solution ~ %1
+\begin{center}
+\begin{tikzpicture}
+\draw (0,0) -- (7,0) -- (2.715,4.199) -- (0,0);
+\draw (0,0) -- (3.429,3.499);
+\node[above] at (2.715,4.199) {$A$};
+\node[below left] at (0,0) {$B$};
+\node[below right] at (7,0) {$C$};
+\node[right] at (3.429,3.499) {$Q$};
+\node[below=.1cm] at (2.715,4.199) {$\alpha$};
+\node[above left=0.1cm] at (6.75,-0.15) {$\gamma$};
+\node[right] at (2.5,2.25) {$h_b$};
+\node[below] at (3.5,0) {$a$};
+\node[left] at (1.35,2.2) {$c$};
+\draw (3.309,3.377) -- (3.431,3.257) -- (3.551,3.379);
+\end{tikzpicture}
+\end{center}
+
+\begin{center}
+\begin{tikzpicture}
+\draw (0,0) -- (7,0) -- (2.715,4.199) -- (0,0);
+\draw (7,0) -- (2.063,3.191);
+\node[above] at (2.715,4.199) {$A$};
+\node[below left] at (0,0) {$B$};
+\node[below right] at (7,0) {$C$};
+\node[left] at (2.063,3.191) {$R$};
+\node[below=.1cm] at (2.715,4.199) {$\alpha$};
+\node[above right=0.1cm] at (0,-0.15) {$\beta$};
+\node[above] at (3.5,2.25) {$h_c$};
+\node[below] at (3.5,0) {$a$};
+\node[right] at (4.85,2.2) {$b$};
+\draw (1.97,3.048) -- (2.114,2.955) -- (2.206,3.099);
+\end{tikzpicture}
+\end{center}
+
+\solution %2
+\begin{align*}
+h_c &= b\sin{\alpha} \\
+&= 12\sin{70\degree} \\
+&\approx 11.28
+\end{align*}
+
+\solution %3
+Let us consider a right triangle $ABC$ with a right angle at $A$.
+
+\begin{center}
+\begin{tikzpicture}[scale=1.5]
+\draw (0,0) -- (5,0) -- (1.8,2.4) -- (0,0);
+\draw (1.8,2.4) -- (1.8,0);
+\draw (1.95,0) -- (1.95,0.15) -- (1.8,0.15);
+\node[above] at (1.8,2.4) {$A$};
+\node[below left] at (0,0) {$B$};
+\node[below right] at (5,0) {$C$};
+\node[below] at (1.8,0) {$P$};
+\node[above right=0.1cm] at (0,-0.15) {$\beta$};
+\node[above left=0.1cm] at (4.85,-0.1) {$\gamma$};
+\node[right] at (3.4,1.25) {$b$};
+\node[left] at (0.9,1.2) {$c$};
+\node[right] at (1.8,1.2) {$h_a$};
+\end{tikzpicture}
+\end{center}
+
+Analyzing the right triangle $APB$ in the above diagram gives us that $h_a=c\sin{\beta}$. Similarly, analyzing the right triangle $APC$ in the above diagram gives us that $h_a=b\sin{\gamma}$. This is consistent with our formulas for $h_a$.
+
+\begin{center}
+\begin{tikzpicture}[scale=1.5]
+\draw (0,0) -- (5,0) -- (1.8,2.4) -- (0,0);
+\draw (1.71,2.28) -- (1.829,2.194) -- (1.92,2.31);
+\node[above] at (1.8,2.4) {$A$};
+\node[below left] at (0,0) {$B$};
+\node[below right] at (5,0) {$C$};
+\node[above right=0.1cm] at (0,-0.15) {$\beta$};
+\node[above left=0.1cm] at (4.85,-0.1) {$\gamma$};
+\node[below] at (2.5,0) {$a$};
+\node[right] at (3.4,1.25) {$b = h_c$};
+\node[left] at (0.9,1.2) {$c = h_b$};
+\end{tikzpicture}
+\end{center}
+
+Since $A$ is a right angle, $b$ and $c$ are themselves altitudes, as shown by the diagram above. Since the sine of a right angle is equal to 1, this is consistent with the formulas $h_b = c\sin{\alpha}$ and $h_c = b\sin{\alpha}$. Additionally, by analyzing the sines at angles $B$ and $C$, we find that $h_b=a\sin{\gamma}$ and $h_c=a\sin{\beta}$, which again agrees with the formulas for $h_b$ and $h_c$.
+
+
+\solution ~ %4
+\begin{center}
+\begin{tikzpicture}
+\draw (0,0) -- (12,0) -- (8.66,5) -- (0,0);
+\draw (8.66,5) -- (8.66,0);
+\draw (8.81,0) -- (8.81,0.15) -- (8.66,0.15);
+\node[above] at (8.66,5) {$P$};
+\node[below left] at (0,0) {$R$};
+\node[below right] at (12,0) {$Q$};
+\node at (1,0.2) {$30\degree$};
+\node[left] at (4.2,2.5) {$10$};
+\node[right] at (8.66,2) {$h_p$};
+\node[below] at (6,0) {$12$};
+\end{tikzpicture}
+\end{center}
+
+\begin{align*}
+A &= \dfrac{1}{2} p h_p \\
+&= \dfrac{1}{2} p q \sin{R} \\
+&= \dfrac{1}{2} \left(12\right) \left(10\right) \sin{30\degree} \\
+&= \dfrac{1}{2} \left(12\right) \left(10\right) \left(\dfrac{1}{2}\right) \\
+&= 30
+\end{align*}
 \end{solutions}
 
 \begin{solutions}{Page 71}
-\solution
+\solution ~ %1
+\begin{center}
+\begin{tikzpicture}
+\draw (0,0) -- (5,0) -- (-4,4) -- (0,0);
+\draw[dashed] (5,0) -- (2.5,-2.5);
+\draw[dashed] (0,0) -- (2.5,-2.5);
+\draw (2.3,-2.3) -- (2.5,-2.1) -- (2.7,-2.3);
+
+\node[left] at (-4,4) {$A$};
+\node[below left] at (0,0) {$B$};
+\node[right] at (5,0) {$C$};
+\node[below] at (2.5,-2.5) {$R$};
+
+\node[below right] at (-3.2,3.5) {$\alpha$};
+\node[above right] at (-0.2,0) {$\beta$};
+\node[above left] at (4.3,0) {$\gamma$};
+
+\node[right] at (3.6,-1.5) {$h_c$};
+\node[below] at (2.5,0) {$a$};
+\node[right] at (0.5,2.2) {$b$};
+\node[left] at (-2,1.8) {$c$};
+\end{tikzpicture}
+\end{center}
+
+For the $h_b$ formulas, there is nothing new to check as $\alpha$ and $\gamma$ are both acute angles.
+
+From the above diagram, since $\triangle{ARC}$ is a right triangle, we can see that $h_c=b\sin{\alpha}$. Also, since $\triangle{BRC}$ is a right triangle, we have that $h_c=a\sin\left(180\degree-\beta\right)$. Since we have asserted that the sine of an angle should be equal to the sine of its supplement, the previous formula is equivalent to $h_c=a\sin{\beta}$.
 \end{solutions}
 
+
 \begin{solutions}{Page 73}
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
+\solution %1
+We first substitute $a$ with $b$, $b$ with $c$, $c$ with $a$, $\alpha$ with $\beta$, $\beta$ with $\gamma$, $\gamma$ with $\alpha$.
+\[
+\dfrac{a}{\sin{\alpha}} = \dfrac{b}{\sin{\beta}} \to \dfrac{b}{\sin{\beta}} = \dfrac{c}{\sin{\gamma}} 
+\]
+
+We now substitute $a$ with $c$, $c$ with $b$, $b$ with $a$, $\alpha$ with $\gamma$, $\gamma$ with $\beta$, $\beta$ with $\alpha$.
+\[
+\dfrac{a}{\sin{\alpha}} = \dfrac{b}{\sin{\beta}} \to \dfrac{c}{\sin{\gamma}} = \dfrac{a}{\sin{\alpha}} 
+\]
+Combining these equalities together gives the Law of Sines:
+\[
+\dfrac{a}{\sin{\alpha}} = \dfrac{b}{\sin{\beta}} = \dfrac{c}{\sin{\gamma}}. 
+\]
+
+\solution %2
+Let $A=30\degree$, $B=60\degree$, $C=90\degree$. We know that $b=a\sqrt{3}$ and $c=2a$ by the properties of 30-60-90 triangles.
+\[
+\dfrac{a}{\sin{\alpha}} = \dfrac{a}{1/2} = 2a
+\]
+\[
+\dfrac{b}{\sin{\beta}} = \dfrac{a\sqrt{3}}{\sqrt{3} / 2} = 2a
+\]
+\[
+\dfrac{c}{\sin{\gamma}} = \dfrac{2a}{1} = 2a
+\]
+Since all of the above ratios are equal to $2a$, we have shown that the Law of Sines holds for 30-60-90 triangles.
+
+\solution %3
+In the triangle on the left, the angle opposite the side of length 10 measures $60\degree$. If $x$ is the side length opposite the $50\degree$ angle and $y$ is the side length opposite the $70\degree$ angle, then
+\[
+\dfrac{x}{\sin{50\degree}} = \dfrac{10}{\sin{60\degree}} \implies x = \dfrac{10\sin{50\degree}}{\sin{60\degree}} \approx 8.85
+\]
+\[
+\dfrac{y}{\sin{70\degree}} = \dfrac{10}{\sin{60\degree}} \implies y = \dfrac{10\sin{70\degree}}{\sin{60\degree}} \approx 10.85
+\]
+
+In the triangle on the right, the missing angle measures $60\degree$. If $x$ is the side length opposite the $60\degree$ angle and $y$ is the side length opposite the $65\degree$ angle, then
+\[
+\dfrac{x}{\sin{60\degree}} = \dfrac{12}{\sin{55\degree}} \implies x = \dfrac{12\sin{60\degree}}{\sin{55\degree}} \approx 12.69
+\]
+\[
+\dfrac{y}{\sin{65\degree}} = \dfrac{12}{\sin{55\degree}} \implies y = \dfrac{12\sin{65\degree}}{\sin{55\degree}} \approx 13.28
+\]
+
+\solution %4
+As discussed in Section 4 of this chapter, the formulas for the altitudes using the sine function remain unchanged for obtuse triangles if we assert that the sine of an angle is equal to the sine of its supplement. Therefore, the proof of the Law of Sines for obtuse triangles is unchanged from the proof presented in the beginning of this section.
+
+\solution %5
+In the triangle on the left, the angle opposite the side of length 6 measures $45\degree$. If $x$ is the side length opposite the $15\degree$ angle and $y$ is the side length opposite the $120\degree$ angle, then
+\[
+\dfrac{x}{\sin{15\degree}} = \dfrac{6}{\sin{45\degree}} \implies x = \dfrac{6\sin{15\degree}}{\sin{45\degree}} \approx 2.20
+\]
+\[
+\dfrac{y}{\sin{120\degree}} = \dfrac{6}{\sin{45\degree}} \implies y = \dfrac{6\sin{120\degree}}{\sin{45\degree}} \approx 7.35
+\]
+
+In the triangle on the right, the missing angle measures $115\degree$. If $x$ is the side length opposite the $40\degree$ angle and $y$ is the side length opposite the $115\degree$ angle, then
+\[
+\dfrac{x}{\sin{40\degree}} = \dfrac{14}{\sin{25\degree}} \implies x = \dfrac{14\sin{40\degree}}{\sin{25\degree}} \approx 21.29
+\]
+\[
+\dfrac{y}{\sin{115\degree}} = \dfrac{14}{\sin{25\degree}} \implies y = \dfrac{14\sin{115\degree}}{\sin{25\degree}} \approx 30.02
+\]
+
+\solution %6
+We first solve for the angle opposite the side of length 10.
+\[
+\dfrac{8}{\sin{50\degree}} = \dfrac{10}{\sin{\alpha}} \implies \sin{\alpha} = \dfrac{10}{8}\sin{50\degree} = 0.9576 \implies \alpha = 73.2\degree
+\]
+We now solve for the third angle by subtracting the other two angles from $180\degree$.
+\[
+\beta = 180\degree - 50\degree - 73.2\degree = 56.8\degree
+\]
+
+\solution %7
+Since the sine of an angle is equal to the sine of its supplement, based on our calculations in the previous exercise, $\alpha$ could equal $73.2\degree$ or $106.8\degree$. This implies that $\beta$ can equal $56.8\degree$ or $23.2\degree$. The below diagram shows the two triangles that satisfy the given constraints overlaid on top of each other.
+\begin{center}
+\begin{tikzpicture}
+\draw (0,0) -- (10,0) -- (2.649,3.158) -- (0,0);
+\draw (0,0) -- (10,0) -- (5.614,6.691) -- (0,0);
+
+\node[above right] at (0.25,0) {$50\degree$};
+\node[below] at (2.8,2.85) {$106.8\degree$};
+\node[below] at (5.6,6.2) {$73.2\degree$};
+
+\node[below] at (5,0) {$10$};
+\node[below] at (6,1.7) {$8$};
+\node[above] at (7.85,3.4) {$8$};
+\end{tikzpicture}
+\end{center}
+
+\solution %8
+This result follows immediately from the theorem proven in Section 12 of Chapter 2.
+
 \end{solutions}
 
 \begin{solutions}{Page 75 (First)}
-\solution
-\solution
+\solution %1
+\[
+2R = \dfrac{10}{\sin{30\degree}} \implies R = \dfrac{10}{2\sin{30\degree}} = \dfrac{10}{2(1/2)} = 10
+\]
+
+\begin{center}
+\begin{tikzpicture}
+\def\rad{4}
+\def\offset{20}
+\draw (0,0) circle [radius=\rad];
+\draw (0,0) -- (150:\rad) -- (210:\rad) -- (0,0);
+\draw (\offset:\rad) -- (150:\rad) -- (210:\rad) -- (\offset:\rad);
+
+\node[above right] at (0,0) {$O$};
+\node[left] at (150:\rad) {$A$};
+\node[left] at (210:\rad) {$B$};
+\node[right] at (\offset:\rad) {$P$};
+
+\node[right] at (180:\rad-0.5) {$10$};
+\node[left] at (\offset:\rad-0.5) {$30\degree$};
+\node[left=0.1cm] at (0,0) {$60\degree$};
+\end{tikzpicture}
+\end{center}
+
+Alternatively, we can find the radius from first principles. Let $APB$ be a triangle inscribed in a circle $O$ with $AB=10$ and $m\angle{APB}=30\degree$. Since $\angle{APB}$ is an inscribed angle, the corresponding central angle $\angle{AOB}$ has a measure of $60\degree$. We also know that segments $OA$ and $OB$ are congruent because they are both radii of the circle $O$. Therefore, $\triangle{AOB}$ is isosceles. This combined with the fact that the measure of $\angle{AOB}$ is $60\degree$ implies that $\triangle{AOB}$ is equilateral. Because $AB$ is equal to 10, we know that the the radius of the circle is also 10 because the other two sides of the equilateral triangle are radii.
+
+\solution %2
+\[
+2R = \dfrac{8}{\sin{90\degree}} \implies R = \dfrac{8}{2\sin{90\degree}} = \dfrac{8}{2(1)} = 4
+\]
+Alternatively, we can apply Thales's theorem (see the appendix of Chapter 2) to show that the hypotenuse of an inscribed triangle is a diameter of the circumscribing circle. If the diameter of the circle is 8, then the radius would be 4.
 \end{solutions}
 
 \begin{solutions}{Page 75 (Second)}
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
+\solution %1
+\[
+A = \dfrac{1}{2}\left(8\right)\left(11\right)\sin{40\degree} = 44\sin{40\degree} \approx 28.3
+\]
+
+\solution %2
+\begin{subsolutions}
+\subsolution %a
+\[
+A = \dfrac{1}{2}\left(10\right)\left(9\right)\sin{23\degree} = 45\sin{23\degree} \approx 17.6
+\]
+
+\subsolution %b
+\[
+A = \dfrac{1}{2}\left(3\right)\left(7\right)\sin{130\degree} = 10.5\sin{130\degree} \approx 8.0
+\]
+
+\subsolution %c
+\[
+A = \dfrac{1}{2}\left(3\right)\left(7\right)\sin{90\degree} = 10.5\sin{90\degree} = 10.5
+\]
+Since this is a right triangle, the sides adjacent to the $90\degree$ angle are altitudes, so we can use the more elementary formula for the area of a triangle: $A=\tfrac{1}{2}bh$.
+\end{subsolutions}
+
+\solution %3
+Let $b$ be the length of $AC$.
+\[
+40=\dfrac{1}{2}b\left(6\right)\sin{40\degree} \implies b = \dfrac{40}{3\sin{40\degree}} \approx 20.7
+\]
+
+\solution %4
+Let $\alpha$ be the measure of angle $P$.
+\[
+9=\dfrac{1}{2}\left(5\right)\left(6\right)\sin{\alpha} \implies \sin{\alpha} = \dfrac{9}{15} \implies \alpha \approx 36.9\degree \text{ or } \alpha \approx 143.1\degree
+\]
+
+\solution %5
+The area of this triangle is $\tfrac{1}{2}ab\sin{\gamma}$, where $\gamma$ is the angle included between the sides of length $a$ and $b$. Because $\sin{\gamma}$ has a maximum value of 1 when $\gamma$ is $90\degree$, the area of the triangle is maximized when $\gamma$ is $90\degree$. This gives an area of $\tfrac{1}{2}ab$. Since $\gamma=90\degree$, the triangle is a right triangle.
+
+In this triangle, $a$ and $b$ are both legs of the right triangle. We can let one of $a$ or $b$ be the hypotenuse of a right triangle to get another non-congruent right triangle with side lengths of $a$ and $b$. Without loss of generality, we can choose $b$ to be the hypotenuse. By the Pythagorean theorem, the other leg of the triangle has length $\sqrt{b^2-a^2}$. Therefore, the area of this triangle is
+\[
+\dfrac{1}{2}a\sqrt{b^2-a^2}.
+\]
+
+\solution %6
+As in the previous exercise, for two given side lengths of a triangle, the area of the triangle is maximized when the angle included between these two sides is equal to $90\degree$. Thus, the maximum area of an isosceles triangle with a leg length of $x$ is
+\[
+\dfrac{1}{2}\left(x\right)\left(x\right)\sin{90\degree} = \dfrac{1}{2}x^{2}.
+\]
+
+\solution ~ %7
+\begin{center}
+\begin{tikzpicture}
+\draw (0,0) -- (6,0) -- (9,4) -- (3,4) -- (0,0);
+\draw (0,0) -- (9,4);
+
+\node[left] at (3,4) {$A$};
+\node[right] at (9,4) {$B$};
+\node[right] at (6,0) {$C$};
+\node[left] at (0,0) {$D$};
+
+\node[below] at (3,0) {$a$};
+\node[above] at (6,4) {$a$};
+\node[left] at (1.5,2) {$b$};
+\node[right] at (7.5,2) {$b$};
+\end{tikzpicture}
+\end{center}
+Because opposite angles of a parallelogram are congruent, the area of the above parallelogram is given by
+\[
+\dfrac{1}{2}ab\sin{A}+\dfrac{1}{2}ab\sin{C} = \dfrac{1}{2}ab\sin{C}+\dfrac{1}{2}ab\sin{C} = ab\sin{C}.
+\]
+Notice that $A$ and $C$ are congruent, $B$ and $C$ are supplements, and $C$ and $D$ are supplements by the properties of parallelograms. This means that the above area formula can be used with any angle of the parallelogram since $\sin{A}=\sin{B}=\sin{C}=\sin{D}$.
+
+\solution ~ %8
+\begin{center}
+\begin{tikzpicture}
+\draw (0,0) -- (4,-1) -- (8,4) -- (2,5) -- (0,0);
+\draw[dashed] (0,0) -- (8,4);
+\draw[dashed] (4,-1) -- (2,5);
+
+\node[above] at (3.25,1.6) {$\alpha$};
+\node[right] at (3.15,1.45) {$180\degree-\alpha$};
+\node[below] at (3,1.5) {$\alpha$};
+\node[left] at (3.1,1.65) {$180\degree-\alpha$};
+
+\node[below] at (1.5,0.75) {$w$};
+\node[above] at (3.7,0.2) {$x$};
+\node[above] at (5.3,2.6) {$y$};
+\node[above] at (2.65,3.3) {$z$};
+\end{tikzpicture}
+\end{center}
+
+\begin{align*}
+A &= \dfrac{1}{2}wx\sin{\alpha} + \dfrac{1}{2}xy\sin\left(180\degree-\alpha\right) + \dfrac{1}{2}yz\sin{\alpha} + \dfrac{1}{2}wz\sin\left(180\degree-\alpha\right) \\
+&= \dfrac{1}{2}wx\sin{\alpha} + \dfrac{1}{2}xy\sin{\alpha} + \dfrac{1}{2}yz\sin{\alpha} + \dfrac{1}{2}wz\sin{\alpha} \\
+&= \dfrac{1}{2}\left(wx+xy+yz+wz\right)\sin{\alpha} \\
+&= \dfrac{1}{2}\left(w\left(x+z\right)+y\left(x+z\right)\right)\sin{\alpha} \\
+&= \dfrac{1}{2}\left(w+y\right)\left(x+z\right)\sin{\alpha}
+\end{align*}
+
+$w+y$ and $x+z$ are the lengths of the diagonals in the quadrilateral in the diagram above. The above derivation shows that the choice of $\alpha$ does not matter since $\sin{\alpha}=\sin\left(180\degree-\alpha\right)$.
+
+\solution ~ %9
+\begin{center}
+\begin{tikzpicture}
+\draw (0,0) -- (7,0) -- (3,1) -- (2,5) -- (0,0);
+\draw[dashed] (0,0) -- (5.25,1.75);
+\draw[dashed] (7,0) -- (2,5);
+
+\node[below] at (5.2,1.75) {$\alpha$};
+\node[left] at (5.15,1.85) {$180\degree- \alpha$};
+
+\node[below] at (2.3,0.8) {$d$};
+\node[below] at (4.1,1.4) {$z$};
+\node[above] at (6.2,1.1) {$x$};
+\node[above] at (3.6,3.5) {$y$};
+\end{tikzpicture}
+\end{center}
+
+\begin{align*}
+A &= \dfrac{1}{2}\left(d+z\right)x\sin{\alpha} + \dfrac{1}{2}\left(d+z\right)y\sin\left(180\degree-\alpha\right) - \dfrac{1}{2}xz\sin{\alpha} - \dfrac{1}{2}yz\sin\left(180\degree-\alpha\right) \\
+&= \dfrac{1}{2}\left(d+z\right)x\sin{\alpha} + \dfrac{1}{2}\left(d+z\right)y\sin{\alpha} - \dfrac{1}{2}xz\sin{\alpha} - \dfrac{1}{2}yz\sin{\alpha} \\
+&= \dfrac{1}{2}\left[\left(d+z\right)x  + \left(d+z\right)y - xz - yz\right]\sin{\alpha} \\
+&= \dfrac{1}{2}\left[\left(d+z\right)\left(x+y\right) - z\left(x+y\right)\right]\sin{\alpha} \\
+&= \dfrac{1}{2}d\left(x+y\right)\sin{\alpha}
+\end{align*}
+
+\solution %10
+\[
+\dfrac{\dfrac{1}{2}\left(4\right)\left(6\right)\sin{\alpha}}{\dfrac{1}{2}\left(8\right)\left(10\right)\sin{\alpha}} = \dfrac{4 \cdot 6}{8 \cdot 10} = \dfrac{3}{10}
+\]
+
+\solution %11
+See solution provided in the textbook
+
+\solution ~ %12
+\begin{center}
+\begin{tikzpicture}
+\draw (0,0) -- (4,-1) -- (8,4) -- (2,5) -- (0,0);
+\draw[dashed] (0,0) -- (8,4);
+\draw[dashed] (4,-1) -- (2,5);
+
+\node[above] at (3.25,1.6) {$\alpha$};
+\node[right] at (3.15,1.45) {$180\degree-\alpha$};
+\node[below] at (3,1.5) {$\alpha$};
+\node[left] at (3.1,1.65) {$180\degree-\alpha$};
+
+\node[below] at (1.5,0.75) {$z$};
+\node[above] at (3.7,0.2) {$y$};
+\node[above] at (5.3,2.6) {$x$};
+\node[above] at (2.7,3.3) {$w$};
+
+\node[above] at (2,5) {$A$};
+\node[right] at (8,4) {$B$};
+\node[below] at (4,-1) {$C$};
+\node[left] at (0,0) {$D$};
+\end{tikzpicture}
+\end{center}
+
+\[
+\left\lvert APB \right\rvert \times \left\lvert CPD \right\rvert = \left(\dfrac{1}{2}wx\sin{\alpha}\right)\left(\dfrac{1}{2}yz\sin{\alpha}\right) = \dfrac{1}{4}wxyz\sin^{2}{\alpha}
+\]
+\[
+\left\lvert BPC \right\rvert \times \left\lvert DPA \right\rvert = \left(\dfrac{1}{2}xy\sin\left(180\degree-\alpha\right)\right)\left(\dfrac{1}{2}wz\sin\left(180\degree-\alpha\right)\right) = \dfrac{1}{4}wxyz\sin^{2}{\alpha}
+\]
+
+This identity is true even if the diagonals intersect outside of the quadrilateral. Using the diagram above in Exercise 9, we can show that $\left\lvert APB \right\rvert \times \left\lvert CPD \right\rvert$ and $\left\lvert BPC \right\rvert \times \left\lvert DPA \right\rvert$ are both equal to
+\[
+\dfrac{1}{4}xyz\left(d+z\right)\sin^{2}{\alpha}.
+\]
+\solution ~ %13
+\begin{center}
+\begin{tikzpicture}[scale=1.5]
+\draw (0,0) -- (5,0) -- (1.8,2.4) -- (0,0);
+\draw (1.8,2.4) -- (1.8,0);
+\draw (1.95,0) -- (1.95,0.15) -- (1.8,0.15);
+\node[below right] at (5,0) {$A$};
+\node[below left] at (0,0) {$B$};
+\node[above] at (1.8,2.4) {$C$};
+\node[below] at (1.8,0) {$P$};
+%\node[above right=0.1cm] at (0,-0.15) {$\beta$};
+%\node[above left=0.1cm] at (4.85,-0.1) {$\gamma$};
+\node[left] at (0.9,1.2) {$a$};
+\node[right] at (3.4,1.25) {$b$};
+\end{tikzpicture}
+\end{center}
+
+\[
+c = AB = AP + PB = b\cos{A} +  a\cos{B}
+\]
+
+Let's suppose angle $A$ is obtuse. Then we need to subtract $\ldots$
+
+\begin{center}
+\begin{tikzpicture}[scale=1.5]
+\draw (0,0) -- (3,0) -- (-1.8,2.4) -- (0,0);
+\draw[dashed] (-1.8,2.4) -- (-1.8,0);
+\draw (-1.65,0) -- (-1.65,0.15) -- (-1.8,0.15);
+\draw[dashed] (0,0) -- (-1.8,0);
+\node[below right] at (3,0) {$A$};
+\node[below left] at (0,0) {$B$};
+\node[above] at (-1.8,2.4) {$C$};
+\node[below] at (-1.8,0) {$P$};
+%\node[above right=0.1cm] at (0,-0.15) {$\beta$};
+%\node[above left=0.1cm] at (4.85,-0.1) {$\gamma$};
+\node[left] at (-0.8,1.1) {$a$};
+\node[right] at (0.65,1.25) {$b$};
+\end{tikzpicture}
+\end{center}
+
+\[
+c = AB = AP - BP = b\cos{A} - a\cos\left(180\degree-B\right) = b\cos{A} +  a\cos{B}
+\]
+As shown above, no changes need to be made to this result for obtuse angles.
 \end{solutions}
 
 \begin{solutions}{Page 79}
-\solution
+\solution ~ %1
+\begin{center}
+\begin{tikzpicture}[scale=1.5]
+\draw (0,0) -- (3,0) -- (-1.8,2.4) -- (0,0);
+\draw[dashed] (-1.8,2.4) -- (-1.8,0);
+\draw (-1.65,0) -- (-1.65,0.15) -- (-1.8,0.15);
+\draw[dashed] (0,0) -- (-1.8,0);
+\node[below right] at (3,0) {$A$};
+\node[below left] at (0,0) {$B$};
+\node[above] at (-1.8,2.4) {$C$};
+\node[below] at (-1.8,0) {$P$};
+%\node[above right=0.1cm] at (0,-0.15) {$\beta$};
+%\node[above left=0.1cm] at (4.85,-0.1) {$\gamma$};
+\node[left] at (-0.8,1.1) {$a$};
+\node[right] at (0.65,1.25) {$b$};
+\node[below] at (1.5,0) {$c$};
+\node[above] at (-0.9,0) {$x=a\cos{B'}$};
+\node[left] at (-1.8,1.1) {$h$};
+\end{tikzpicture}
+\end{center}
+\begin{align*}
+b^2 &= h^2 + \left(c+x\right)^2 \\
+&= a^2 - x^2 + c^2 + 2cx + x^2 \\
+&= a^2 + c^2 + 2cx \\
+&= a^2 + c^2 + 2ac\cos{B'}
+\end{align*}
 \end{solutions}
 
 \begin{solutions}{Page 80}
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
-\solution
+\solution %1
+\solution %2
+\begin{subsolutions}
+\subsolution %a
+\[
+x^2 = y^2 + z^2 - 2yz\cos{X}
+\]
+\subsolution %b
+\[
+x^2 = y^2 + z^2 - 2yz\cos{X}
+\]
+\subsolution %c
+\[
+a^2 = b^2 + c^2 - 2bc\cos{A}
+\]
+\subsolution %d
+\[
+b^2 = a^2 + c^2 - 2ac\cos{B}
+\]
+\subsolution %e
+\[
+c^2 = a^2 + b^2 - 2ac\cos{C}
+\]
+\end{subsolutions}
+
+\solution %3
+Given two sides and the angle between them, the Law of Cosines can be used to find the length of the third side. Another application of the Law of Cosines can be used to solve for one of the unknown angles since the three sides of the triangle are now known. The final angle of the triangle can be determined by subtracting the measures of the two known angles from $180\degree$.
+
+\solution %4
+\begin{subsolutions}
+\subsolution %a
+\[
+x = \sqrt{12^2+15^2-2\left(12\right)\left(15\right)\cos{50\degree}} \approx 11.7
+\]
+\subsolution %b
+\[
+x = \sqrt{10^2+16^2-2\left(10\right)\left(16\right)\cos{110\degree}} \approx 21.6
+\]
+\subsolution %c
+\[
+\cos{x\degree} = \dfrac{6^2+8^2-9^2}{2\left(6\right)\left(8\right)} = \dfrac{19}{96} \implies x \approx 78.6
+\]
+\subsolution %d
+\[
+\cos{x\degree} = \dfrac{10^2+5^2-12^2}{2\left(10\right)\left(5\right)} = -\dfrac{19}{100} \implies x \approx101.0
+\]
+\end{subsolutions}
+
+\solution %5
+\[
+\cos{A} = \dfrac{10^2+7^2-6^2}{2\left(10\right)\left(7\right)} = \dfrac{113}{140} \implies A \approx 36.2\degree
+\]
+\[
+\cos{B} = \dfrac{10^2+6^2-7^2}{2\left(10\right)\left(6\right)} = \dfrac{29}{40} \implies B \approx 43.5\degree
+\]
+\[
+\cos{C} = \dfrac{7^2+6^2-10^2}{2\left(7\right)\left(6\right)} = -\dfrac{5}{28} \implies C \approx 100.3\degree
+\]
+\solution ~ %6
+\begin{center}
+\begin{tikzpicture}[scale=1.5]
+\draw (0,0) -- (6,0) -- (6.9,1.2) -- (0.9,1.2) -- (0,0);
+\draw (0,0) -- (6.9,1.2);
+\draw (6,0) -- (0.9,1.2);
+
+\node[left] at (0.9,1.2) {$A$};
+\node[right] at (6.9,1.2) {$B$};
+\node[right] at (6,0) {$C$};
+\node[left] at (0,0) {$D$};
+
+\node[below] at (3,0) {$12$};
+\node[above] at (3.5,1.2) {$12$};
+\node[left] at (0.4,0.6) {$3$};
+\node[right] at (6.5,0.6) {$3$};
+\end{tikzpicture}
+\end{center}
+
+In the above diagram of a parallelogram with side lengths of 3 and 12, let $d_1$ be the length of the diagonal $AC$ and let $d_2$ be the length of the diagonal $BD$. By the Law of Cosines, we know that
+\[
+d_1^2 = 3^2+12^2-2(3)(12)\cos{B}
+\]
+and
+\[
+d_2^2 = 3^2+12^2-2(3)(12)\cos{A}.
+\]
+However, since adjacent angles in a parallelogram are supplementary, $\cos{B} = -\cos{A}$. Therefore,
+\begin{align*}
+d_1^2 + d_2^2 &= \left(3^2+12^2-2(3)(12)\cos{B}\right) + \left( 3^2+12^2-2(3)(12)\cos{A}\right) \\
+&= \left(3^2+12^2+2(3)(12)\cos{A}\right) + \left( 3^2+12^2-2(3)(12)\cos{A}\right) \\
+&= 3^2 + 12^2 + 3^2 + 12^2 \\
+&= 306
+\end{align*}
+Thus, the answer does not depend on the specific shape of the parallelogram. Only the side lengths are pertinent.
+
+\solution ~ %7
+\begin{center}
+\begin{tikzpicture}
+\draw (0,0) -- (6,0) -- (9,4) -- (3,4) -- (0,0);
+\draw (0,0) -- (9,4);
+\draw (6,0) -- (3,4);
+
+\node[left] at (3,4) {$A$};
+\node[right] at (9,4) {$B$};
+\node[right] at (6,0) {$C$};
+\node[left] at (0,0) {$D$};
+
+\node[below] at (3,0) {$a$};
+\node[above] at (6,4) {$a$};
+\node[left] at (1.5,2) {$b$};
+\node[right] at (7.5,2) {$b$};
+\end{tikzpicture}
+\end{center}
+We can generalize the argument from the previous exercise to an arbitrary parallelogram. As before, let $d_1$ be the length of the diagonal $AC$ and let $d_2$ be the length of the diagonal $BD$. Then,
+\begin{align*}
+d_1^2 + d_2^2 &= a^2+b^2-2ab\cos{B} + a^2+b^2-2ab\cos{A} \\
+&= a^2+b^2+2ab\cos{A} + a^2+b^2-2ab\cos{A} \\
+&= a^2+b^2+a^2+b^2,
+\end{align*}
+which shows that the sum of the squares of the diagonals of a parallelogram is equal to the sum of the squares of the four sides.
+
+\solution ~ %8
+\begin{center}
+\begin{tikzpicture}
+\draw (0,0) -- (6,0) -- (9,4) -- (3,4) -- (0,0);
+\draw (0,0) -- (9,4);
+\draw (6,0) -- (3,4);
+
+\node[left] at (3,4) {$B$};
+\node[right] at (9,4) {$A$};
+\node[right] at (6,0) {$C$};
+\node[left] at (0,0) {$D$};
+\node[below] at (4.3,1.9) {$M$};
+\end{tikzpicture}
+\end{center}
+We can create a parallelogram from triangle $ABC$ by creating a copy of the triangle and reflecting it through the point $M$. This allows us to apply the result from the previous exercise about the sum of the squares of the diagonals.
+\begin{align*}
+AD^2+BC^2 = AB^2+AC^2+BD^2+CD^2 &\implies \left(2AM\right)^2+BC^2 = AB^2+AC^2+AC^2+AB^2 \\
+&\implies 4AM^2+BC^2 = 2AB^2+2AC^2 \\
+&\implies 4AM^2 = 2AB^2+2AC^2-BC^2
+\end{align*}
+
+\solution %9
+We can get a formula for the length of each median in a triangle by applying cyclic substitutions to the result we derived in the previous exercise.
+\[
+4AM^2 = 2AB^2+2AC^2-BC^2
+\]
+\[
+4BM^2 = 2BC^2+2AB^2-AC^2
+\]
+\[
+4CM^2 = 2AC^2+2BC^2-AB^2
+\]
+Adding these three equations together gives
+\[
+4AM^2+4BM^2+4CM^2 = 3AB^2 + 3AC^2 + 3BC^2.
+\]
+Factoring out 3 on the right-hand side of the equation and dividing both sides by 4 gives the result:
+\[
+AM^2+BM^2+CM^2 = \dfrac{3}{4}\left(AB^2+AC^2+BC^2\right).
+\]
+\solution %10
+\solution %11
+\[
+c^2 = 1^2 + 4^2 - 2\left(1\right)\left(4\right)\cos{60\degree} = 17-8\left(\dfrac{1}{2}\right) = 13 \implies c = \sqrt{13}
+\]
+
+\solution %12
+\[
+c^2=a^2+b^2-2ab\cos{60\degree} =a^2+b^2-2ab\left(\dfrac{1}{2}\right) = a^2+b^2-ab
+\]
+Since $120\degree$ is the supplement of $60\degree$, the analogous result is that $c^2=a^2+b^2+ab$.
+
+\solution ~ %13
+\begin{center}
+\begin{tikzpicture}
+\draw (0,0) -- (3,0);
+\draw (0,0) -- (-1,1.732);
+\draw (0,0) -- (-0.5,-0.866);
+\draw (3,0) -- (-1,1.732) -- (-0.5,-0.866) -- (3,0);
+
+\node[above] at (0.2,0) {$X$};
+\node[right] at (3,0) {$A$};
+\node[above] at (-1,1.732) {$B$};
+\node[below left] at (-0.5,-0.866) {$C$};
+\end{tikzpicture}
+\end{center}
+
+Let $A$, $B$, and $C$ be the positions of the three riders at some time $t$, where $t$ is the number of elapsed hours since departure. Then $AX=60t$, $BX=40t$, and $CX=20t$. Applying the result from the previous exercise concerning the Law of Cosines for triangles with a $120\degree$ angle,
+\[
+AB = \sqrt{\left(60t\right)^2+\left(40t\right)^2 + \left(60t\right)\left(40t\right)} \approx 87.2t
+\]
+\[
+BC = \sqrt{\left(40t\right)^2+\left(20t\right)^2 + \left(40t\right)\left(20t\right)} \approx 52.9t
+\]
+\[
+AC = \sqrt{\left(60t\right)^2+\left(20t\right)^2 + \left(60t\right)\left(20t\right)} \approx 72.1t
+\]
+Therefore, after 1 hour, riders $A$ and $B$ are 87.2 miles apart, riders $B$ and $C$ are 52.9 miles apart, and riders $A$ and $C$ are 72.1 miles apart. After 2 hours, riders $A$ and $B$ are 174.4 miles apart, riders $B$ and $C$ are 105.8 miles apart, and riders $A$ and $C$ are 144.2 miles apart.
 \end{solutions}
 
 \begin{solutions}{Page 83}
-\solution
-\solution
-\solution
+\solution ~ %1
+45-45-90 triangle:
+\begin{center}
+\begin{tikzpicture}
+\draw (0,0) -- (0,3) -- (3,0) -- (0,0);
+
+\draw (4,0) -- (7,0) -- (7,3) -- (4,0);
+\end{tikzpicture}
+\end{center}
+
+\solution %2
+The triangles which can be placed on their mirror images without reflection are the isosceles triangles.
+
+\solution ~ %3
+Rectangle:
+\begin{center}
+\begin{tikzpicture}
+\draw (0,0) -- (0,2) -- (4,2) -- (4,0) -- (0,0);
+\end{tikzpicture}
+\end{center}
+
+Rhombus:
+\begin{center}
+\begin{tikzpicture}
+\draw (0,0) -- (2.5,0) -- (4,2) -- (1.5,2) -- (0,0);
+\end{tikzpicture}
+\end{center}
+
+Isosceles Trapezoid:
+\begin{center}
+\begin{tikzpicture}
+\draw (0,0) -- (5,0) -- (4,2) -- (1,2) -- (0,0);
+\end{tikzpicture}
+\end{center}
 \end{solutions}
 
 \begin{solutions}{Page 84}
-\solution
-\solution
+\solution ~ %1
+\begin{center}
+\begin{tikzpicture}
+\draw (0,0) -- (4,0) -- (4,3) -- (0,0);
+\draw (3.8,0) -- (3.8,0.2) -- (4,0.2);
+
+\node[right] at (4,0) {$A$};
+\node[left] at (0,0) {$B$};
+\node[above right] at (4,3) {$C$};
+
+\node[above] at (1.9,1.5) {$a$};
+\node[right] at (4,1.5) {$b$};
+\node[below] at (2,0) {$c$};
+
+\node[above right] at (0.4,-0.1) {$\beta$};
+\node[below left] at (4,2.8) {$\gamma$};
+\end{tikzpicture}
+\end{center}
+
+\[
+\sin{\beta} = \dfrac{2S}{ac} = \dfrac{bc}{ac} = \dfrac{b}{a}
+\]
+\[
+\sin{\gamma} = \dfrac{2S}{ab} = \dfrac{bc}{ab} = \dfrac{c}{a}
+\]
+\solution %2
+\begin{align*}
+c^2 &= a^2+b^2 - 2ab\cos{\gamma} \\
+&= a^2+b^2 -2 \left(\dfrac{2S}{\sin{\gamma}}\right)\cos{\gamma} \\
+&= a^2+b^2 - 4S\cot{\gamma}
+\end{align*}
 \end{solutions}
 
 \begin{solutions}{Page 85}
-\solution
-\solution
+\solution %1
+\[
+b^2 = a^2 + c^2 - 2ac\cos{\beta}
+\]
+\[
+a^2 = b^2 + c^2 - 2bc\cos{\alpha}
+\]
+\solution %2
+These three quantities are all equal to twice the circumradius of the triangle.
 \end{solutions}
 
 \begin{solutions}{Page 86}
-\solution
+\solution %1
+\begin{subsolutions}
+\subsolution %a
+The dimensions of the left-hand side and right-hand side of the equation are both $[L]/[\emptyset]$, where we use $\emptyset$ to represent a dimensionless quantity.
+
+\subsolution %b
+The dimensions of the left-hand side are $[L]/[L]$, which is a dimensionless quantity. The dimensions of the right-hand side are $[\emptyset]/[\emptyset]$, which is also a dimensionless quantity. Thus, the dimensions in this equation are consistent.
+
+\subsolution %c
+The dimensions of the left-hand side are $[L]^2$, and the dimensions of the right-hand side are $[L]\cdot[L]\cdot[\emptyset]$, which is equivalent to the dimensions of $[L]^2$.
+
+\subsolution %d
+The dimensions of the left-hand side are $[L]^2$. The dimensions of each term on the right-hand side are $[L]^2$ (recall that $\cos{\gamma}$ is dimensionless), so the overall dimensions of the right-hand side are also $[L]^2$.
+\end{subsolutions}
 \end{solutions}
 
 \begin{solutions}{Page 88}
-\solution
-\solution
-\solution
-\solution
-\solution
+\solution %1
+The semiperimeter of this triangle is $(3+4+5)/2 = 6$.
+\[
+S = \sqrt{6\left(6-3\right)\left(6-4\right)\left(6-5\right)} = 6
+\]
+\solution %2
+The semiperimeter of this triangle is $(5+12+13)/2 = 15$.
+\[
+S = \sqrt{15\left(15-5\right)\left(15-12\right)\left(15-13\right)} = 30
+\]
+\solution %3
+The semiperimeter of an equilateral triangle with side length $l$ is $3l/2$
+\[
+S = \sqrt{\dfrac{3l}{2} \cdot \dfrac{l}{2} \cdot \dfrac{l}{2} \cdot \dfrac{l}{2}} = \sqrt{\dfrac{3}{16}l^4} = l^2 \dfrac{\sqrt{3}}{4}
+\]
+\solution %4
+Each angle in an equilateral triangle is $60\degree$.
+\[
+S = \dfrac{1}{2}l^2\sin{60\degree} = l^2\dfrac{\sqrt{3}}{4}
+\]
+\solution %5
+The semiperimeter of a 13-14-15 triangle is $(13+14+15)/2 = 21$.
+\[
+S = \sqrt{21\left(21-13\right)\left(21-14\right)\left(21-15\right)} = 84
+\]
+The semiperimeter of a 25-39-56 triangle is $(25+39+56)/2 = 60$.
+\[
+S = \sqrt{60\left(60-25\right)\left(60-39\right)\left(60-56\right)} = 420
+\]
+The semiperimeter of a 25-39-16 triangle is $(25+39+16)/2 = 40$.
+\[
+S = \sqrt{40\left(40-25\right)\left(40-39\right)\left(40-16\right)} = 120
+\]
 \end{solutions}
 
 \section*{Chapter 4: Angles and Rotations}
