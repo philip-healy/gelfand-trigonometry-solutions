@@ -1,6 +1,7 @@
 # Solutions for Gelfand's *Trigonometry*
 
-[![Build Status](https://github.com/philip-healy/gelfand-trigonometry-solutions/actions/workflows/main.yml/badge.svg)](https://github.com/philip-healy/gelfand-trigonometry-solutions/actions/workflows/main.yml)
+[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa] [![Build Status](https://github.com/philip-healy/gelfand-trigonometry-solutions/actions/workflows/main.yml/badge.svg)](https://github.com/philip-healy/gelfand-trigonometry-solutions/actions/workflows/main.yml)
+
 
 <p align="center">
 <img alt="Cover" src="images/cover.png" width="250">
@@ -11,9 +12,7 @@ Solutions:
 </p>
 
 *Trigonometry* by Gelfand and Saul is often recommended as a precalculus text for self-study.
-However, those who are learning without the help of a teacher can struggle with the lack of solutions to exercises in the text.
-A [partial set of solutions for *Trigonometry*](https://jbeach50.weebly.com/gelfand--saul-trig-solutions.html) (odd numbered exercises only) has been published by John Beach.
-It is hoped that this repository will eventually contain a complete set of solutions that can be viewed as HTML or downloaded in PDF format.
+However, those who are learning without the help of a teacher can struggle with the lack of solutions to exercises in the text. It is hoped that this repository will eventually contain a complete set of solutions that can be viewed as HTML or downloaded in PDF format.
 
 ## Contributing
 Contributions are welcome! Contributions can be:
@@ -26,13 +25,12 @@ Contributions are welcome! Contributions can be:
 If you are comfortable editing the `.tex` file directly then feel free to submit a pull request. If not, just create a GitHub issue describing your proposed change. 
 
 ## See Also
-Adrian S. Durham has published a [complete set of solutions](https://www.reddit.com/r/learnmath/comments/5zc3zl/solutions_to_gelfands_algebra_by_adrian_s_durham/) for Gelfand's *Algebra*.
+* John Beach published a [partial set of solutions](https://jbeach50.weebly.com/gelfand--saul-trig-solutions.html) (odd numbered exercises only).
+* Fardeen Ashraf also published a [partial set of solutions](https://archive.org/details/gelfand-trigonometry-solutions-manual) (Chapter 1--Chapter 4).
+* Adrian S. Durham published a [complete set of solutions](https://archive.org/details/SolutionsToGelfandsAlgebra) for Gelfand's *Algebra*.
 
 ## License
-Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
-
-This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0
-International License][cc-by-sa].
+This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
 
 [![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
 
