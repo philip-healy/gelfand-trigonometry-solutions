@@ -26,7 +26,7 @@ If you are comfortable editing the `.tex` file directly then feel free to submit
 
 ## See Also
 * John Beach published a [partial set of solutions](https://jbeach50.weebly.com/gelfand--saul-trig-solutions.html) (odd numbered exercises only).
-* Fardeen Ashraf also published a [partial set of solutions](https://archive.org/details/gelfand-trigonometry-solutions-manual) (Chapter 1--Chapter 4).
+* Fardeen Ashraf also published a [partial set of solutions](https://archive.org/details/gelfand-trigonometry-solutions-manual) (Chapters 1-4).
 * Adrian S. Durham published a [complete set of solutions](https://archive.org/details/SolutionsToGelfandsAlgebra) for Gelfand's *Algebra*.
 
 ## License
