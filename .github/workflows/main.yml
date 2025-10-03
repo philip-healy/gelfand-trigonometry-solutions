@@ -9,21 +9,20 @@ jobs:
   republish-gelfand-trigonometry-solutions:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+
       - name: Install texlive
-        uses: paolobrasolin/setup-texlive-action@v1
-        with:
-          packages: >-
-            scheme-full
-      
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y texlive-full
+
       - name: Install pdf2htmlex
         run: |
           wget https://github.com/pdf2htmlEX/pdf2htmlEX/releases/download/v0.18.8.rc1/pdf2htmlEX-0.18.8.rc1-master-20200630-Ubuntu-bionic-x86_64.deb
           mv pdf2htmlEX-0.18.8.rc1-master-20200630-Ubuntu-bionic-x86_64.deb pdf2htmlex.deb
           sudo apt install ./pdf2htmlex.deb
-      
-      - name: Check out repository code
-        uses: actions/checkout@v3
-      
+
       - name: Generate PDF and HTML
         run: |
           mkdir deploy
