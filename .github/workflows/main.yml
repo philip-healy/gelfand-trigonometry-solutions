@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install texlive
-        uses: teatimeguest/setup-texlive-action@v2
+        uses: paolobrasolin/setup-texlive-action@v1
         with:
           packages: >-
             scheme-full
